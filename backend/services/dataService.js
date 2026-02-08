@@ -2,27 +2,29 @@ import { generateAllMockTweets } from './mockDataService.js';
 import { fetchAllTweetsAlternative, isAlternativeApiConfigured } from './alternativeApiService.js';
 import { translateAllToolsTweets, isTranslateConfigured, clearTranslationCache } from './translateService.js';
 
-// Cache
+// Serverless ortam kontrolü (Vercel)
+const IS_SERVERLESS = !!process.env.VERCEL;
+
+// Cache (sadece persistent process'lerde çalışır - lokalde)
 let cachedData = null;
 let cacheTime = null;
 let cachedSource = 'mock';
-let fetchInProgress = null; // Aynı anda iki çekim olmasın
+let fetchInProgress = null;
 const CACHE_DURATION = 1000 * 60 * 15; // 15 dakika
 
 export async function getToolsWithTweets(category = 'all', forceRefresh = false) {
   try {
     let data;
 
-    // Cache kontrolü
-    if (!forceRefresh && cachedData && cacheTime && (Date.now() - cacheTime < CACHE_DURATION)) {
+    // Cache kontrolü (serverless'ta cache çalışmaz - her invocation yeni process)
+    if (!IS_SERVERLESS && !forceRefresh && cachedData && cacheTime && (Date.now() - cacheTime < CACHE_DURATION)) {
       data = cachedData;
-    } else if (fetchInProgress) {
-      // Başka bir istek zaten çekiyor, onu bekle
+    } else if (!IS_SERVERLESS && fetchInProgress) {
       console.log('⏳ Başka bir istek zaten çekiyor, bekleniyor...');
       data = await fetchInProgress;
     } else {
       // Yeni çekim başlat
-      fetchInProgress = (async () => {
+      const fetchFn = async () => {
         let result;
         // 1. RapidAPI dene
         if (isAlternativeApiConfigured()) {
@@ -38,8 +40,8 @@ export async function getToolsWithTweets(category = 'all', forceRefresh = false)
         } else {
           cachedSource = 'rapidapi';
 
-          // 3. DeepSeek ile Türkçeye çevir
-          if (isTranslateConfigured()) {
+          // 3. DeepSeek ile Türkçeye çevir (sadece lokalde - serverless'ta süre yetmez)
+          if (!IS_SERVERLESS && isTranslateConfigured()) {
             result = await translateAllToolsTweets(result);
           }
         }
@@ -47,12 +49,19 @@ export async function getToolsWithTweets(category = 'all', forceRefresh = false)
         cachedData = result;
         cacheTime = Date.now();
         return result;
-      })();
+      };
 
-      try {
-        data = await fetchInProgress;
-      } finally {
-        fetchInProgress = null;
+      if (IS_SERVERLESS) {
+        // Serverless: direkt çalıştır, mutex gereksiz
+        data = await fetchFn();
+      } else {
+        // Lokal: mutex ile çalıştır
+        fetchInProgress = fetchFn();
+        try {
+          data = await fetchInProgress;
+        } finally {
+          fetchInProgress = null;
+        }
       }
     }
 

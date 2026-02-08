@@ -10,11 +10,11 @@ import { aiTools } from '../data/ai-tools.js';
 const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
 const RAPIDAPI_HOST = 'twitter-api45.p.rapidapi.com';
 
-// Tek kullanıcının tweet'lerini çek
-async function fetchFromRapidAPI(username, maxResults = 5) {
+// Tek kullanıcının tweet'lerini çek (retry destekli)
+async function fetchFromRapidAPI(username, maxResults = 5, retryCount = 0) {
   try {
     if (!RAPIDAPI_KEY) {
-      return null;
+      return { data: null, rateLimited: false };
     }
 
     console.log(`🚀 RapidAPI'den ${username} için veri çekiliyor...`);
@@ -29,7 +29,7 @@ async function fetchFromRapidAPI(username, maxResults = 5) {
         params: {
           screenname: username
         },
-        timeout: 15000
+        timeout: 10000
       }
     );
 
@@ -38,7 +38,7 @@ async function fetchFromRapidAPI(username, maxResults = 5) {
 
     if (!Array.isArray(tweets) || tweets.length === 0) {
       console.log(`⚠️  ${username} için tweet bulunamadı`);
-      return null;
+      return { data: null, rateLimited: false };
     }
 
     // Son 90 gün filtresi
@@ -73,21 +73,28 @@ async function fetchFromRapidAPI(username, maxResults = 5) {
 
     if (parsed.length === 0) {
       console.log(`⚠️  ${username}: Son 90 günde tweet yok`);
-      return null;
+      return { data: null, rateLimited: false };
     }
 
     console.log(`✅ RapidAPI başarılı: ${username} (${parsed.length} tweet)`);
-    return parsed;
+    return { data: parsed, rateLimited: false };
 
   } catch (error) {
     if (error.response?.status === 429) {
-      console.warn(`⚠️  Rate limit aşıldı! Bekleyin.`);
+      console.warn(`⚠️  Rate limit aşıldı (${username})!`);
+      // 1 kez retry - 2 saniye bekleyip tekrar dene
+      if (retryCount < 1) {
+        console.log(`🔄 ${username} için 2s sonra tekrar deneniyor...`);
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        return fetchFromRapidAPI(username, maxResults, retryCount + 1);
+      }
+      return { data: null, rateLimited: true };
     } else if (error.response?.status === 403) {
       console.error(`❌ RapidAPI key geçersiz veya plan limiti doldu`);
     } else {
       console.error(`❌ RapidAPI hata (${username}):`, error.response?.data?.message || error.message);
     }
-    return null;
+    return { data: null, rateLimited: false };
   }
 }
 
@@ -108,40 +115,47 @@ export async function fetchAllTweetsAlternative(maxPerTool = 5) {
   }
 
   const results = [];
-  const BATCH_SIZE = 5; // 5 paralel istek
+  let failCount = 0;
+  let rateLimitHit = false;
 
-  console.log(`\n🚀 RapidAPI (twitter-api45) ile ${aiTools.length} AI aracı için tweet çekiliyor (${BATCH_SIZE} paralel)...\n`);
+  console.log(`\n🚀 RapidAPI (twitter-api45) ile ${aiTools.length} AI aracı için tweet çekiliyor (sıralı, hızlı)...\n`);
 
-  const batches = chunkArray(aiTools, BATCH_SIZE);
+  for (const tool of aiTools) {
+    // Çok fazla ardışık hata varsa dur
+    if (failCount >= 8) {
+      console.warn('⚠️  Çok fazla hata, geri kalan araçlar atlanıyor...');
+      break;
+    }
 
-  for (const batch of batches) {
-    // Batch'teki tüm araçları paralel çek
-    const batchResults = await Promise.allSettled(
-      batch.map(tool => fetchFromRapidAPI(tool.xHandle, maxPerTool))
-    );
+    const { data: tweets, rateLimited } = await fetchFromRapidAPI(tool.xHandle, maxPerTool);
 
-    // Sonuçları işle
-    batchResults.forEach((result, index) => {
-      const tool = batch[index];
-      if (result.status === 'fulfilled' && result.value && result.value.length > 0) {
-        results.push({
-          tool: tool.id,
-          name: tool.name,
-          xHandle: tool.xHandle,
-          category: tool.category,
-          categoryLabel: tool.categoryLabel,
-          brandColor: tool.brandColor,
-          logo: tool.logo,
-          company: tool.company,
-          description: tool.description,
-          tweets: result.value,
-          source: 'rapidapi'
-        });
-      }
-    });
+    if (rateLimited) {
+      rateLimitHit = true;
+    }
 
-    // Batch'ler arası 500ms bekle (rate limit koruması)
-    await new Promise(resolve => setTimeout(resolve, 500));
+    if (tweets && tweets.length > 0) {
+      results.push({
+        tool: tool.id,
+        name: tool.name,
+        xHandle: tool.xHandle,
+        category: tool.category,
+        categoryLabel: tool.categoryLabel,
+        brandColor: tool.brandColor,
+        logo: tool.logo,
+        company: tool.company,
+        description: tool.description,
+        tweets,
+        source: 'rapidapi'
+      });
+      failCount = 0;
+      rateLimitHit = false;
+    } else {
+      failCount++;
+    }
+
+    // Rate limit koruması - istekler arası bekleme
+    const delay = rateLimitHit ? 2500 : 800;
+    await new Promise(resolve => setTimeout(resolve, delay));
   }
 
   if (results.length === 0) {
@@ -163,7 +177,8 @@ export async function fetchAllTweetsAlternative(maxPerTool = 5) {
 
 // Tek araç için tweet çek
 export async function fetchTweetsAlternative(username, maxResults = 5) {
-  return fetchFromRapidAPI(username, maxResults);
+  const { data } = await fetchFromRapidAPI(username, maxResults);
+  return data;
 }
 
 // Yapılandırma kontrolü
