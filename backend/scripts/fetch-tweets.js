@@ -191,6 +191,23 @@ function extractMedia(tweet) {
   return media;
 }
 
+// Alıntı tweet bilgisini çıkar
+function extractQuotedTweet(tweet) {
+  const quoted = tweet.quoted_status || tweet.quote;
+  if (!quoted) return null;
+  
+  return {
+    id: quoted.id_str || quoted.id,
+    text: quoted.full_text || quoted.text || '',
+    author: {
+      name: quoted.user?.name || quoted.author?.name,
+      handle: quoted.user?.screen_name || quoted.author?.screen_name
+    },
+    media: extractMedia(quoted),
+    url: quoted.permalink ? `https://twitter.com${quoted.permalink}` : undefined
+  };
+}
+
 function parseSyndicationTweets({ handle, entries, maxResults, windowStart }) {
   if (!Array.isArray(entries) || entries.length === 0) {
     return [];
@@ -216,6 +233,7 @@ function parseSyndicationTweets({ handle, entries, maxResults, windowStart }) {
 
     const permalink = tweet.permalink ? `https://x.com${tweet.permalink}` : '';
     const media = extractMedia(tweet);
+    const quotedTweet = extractQuotedTweet(tweet);
 
     tweets.push({
       id,
@@ -231,6 +249,7 @@ function parseSyndicationTweets({ handle, entries, maxResults, windowStart }) {
       },
       url: buildTweetUrl(handle, id, permalink),
       media: media.length > 0 ? media : undefined,
+      quotedTweet: quotedTweet || undefined,
       isMock: false,
       source: 'syndication'
     });
@@ -363,6 +382,21 @@ async function fetchFromRapidAPI(username, maxResults = MAX_RESULTS_PER_TOOL) {
           }
         }
         
+        // Alıntı tweet bilgisi
+        let quotedTweet = null;
+        if (tweet.quoted_status || tweet.quote) {
+          const q = tweet.quoted_status || tweet.quote;
+          quotedTweet = {
+            id: q.id_str || q.id,
+            text: q.full_text || q.text || '',
+            author: {
+              name: q.user?.name || q.author?.name,
+              handle: q.user?.screen_name || q.author?.screen_name
+            },
+            media: q.media || []
+          };
+        }
+        
         return {
           id: tweetId,
           text: tweet.text || tweet.full_text || '',
@@ -383,6 +417,7 @@ async function fetchFromRapidAPI(username, maxResults = MAX_RESULTS_PER_TOOL) {
             tweet.url || tweet.tweet_url || tweet.permalink || ''
           ),
           media: media.length > 0 ? media : undefined,
+          quotedTweet: quotedTweet || undefined,
           isMock: false,
           source: 'rapidapi'
         };

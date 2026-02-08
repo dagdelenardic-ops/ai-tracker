@@ -1,17 +1,77 @@
 import { useState, useRef, useEffect } from 'react';
-import { Heart, Twitter, Calendar, TrendingUp, ChevronDown, ChevronUp, Image as ImageIcon, Play } from 'lucide-react';
+import { Heart, Twitter, Calendar, TrendingUp, ChevronDown, ChevronUp, Image as ImageIcon, Play, Quote } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { formatDate, isRecent } from '../utils/dateUtils';
 import { getValidXUrl, getXProfileUrl } from '../utils/xUrl';
 
-// Medya Önizleme (ToolCard için sadece ilk medya)
+// URL'leri tıklanabilir linklere dönüştür
+function LinkifyText({ text }) {
+  if (!text) return null;
+  
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlRegex);
+  
+  return (
+    <>
+      {parts.map((part, index) => {
+        if (part.match(urlRegex)) {
+          const displayUrl = part.length > 40 ? part.substring(0, 40) + '...' : part;
+          return (
+            <a
+              key={index}
+              href={part}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-400 hover:text-indigo-300 hover:underline break-all"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {displayUrl}
+            </a>
+          );
+        }
+        return <span key={index}>{part}</span>;
+      })}
+    </>
+  );
+}
+
+// Alıntı Tweet Gösterimi
+function QuoteTweet({ quote, parentTweetUrl }) {
+  if (!quote) return null;
+  
+  const quoteUrl = quote.url || parentTweetUrl;
+  
+  return (
+    <a
+      href={quoteUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block mt-3 mb-2 p-3 rounded-xl border border-dark-600/50 bg-dark-800/30 hover:bg-dark-800/50 hover:border-indigo-500/30 transition-all"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <div className="flex items-center gap-2 mb-2">
+        <Quote className="w-3 h-3 text-gray-500" />
+        <span className="text-xs font-medium text-gray-400">
+          {quote.author?.name || 'Alıntı'}
+        </span>
+        <span className="text-xs text-gray-500">
+          @{quote.author?.handle || ''}
+        </span>
+      </div>
+      <p className="text-xs text-gray-300 line-clamp-2">
+        <LinkifyText text={quote.text} />
+      </p>
+    </a>
+  );
+}
+
+// Medya Önizleme
 function TweetMediaPreview({ media }) {
   if (!media || media.length === 0) return null;
 
   const [isLoaded, setIsLoaded] = useState(false);
   const firstMedia = media[0];
 
-  // Video gösterimi
   if (firstMedia.type === 'video' || firstMedia.type === 'animated_gif') {
     return (
       <div className="relative rounded-lg overflow-hidden bg-dark-800 aspect-video mb-3 mt-2">
@@ -39,7 +99,6 @@ function TweetMediaPreview({ media }) {
     );
   }
 
-  // Fotoğraf gösterimi
   return (
     <div className="relative rounded-lg overflow-hidden bg-dark-800 aspect-video mb-3 mt-2">
       {!isLoaded && (
@@ -148,14 +207,14 @@ export default function ToolCard({ tool }) {
           </div>
         </div>
 
-        {/* Latest Tweet - Tıklanabilir */}
+        {/* Latest Tweet */}
         {latestTweet ? (
           <div className="rounded-lg p-3 border border-dark-600/50 bg-dark-800/50">
             <p
               ref={textRef}
               className={`text-sm text-gray-300 whitespace-pre-line ${expanded ? '' : 'line-clamp-8'}`}
             >
-              {latestTweet.text}
+              <LinkifyText text={latestTweet.text} />
             </p>
 
             {isClamped && (
@@ -173,6 +232,11 @@ export default function ToolCard({ tool }) {
                   <><ChevronDown className="w-3.5 h-3.5" /> Devamını oku</>
                 )}
               </button>
+            )}
+
+            {/* Alıntı Tweet */}
+            {latestTweet.quotedTweet && (
+              <QuoteTweet quote={latestTweet.quotedTweet} parentTweetUrl={tweetUrl} />
             )}
 
             {/* Medya Önizleme */}

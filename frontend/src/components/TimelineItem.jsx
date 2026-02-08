@@ -1,7 +1,76 @@
 import { useState, useRef, useEffect } from 'react';
-import { Twitter, Heart, Repeat2, MessageCircle, Eye, ChevronDown, ChevronUp, Image as ImageIcon, Play, ExternalLink } from 'lucide-react';
+import { Twitter, Heart, Repeat2, MessageCircle, Eye, ChevronDown, ChevronUp, Image as ImageIcon, Play, ExternalLink, Quote } from 'lucide-react';
 import { formatDate, formatFullDate, isRecent } from '../utils/dateUtils';
 import { getValidXUrl } from '../utils/xUrl';
+
+// URL'leri tıklanabilir linklere dönüştür
+function LinkifyText({ text }) {
+  if (!text) return null;
+  
+  // URL regex pattern
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlRegex);
+  
+  return (
+    <>
+      {parts.map((part, index) => {
+        if (part.match(urlRegex)) {
+          // URL'yi kısalt göster
+          const displayUrl = part.length > 40 ? part.substring(0, 40) + '...' : part;
+          return (
+            <a
+              key={index}
+              href={part}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-400 hover:text-indigo-300 hover:underline break-all"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {displayUrl}
+            </a>
+          );
+        }
+        return <span key={index}>{part}</span>;
+      })}
+    </>
+  );
+}
+
+// Alıntı Tweet (Quote Tweet) Gösterimi
+function QuoteTweet({ quote, parentTweetUrl }) {
+  if (!quote) return null;
+  
+  const quoteUrl = quote.url || parentTweetUrl;
+  
+  return (
+    <a
+      href={quoteUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block mt-3 mb-3 p-3 rounded-xl border border-dark-600/50 bg-dark-800/30 hover:bg-dark-800/50 hover:border-indigo-500/30 transition-all"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <div className="flex items-center gap-2 mb-2">
+        <Quote className="w-4 h-4 text-gray-500" />
+        <span className="text-sm font-medium text-gray-400">
+          {quote.author?.name || 'Alıntılanan Tweet'}
+        </span>
+        <span className="text-sm text-gray-500">
+          @{quote.author?.handle || ''}
+        </span>
+      </div>
+      <p className="text-sm text-gray-300 line-clamp-3">
+        <LinkifyText text={quote.text} />
+      </p>
+      {quote.media && quote.media.length > 0 && (
+        <div className="mt-2 text-xs text-gray-500 flex items-center gap-1">
+          <ImageIcon className="w-3 h-3" />
+          {quote.media.length} görsel
+        </div>
+      )}
+    </a>
+  );
+}
 
 // Medya Galerisi Bileşeni
 function MediaGallery({ media, tweetUrl }) {
@@ -144,12 +213,12 @@ export default function TimelineItem({ item }) {
             )}
           </div>
 
-          {/* Tweet Text */}
+          {/* Tweet Text - Linkify edilmiş */}
           <p 
             ref={textRef}
             className={`text-gray-200 mb-3 leading-relaxed whitespace-pre-line ${expanded ? '' : 'line-clamp-8'}`}
           >
-            {item.text}
+            <LinkifyText text={item.text} />
           </p>
 
           {/* Devamını Oku */}
@@ -168,6 +237,11 @@ export default function TimelineItem({ item }) {
                 <><ChevronDown className="w-3.5 h-3.5" /> Devamını oku</>
               )}
             </button>
+          )}
+
+          {/* Alıntı Tweet */}
+          {item.quotedTweet && (
+            <QuoteTweet quote={item.quotedTweet} parentTweetUrl={tweetUrl} />
           )}
 
           {/* Medya Galerisi */}
