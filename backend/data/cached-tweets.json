@@ -1,7 +1,296 @@
 {
-  "fetchedAt": "2026-02-08T06:36:21.651Z",
-  "source": "rapidapi",
-  "toolCount": 0,
-  "tweetCount": 0,
-  "data": []
+  "fetchedAt": "2026-02-08T12:15:26.218Z",
+  "source": "syndication+deepseek",
+  "toolCount": 6,
+  "tweetCount": 12,
+  "data": [
+    {
+      "tool": "github-copilot",
+      "name": "GitHub Copilot",
+      "xHandle": "github",
+      "category": "coding",
+      "categoryLabel": "Coding",
+      "brandColor": "#6E40C9",
+      "logo": "🐙",
+      "company": "GitHub",
+      "description": "GitHub'ın AI kod asistanı",
+      "tweets": [
+        {
+          "id": "2020444015334711594",
+          "text": "Yeni cep boyutundaki programlama dostunla tanış!\n\nGitHub Copilot Peluş Anahtarlık yumuşacık, sevimli ve anahtarlarınıza ya da sırt çantanıza hemen takılır; Copilot'un büyüsünü yanınızda taşımanızı sağlar.\nhttps://t.co/qECBDE4326 https://t.co/aCNForRLd2",
+          "createdAt": "2026-02-08T10:26:05.000Z",
+          "metrics": {
+            "like_count": 62,
+            "retweet_count": 6,
+            "reply_count": 23,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 3
+          },
+          "url": "https://x.com/github/status/2020444015334711594",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Meet your new pocket-sized programming pal!\n\nThe GitHub Copilot Plush Keychain is soft, adorable, and attaches right to your keys or backpack, bringing a little Copilot magic wherever you go.\nhttps://t.co/qECBDE4326 https://t.co/aCNForRLd2"
+        },
+        {
+          "id": "2020285201180487765",
+          "text": "Hata ayıklama sürenizi /yarıya indirmek ister misiniz? 🤭\n\nCopilot CLI'da kolayca gezinmenize yardımcı olacak slash komutları için nihileştirilmiş kısayol listesini derledik. Rica ederiz! 😎\nhttps://t.co/gArZhIuqe4",
+          "createdAt": "2026-02-07T23:55:01.000Z",
+          "metrics": {
+            "like_count": 105,
+            "retweet_count": 9,
+            "reply_count": 6,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 2
+          },
+          "url": "https://x.com/github/status/2020285201180487765",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Want to /slash your debugging time in half? 🤭\n\nWe compiled the ultimate cheat sheet for slash commands to help you easily navigate Copilot CLI. You're welcome! 😎\nhttps://t.co/gArZhIuqe4"
+        },
+        {
+          "id": "2020259771614654759",
+          "text": "Bunu bütün sabah test ediyoruz ve hızına bayılıyoruz ⚡️\n\nCopilot Pro+ kullanıcıları artık araştırma önizlemesinde Claude Opus 4.6 için hızlı moda erişebiliyor. Ne düşündüğünüzü bize bildirin 👀",
+          "createdAt": "2026-02-07T22:13:58.000Z",
+          "metrics": {
+            "like_count": 208,
+            "retweet_count": 25,
+            "reply_count": 12,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 5
+          },
+          "url": "https://x.com/github/status/2020259771614654759",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We’ve been testing this all morning and we’re loving the speed ⚡️ \n\nCopilot Pro+ users now have access to fast mode for Claude Opus 4.6 in research preview. Let us know what you think 👀"
+        },
+        {
+          "id": "2020235612654301479",
+          "text": "RT @matthewisabel: Daha fazla büyük PR performans iyileştirmesi artık yayında\n\nKlasik dosya... göre p99 INP'de yaklaşık ~3 kat iyileşme görüyoruz",
+          "createdAt": "2026-02-07T20:37:58.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 37,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://x.com/github/status/2020235612654301479",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @matthewisabel: More large PR performance improvements are now live\n\nWe’re seeing ~3x improvement in p99 INP relative to the classic fil…"
+        },
+        {
+          "id": "2020209157018665179",
+          "text": "🏎️ @AnthropicAI'ın Claude Opus 4.6 için hızlı mod, GitHub Copilot'ta araştırma önizlemesi olarak yayına alınıyor. Aynı sınır zekasıyla 2.5 kat daha hızlı token hızlarına ulaşın—şimdi 16 Şubat'a kadar 9 premium istekle promosyon fiyatında.\n\nBu sürüm erken ve deneysel bir sürümdür. Deneyin",
+          "createdAt": "2026-02-07T18:52:51.000Z",
+          "metrics": {
+            "like_count": 508,
+            "retweet_count": 46,
+            "reply_count": 37,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 22
+          },
+          "url": "https://x.com/github/status/2020209157018665179",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "🏎️ Fast mode for @AnthropicAI’s Claude Opus 4.6 is rolling out in research preview on GitHub Copilot. Get 2.5x faster token speeds with the same frontier intelligence—now at promotional price of 9 premium requests through Feb 16.\n\nThis release is early and experimental. Try it"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "kimiai",
+      "name": "Kimi",
+      "xHandle": "Kimi_Moonshot",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#6366F1",
+      "logo": "🌙",
+      "company": "Moonshot AI",
+      "description": "Moonshot AI'ın uzun bağlamlı modeli",
+      "tweets": [
+        {
+          "id": "2020423716698730607",
+          "text": "RT @OpenRouterAI: Kimi K2.5 artık OpenRouter'daki en popüler model https://t.co/kftInjEt8u",
+          "createdAt": "2026-02-08T09:05:26.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 92,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://x.com/Kimi_Moonshot/status/2020423716698730607",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @OpenRouterAI: Kimi K2.5 is now the most popular model on OpenRouter https://t.co/kftInjEt8u"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "grok",
+      "name": "Grok",
+      "xHandle": "xAI",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#FF6B6B",
+      "logo": "🐦",
+      "company": "xAI",
+      "description": "xAI'ın gerçek zamanlı bilgi erişimli botu",
+      "tweets": [
+        {
+          "id": "2020313728802242673",
+          "text": "Yeni görüntü modelleri artık Grok Imagine API'de kullanılabilir.\n\nhttps://t.co/TAkoRrflJ5 adresinden deneyin.",
+          "createdAt": "2026-02-08T01:48:23.000Z",
+          "metrics": {
+            "like_count": 869,
+            "retweet_count": 93,
+            "reply_count": 97,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 11
+          },
+          "url": "https://x.com/xai/status/2020313728802242673",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "The new image models are now available on Grok Imagine API. \n\nTry them at https://t.co/TAkoRrflJ5."
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "claude",
+      "name": "Claude",
+      "xHandle": "AnthropicAI",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#CC785C",
+      "logo": "🧠",
+      "company": "Anthropic",
+      "description": "Anthropic'ın güvenli AI asistanı",
+      "tweets": [
+        {
+          "id": "2020226842846744786",
+          "text": "RT @claudeai: Ekiplerimiz, Claude Opus 4.6'nın 2.5 kat daha hızlı bir versiyonuyla çalışıyor.\n\nŞimdi bunu erken bir deneyim olarak sunuyoruz…",
+          "createdAt": "2026-02-07T20:03:07.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 606,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://x.com/AnthropicAI/status/2020226842846744786",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @claudeai: Our teams have been building with a 2.5x-faster version of Claude Opus 4.6.\n\nWe’re now making it available as an early experi…"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "luma",
+      "name": "Dream Machine",
+      "xHandle": "LumaLabsAI",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#3B82F6",
+      "logo": "💭",
+      "company": "Luma AI",
+      "description": "Gerçekçi AI video üretimi",
+      "tweets": [
+        {
+          "id": "2020219893442806187",
+          "text": "Luma Dream Brief, en iyi gerçekleşmemiş reklam fikrinizi Luma AI kullanarak hayata geçirmek için düzenlenen 1 milyon dolarlık küresel bir yarışma.\n\nMüşteri yok. Onay yok.\nSadece aklınızdan hiç çıkmayan o fikir.\n\nSon başvuru tarihi: 22 Mart. https://t.co/jqcN1SN0Ee",
+          "createdAt": "2026-02-07T19:35:31.000Z",
+          "metrics": {
+            "like_count": 36,
+            "retweet_count": 4,
+            "reply_count": 3,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 3
+          },
+          "url": "https://x.com/LumaLabsAI/status/2020219893442806187",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "The Luma Dream Brief is a $1M global competition to bring your best unmade advertising idea to life using Luma AI. \n\nNo client. No approvals.\nJust the idea you never stopped thinking about. \n\nSubmit by March 22. https://t.co/jqcN1SN0Ee"
+        },
+        {
+          "id": "2020219891559633040",
+          "text": "Hiç Super Bowl reklamlarını izleyip,\n\"benim fikrim şu çöpten daha iyi\" diye düşündünüz mü?\nKanıtlayın. Ve 1 milyon dolar kazanın. https://t.co/Ya5UmU9Yu3",
+          "createdAt": "2026-02-07T19:35:30.000Z",
+          "metrics": {
+            "like_count": 109,
+            "retweet_count": 14,
+            "reply_count": 23,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 3
+          },
+          "url": "https://x.com/LumaLabsAI/status/2020219891559633040",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "You ever watch Super Bowl ads and think,\nmy idea is better than that garbage?\nProve it. And win $1M. https://t.co/Ya5UmU9Yu3"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "xHandle": "cursor_ai",
+      "category": "coding",
+      "categoryLabel": "Coding",
+      "brandColor": "#000000",
+      "logo": "💻",
+      "company": "Anysphere",
+      "description": "AI destekli kod editörü",
+      "tweets": [
+        {
+          "id": "2020208133847806170",
+          "text": "Giriş token'ları 30$, çıkış token'ları 150$ fiyatlandırılmış.\n\nÖnümüzdeki 10 gün boyunca %50 indirimle mevcut.",
+          "createdAt": "2026-02-07T18:48:47.000Z",
+          "metrics": {
+            "like_count": 508,
+            "retweet_count": 9,
+            "reply_count": 29,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 15
+          },
+          "url": "https://x.com/cursor_ai/status/2020208133847806170",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "It's priced at $30 input / $150 output tokens.\n\nFor the next 10 days, it's available for 50% off."
+        },
+        {
+          "id": "2020208132207845576",
+          "text": "Opus 4.6 (hızlı mod) artık Cursor'da kullanılabilir!\n\nAraştırma önizlemesinde 2.5 kat daha hızlı.",
+          "createdAt": "2026-02-07T18:48:47.000Z",
+          "metrics": {
+            "like_count": 1530,
+            "retweet_count": 60,
+            "reply_count": 69,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 19
+          },
+          "url": "https://x.com/cursor_ai/status/2020208132207845576",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Opus 4.6 (fast mode) is now available in Cursor!\n\nIt's 2.5x as fast in research preview."
+        }
+      ],
+      "source": "syndication"
+    }
+  ]
 }
