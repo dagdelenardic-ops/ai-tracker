@@ -95,75 +95,7 @@ router.get('/timeline', async (req, res) => {
   }
 });
 
-// Get single tool by ID
-router.get('/:id', (req, res) => {
-  const tool = aiTools.find(t => t.id === req.params.id);
-  
-  if (!tool) {
-    return res.status(404).json({
-      success: false,
-      message: 'Tool not found'
-    });
-  }
-  
-  res.json({
-    success: true,
-    data: tool
-  });
-});
-
-// Search tools
-router.get('/search/:query', (req, res) => {
-  const query = req.params.query.toLowerCase();
-  
-  const results = aiTools.filter(tool => 
-    tool.name.toLowerCase().includes(query) ||
-    tool.company.toLowerCase().includes(query) ||
-    tool.description.toLowerCase().includes(query) ||
-    tool.categoryLabel.toLowerCase().includes(query)
-  );
-  
-  res.json({
-    success: true,
-    count: results.length,
-    data: results
-  });
-});
-
-// API status
-router.get('/status/api', (req, res) => {
-  res.json({
-    success: true,
-    data: getApiStatus()
-  });
-});
-
-// Test X API connection
-router.get('/test/x-api', async (req, res) => {
-  try {
-    const result = await testConnection();
-    res.json(result);
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: error.message
-    });
-  }
-});
-
-// Force refresh cache
-router.post('/refresh', (req, res) => {
-  const isServerless = !!process.env.VERCEL;
-  clearCache();
-  res.json({
-    success: true,
-    message: isServerless
-      ? 'Runtime cache temizlendi. Yeni veri günlük snapshot güncellemesiyle gelir.'
-      : 'Cache temizlendi. Bir sonraki istekte snapshot dosyası tekrar okunacak.'
-  });
-});
-
-// ========== ARŞİV ENDPOINT'LERİ ==========
+// ========== ARŞİV ENDPOINT'LERİ (/:id'den önce olmalı) ==========
 
 // Get archive timeline (all historical tweets)
 router.get('/archive', (req, res) => {
@@ -240,6 +172,74 @@ router.get('/archive/:toolId', (req, res) => {
       error: error.message
     });
   }
+});
+
+// Get single tool by ID
+router.get('/:id', (req, res) => {
+  const tool = aiTools.find(t => t.id === req.params.id);
+  
+  if (!tool) {
+    return res.status(404).json({
+      success: false,
+      message: 'Tool not found'
+    });
+  }
+  
+  res.json({
+    success: true,
+    data: tool
+  });
+});
+
+// Search tools
+router.get('/search/:query', (req, res) => {
+  const query = req.params.query.toLowerCase();
+  
+  const results = aiTools.filter(tool => 
+    tool.name.toLowerCase().includes(query) ||
+    tool.company.toLowerCase().includes(query) ||
+    tool.description.toLowerCase().includes(query) ||
+    tool.categoryLabel.toLowerCase().includes(query)
+  );
+  
+  res.json({
+    success: true,
+    count: results.length,
+    data: results
+  });
+});
+
+// API status
+router.get('/status/api', (req, res) => {
+  res.json({
+    success: true,
+    data: getApiStatus()
+  });
+});
+
+// Test X API connection
+router.get('/test/x-api', async (req, res) => {
+  try {
+    const result = await testConnection();
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
+
+// Force refresh cache
+router.post('/refresh', (req, res) => {
+  const isServerless = !!process.env.VERCEL;
+  clearCache();
+  res.json({
+    success: true,
+    message: isServerless
+      ? 'Runtime cache temizlendi. Yeni veri günlük snapshot güncellemesiyle gelir.'
+      : 'Cache temizlendi. Bir sonraki istekte snapshot dosyası tekrar okunacak.'
+  });
 });
 
 export default router;
