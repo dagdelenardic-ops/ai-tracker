@@ -1,0 +1,22 @@
+{
+  "name": "ai-tracker",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "X'den AI araç gelişmelerini takip eden dashboard",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "vercel-build": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

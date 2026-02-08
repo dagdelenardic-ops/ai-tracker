@@ -1,0 +1,162 @@
+import { useState, useRef, useEffect } from 'react';
+import { Heart, Twitter, Calendar, TrendingUp, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { useApp } from '../context/AppContext';
+import { formatDate, isRecent } from '../utils/dateUtils';
+
+export default function ToolCard({ tool }) {
+  const { toggleFavorite, isFavorite } = useApp();
+  const favorite = isFavorite(tool.tool);
+  const latestTweet = tool.latestTweet;
+  const isNew = latestTweet && isRecent(latestTweet.createdAt, 48);
+  const tweetUrl = latestTweet?.url || `https://x.com/${tool.xHandle}`;
+  const [expanded, setExpanded] = useState(false);
+  const [isClamped, setIsClamped] = useState(false);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    if (textRef.current) {
+      setIsClamped(textRef.current.scrollHeight > textRef.current.clientHeight);
+    }
+  }, [latestTweet?.text]);
+
+  return (
+    <div className="relative overflow-hidden rounded-xl bg-dark-700/50 border border-dark-600/50 animate-fade-in">
+      {/* Brand color accent bar */}
+      <div
+        className="absolute top-0 left-0 right-0 h-1 z-10"
+        style={{ backgroundColor: tool.brandColor }}
+      />
+
+      {/* New badge */}
+      {isNew && (
+        <div className="absolute top-3 right-3 z-10">
+          <span className="badge-new">YENİ</span>
+        </div>
+      )}
+
+      <div className="p-5">
+        {/* Header */}
+        <div className="flex items-start gap-4 mb-4">
+          <div
+            className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl shadow-lg"
+            style={{
+              backgroundColor: `${tool.brandColor}20`,
+              border: `2px solid ${tool.brandColor}40`
+            }}
+          >
+            {tool.logo}
+          </div>
+
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2">
+              <h3 className="text-lg font-bold text-white truncate">
+                {tool.name}
+              </h3>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  toggleFavorite(tool.tool);
+                }}
+                className="p-1 rounded-lg hover:bg-dark-600 transition-colors relative z-20"
+              >
+                <Heart
+                  className={`w-5 h-5 transition-colors ${
+                    favorite
+                      ? 'text-pink-500 fill-pink-500'
+                      : 'text-gray-500 hover:text-pink-400'
+                  }`}
+                />
+              </button>
+            </div>
+            <p className="text-sm text-gray-400">{tool.company}</p>
+            <div className="flex items-center gap-2 mt-1">
+              <span
+                className="text-xs px-2 py-0.5 rounded-full"
+                style={{
+                  backgroundColor: `${tool.brandColor}20`,
+                  color: tool.brandColor
+                }}
+              >
+                {tool.categoryLabel}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Latest Tweet - Tıklanabilir */}
+        {latestTweet ? (
+          <div className="rounded-lg p-3 border border-dark-600/50 bg-dark-800/50">
+            <p
+              ref={textRef}
+              className={`text-sm text-gray-300 whitespace-pre-line ${expanded ? '' : 'line-clamp-5'}`}
+            >
+              {latestTweet.text}
+            </p>
+
+            {isClamped && (
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setExpanded(!expanded);
+                }}
+                className="flex items-center gap-1 text-xs text-indigo-400 hover:text-indigo-300 mt-2 transition-colors"
+              >
+                {expanded ? (
+                  <><ChevronUp className="w-3.5 h-3.5" /> Daralt</>
+                ) : (
+                  <><ChevronDown className="w-3.5 h-3.5" /> Devamını oku</>
+                )}
+              </button>
+            )}
+
+            <div className="flex items-center justify-between mt-3 pt-3 border-t border-dark-600/50">
+              <div className="flex items-center gap-3 text-xs text-gray-500">
+                <span className="flex items-center gap-1">
+                  <Calendar className="w-3.5 h-3.5" />
+                  {formatDate(latestTweet.createdAt)}
+                </span>
+                {latestTweet.metrics?.like_count > 0 && (
+                  <span className="flex items-center gap-1">
+                    <TrendingUp className="w-3.5 h-3.5" />
+                    {latestTweet.metrics.like_count.toLocaleString()}
+                  </span>
+                )}
+              </div>
+
+              <a
+                href={tweetUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-xs text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Twitter className="w-3.5 h-3.5" />
+                X'te Gör →
+              </a>
+            </div>
+          </div>
+        ) : (
+          <div className="text-center py-6 text-gray-500">
+            <Twitter className="w-8 h-8 mx-auto mb-2 opacity-50" />
+            <p className="text-sm">Son 3 ayda paylaşım yok</p>
+          </div>
+        )}
+
+        {/* Footer Actions */}
+        <div className="flex items-center gap-2 mt-4 pt-4 border-t border-dark-600/30">
+          <a
+            href={`https://x.com/${tool.xHandle}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 btn-secondary text-sm flex items-center justify-center gap-2"
+          >
+            <Twitter className="w-4 h-4" />
+            X Profili
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
