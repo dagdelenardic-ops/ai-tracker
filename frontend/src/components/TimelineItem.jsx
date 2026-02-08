@@ -1,10 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
-import { Twitter, Heart, Repeat2, MessageCircle, Eye, ChevronDown, ChevronUp, Image as ImageIcon, Play } from 'lucide-react';
+import { Twitter, Heart, Repeat2, MessageCircle, Eye, ChevronDown, ChevronUp, Image as ImageIcon, Play, ExternalLink } from 'lucide-react';
 import { formatDate, formatFullDate, isRecent } from '../utils/dateUtils';
 import { getValidXUrl } from '../utils/xUrl';
 
 // Medya Galerisi Bileşeni
-function MediaGallery({ media }) {
+function MediaGallery({ media, tweetUrl }) {
   if (!media || media.length === 0) return null;
 
   const gridClass = media.length === 1 
@@ -16,91 +16,85 @@ function MediaGallery({ media }) {
   return (
     <div className={`grid ${gridClass} gap-2 mb-3 mt-2`}>
       {media.map((item, index) => (
-        <MediaItem key={index} item={item} index={index} total={media.length} />
+        <MediaItem key={index} item={item} index={index} total={media.length} tweetUrl={tweetUrl} />
       ))}
     </div>
   );
 }
 
 // Tek Medya Öğesi
-function MediaItem({ item, index, total }) {
-  const [isLoaded, setIsLoaded] = useState(false);
+function MediaItem({ item, index, total, tweetUrl }) {
   const [error, setError] = useState(false);
 
   // Video gösterimi
   if (item.type === 'video' || item.type === 'animated_gif') {
     return (
-      <div className={`relative rounded-xl overflow-hidden bg-dark-800 ${
-        total === 1 ? 'aspect-video' : 'aspect-square'
-      }`}>
-        {item.video_url ? (
-          <video
-            src={item.video_url}
-            poster={item.url}
-            controls
-            className="w-full h-full object-cover"
-            preload="metadata"
-          />
-        ) : (
-          <>
-            <img
-              src={item.url}
-              alt="Video thumbnail"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              onLoad={() => setIsLoaded(true)}
-              onError={() => setError(true)}
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-              <a
-                href={item.expanded_url || '#'}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-full bg-white/20 hover:bg-white/30 transition-colors"
-              >
-                <Play className="w-8 h-8 text-white fill-white" />
-              </a>
-            </div>
-          </>
+      <a 
+        href={tweetUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`relative rounded-xl overflow-hidden bg-dark-800 block ${
+          total === 1 ? 'aspect-video' : 'aspect-square'
+        }`}
+      >
+        <img
+          src={item.url}
+          alt="Video thumbnail"
+          className="w-full h-full object-cover"
+          loading="lazy"
+          onError={() => setError(true)}
+        />
+        <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+          <div className="p-3 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
+            <Play className="w-8 h-8 text-white fill-white" />
+          </div>
+        </div>
+        {total > 1 && (
+          <div className="absolute bottom-2 right-2 px-2 py-1 rounded-full bg-black/60 text-xs text-white">
+            +{total - 1}
+          </div>
         )}
-      </div>
+      </a>
     );
   }
 
   // Fotoğraf gösterimi
   return (
-    <div className={`relative rounded-xl overflow-hidden bg-dark-800 ${
-      total === 1 ? 'max-h-96' : 'aspect-square'
-    }`}>
-      {!isLoaded && !error && (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <ImageIcon className="w-8 h-8 text-gray-600 animate-pulse" />
-        </div>
-      )}
+    <a 
+      href={tweetUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`relative rounded-xl overflow-hidden bg-dark-800 block ${
+        total === 1 ? 'max-h-96' : 'aspect-square'
+      }`}
+    >
       {error ? (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <ImageIcon className="w-8 h-8 text-gray-600" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-dark-800 text-gray-500">
+          <ImageIcon className="w-8 h-8 mb-2" />
+          <span className="text-xs">X'te Gör</span>
         </div>
       ) : (
-        <a
-          href={item.expanded_url || item.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full h-full"
-        >
+        <>
           <img
             src={item.url}
-            alt={`Media ${index + 1}`}
-            className={`w-full h-full object-cover transition-opacity duration-300 hover:opacity-90 ${
-              isLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
+            alt={`Görsel ${index + 1}`}
+            className="w-full h-full object-cover hover:opacity-90 transition-opacity"
             loading="lazy"
-            onLoad={() => setIsLoaded(true)}
             onError={() => setError(true)}
           />
-        </a>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end justify-center pb-3">
+            <span className="text-white text-sm flex items-center gap-1">
+              <ExternalLink className="w-4 h-4" /> X'te Aç
+            </span>
+          </div>
+        </>
       )}
-    </div>
+      {total > 1 && (
+        <div className="absolute bottom-2 right-2 px-2 py-1 rounded-full bg-black/60 text-xs text-white">
+          +{total - 1}
+        </div>
+      )}
+    </a>
   );
 }
 
@@ -178,7 +172,7 @@ export default function TimelineItem({ item }) {
 
           {/* Medya Galerisi */}
           {item.media && item.media.length > 0 && (
-            <MediaGallery media={item.media} />
+            <MediaGallery media={item.media} tweetUrl={tweetUrl} />
           )}
 
           {/* Metrics */}
