@@ -22,28 +22,32 @@ npm run dev
 
 **Site:** http://localhost:5173
 
-## 🔑 X API Etkinleştirme (Opsiyonel)
+## 🔑 Veri Modeli (24 Saatte Bir Güncelleme)
 
-API'siz de çalışır (demo veri), gerçek X tweet'leri için:
+Vercel tarafında runtime'da RapidAPI çağrısı yapılmaz. Site yalnızca
+`backend/data/cached-tweets.json` snapshot dosyasını okur.
 
-### 1. Token Al
-1. Git: https://developer.twitter.com
-2. "Sign up" → Free plan seç
-3. Projects & Apps → Create App
-4. "Keys and Tokens" → **Bearer Token** kopyala
+Bu snapshot dosyası her 24 saatte bir GitHub Actions ile güncellenir:
 
-### 2. Token'ı Yapıştır
+- X verisi: RapidAPI (`twitter-api45`)
+- Türkçe çeviri: DeepSeek (opsiyonel ama önerilir)
+
+Workflow dosyası:
+
+- `.github/workflows/daily-refresh.yml`
+
+GitHub repository **Secrets** alanına ekleyin:
+
+- `RAPIDAPI_KEY` (zorunlu)
+- `DEEPSEEK_API_KEY` (opsiyonel)
+- `X_BEARER_TOKEN` (opsiyonel fallback)
+
+Manuel test için:
+
 ```bash
-# ai-tracker/backend/.env dosyasını aç
-X_BEARER_TOKEN=AAAAAAAAAAAAAAAAAAAAAxxxxxxxxxxxxx
+cd backend
+node scripts/fetch-tweets.js
 ```
-
-### 3. Yeniden Başlat
-```bash
-npm run dev
-```
-
-✅ **Hazır!** Gerçek tweet'ler çekilecek.
 
 ## ✨ Özellikler
 
@@ -51,7 +55,7 @@ npm run dev
 |---------|----------|
 | 🤖 **35+ AI Aracı** | ChatGPT, Claude, Gemini, Grok, Midjourney, Runway, Cursor... |
 | 🐦 **X Entegrasyonu** | Doğrudan X gönderilerini sitede görüntüle |
-| 📅 **Son 3 Ay** | Son 90 günlük paylaşımları takip et |
+| 📅 **Son 24 Saat** | Son 24 saatteki gelişmeleri takip et |
 | 🏷️ **6 Kategori** | Chatbots, Image, Video, Audio, Coding, Productivity |
 | ❤️ **Favoriler** | Sevdiğin araçları kaydet |
 | 🔍 **Arama & Filtre** | İsim, kategori, tarih |
@@ -62,8 +66,11 @@ npm run dev
 
 ```
 ai-tracker/
+├── .github/workflows/       # Daily snapshot workflow
 ├── backend/                 # Node.js + Express API
 │   ├── data/ai-tools.js     # 35+ AI aracı veritabanı
+│   ├── data/cached-tweets.json # Günlük snapshot
+│   ├── scripts/fetch-tweets.js # RapidAPI + DeepSeek çekim scripti
 │   ├── services/
 │   │   ├── xApiService.js   # X API entegrasyonu
 │   │   ├── mockDataService.js # Demo veri
@@ -90,7 +97,7 @@ ai-tracker/
 | `GET /api/tools/with-tweets` | Tweet'lerle birlikte |
 | `GET /api/tools/timeline` | Zaman çizelgesi |
 | `GET /api/tools/status/api` | API durumu |
-| `POST /api/tools/refresh` | Verileri yenile |
+| `POST /api/tools/refresh` | Runtime cache temizle (yerel kullanım) |
 
 ## ⚠️ X API Limitleri (Free Plan)
 
@@ -112,16 +119,20 @@ npm run dev:backend
 # Sadece frontend
 npm run dev:frontend
 
+# Snapshot'ı manuel yenile (RapidAPI + DeepSeek)
+npm run snapshot:refresh
+
 # Üretim build
 npm run build
 ```
 
 ## 📝 Notlar
 
-- **API'siz çalışır:** Demo verilerle çalışmaya devam eder
-- **Otomatik yenileme:** Her saat başı veriler güncellenir
-- **Cache:** 15 dakika boyunca veriler önbellekten gelir
-- **Hata yönetimi:** X API hata verirse otomatik demo veriye döner
+- **Güncelleme sıklığı:** Snapshot her 24 saatte bir güncellenir
+- **Vercel davranışı:** Runtime'da dış API yerine snapshot dosyası kullanılır
+- **Cache:** API cevapları 24 saat edge cache ile servis edilir
+- **Fallback:** RapidAPI limitinde snapshot job otomatik X API (`X_BEARER_TOKEN`) dener
+- **Canlı veri yoksa:** Production'da demo yerine boş liste gösterilir (`Canlı Veri Yok`)
 
 ## 📄 Lisans
 

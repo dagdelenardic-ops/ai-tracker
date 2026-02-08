@@ -5,9 +5,12 @@ export default function handler(req, res) {
     return res.status(405).json({ success: false, message: 'Method not allowed' });
   }
 
+  const isServerless = !!process.env.VERCEL;
   clearCache();
   res.json({
     success: true,
-    message: 'Cache temizlendi, bir sonraki istekte veriler yenilenecek'
+    message: isServerless
+      ? 'Runtime cache temizlendi. Yeni veri günlük snapshot güncellemesiyle gelir.'
+      : 'Cache temizlendi. Bir sonraki istekte snapshot dosyası tekrar okunacak.'
   });
 }

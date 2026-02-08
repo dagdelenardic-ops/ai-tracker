@@ -32,13 +32,14 @@ router.get('/categories', (req, res) => {
 router.get('/with-tweets', async (req, res) => {
   try {
     const { category, limit = 50, refresh } = req.query;
+    const forceRefresh = refresh === 'true';
     
     // Manuel yenileme istenirse cache'i temizle
-    if (refresh === 'true') {
+    if (forceRefresh) {
       clearCache();
     }
     
-    const tools = await getToolsWithTweets(category);
+    const tools = await getToolsWithTweets(category, forceRefresh);
     
     // Kaynak tespiti: isMock flag'i veya source field'i kontrol et
     let source = 'mock';
@@ -69,12 +70,13 @@ router.get('/with-tweets', async (req, res) => {
 router.get('/timeline', async (req, res) => {
   try {
     const { limit = 100, category, refresh } = req.query;
+    const forceRefresh = refresh === 'true';
     
-    if (refresh === 'true') {
+    if (forceRefresh) {
       clearCache();
     }
     
-    const timeline = await getTimeline(category);
+    const timeline = await getTimeline(category, forceRefresh);
     
     res.json({
       success: true,
@@ -150,10 +152,13 @@ router.get('/test/x-api', async (req, res) => {
 
 // Force refresh cache
 router.post('/refresh', (req, res) => {
+  const isServerless = !!process.env.VERCEL;
   clearCache();
   res.json({
     success: true,
-    message: 'Cache temizlendi, bir sonraki istekte veriler yenilenecek'
+    message: isServerless
+      ? 'Runtime cache temizlendi. Yeni veri günlük snapshot güncellemesiyle gelir.'
+      : 'Cache temizlendi. Bir sonraki istekte snapshot dosyası tekrar okunacak.'
   });
 });
 

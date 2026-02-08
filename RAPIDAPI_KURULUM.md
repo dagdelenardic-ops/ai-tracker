@@ -31,9 +31,10 @@
 ai-tracker/backend/.env
 ```
 
-### RapidAPI Key'i yapıştır:
+### RapidAPI ve DeepSeek key'lerini yapıştır:
 ```env
 RAPIDAPI_KEY=123456789mshabcdef1234567890p1abcd1jsnabcdef123456
+DEEPSEEK_API_KEY=sk-xxxx
 ```
 
 ### Sunucuyu yeniden başlat:
@@ -42,13 +43,28 @@ cd ai-tracker
 npm run dev
 ```
 
+### GitHub Actions (Vercel için zorunlu)
+
+Repository > Settings > Secrets and variables > Actions:
+
+- `RAPIDAPI_KEY`
+- `DEEPSEEK_API_KEY` (opsiyonel)
+- `X_BEARER_TOKEN` (opsiyonel fallback)
+
+Workflow: `.github/workflows/daily-refresh.yml`
+
 ---
 
 ## ✅ Kontrol Et
 
-Siteye gir (http://localhost:5173) ve API Durumu kartına bak:
-- **Mavi renk** görmelisin: "Alternatif API"
-- RapidAPI: ✓ görmelisin
+Yerelde:
+
+```bash
+cd ai-tracker/backend
+node scripts/fetch-tweets.js
+```
+
+`backend/data/cached-tweets.json` dosyasında `toolCount > 0` görmelisin.
 
 ---
 
@@ -60,7 +76,7 @@ Siteye gir (http://localhost:5173) ve API Durumu kartına bak:
 | Saniye başına | 1 istek |
 
 35 AI aracı × 5 tweet = 175 istek
-Günde 2-3 kere yenileme = yeterli!
+Günde 1 kez otomatik yenileme için uygundur.
 
 ---
 

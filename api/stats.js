@@ -1,9 +1,11 @@
+import { getApiStatus } from '../backend/services/dataService.js';
+
 export default function handler(req, res) {
-  const hasRapidApi = !!process.env.RAPIDAPI_KEY;
+  const status = getApiStatus();
   res.json({
     totalTools: 35,
     categories: 6,
-    mode: hasRapidApi ? 'RAPIDAPI' : 'DEMO',
-    lastUpdated: new Date().toISOString()
+    mode: status.snapshotAvailable ? 'SNAPSHOT' : 'DEMO',
+    lastUpdated: status.lastUpdated
   });
 }

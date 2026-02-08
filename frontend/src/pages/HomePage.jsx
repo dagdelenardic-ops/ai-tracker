@@ -38,13 +38,15 @@ export default function HomePage() {
         {/* Data Source Badge */}
         <div className="flex justify-end mb-4">
           <div className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm ${
-            dataSource === 'mock'
+            dataSource === 'unavailable' || dataSource === 'mock'
               ? 'bg-yellow-500/10 text-yellow-400 border border-yellow-500/30'
               : 'bg-green-500/10 text-green-400 border border-green-500/30'
           }`}>
             <Database className="w-4 h-4" />
-            {dataSource === 'rapidapi' ? '🚀 Gerçek X Verileri' :
+            {dataSource === 'rapidapi+deepseek' ? '🚀 X + DeepSeek Çeviri' :
+             dataSource === 'rapidapi' ? '🚀 Gerçek X Verileri' :
              dataSource === 'x_api' ? '🐦 X API' :
+             dataSource === 'unavailable' ? '⚠️ Canlı Veri Yok' :
              '🎭 Demo Veri'}
           </div>
         </div>
@@ -129,8 +131,8 @@ export default function HomePage() {
               <div className="text-sm text-gray-500">Kategori</div>
             </div>
             <div className="p-4 rounded-xl bg-dark-800/50">
-              <div className="text-2xl font-bold gradient-text">90</div>
-              <div className="text-sm text-gray-500">Gün Geriye Dönük</div>
+              <div className="text-2xl font-bold gradient-text">24</div>
+              <div className="text-sm text-gray-500">Saat Geriye Dönük</div>
             </div>
             <div className="p-4 rounded-xl bg-dark-800/50">
               <div className="text-2xl font-bold gradient-text">∞</div>

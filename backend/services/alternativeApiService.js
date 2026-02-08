@@ -9,6 +9,30 @@ import { aiTools } from '../data/ai-tools.js';
 
 const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
 const RAPIDAPI_HOST = 'twitter-api45.p.rapidapi.com';
+const TWEET_WINDOW_HOURS = Number(process.env.TWEET_WINDOW_HOURS || 24);
+
+function sanitizeHandle(username = '') {
+  return String(username || '').trim().replace(/^@+/, '');
+}
+
+function buildProfileUrl(username = '') {
+  const handle = sanitizeHandle(username);
+  return handle ? `https://x.com/${encodeURIComponent(handle)}` : 'https://x.com';
+}
+
+function buildTweetUrl(username = '', tweetId = '', fallbackUrl = '') {
+  if (fallbackUrl && typeof fallbackUrl === 'string' && /^https?:\/\//i.test(fallbackUrl)) {
+    return fallbackUrl;
+  }
+
+  const profileUrl = buildProfileUrl(username);
+  const id = String(tweetId || '').trim();
+  if (!id || /^(undefined|null|nan)$/i.test(id)) {
+    return profileUrl;
+  }
+
+  return `${profileUrl}/status/${encodeURIComponent(id)}`;
+}
 
 // Tek kullanıcının tweet'lerini çek (retry destekli)
 async function fetchFromRapidAPI(username, maxResults = 5, retryCount = 0) {
@@ -41,8 +65,8 @@ async function fetchFromRapidAPI(username, maxResults = 5, retryCount = 0) {
       return { data: null, rateLimited: false };
     }
 
-    // Son 90 gün filtresi
-    const ninetyDaysAgo = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000);
+    // Son 24 saat filtresi (env ile değiştirilebilir)
+    const windowStart = new Date(Date.now() - TWEET_WINDOW_HOURS * 60 * 60 * 1000);
 
     const parsed = tweets
       .slice(0, maxResults)
@@ -64,15 +88,19 @@ async function fetchFromRapidAPI(username, maxResults = 5, retryCount = 0) {
             bookmark_count: tweet.bookmarks || 0,
             quote_count: tweet.quotes || tweet.quote_count || 0
           },
-          url: `https://x.com/${username}/status/${tweetId}`,
+          url: buildTweetUrl(
+            username,
+            tweetId,
+            tweet.url || tweet.tweet_url || tweet.permalink || ''
+          ),
           isMock: false,
           source: 'rapidapi'
         };
       })
-      .filter(t => new Date(t.createdAt) >= ninetyDaysAgo);
+      .filter(t => new Date(t.createdAt) >= windowStart);
 
     if (parsed.length === 0) {
-      console.log(`⚠️  ${username}: Son 90 günde tweet yok`);
+      console.log(`⚠️  ${username}: Son ${TWEET_WINDOW_HOURS} saatte tweet yok`);
       return { data: null, rateLimited: false };
     }
 

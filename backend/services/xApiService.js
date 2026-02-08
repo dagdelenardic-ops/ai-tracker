@@ -58,7 +58,7 @@ export async function fetchRecentTweets(username, maxResults = 5) {
           max_results: maxResults,
           'tweet.fields': 'created_at,public_metrics,entities,referenced_tweets,attachments',
           exclude: 'replies,retweets',
-          start_time: new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString() // Son 3 ay
+          start_time: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString() // Son 24 saat
         }
       }
     );

@@ -1,0 +1,54 @@
+name: Daily Tweet Snapshot
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-tweet-snapshot
+  cancel-in-progress: false
+
+jobs:
+  refresh-snapshot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Fetch tweets and translate
+        working-directory: backend
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node scripts/fetch-tweets.js
+
+      - name: Commit snapshot if changed
+        run: |
+          if git diff --quiet -- backend/data/cached-tweets.json; then
+            echo "No snapshot changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backend/data/cached-tweets.json
+          git commit -m "chore: refresh daily tweet snapshot"
+          git push

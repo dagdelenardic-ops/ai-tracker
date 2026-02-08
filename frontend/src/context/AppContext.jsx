@@ -1,7 +1,28 @@
 import { createContext, useContext, useState, useCallback, useEffect } from 'react';
-import { fetchCategories, fetchToolsWithTweets, fetchTimeline } from '../utils/api';
+import { fetchCategories, fetchToolsWithTweets } from '../utils/api';
 
 const AppContext = createContext();
+
+function buildTimeline(tools = []) {
+  const items = [];
+
+  tools.forEach(tool => {
+    (tool.tweets || []).forEach(tweet => {
+      items.push({
+        ...tweet,
+        toolId: tool.tool,
+        toolName: tool.name,
+        xHandle: tool.xHandle,
+        category: tool.category,
+        brandColor: tool.brandColor,
+        logo: tool.logo
+      });
+    });
+  });
+
+  items.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  return items;
+}
 
 export function AppProvider({ children }) {
   const [tools, setTools] = useState([]);
@@ -15,26 +36,23 @@ export function AppProvider({ children }) {
   });
   const [sortBy, setSortBy] = useState('date');
   const [loading, setLoading] = useState(true);
-  const [dataSource, setDataSource] = useState('mock'); // 'mock' | 'x_api'
+  const [dataSource, setDataSource] = useState('unavailable'); // 'rapidapi' | 'rapidapi+deepseek' | 'x_api' | 'mock' | 'unavailable'
 
-  // Load initial data - sıralı (önce tools cache'e yazılsın, sonra timeline cache'den gelsin)
+  // Load initial data - snapshot üzerinden
   useEffect(() => {
     async function loadData() {
       try {
         setLoading(true);
+        const [cats, toolsData] = await Promise.all([
+          fetchCategories(),
+          fetchToolsWithTweets()
+        ]);
 
-        // 1. Kategorileri çek (hızlı, static veri)
-        const cats = await fetchCategories();
+        const loadedTools = toolsData.data || [];
         setCategories(cats.data || []);
-
-        // 2. Tools'u çek (ilk seferde RapidAPI ~60sn sürer, cache'e yazılır)
-        const toolsData = await fetchToolsWithTweets();
-        setTools(toolsData.data || []);
-        setDataSource(toolsData.source || 'mock');
-
-        // 3. Timeline'ı çek (cache'den gelir, çok hızlı)
-        const timelineData = await fetchTimeline();
-        setTimeline(timelineData.data || []);
+        setTools(loadedTools);
+        setTimeline(buildTimeline(loadedTools));
+        setDataSource(toolsData.source || 'unavailable');
 
       } catch (error) {
         console.error('Error loading data:', error);
@@ -95,22 +113,22 @@ export function AppProvider({ children }) {
 
   const isFavorite = useCallback((toolId) => favorites.includes(toolId), [favorites]);
 
-  // Refresh data - sıralı
+  // Refresh data - runtime API çağrısı zorlamadan snapshot'ı yeniden yükler
   const refreshData = useCallback(async () => {
     setLoading(true);
     try {
-      const toolsData = await fetchToolsWithTweets(activeCategory, 50, true);
-      setTools(toolsData.data || []);
-      setDataSource(toolsData.source || 'mock');
+      const toolsData = await fetchToolsWithTweets('all', 50, false);
+      const loadedTools = toolsData.data || [];
 
-      const timelineData = await fetchTimeline(activeCategory, 100, true);
-      setTimeline(timelineData.data || []);
+      setTools(loadedTools);
+      setTimeline(buildTimeline(loadedTools));
+      setDataSource(toolsData.source || 'unavailable');
     } catch (error) {
       console.error('Error refreshing data:', error);
     } finally {
       setLoading(false);
     }
-  }, [activeCategory]);
+  }, []);
 
   const value = {
     tools: sortedTools,

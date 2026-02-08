@@ -11,33 +11,46 @@ function withTimeout(promise, ms) {
 export default async function handler(req, res) {
   try {
     const { limit = 100, category, refresh } = req.query;
+    const forceRefresh = refresh === 'true';
 
-    if (refresh === 'true') {
+    if (forceRefresh) {
       clearCache();
     }
+
+    res.setHeader(
+      'Cache-Control',
+      forceRefresh
+        ? 'no-store'
+        : 'public, s-maxage=86400, stale-while-revalidate=43200'
+    );
 
     let timeline;
 
     try {
-      timeline = await withTimeout(getTimeline(category), 50000);
+      timeline = await withTimeout(getTimeline(category, forceRefresh), 50000);
     } catch (timeoutError) {
-      console.log('⏱️ Timeline timeout, mock veri kullanılıyor...');
-      const tools = generateAllMockTweets();
-      timeline = [];
-      tools.forEach(tool => {
-        (tool.tweets || []).forEach(tweet => {
-          timeline.push({
-            ...tweet,
-            toolId: tool.tool,
-            toolName: tool.name,
-            xHandle: tool.xHandle,
-            category: tool.category,
-            brandColor: tool.brandColor,
-            logo: tool.logo
+      const isProd = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
+      if (isProd) {
+        timeline = [];
+      } else {
+        console.log('⏱️ Timeline timeout, mock veri kullanılıyor...');
+        const tools = generateAllMockTweets();
+        timeline = [];
+        tools.forEach(tool => {
+          (tool.tweets || []).forEach(tweet => {
+            timeline.push({
+              ...tweet,
+              toolId: tool.tool,
+              toolName: tool.name,
+              xHandle: tool.xHandle,
+              category: tool.category,
+              brandColor: tool.brandColor,
+              logo: tool.logo
+            });
           });
         });
-      });
-      timeline.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        timeline.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+      }
     }
 
     res.json({
@@ -48,6 +61,15 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('Error fetching timeline:', error);
+    const isProd = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
+    if (isProd) {
+      return res.json({
+        success: true,
+        count: 0,
+        data: []
+      });
+    }
+
     res.status(500).json({
       success: false,
       message: 'Timeline getirme hatası',

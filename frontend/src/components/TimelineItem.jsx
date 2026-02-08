@@ -1,10 +1,11 @@
 import { Twitter, Heart, Repeat2, MessageCircle, Eye } from 'lucide-react';
 import { formatDate, formatFullDate, isRecent } from '../utils/dateUtils';
+import { getValidXUrl } from '../utils/xUrl';
 
 export default function TimelineItem({ item }) {
-  const isNew = isRecent(item.createdAt, 48);
+  const isNew = isRecent(item.createdAt, 24);
   const metrics = item.metrics || {};
-  const tweetUrl = item.url || `https://x.com/${item.xHandle}`;
+  const tweetUrl = getValidXUrl(item.url, item.xHandle);
 
   return (
     <a

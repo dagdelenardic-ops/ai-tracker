@@ -1,62 +1,135 @@
 import { generateAllMockTweets } from './mockDataService.js';
 import { fetchAllTweetsAlternative, isAlternativeApiConfigured } from './alternativeApiService.js';
 import { translateAllToolsTweets, isTranslateConfigured, clearTranslationCache } from './translateService.js';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // Serverless ortam kontrolü (Vercel)
 const IS_SERVERLESS = !!process.env.VERCEL;
+const IS_PRODUCTION = process.env.NODE_ENV === 'production';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const CACHED_TWEETS_FILE = path.join(__dirname, '..', 'data', 'cached-tweets.json');
+const TWEET_WINDOW_HOURS = Number(process.env.TWEET_WINDOW_HOURS || 24);
+const TWEET_WINDOW_MS = TWEET_WINDOW_HOURS * 60 * 60 * 1000;
 
 // Cache (sadece persistent process'lerde çalışır - lokalde)
 let cachedData = null;
 let cacheTime = null;
 let cachedSource = 'mock';
+let lastSnapshotFetchedAt = null;
 let fetchInProgress = null;
 const CACHE_DURATION = 1000 * 60 * 15; // 15 dakika
 
+function readSnapshotFile({ requireNonEmpty = true } = {}) {
+  try {
+    if (fs.existsSync(CACHED_TWEETS_FILE)) {
+      const raw = fs.readFileSync(CACHED_TWEETS_FILE, 'utf-8');
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed.data) && (!requireNonEmpty || parsed.data.length > 0)) {
+        return parsed;
+      }
+    }
+  } catch (err) {
+    console.error('⚠️ Snapshot okunamadı:', err.message);
+  }
+  return null;
+}
+
+function writeSnapshotFile(data, source = 'rapidapi') {
+  const output = {
+    fetchedAt: new Date().toISOString(),
+    source,
+    toolCount: data.length,
+    tweetCount: data.reduce((acc, tool) => acc + (tool.tweets?.length || 0), 0),
+    data
+  };
+
+  fs.writeFileSync(CACHED_TWEETS_FILE, JSON.stringify(output, null, 2), 'utf-8');
+  lastSnapshotFetchedAt = output.fetchedAt;
+}
+
+function withToolMeta(tools = []) {
+  return tools.map(tool => ({
+    ...tool,
+    latestTweet: tool.tweets && tool.tweets.length > 0 ? tool.tweets[0] : null,
+    tweetCount: tool.tweets ? tool.tweets.length : 0
+  }));
+}
+
+function filterToolsByWindow(tools = []) {
+  const threshold = Date.now() - TWEET_WINDOW_MS;
+
+  return tools
+    .map(tool => {
+      const tweets = (tool.tweets || []).filter(tweet => {
+        const ts = new Date(tweet.createdAt).getTime();
+        return Number.isFinite(ts) && ts >= threshold;
+      });
+
+      return {
+        ...tool,
+        tweets
+      };
+    })
+    .filter(tool => tool.tweets.length > 0);
+}
+
+async function fetchLiveData() {
+  let result = await fetchAllTweetsAlternative();
+
+  if (!result || result.length === 0) {
+    return null;
+  }
+
+  if (isTranslateConfigured()) {
+    result = await translateAllToolsTweets(result);
+  }
+
+  return result;
+}
+
 export async function getToolsWithTweets(category = 'all', forceRefresh = false) {
   try {
-    let data;
+    let data = null;
+    let hasSnapshotSource = false;
 
-    // Cache kontrolü (serverless'ta cache çalışmaz - her invocation yeni process)
-    if (!IS_SERVERLESS && !forceRefresh && cachedData && cacheTime && (Date.now() - cacheTime < CACHE_DURATION)) {
+    // 1) Önce process cache (forceRefresh değilse)
+    if (!forceRefresh && cachedData && cacheTime && (Date.now() - cacheTime < CACHE_DURATION)) {
       data = cachedData;
-    } else if (!IS_SERVERLESS && fetchInProgress) {
-      console.log('⏳ Başka bir istek zaten çekiyor, bekleniyor...');
-      data = await fetchInProgress;
-    } else {
-      // Yeni çekim başlat
-      const fetchFn = async () => {
-        let result;
-        // 1. RapidAPI dene
-        if (isAlternativeApiConfigured()) {
-          console.log('🚀 RapidAPI deneniyor...');
-          result = await fetchAllTweetsAlternative();
-        }
+      hasSnapshotSource = cachedSource !== 'mock' && cachedSource !== 'unavailable';
+    }
 
-        // 2. RapidAPI başarısızsa mock veri kullan
-        if (!result || result.length === 0) {
-          console.log('🎭 Mock veri kullanılıyor...');
-          result = generateAllMockTweets();
-          cachedSource = 'mock';
-        } else {
-          cachedSource = 'rapidapi';
-
-          // 3. DeepSeek ile Türkçeye çevir (sadece lokalde - serverless'ta süre yetmez)
-          if (!IS_SERVERLESS && isTranslateConfigured()) {
-            result = await translateAllToolsTweets(result);
-          }
-        }
-
-        cachedData = result;
+    // 2) Snapshot dosyasını kullan (Vercel + local varsayılan akış)
+    if (!data) {
+      const snapshot = readSnapshotFile();
+      if (snapshot) {
+        data = snapshot.data;
+        hasSnapshotSource = true;
+        lastSnapshotFetchedAt = snapshot.fetchedAt || null;
+        cachedSource = snapshot.source || 'snapshot';
+        cachedData = data;
         cacheTime = Date.now();
-        return result;
-      };
+      }
+    }
 
-      if (IS_SERVERLESS) {
-        // Serverless: direkt çalıştır, mutex gereksiz
-        data = await fetchFn();
+    // 3) Canlı çekim sadece lokal + zorunlu yenilemede çalışsın
+    if (!IS_SERVERLESS && forceRefresh && isAlternativeApiConfigured()) {
+      if (fetchInProgress) {
+        data = await fetchInProgress;
       } else {
-        // Lokal: mutex ile çalıştır
-        fetchInProgress = fetchFn();
+        fetchInProgress = (async () => {
+          const liveData = await fetchLiveData();
+          if (liveData && liveData.length > 0) {
+            writeSnapshotFile(liveData, 'rapidapi');
+            cachedSource = 'rapidapi';
+            cachedData = liveData;
+            cacheTime = Date.now();
+            hasSnapshotSource = true;
+          }
+          return liveData;
+        })();
+
         try {
           data = await fetchInProgress;
         } finally {
@@ -65,12 +138,28 @@ export async function getToolsWithTweets(category = 'all', forceRefresh = false)
       }
     }
 
-    // latestTweet ekle (frontend'in ihtiyacı var)
-    data = data.map(tool => ({
-      ...tool,
-      latestTweet: tool.tweets && tool.tweets.length > 0 ? tool.tweets[0] : null,
-      tweetCount: tool.tweets ? tool.tweets.length : 0
-    }));
+    // 4) Son çare
+    if (data === null) {
+      // Production/serverless ortamında sahte veri üretme, boş dön.
+      if (IS_SERVERLESS || IS_PRODUCTION) {
+        data = [];
+        cachedSource = 'unavailable';
+        cachedData = data;
+        cacheTime = Date.now();
+      } else {
+        data = generateAllMockTweets();
+        cachedSource = 'mock';
+        cachedData = data;
+        cacheTime = Date.now();
+      }
+    }
+
+    // 24 saatlik pencere filtresi (canlı/snapshot veriler)
+    if (hasSnapshotSource || cachedSource.startsWith('rapidapi') || cachedSource === 'x_api') {
+      data = filterToolsByWindow(data);
+    }
+
+    data = withToolMeta(data);
 
     // Kategori filtresi uygula
     if (category !== 'all') {
@@ -80,12 +169,15 @@ export async function getToolsWithTweets(category = 'all', forceRefresh = false)
     return data;
   } catch (error) {
     console.error('❌ Hata:', error);
-    return generateAllMockTweets();
+    if (IS_SERVERLESS || IS_PRODUCTION) {
+      return [];
+    }
+    return withToolMeta(generateAllMockTweets());
   }
 }
 
-export async function getTimeline(category = 'all') {
-  const tools = await getToolsWithTweets(category);
+export async function getTimeline(category = 'all', forceRefresh = false) {
+  const tools = await getToolsWithTweets(category, forceRefresh);
   const timeline = [];
 
   tools.forEach(tool => {
@@ -109,17 +201,25 @@ export async function getTimeline(category = 'all') {
 export function clearCache() {
   cachedData = null;
   cacheTime = null;
-  cachedSource = 'mock';
+  cachedSource = 'snapshot';
   clearTranslationCache();
   console.log('🗑️ Cache temizlendi');
 }
 
 export function getApiStatus() {
+  const snapshot = readSnapshotFile({ requireNonEmpty: false });
+  const snapshotAvailable = !!(snapshot && Array.isArray(snapshot.data) && snapshot.data.length > 0);
+
   return {
     source: cachedSource,
+    mode: IS_SERVERLESS ? 'snapshot_only' : 'snapshot_local_refresh',
+    tweetWindowHours: TWEET_WINDOW_HOURS,
     rapidApiConfigured: isAlternativeApiConfigured(),
     translateConfigured: isTranslateConfigured(),
     cached: !!cachedData,
-    lastUpdated: cacheTime ? new Date(cacheTime).toISOString() : null
+    snapshotAvailable,
+    snapshotToolCount: snapshot?.toolCount || 0,
+    snapshotTweetCount: snapshot?.tweetCount || 0,
+    lastUpdated: snapshotAvailable ? (lastSnapshotFetchedAt || snapshot?.fetchedAt || null) : null
   };
 }

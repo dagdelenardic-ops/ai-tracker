@@ -1,14 +1,16 @@
 import { useState, useRef, useEffect } from 'react';
-import { Heart, Twitter, Calendar, TrendingUp, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { Heart, Twitter, Calendar, TrendingUp, ChevronDown, ChevronUp } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { formatDate, isRecent } from '../utils/dateUtils';
+import { getValidXUrl, getXProfileUrl } from '../utils/xUrl';
 
 export default function ToolCard({ tool }) {
   const { toggleFavorite, isFavorite } = useApp();
   const favorite = isFavorite(tool.tool);
   const latestTweet = tool.latestTweet;
-  const isNew = latestTweet && isRecent(latestTweet.createdAt, 48);
-  const tweetUrl = latestTweet?.url || `https://x.com/${tool.xHandle}`;
+  const isNew = latestTweet && isRecent(latestTweet.createdAt, 24);
+  const tweetUrl = getValidXUrl(latestTweet?.url, tool.xHandle);
+  const profileUrl = getXProfileUrl(tool.xHandle);
   const [expanded, setExpanded] = useState(false);
   const [isClamped, setIsClamped] = useState(false);
   const textRef = useRef(null);
@@ -140,14 +142,14 @@ export default function ToolCard({ tool }) {
         ) : (
           <div className="text-center py-6 text-gray-500">
             <Twitter className="w-8 h-8 mx-auto mb-2 opacity-50" />
-            <p className="text-sm">Son 3 ayda paylaşım yok</p>
+            <p className="text-sm">Son 24 saatte paylaşım yok</p>
           </div>
         )}
 
         {/* Footer Actions */}
         <div className="flex items-center gap-2 mt-4 pt-4 border-t border-dark-600/30">
           <a
-            href={`https://x.com/${tool.xHandle}`}
+            href={profileUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 btn-secondary text-sm flex items-center justify-center gap-2"

@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import cron from 'node-cron';
 import toolsRouter from './routes/tools.js';
-import { clearCache } from './services/dataService.js';
+import { clearCache, getApiStatus } from './services/dataService.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -13,21 +13,23 @@ app.use(express.json());
 app.use('/api/tools', toolsRouter);
 
 app.get('/api/health', (req, res) => {
-  const hasRapidApi = !!process.env.RAPIDAPI_KEY;
+  const status = getApiStatus();
   res.json({
     status: 'OK',
     timestamp: new Date().toISOString(),
-    mode: hasRapidApi ? 'RAPIDAPI' : 'DEMO'
+    mode: status.snapshotAvailable ? 'SNAPSHOT' : 'UNAVAILABLE',
+    source: status.source,
+    lastUpdated: status.lastUpdated
   });
 });
 
 app.get('/api/stats', (req, res) => {
-  const hasRapidApi = !!process.env.RAPIDAPI_KEY;
+  const status = getApiStatus();
   res.json({
     totalTools: 35,
     categories: 6,
-    mode: hasRapidApi ? 'RAPIDAPI' : 'DEMO',
-    lastUpdated: new Date().toISOString()
+    mode: status.snapshotAvailable ? 'SNAPSHOT' : 'DEMO',
+    lastUpdated: status.lastUpdated
   });
 });
 
@@ -57,8 +59,8 @@ app.listen(PORT, () => {
   console.log('');
 });
 
-cron.schedule('0 * * * *', () => {
-  console.log('🔄 Cache temizleniyor...');
+cron.schedule('0 0 * * *', () => {
+  console.log('🔄 Günlük cache temizleniyor...');
   clearCache();
 });
 
