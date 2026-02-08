@@ -91,7 +91,7 @@ export default function ToolCard({ tool }) {
           <div className="rounded-lg p-3 border border-dark-600/50 bg-dark-800/50">
             <p
               ref={textRef}
-              className={`text-sm text-gray-300 whitespace-pre-line ${expanded ? '' : 'line-clamp-5'}`}
+              className={`text-sm text-gray-300 whitespace-pre-line ${expanded ? '' : 'line-clamp-8'}`}
             >
               {latestTweet.text}
             </p>

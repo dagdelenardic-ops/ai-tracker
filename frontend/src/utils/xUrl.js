@@ -4,7 +4,7 @@ function sanitizeHandle(xHandle = '') {
 
 export function getXProfileUrl(xHandle = '') {
   const handle = sanitizeHandle(xHandle);
-  return handle ? `https://x.com/${encodeURIComponent(handle)}` : 'https://x.com';
+  return handle ? `https://twitter.com/${encodeURIComponent(handle)}` : 'https://twitter.com';
 }
 
 export function getValidXUrl(url, xHandle = '') {
@@ -32,8 +32,15 @@ export function getValidXUrl(url, xHandle = '') {
       return profileUrl;
     }
 
-    return parsed.toString();
-  } catch {
+    // URL'nin geçerli olduğundan emin ol (twitter.com kullan - daha stabil)
+    let finalUrl = parsed.toString();
+    
+    // x.com yerine twitter.com kullan (daha geniş uyumluluk)
+    finalUrl = finalUrl.replace('https://x.com/', 'https://twitter.com/');
+    
+    return finalUrl;
+  } catch (err) {
+    console.error('[X URL Error]:', err.message, 'URL:', url);
     return profileUrl;
   }
 }

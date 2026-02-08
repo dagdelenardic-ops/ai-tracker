@@ -189,9 +189,9 @@ function generateMockTweet(tool, daysAgo, tweetIndex) {
   const replies = Math.floor(engagement.replies * (1 + (Math.random() * variance * 2 - variance)));
   const impressions = Math.floor(likes * (8 + Math.random() * 4)); // Görüntülenme
   
-  // Gerçek X URL'si oluştur (mock ID ile)
+  // Gerçek X URL'si oluştur (mock ID ile) - twitter.com kullan
   const tweetId = sampleTweetIds[tweetIndex % sampleTweetIds.length];
-  const url = `https://x.com/${tool.xHandle}/status/${tweetId}`;
+  const url = `https://twitter.com/${tool.xHandle}/status/${tweetId}`;
   
   return {
     id: tweetId,

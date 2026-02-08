@@ -115,3 +115,11 @@
 .twitter-tweet-rendered {
   @apply rounded-lg overflow-hidden;
 }
+
+/* Custom line-clamp utilities */
+.line-clamp-8 {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

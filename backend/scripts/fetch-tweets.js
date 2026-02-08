@@ -72,12 +72,13 @@ function sanitizeHandle(username = '') {
 
 function buildProfileUrl(username = '') {
   const handle = sanitizeHandle(username);
-  return handle ? `https://x.com/${encodeURIComponent(handle)}` : 'https://x.com';
+  return handle ? `https://twitter.com/${encodeURIComponent(handle)}` : 'https://twitter.com';
 }
 
 function buildTweetUrl(username = '', tweetId = '', fallbackUrl = '') {
   if (fallbackUrl && typeof fallbackUrl === 'string' && /^https?:\/\//i.test(fallbackUrl)) {
-    return fallbackUrl;
+    // x.com yerine twitter.com kullan
+    return fallbackUrl.replace('https://x.com/', 'https://twitter.com/');
   }
 
   const profileUrl = buildProfileUrl(username);
