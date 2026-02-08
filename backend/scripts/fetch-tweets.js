@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
 /**
- * Günlük snapshot scripti:
- * 1) RapidAPI'den araç tweet'lerini çeker
- * 2) DeepSeek varsa Türkçeye çevirir
- * 3) backend/data/cached-tweets.json dosyasına yazar
+ * Gunluk snapshot scripti:
+ * 1) X syndication (embed timeline) uzerinden arac hesaplarinin tweet'lerini ceker (token gerekmez)
+ * 2) DeepSeek varsa Turkce'ye cevirir
+ * 3) backend/data/cached-tweets.json dosyasina yazar
  *
- * Kullanım:
+ * Kullanim:
  *   cd backend && node scripts/fetch-tweets.js
  *
- * Bu dosya git'e commit edilip Vercel'de doğrudan okunur.
- * Böylece Vercel runtime'da dış API çağrısı yapılmaz.
+ * Bu dosya git'e commit edilip Vercel'de dogrudan okunur.
+ * Boylece Vercel runtime'da dis API cagrisi yapilmaz.
  */
 
 import 'dotenv/config';
@@ -27,13 +27,26 @@ const OUTPUT_FILE = path.join(__dirname, '..', 'data', 'cached-tweets.json');
 
 const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
 const RAPIDAPI_HOST = 'twitter-api45.p.rapidapi.com';
+
 const MAX_RESULTS_PER_TOOL = 5;
-const REQUEST_DELAY_MS = 2000;
 const TWEET_WINDOW_HOURS = Number(process.env.TWEET_WINDOW_HOURS || 24);
 
-if (!RAPIDAPI_KEY) {
-  console.error('❌ RAPIDAPI_KEY bulunamadı! .env dosyasını kontrol edin.');
-  process.exit(1);
+const SYNDICATION_BASE_URL = 'https://syndication.twitter.com/srv/timeline-profile/screen-name';
+const SYNDICATION_TIMEOUT_MS = Number(process.env.SYNDICATION_TIMEOUT_MS || 20000);
+const SYNDICATION_USER_AGENT =
+  process.env.SYNDICATION_USER_AGENT ||
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+const RATE_LIMIT_SAFETY_MS = 1500;
+const MAX_RATE_LIMIT_RETRIES = 3;
+
+let syndicationRateLimit = {
+  limit: null,
+  remaining: null,
+  resetAtMs: null
+};
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function readExistingSnapshot() {
@@ -48,7 +61,7 @@ function readExistingSnapshot() {
     }
     return parsed;
   } catch (error) {
-    console.warn('⚠️ Mevcut snapshot okunamadı:', error.message);
+    console.warn('⚠️ Mevcut snapshot okunamadi:', error.message);
     return null;
   }
 }
@@ -105,9 +118,165 @@ function enrichXApiToolsData(tools = []) {
     .filter(tool => tool.tweets.length > 0);
 }
 
+function updateSyndicationRateLimit(headers) {
+  const limitRaw = headers.get('x-rate-limit-limit');
+  const remainingRaw = headers.get('x-rate-limit-remaining');
+  const resetRaw = headers.get('x-rate-limit-reset');
+
+  const limit = limitRaw ? Number(limitRaw) : null;
+  const remaining = remainingRaw ? Number(remainingRaw) : null;
+  const resetAtMs = resetRaw ? Number(resetRaw) * 1000 : null;
+
+  syndicationRateLimit = {
+    limit: Number.isFinite(limit) ? limit : syndicationRateLimit.limit,
+    remaining: Number.isFinite(remaining) ? remaining : syndicationRateLimit.remaining,
+    resetAtMs: Number.isFinite(resetAtMs) ? resetAtMs : syndicationRateLimit.resetAtMs
+  };
+}
+
+function computeRateLimitWaitMs(resetAtMs) {
+  if (!resetAtMs || !Number.isFinite(resetAtMs)) {
+    return 60_000;
+  }
+
+  const wait = resetAtMs - Date.now() + RATE_LIMIT_SAFETY_MS;
+  return Math.max(wait, 1000);
+}
+
+function extractNextDataJson(html = '') {
+  if (!html) return null;
+
+  const match = html.match(/<script[^>]*id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+  if (!match) return null;
+  return match[1];
+}
+
+function parseSyndicationTweets({ handle, entries, maxResults, windowStart }) {
+  if (!Array.isArray(entries) || entries.length === 0) {
+    return [];
+  }
+
+  const seen = new Set();
+  const tweets = [];
+
+  for (const entry of entries) {
+    if (entry?.type !== 'tweet') continue;
+
+    const tweet = entry?.content?.tweet;
+    if (!tweet) continue;
+
+    const id = tweet.id_str || tweet.conversation_id_str || '';
+    if (!id || seen.has(id)) continue;
+
+    const createdAt = tweet.created_at ? new Date(tweet.created_at) : null;
+    if (!createdAt || Number.isNaN(createdAt.getTime())) continue;
+    if (createdAt < windowStart) continue;
+
+    seen.add(id);
+
+    const permalink = tweet.permalink ? `https://x.com${tweet.permalink}` : '';
+
+    tweets.push({
+      id,
+      text: tweet.full_text || tweet.text || '',
+      createdAt: createdAt.toISOString(),
+      metrics: {
+        like_count: tweet.favorite_count || 0,
+        retweet_count: tweet.retweet_count || 0,
+        reply_count: tweet.reply_count || 0,
+        impression_count: tweet.view_count || 0,
+        bookmark_count: tweet.bookmark_count || 0,
+        quote_count: tweet.quote_count || 0
+      },
+      url: buildTweetUrl(handle, id, permalink),
+      isMock: false,
+      source: 'syndication'
+    });
+
+    if (tweets.length >= maxResults) break;
+  }
+
+  tweets.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  return tweets.slice(0, maxResults);
+}
+
+async function fetchFromSyndication(username, maxResults = MAX_RESULTS_PER_TOOL) {
+  const handle = sanitizeHandle(username);
+  if (!handle) return null;
+
+  const windowStart = new Date(Date.now() - TWEET_WINDOW_HOURS * 60 * 60 * 1000);
+  const url = `${SYNDICATION_BASE_URL}/${encodeURIComponent(handle)}`;
+
+  for (let attempt = 1; attempt <= MAX_RATE_LIMIT_RETRIES; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), SYNDICATION_TIMEOUT_MS);
+
+      const res = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'user-agent': SYNDICATION_USER_AGENT,
+          'accept': 'text/html,application/xhtml+xml'
+        },
+        signal: controller.signal
+      });
+
+      clearTimeout(timeout);
+      updateSyndicationRateLimit(res.headers);
+
+      if (res.status === 429) {
+        const waitMs = computeRateLimitWaitMs(syndicationRateLimit.resetAtMs);
+        console.warn(`  ⚠️ Syndication rate limit (@${handle}) - ${Math.ceil(waitMs / 1000)}s bekleniyor (deneme ${attempt}/${MAX_RATE_LIMIT_RETRIES})...`);
+        await sleep(waitMs);
+        continue;
+      }
+
+      if (!res.ok) {
+        console.warn(`  ⚠️ Syndication hata (@${handle}): HTTP ${res.status}`);
+        return null;
+      }
+
+      const html = await res.text();
+      const nextDataJson = extractNextDataJson(html);
+      if (!nextDataJson) {
+        console.warn(`  ⚠️ Syndication parse hatasi (@${handle}): __NEXT_DATA__ bulunamadi`);
+        return null;
+      }
+
+      let parsed;
+      try {
+        parsed = JSON.parse(nextDataJson);
+      } catch (err) {
+        console.warn(`  ⚠️ Syndication JSON parse hatasi (@${handle}): ${err.message}`);
+        return null;
+      }
+
+      const entries = parsed?.props?.pageProps?.timeline?.entries || [];
+      return parseSyndicationTweets({ handle, entries, maxResults, windowStart });
+
+    } catch (err) {
+      const msg = err?.name === 'AbortError' ? 'TIMEOUT' : (err?.message || String(err));
+      console.warn(`  ⚠️ Syndication hata (@${handle}): ${msg}`);
+
+      if (attempt < MAX_RATE_LIMIT_RETRIES && (msg.includes('TIMEOUT') || msg.includes('fetch') || msg.includes('network'))) {
+        await sleep(1000);
+        continue;
+      }
+
+      return null;
+    }
+  }
+
+  return null;
+}
+
 async function fetchFromRapidAPI(username, maxResults = MAX_RESULTS_PER_TOOL) {
+  if (!RAPIDAPI_KEY) {
+    return null;
+  }
+
   try {
-    console.log(`🚀 ${username} için veri çekiliyor...`);
+    console.log(`  ↪️  RapidAPI fallback: @${username}`);
 
     const response = await axios.get(
       `https://${RAPIDAPI_HOST}/timeline.php`,
@@ -123,7 +292,6 @@ async function fetchFromRapidAPI(username, maxResults = MAX_RESULTS_PER_TOOL) {
 
     const tweets = response.data?.timeline || [];
     if (!Array.isArray(tweets) || tweets.length === 0) {
-      console.log(`  ⚠️ ${username}: tweet bulunamadı`);
       return null;
     }
 
@@ -158,135 +326,110 @@ async function fetchFromRapidAPI(username, maxResults = MAX_RESULTS_PER_TOOL) {
       })
       .filter(t => new Date(t.createdAt) >= windowStart);
 
-    if (parsed.length === 0) {
-      console.log(`  ⚠️ ${username}: Son ${TWEET_WINDOW_HOURS} saatte tweet yok`);
-      return null;
-    }
-
-    console.log(`  ✅ ${username}: ${parsed.length} tweet`);
-    return parsed;
+    return parsed.length > 0 ? parsed : null;
 
   } catch (error) {
     if (error.response?.status === 429) {
-      console.warn(`  ⚠️ Rate limit (${username}) - 5s bekleniyor...`);
-      await new Promise(r => setTimeout(r, 5000));
-      // Bir kez daha dene
-      try {
-        const response = await axios.get(
-          `https://${RAPIDAPI_HOST}/timeline.php`,
-          {
-            headers: {
-              'x-rapidapi-key': RAPIDAPI_KEY,
-              'x-rapidapi-host': RAPIDAPI_HOST
-            },
-            params: { screenname: username },
-            timeout: 15000
-          }
-        );
-        const tweets = response.data?.timeline || [];
-        if (tweets.length > 0) {
-          const windowStart = new Date(Date.now() - TWEET_WINDOW_HOURS * 60 * 60 * 1000);
-          const parsed = tweets.slice(0, 5).map(tweet => ({
-            id: tweet.tweet_id || tweet.id,
-            text: tweet.text || tweet.full_text || '',
-            createdAt: tweet.created_at ? new Date(tweet.created_at).toISOString() : new Date().toISOString(),
-            metrics: {
-              like_count: tweet.favorites || 0,
-              retweet_count: tweet.retweets || 0,
-              reply_count: tweet.replies || 0,
-              impression_count: parseInt(tweet.views) || 0,
-              bookmark_count: tweet.bookmarks || 0,
-              quote_count: tweet.quotes || 0
-            },
-            url: buildTweetUrl(
-              username,
-              tweet.tweet_id || tweet.id,
-              tweet.url || tweet.tweet_url || tweet.permalink || ''
-            ),
-            isMock: false,
-            source: 'rapidapi'
-          })).filter(t => new Date(t.createdAt) >= windowStart);
-          if (parsed.length > 0) {
-            console.log(`  ✅ ${username}: ${parsed.length} tweet (retry)`);
-            return parsed;
-          }
-        }
-      } catch {
-        // ignore retry error
-      }
+      console.warn('  ⚠️ RapidAPI rate limit - atlandi');
       return null;
     }
-    console.error(`  ❌ ${username}: ${error.message}`);
+    console.warn(`  ⚠️ RapidAPI hata (@${username}): ${error.message}`);
     return null;
   }
 }
 
-async function main() {
-  console.log(`\n📡 RapidAPI'den ${aiTools.length} AI aracının tweet'leri çekiliyor...\n`);
-  console.log(`   Rate limit koruması: istekler arası ${REQUEST_DELAY_MS / 1000}s bekleme\n`);
-  console.log(`   Zaman penceresi: son ${TWEET_WINDOW_HOURS} saat\n`);
-  console.log(`   DeepSeek çeviri: ${isTranslateConfigured() ? 'AKTIF' : 'PASIF'}\n`);
-
-  const existingSnapshot = readExistingSnapshot();
-  const results = [];
-  let successCount = 0;
-  let failCount = 0;
-  let source = 'rapidapi';
+function groupToolsByHandle() {
+  const handleMap = new Map();
 
   for (const tool of aiTools) {
-    const tweets = await fetchFromRapidAPI(tool.xHandle, MAX_RESULTS_PER_TOOL);
+    const handle = sanitizeHandle(tool.xHandle);
+    if (!handle) continue;
 
-    if (tweets && tweets.length > 0) {
-      results.push({
-        tool: tool.id,
-        name: tool.name,
-        xHandle: tool.xHandle,
-        category: tool.category,
-        categoryLabel: tool.categoryLabel,
-        brandColor: tool.brandColor,
-        logo: tool.logo,
-        company: tool.company,
-        description: tool.description,
-        tweets,
-        source: 'rapidapi'
-      });
-      successCount++;
-      failCount = 0;
-    } else {
-      failCount++;
-      if (failCount >= 10) {
-        console.warn('\n⚠️ 10 ardışık hata - durduruluyor.\n');
-        break;
+    if (!handleMap.has(handle)) {
+      handleMap.set(handle, []);
+    }
+    handleMap.get(handle).push(tool);
+  }
+
+  return handleMap;
+}
+
+async function main() {
+  console.log(`\n📡 Gunluk snapshot: son ${TWEET_WINDOW_HOURS} saat`);
+  console.log(`   Kaynak: X syndication (token gerekmez)`);
+  console.log(`   DeepSeek ceviri: ${isTranslateConfigured() ? 'AKTIF' : 'PASIF'}\n`);
+
+  const existingSnapshot = readExistingSnapshot();
+  const toolsByHandle = groupToolsByHandle();
+  const handles = Array.from(toolsByHandle.keys());
+
+  console.log(`   Toplam arac: ${aiTools.length}`);
+  console.log(`   Benzersiz X handle: ${handles.length}\n`);
+
+  const results = [];
+  let source = 'syndication';
+
+  for (let i = 0; i < handles.length; i++) {
+    const handle = handles[i];
+    console.log(`[${i + 1}/${handles.length}] @${handle}`);
+
+    // Rate limit'e girdiysek bir sonraki istegi atmadan once bekle
+    if (syndicationRateLimit.remaining === 0 && syndicationRateLimit.resetAtMs) {
+      const waitMs = computeRateLimitWaitMs(syndicationRateLimit.resetAtMs);
+      console.warn(`  ⏳ Rate limit sifir (@${handle}) - ${Math.ceil(waitMs / 1000)}s bekleniyor...`);
+      await sleep(waitMs);
+    }
+
+    let tweets = await fetchFromSyndication(handle, MAX_RESULTS_PER_TOOL);
+
+    // Syndication bosa donerse ve RapidAPI key varsa tek handle icin fallback dene
+    if (!tweets && RAPIDAPI_KEY) {
+      const rapidTweets = await fetchFromRapidAPI(handle, MAX_RESULTS_PER_TOOL);
+      if (rapidTweets && rapidTweets.length > 0) {
+        tweets = rapidTweets;
+        source = 'rapidapi';
       }
     }
 
-    // Rate limit koruması
-    await new Promise(r => setTimeout(r, REQUEST_DELAY_MS));
+    if (Array.isArray(tweets) && tweets.length > 0) {
+      const toolList = toolsByHandle.get(handle) || [];
+
+      for (const tool of toolList) {
+        results.push({
+          tool: tool.id,
+          name: tool.name,
+          xHandle: tool.xHandle,
+          category: tool.category,
+          categoryLabel: tool.categoryLabel,
+          brandColor: tool.brandColor,
+          logo: tool.logo,
+          company: tool.company,
+          description: tool.description,
+          tweets: tweets.map(t => ({ ...t })),
+          source: tweets[0]?.source || 'syndication'
+        });
+      }
+
+      console.log(`  ✅ ${tweets.length} tweet bulundu (${toolList.length} araca eklendi)`);
+    } else if (Array.isArray(tweets) && tweets.length === 0) {
+      console.log(`  ⚠️ Son ${TWEET_WINDOW_HOURS} saatte tweet yok`);
+    } else {
+      console.log('  ❌ Veri cekilemedi');
+    }
   }
 
   if (results.length === 0 && isXApiConfigured()) {
-    console.log('\n⚙️ RapidAPI sonuçsuz kaldı, X API fallback deneniyor...\n');
+    console.log('\n⚙️ Syndication/RapidAPI sonuc yok, X API fallback deneniyor...\n');
     const xApiResults = await fetchAllTweets(MAX_RESULTS_PER_TOOL);
     const enrichedXApiResults = enrichXApiToolsData(xApiResults || []);
     if (enrichedXApiResults.length > 0) {
       results.push(...enrichedXApiResults);
-      successCount = enrichedXApiResults.length;
       source = 'x_api';
-      console.log(`✅ X API fallback başarılı: ${enrichedXApiResults.length} araç`);
+      console.log(`✅ X API fallback basarili: ${enrichedXApiResults.length} arac`);
     }
   }
 
-  if (results.length === 0) {
-    if (existingSnapshot && existingSnapshot.data.length > 0) {
-      console.warn('\n⚠️ Yeni veri 0; mevcut snapshot korunuyor (dosya güncellenmedi).\n');
-      return;
-    }
-
-    console.error('\n❌ Hiç veri çekilemedi ve korunacak eski snapshot da yok.\n');
-    process.exit(1);
-  }
-
-  // Tarihe göre sırala
+  // Tarihe gore sirala
   results.sort((a, b) => {
     const dateA = a.tweets[0] ? new Date(a.tweets[0].createdAt) : new Date(0);
     const dateB = b.tweets[0] ? new Date(b.tweets[0].createdAt) : new Date(0);
@@ -294,8 +437,29 @@ async function main() {
   });
 
   let finalResults = results;
-  if (isTranslateConfigured()) {
+  if (isTranslateConfigured() && results.length > 0) {
     finalResults = await translateAllToolsTweets(results);
+  }
+
+  // Hic veri yoksa: workflow'u kirmamak icin bos snapshot yaz (veya var olani koru)
+  if (finalResults.length === 0) {
+    const output = {
+      fetchedAt: new Date().toISOString(),
+      source: isTranslateConfigured() ? `${source}+deepseek` : source,
+      toolCount: 0,
+      tweetCount: 0,
+      data: []
+    };
+
+    // Eski snapshot doluysa ve yeni veri yoksa, daha onceki veriyi koru
+    if (existingSnapshot && Array.isArray(existingSnapshot.data) && existingSnapshot.data.length > 0) {
+      console.warn('\n⚠️ Yeni veri 0; mevcut snapshot korunuyor (dosya guncellenmedi).\n');
+      return;
+    }
+
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2), 'utf-8');
+    console.warn('\n⚠️ Hic tweet bulunamadi; bos snapshot yazildi.\n');
+    return;
   }
 
   const output = {
@@ -308,9 +472,9 @@ async function main() {
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2), 'utf-8');
 
-  console.log(`\n✅ Tamamlandı!`);
-  console.log(`   ${successCount} araç, ${output.tweetCount} tweet`);
-  console.log(`   Çeviri: ${isTranslateConfigured() ? 'DeepSeek ile yapıldı' : 'Atlandı (DEEPSEEK_API_KEY yok)'}`);
+  console.log(`\n✅ Tamamlandi!`);
+  console.log(`   ${output.toolCount} arac, ${output.tweetCount} tweet`);
+  console.log(`   Ceviri: ${isTranslateConfigured() ? 'DeepSeek ile yapildi' : 'Atlandi (DEEPSEEK_API_KEY yok)'}`);
   console.log(`   Kaydedildi: ${OUTPUT_FILE}\n`);
 }
 

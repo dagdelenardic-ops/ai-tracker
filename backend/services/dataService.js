@@ -58,8 +58,8 @@ function withToolMeta(tools = []) {
   }));
 }
 
-function filterToolsByWindow(tools = []) {
-  const threshold = Date.now() - TWEET_WINDOW_MS;
+function filterToolsByWindow(tools = [], referenceTimeMs = Date.now()) {
+  const threshold = referenceTimeMs - TWEET_WINDOW_MS;
 
   return tools
     .map(tool => {
@@ -76,7 +76,7 @@ function filterToolsByWindow(tools = []) {
     .filter(tool => tool.tweets.length > 0);
 }
 
-function buildEmptyToolsList() {
+function buildEmptyToolsList(source = 'unavailable') {
   return aiTools.map(tool => ({
     tool: tool.id,
     name: tool.name,
@@ -88,7 +88,7 @@ function buildEmptyToolsList() {
     company: tool.company,
     description: tool.description,
     tweets: [],
-    source: 'unavailable'
+    source
   }));
 }
 
@@ -172,8 +172,22 @@ export async function getToolsWithTweets(category = 'all', forceRefresh = false)
     }
 
     // 24 saatlik pencere filtresi (canlı/snapshot veriler)
+    // Snapshot akışında pencereyi snapshot'in alindigi ana gore uygula (gunluk digest gibi kalsin).
     if (hasSnapshotSource || cachedSource.startsWith('rapidapi') || cachedSource === 'x_api') {
-      data = filterToolsByWindow(data);
+      const referenceTimeMs = hasSnapshotSource && lastSnapshotFetchedAt
+        ? new Date(lastSnapshotFetchedAt).getTime()
+        : Date.now();
+
+      const filtered = filterToolsByWindow(data, referenceTimeMs);
+
+      // Snapshot var ama pencere icinde tweet yoksa UI bos kalmasin.
+      if (filtered.length === 0 && (IS_SERVERLESS || IS_PRODUCTION)) {
+        data = buildEmptyToolsList(cachedSource || 'unavailable');
+        cachedData = data;
+        cacheTime = Date.now();
+      } else {
+        data = filtered;
+      }
     }
 
     data = withToolMeta(data);
