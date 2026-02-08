@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Sparkles, RefreshCw, Heart } from 'lucide-react';
+import { Search, Sparkles, RefreshCw, Heart, Archive } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 
 export default function Header() {
@@ -50,6 +50,19 @@ export default function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-2 lg:gap-3">
+            {/* Archive link */}
+            <a
+              href="/arsiv"
+              className={`hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl text-sm transition-all ${
+                window.location.pathname === '/arsiv' 
+                  ? 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/30' 
+                  : 'bg-dark-700 text-gray-400 hover:text-white hover:bg-dark-600'
+              }`}
+            >
+              <Archive className="w-4 h-4" />
+              Arşiv
+            </a>
+
             {/* Favorites count */}
             {favorites.length > 0 && (
               <div className="hidden sm:flex items-center gap-1 px-3 py-1.5 bg-dark-700 rounded-full text-sm">

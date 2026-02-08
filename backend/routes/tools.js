@@ -1,6 +1,7 @@
 import express from 'express';
 import { aiTools, categories, getToolsByCategory } from '../data/ai-tools.js';
 import { getToolsWithTweets, getTimeline, clearCache, getApiStatus } from '../services/dataService.js';
+import { getArchive, getArchiveStats, getToolArchive } from '../services/archiveService.js';
 import { testConnection } from '../services/xApiService.js';
 
 const router = express.Router();
@@ -160,6 +161,85 @@ router.post('/refresh', (req, res) => {
       ? 'Runtime cache temizlendi. Yeni veri günlük snapshot güncellemesiyle gelir.'
       : 'Cache temizlendi. Bir sonraki istekte snapshot dosyası tekrar okunacak.'
   });
+});
+
+// ========== ARŞİV ENDPOINT'LERİ ==========
+
+// Get archive timeline (all historical tweets)
+router.get('/archive', (req, res) => {
+  try {
+    const { category, days = 90, limit = 500 } = req.query;
+    
+    const archive = getArchive({ 
+      category, 
+      days: parseInt(days),
+      limit: parseInt(limit)
+    });
+    
+    res.json({
+      success: true,
+      ...archive,
+      data: archive.data.slice(0, parseInt(limit))
+    });
+    
+  } catch (error) {
+    console.error('Error fetching archive:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Arşiv getirme hatası',
+      error: error.message
+    });
+  }
+});
+
+// Get archive statistics
+router.get('/archive/stats', (req, res) => {
+  try {
+    const stats = getArchiveStats();
+    
+    res.json({
+      success: true,
+      data: stats
+    });
+    
+  } catch (error) {
+    console.error('Error fetching archive stats:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Arşiv istatistikleri getirme hatası',
+      error: error.message
+    });
+  }
+});
+
+// Get single tool's archive
+router.get('/archive/:toolId', (req, res) => {
+  try {
+    const { toolId } = req.params;
+    const { days = 90 } = req.query;
+    
+    const archive = getToolArchive(toolId, parseInt(days));
+    
+    if (archive.totalTweets === 0) {
+      return res.status(404).json({
+        success: false,
+        message: 'Bu araç için arşivde tweet bulunamadı'
+      });
+    }
+    
+    res.json({
+      success: true,
+      ...archive
+    });
+    
+  } catch (error) {
+    console.error('Error fetching tool archive:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Araç arşivi getirme hatası',
+      error: error.message
+    });
+  }
 });
 
 export default router;

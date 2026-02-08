@@ -45,3 +45,23 @@ export async function refreshData() {
   const res = await fetch(`${API_BASE}/tools/refresh`, { method: 'POST' });
   return res.json();
 }
+
+// ========== ARŞİV API'LERİ ==========
+
+// Arşiv zaman çizelgesini getir (tüm geçmiş tweetler)
+export async function fetchArchive(category = 'all', days = 90, limit = 500) {
+  const res = await fetch(`${API_BASE}/tools/archive?category=${category}&days=${days}&limit=${limit}`);
+  return res.json();
+}
+
+// Arşiv istatistiklerini getir
+export async function fetchArchiveStats() {
+  const res = await fetch(`${API_BASE}/tools/archive/stats`);
+  return res.json();
+}
+
+// Belirli bir aracın arşivini getir
+export async function fetchToolArchive(toolId, days = 90) {
+  const res = await fetch(`${API_BASE}/tools/archive/${toolId}?days=${days}`);
+  return res.json();
+}

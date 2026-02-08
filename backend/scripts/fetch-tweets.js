@@ -21,6 +21,7 @@ import axios from 'axios';
 import { aiTools } from '../data/ai-tools.js';
 import { translateAllToolsTweets, isTranslateConfigured } from '../services/translateService.js';
 import { fetchAllTweets, isXApiConfigured } from '../services/xApiService.js';
+import { addToArchive } from '../services/archiveService.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT_FILE = path.join(__dirname, '..', 'data', 'cached-tweets.json');
@@ -473,9 +474,13 @@ async function main() {
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2), 'utf-8');
 
+  // Arşive ekle (tüm geçmiş tweetleri biriktir)
+  const archiveResult = addToArchive(finalResults);
+
   console.log(`\n✅ Tamamlandi!`);
   console.log(`   ${output.toolCount} arac, ${output.tweetCount} tweet`);
   console.log(`   Ceviri: ${isTranslateConfigured() ? 'DeepSeek ile yapildi' : 'Atlandi (DEEPSEEK_API_KEY yok)'}`);
+  console.log(`   Arsiv: ${archiveResult.totalTweets} toplam tweet`);
   console.log(`   Kaydedildi: ${OUTPUT_FILE}\n`);
 }
 
