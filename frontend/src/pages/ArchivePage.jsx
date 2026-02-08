@@ -5,7 +5,7 @@ import CategoryFilter from '../components/CategoryFilter';
 import TimelineItem from '../components/TimelineItem';
 import LoadingState from '../components/LoadingState';
 import { fetchArchive, fetchArchiveStats } from '../utils/api';
-import { Archive, Calendar, BarChart3, Clock, ChevronDown, ChevronUp } from 'lucide-react';
+import { Archive, Calendar, BarChart3, Clock, ChevronDown, ChevronUp, Image as ImageIcon } from 'lucide-react';
 
 export default function ArchivePage() {
   const { activeCategory, setActiveCategory, categories } = useApp();
@@ -103,6 +103,15 @@ export default function ArchivePage() {
                 <div>
                   <div className="text-2xl font-bold text-white">{Object.keys(groupedByDate).length}</div>
                   <div className="text-xs text-gray-500">Gün</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-dark-800/50 border border-dark-600/30">
+                <ImageIcon className="w-5 h-5 text-pink-400" />
+                <div>
+                  <div className="text-2xl font-bold text-white">
+                    {archive.filter(t => t.media && t.media.length > 0).length}
+                  </div>
+                  <div className="text-xs text-gray-500">Medya</div>
                 </div>
               </div>
               {stats && (

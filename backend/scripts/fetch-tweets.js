@@ -153,6 +153,44 @@ function extractNextDataJson(html = '') {
   return match[1];
 }
 
+// Medya bilgilerini çıkar (fotoğraflar, videolar)
+function extractMedia(tweet) {
+  const media = [];
+  
+  // Extended entities içinde media var mı?
+  const entities = tweet.extended_entities || tweet.entities;
+  
+  if (entities?.media && Array.isArray(entities.media)) {
+    for (const item of entities.media) {
+      const mediaItem = {
+        type: item.type, // photo, video, animated_gif
+        url: item.media_url_https || item.media_url,
+        display_url: item.display_url,
+        expanded_url: item.expanded_url
+      };
+      
+      // Video için ek bilgiler
+      if (item.type === 'video' || item.type === 'animated_gif') {
+        if (item.video_info?.variants) {
+          // En yüksek kaliteli MP4'ü bul
+          const mp4Variants = item.video_info.variants
+            .filter(v => v.content_type === 'video/mp4')
+            .sort((a, b) => (b.bitrate || 0) - (a.bitrate || 0));
+          
+          if (mp4Variants.length > 0) {
+            mediaItem.video_url = mp4Variants[0].url;
+          }
+        }
+        mediaItem.duration_millis = item.video_info?.duration_millis;
+      }
+      
+      media.push(mediaItem);
+    }
+  }
+  
+  return media;
+}
+
 function parseSyndicationTweets({ handle, entries, maxResults, windowStart }) {
   if (!Array.isArray(entries) || entries.length === 0) {
     return [];
@@ -177,6 +215,7 @@ function parseSyndicationTweets({ handle, entries, maxResults, windowStart }) {
     seen.add(id);
 
     const permalink = tweet.permalink ? `https://x.com${tweet.permalink}` : '';
+    const media = extractMedia(tweet);
 
     tweets.push({
       id,
@@ -191,6 +230,7 @@ function parseSyndicationTweets({ handle, entries, maxResults, windowStart }) {
         quote_count: tweet.quote_count || 0
       },
       url: buildTweetUrl(handle, id, permalink),
+      media: media.length > 0 ? media : undefined,
       isMock: false,
       source: 'syndication'
     });
@@ -303,6 +343,26 @@ async function fetchFromRapidAPI(username, maxResults = MAX_RESULTS_PER_TOOL) {
       .slice(0, maxResults)
       .map(tweet => {
         const tweetId = tweet.tweet_id || tweet.id;
+        
+        // Medya bilgilerini çıkar
+        const media = [];
+        if (tweet.media && Array.isArray(tweet.media)) {
+          for (const item of tweet.media) {
+            const mediaItem = {
+              type: item.type || 'photo',
+              url: item.media_url_https || item.media_url || item.url,
+              display_url: item.display_url,
+              expanded_url: item.expanded_url
+            };
+            
+            if (item.type === 'video' && item.video_url) {
+              mediaItem.video_url = item.video_url;
+            }
+            
+            media.push(mediaItem);
+          }
+        }
+        
         return {
           id: tweetId,
           text: tweet.text || tweet.full_text || '',
@@ -322,6 +382,7 @@ async function fetchFromRapidAPI(username, maxResults = MAX_RESULTS_PER_TOOL) {
             tweetId,
             tweet.url || tweet.tweet_url || tweet.permalink || ''
           ),
+          media: media.length > 0 ? media : undefined,
           isMock: false,
           source: 'rapidapi'
         };

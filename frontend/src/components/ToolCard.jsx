@@ -1,8 +1,70 @@
 import { useState, useRef, useEffect } from 'react';
-import { Heart, Twitter, Calendar, TrendingUp, ChevronDown, ChevronUp } from 'lucide-react';
+import { Heart, Twitter, Calendar, TrendingUp, ChevronDown, ChevronUp, Image as ImageIcon, Play } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { formatDate, isRecent } from '../utils/dateUtils';
 import { getValidXUrl, getXProfileUrl } from '../utils/xUrl';
+
+// Medya Önizleme (ToolCard için sadece ilk medya)
+function TweetMediaPreview({ media }) {
+  if (!media || media.length === 0) return null;
+
+  const [isLoaded, setIsLoaded] = useState(false);
+  const firstMedia = media[0];
+
+  // Video gösterimi
+  if (firstMedia.type === 'video' || firstMedia.type === 'animated_gif') {
+    return (
+      <div className="relative rounded-lg overflow-hidden bg-dark-800 aspect-video mb-3 mt-2">
+        <img
+          src={firstMedia.url}
+          alt="Video thumbnail"
+          className={`w-full h-full object-cover transition-opacity duration-300 ${
+            isLoaded ? 'opacity-100' : 'opacity-0'
+          }`}
+          loading="lazy"
+          onLoad={() => setIsLoaded(true)}
+          onError={() => setIsLoaded(true)}
+        />
+        <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+          <div className="p-2.5 rounded-full bg-white/20">
+            <Play className="w-6 h-6 text-white fill-white" />
+          </div>
+        </div>
+        {media.length > 1 && (
+          <div className="absolute bottom-2 right-2 px-2 py-1 rounded-full bg-black/60 text-xs text-white">
+            +{media.length - 1}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // Fotoğraf gösterimi
+  return (
+    <div className="relative rounded-lg overflow-hidden bg-dark-800 aspect-video mb-3 mt-2">
+      {!isLoaded && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <ImageIcon className="w-6 h-6 text-gray-600 animate-pulse" />
+        </div>
+      )}
+      <img
+        src={firstMedia.url}
+        alt="Tweet media"
+        className={`w-full h-full object-cover transition-opacity duration-300 ${
+          isLoaded ? 'opacity-100' : 'opacity-0'
+        }`}
+        loading="lazy"
+        onLoad={() => setIsLoaded(true)}
+        onError={() => setIsLoaded(true)}
+      />
+      {media.length > 1 && (
+        <div className="absolute bottom-2 right-2 px-2 py-1 rounded-full bg-black/60 text-xs text-white">
+          +{media.length - 1}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function ToolCard({ tool }) {
   const { toggleFavorite, isFavorite } = useApp();
@@ -111,6 +173,11 @@ export default function ToolCard({ tool }) {
                   <><ChevronDown className="w-3.5 h-3.5" /> Devamını oku</>
                 )}
               </button>
+            )}
+
+            {/* Medya Önizleme */}
+            {latestTweet.media && latestTweet.media.length > 0 && (
+              <TweetMediaPreview media={latestTweet.media} />
             )}
 
             <div className="flex items-center justify-between mt-3 pt-3 border-t border-dark-600/50">

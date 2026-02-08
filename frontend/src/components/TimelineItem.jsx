@@ -1,7 +1,108 @@
 import { useState, useRef, useEffect } from 'react';
-import { Twitter, Heart, Repeat2, MessageCircle, Eye, ChevronDown, ChevronUp } from 'lucide-react';
+import { Twitter, Heart, Repeat2, MessageCircle, Eye, ChevronDown, ChevronUp, Image as ImageIcon, Play } from 'lucide-react';
 import { formatDate, formatFullDate, isRecent } from '../utils/dateUtils';
 import { getValidXUrl } from '../utils/xUrl';
+
+// Medya Galerisi Bileşeni
+function MediaGallery({ media }) {
+  if (!media || media.length === 0) return null;
+
+  const gridClass = media.length === 1 
+    ? 'grid-cols-1' 
+    : media.length === 2 
+      ? 'grid-cols-2' 
+      : 'grid-cols-2';
+
+  return (
+    <div className={`grid ${gridClass} gap-2 mb-3 mt-2`}>
+      {media.map((item, index) => (
+        <MediaItem key={index} item={item} index={index} total={media.length} />
+      ))}
+    </div>
+  );
+}
+
+// Tek Medya Öğesi
+function MediaItem({ item, index, total }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [error, setError] = useState(false);
+
+  // Video gösterimi
+  if (item.type === 'video' || item.type === 'animated_gif') {
+    return (
+      <div className={`relative rounded-xl overflow-hidden bg-dark-800 ${
+        total === 1 ? 'aspect-video' : 'aspect-square'
+      }`}>
+        {item.video_url ? (
+          <video
+            src={item.video_url}
+            poster={item.url}
+            controls
+            className="w-full h-full object-cover"
+            preload="metadata"
+          />
+        ) : (
+          <>
+            <img
+              src={item.url}
+              alt="Video thumbnail"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              onLoad={() => setIsLoaded(true)}
+              onError={() => setError(true)}
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+              <a
+                href={item.expanded_url || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-white/20 hover:bg-white/30 transition-colors"
+              >
+                <Play className="w-8 h-8 text-white fill-white" />
+              </a>
+            </div>
+          </>
+        )}
+      </div>
+    );
+  }
+
+  // Fotoğraf gösterimi
+  return (
+    <div className={`relative rounded-xl overflow-hidden bg-dark-800 ${
+      total === 1 ? 'max-h-96' : 'aspect-square'
+    }`}>
+      {!isLoaded && !error && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <ImageIcon className="w-8 h-8 text-gray-600 animate-pulse" />
+        </div>
+      )}
+      {error ? (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <ImageIcon className="w-8 h-8 text-gray-600" />
+        </div>
+      ) : (
+        <a
+          href={item.expanded_url || item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full h-full"
+        >
+          <img
+            src={item.url}
+            alt={`Media ${index + 1}`}
+            className={`w-full h-full object-cover transition-opacity duration-300 hover:opacity-90 ${
+              isLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
+            loading="lazy"
+            onLoad={() => setIsLoaded(true)}
+            onError={() => setError(true)}
+          />
+        </a>
+      )}
+    </div>
+  );
+}
 
 export default function TimelineItem({ item }) {
   const isNew = isRecent(item.createdAt, 24);
@@ -73,6 +174,11 @@ export default function TimelineItem({ item }) {
                 <><ChevronDown className="w-3.5 h-3.5" /> Devamını oku</>
               )}
             </button>
+          )}
+
+          {/* Medya Galerisi */}
+          {item.media && item.media.length > 0 && (
+            <MediaGallery media={item.media} />
           )}
 
           {/* Metrics */}
