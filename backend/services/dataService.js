@@ -1,6 +1,7 @@
 import { generateAllMockTweets } from './mockDataService.js';
 import { fetchAllTweetsAlternative, isAlternativeApiConfigured } from './alternativeApiService.js';
 import { translateAllToolsTweets, isTranslateConfigured, clearTranslationCache } from './translateService.js';
+import { aiTools } from '../data/ai-tools.js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -75,6 +76,22 @@ function filterToolsByWindow(tools = []) {
     .filter(tool => tool.tweets.length > 0);
 }
 
+function buildEmptyToolsList() {
+  return aiTools.map(tool => ({
+    tool: tool.id,
+    name: tool.name,
+    xHandle: tool.xHandle,
+    category: tool.category,
+    categoryLabel: tool.categoryLabel,
+    brandColor: tool.brandColor,
+    logo: tool.logo,
+    company: tool.company,
+    description: tool.description,
+    tweets: [],
+    source: 'unavailable'
+  }));
+}
+
 async function fetchLiveData() {
   let result = await fetchAllTweetsAlternative();
 
@@ -142,7 +159,7 @@ export async function getToolsWithTweets(category = 'all', forceRefresh = false)
     if (data === null) {
       // Production/serverless ortamında sahte veri üretme, boş dön.
       if (IS_SERVERLESS || IS_PRODUCTION) {
-        data = [];
+        data = buildEmptyToolsList();
         cachedSource = 'unavailable';
         cachedData = data;
         cacheTime = Date.now();
