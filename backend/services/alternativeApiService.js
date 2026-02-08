@@ -91,7 +91,16 @@ async function fetchFromRapidAPI(username, maxResults = 5) {
   }
 }
 
-// Tüm araçlar için tweet çek
+// Araçları batch'lere böl
+function chunkArray(array, size) {
+  const chunks = [];
+  for (let i = 0; i < array.length; i += size) {
+    chunks.push(array.slice(i, i + size));
+  }
+  return chunks;
+}
+
+// Tüm araçlar için tweet çek - PARALEL BATCH
 export async function fetchAllTweetsAlternative(maxPerTool = 5) {
   if (!RAPIDAPI_KEY) {
     console.log('⚠️  RAPIDAPI_KEY bulunamadı, mock veri kullanılacak.');
@@ -99,41 +108,40 @@ export async function fetchAllTweetsAlternative(maxPerTool = 5) {
   }
 
   const results = [];
-  let failCount = 0;
+  const BATCH_SIZE = 5; // 5 paralel istek
 
-  console.log(`\n🚀 RapidAPI (twitter-api45) ile ${aiTools.length} AI aracı için tweet çekiliyor...\n`);
+  console.log(`\n🚀 RapidAPI (twitter-api45) ile ${aiTools.length} AI aracı için tweet çekiliyor (${BATCH_SIZE} paralel)...\n`);
 
-  // Rate limit'e takılmamak için sıralı çek
-  for (const tool of aiTools) {
-    // Çok fazla hata varsa dur
-    if (failCount >= 5) {
-      console.warn('⚠️  Çok fazla hata, geri kalan araçlar atlanıyor...');
-      break;
-    }
+  const batches = chunkArray(aiTools, BATCH_SIZE);
 
-    const tweets = await fetchFromRapidAPI(tool.xHandle, maxPerTool);
+  for (const batch of batches) {
+    // Batch'teki tüm araçları paralel çek
+    const batchResults = await Promise.allSettled(
+      batch.map(tool => fetchFromRapidAPI(tool.xHandle, maxPerTool))
+    );
 
-    if (tweets && tweets.length > 0) {
-      results.push({
-        tool: tool.id,
-        name: tool.name,
-        xHandle: tool.xHandle,
-        category: tool.category,
-        categoryLabel: tool.categoryLabel,
-        brandColor: tool.brandColor,
-        logo: tool.logo,
-        company: tool.company,
-        description: tool.description,
-        tweets,
-        source: 'rapidapi'
-      });
-      failCount = 0; // Başarılı oldu, sayacı sıfırla
-    } else {
-      failCount++;
-    }
+    // Sonuçları işle
+    batchResults.forEach((result, index) => {
+      const tool = batch[index];
+      if (result.status === 'fulfilled' && result.value && result.value.length > 0) {
+        results.push({
+          tool: tool.id,
+          name: tool.name,
+          xHandle: tool.xHandle,
+          category: tool.category,
+          categoryLabel: tool.categoryLabel,
+          brandColor: tool.brandColor,
+          logo: tool.logo,
+          company: tool.company,
+          description: tool.description,
+          tweets: result.value,
+          source: 'rapidapi'
+        });
+      }
+    });
 
-    // Rate limit koruması - istekler arası 1.5 saniye bekle
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // Batch'ler arası 500ms bekle (rate limit koruması)
+    await new Promise(resolve => setTimeout(resolve, 500));
   }
 
   if (results.length === 0) {
