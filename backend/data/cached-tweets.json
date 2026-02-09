@@ -1,9 +1,304 @@
 {
-  "fetchedAt": "2026-02-08T12:29:01.912Z",
+  "fetchedAt": "2026-02-09T08:16:09.004Z",
   "source": "syndication+deepseek",
-  "toolCount": 7,
+  "toolCount": 9,
   "tweetCount": 14,
   "data": [
+    {
+      "tool": "kimiai",
+      "name": "Kimi",
+      "xHandle": "Kimi_Moonshot",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#6366F1",
+      "logo": "🌙",
+      "company": "Moonshot AI",
+      "description": "Moonshot AI'ın uzun bağlamlı modeli",
+      "tweets": [
+        {
+          "id": "2020761643152794038",
+          "text": "RT @qoder_ai_ide: Kimi K2.5 artık Qoder'da yayında.\n\nOpenRouter'daki şu anki #1 model ve AI Chat'te 0.3x Kredi ile kullanabilirsiniz…",
+          "createdAt": "2026-02-09T07:28:14.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 6,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/Kimi_Moonshot/status/2020761643152794038",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @qoder_ai_ide: Kimi K2.5 is now live on Qoder.\n\nIt's the #1 model on OpenRouter right now, and we've got it in AI Chat at  0.3x Credit…"
+        },
+        {
+          "id": "2020423716698730607",
+          "text": "RT @OpenRouterAI: Kimi K2.5 artık OpenRouter'daki en popüler model https://t.co/kftInjEt8u",
+          "createdAt": "2026-02-08T09:05:26.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 159,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/Kimi_Moonshot/status/2020423716698730607",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HAkw42ZacAE5vBs.jpg",
+              "display_url": "pic.x.com/kftInjEt8u",
+              "expanded_url": "https://x.com/OpenRouterAI/status/2020199664746971195/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @OpenRouterAI: Kimi K2.5 is now the most popular model on OpenRouter https://t.co/kftInjEt8u"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "chatgpt",
+      "name": "ChatGPT",
+      "xHandle": "OpenAI",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#10A37F",
+      "logo": "🤖",
+      "company": "OpenAI",
+      "description": "OpenAI'nin sohbet botu ve GPT modelleri",
+      "tweets": [
+        {
+          "id": "2020649757434327362",
+          "text": "Sadece bir şeyler inşa edebilirsin. https://t.co/g0JCVjbSef",
+          "createdAt": "2026-02-09T00:03:38.000Z",
+          "metrics": {
+            "like_count": 4669,
+            "retweet_count": 392,
+            "reply_count": 509,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 288
+          },
+          "url": "https://twitter.com/OpenAI/status/2020649757434327362",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HAqlTMtacAAbhZH.jpg",
+              "display_url": "pic.x.com/g0JCVjbSef",
+              "expanded_url": "https://x.com/OpenAI/status/2020649757434327362/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2020608699069612032/vid/avc1/1920x1080/Htq9Xr79Q64q62n8.mp4",
+              "duration_millis": 60060
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "You can just build things. https://t.co/g0JCVjbSef"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "dalle",
+      "name": "DALL-E",
+      "xHandle": "OpenAI",
+      "category": "image",
+      "categoryLabel": "Image Generation",
+      "brandColor": "#10A37F",
+      "logo": "🖼️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın görsel oluşturma modeli",
+      "tweets": [
+        {
+          "id": "2020649757434327362",
+          "text": "Sadece bir şeyler inşa edebilirsin. https://t.co/g0JCVjbSef",
+          "createdAt": "2026-02-09T00:03:38.000Z",
+          "metrics": {
+            "like_count": 4669,
+            "retweet_count": 392,
+            "reply_count": 509,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 288
+          },
+          "url": "https://twitter.com/OpenAI/status/2020649757434327362",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HAqlTMtacAAbhZH.jpg",
+              "display_url": "pic.x.com/g0JCVjbSef",
+              "expanded_url": "https://x.com/OpenAI/status/2020649757434327362/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2020608699069612032/vid/avc1/1920x1080/Htq9Xr79Q64q62n8.mp4",
+              "duration_millis": 60060
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "You can just build things. https://t.co/g0JCVjbSef"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "sora",
+      "name": "Sora",
+      "xHandle": "OpenAI",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#10A37F",
+      "logo": "🎞️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın video oluşturma modeli",
+      "tweets": [
+        {
+          "id": "2020649757434327362",
+          "text": "Sadece bir şeyler inşa edebilirsin. https://t.co/g0JCVjbSef",
+          "createdAt": "2026-02-09T00:03:38.000Z",
+          "metrics": {
+            "like_count": 4669,
+            "retweet_count": 392,
+            "reply_count": 509,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 288
+          },
+          "url": "https://twitter.com/OpenAI/status/2020649757434327362",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HAqlTMtacAAbhZH.jpg",
+              "display_url": "pic.x.com/g0JCVjbSef",
+              "expanded_url": "https://x.com/OpenAI/status/2020649757434327362/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2020608699069612032/vid/avc1/1920x1080/Htq9Xr79Q64q62n8.mp4",
+              "duration_millis": 60060
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "You can just build things. https://t.co/g0JCVjbSef"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "codex",
+      "name": "Codex",
+      "xHandle": "OpenAI",
+      "category": "coding",
+      "categoryLabel": "Coding",
+      "brandColor": "#10A37F",
+      "logo": "⌨️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın kod modeli",
+      "tweets": [
+        {
+          "id": "2020649757434327362",
+          "text": "Sadece bir şeyler inşa edebilirsin. https://t.co/g0JCVjbSef",
+          "createdAt": "2026-02-09T00:03:38.000Z",
+          "metrics": {
+            "like_count": 4669,
+            "retweet_count": 392,
+            "reply_count": 509,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 288
+          },
+          "url": "https://twitter.com/OpenAI/status/2020649757434327362",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HAqlTMtacAAbhZH.jpg",
+              "display_url": "pic.x.com/g0JCVjbSef",
+              "expanded_url": "https://x.com/OpenAI/status/2020649757434327362/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2020608699069612032/vid/avc1/1920x1080/Htq9Xr79Q64q62n8.mp4",
+              "duration_millis": 60060
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "You can just build things. https://t.co/g0JCVjbSef"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "copilot",
+      "name": "Microsoft Copilot",
+      "xHandle": "Microsoft",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#00A4EF",
+      "logo": "🔷",
+      "company": "Microsoft",
+      "description": "Microsoft'un entegre AI asistanı",
+      "tweets": [
+        {
+          "id": "2020567013576380449",
+          "text": "RT @Microsoft365: Microsoft 365 Copilot, Work IQ ile desteklenir. Etkiye göre öncelikleri listele, durumu özetle, engelleri ortaya çıkar ve bağlantı kur...",
+          "createdAt": "2026-02-08T18:34:51.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 30,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/Microsoft/status/2020567013576380449",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @Microsoft365: Microsoft 365 Copilot is powered by Work IQ. List top priorities by impact, summarize status, surface blockers, and link…"
+        },
+        {
+          "id": "2020553984952647821",
+          "text": "RT @msexcel: Excel'deki Ajan Modu'nun futbol karelerini bir analiz sayfasına dönüştürüp, geçmiş büyük maçlardaki yaygın skor kombinasyonlarını ortaya çıkarmasını izleyin...",
+          "createdAt": "2026-02-08T17:43:04.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 26,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/Microsoft/status/2020553984952647821",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @msexcel: Watch Agent Mode in Excel turn football squares into an analysis sheet, surfacing common score-ending combos from past big-gam…"
+        },
+        {
+          "id": "2020543145813983354",
+          "text": "Excel'deki Copilot yardımıyla analizi harekete dönüştürün. https://t.co/LwpcJ7Xk9w https://t.co/5ESi5VqsiF",
+          "createdAt": "2026-02-08T17:00:00.000Z",
+          "metrics": {
+            "like_count": 320,
+            "retweet_count": 83,
+            "reply_count": 39,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 10
+          },
+          "url": "https://twitter.com/Microsoft/status/2020543145813983354",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HAla5S5XQAAwvHW.jpg",
+              "display_url": "pic.x.com/5ESi5VqsiF",
+              "expanded_url": "https://x.com/Microsoft/status/2020543145813983354/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2020245750295179264/vid/avc1/1280x720/9J_-7kBABkHdkTL3.mp4?tag=14",
+              "duration_millis": 30030
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Turn analysis into action with help from Copilot in Excel. https://t.co/LwpcJ7Xk9w https://t.co/5ESi5VqsiF"
+        }
+      ],
+      "source": "syndication"
+    },
     {
       "tool": "elevenlabs",
       "name": "ElevenLabs",
@@ -16,13 +311,40 @@
       "description": "Gerçekçi AI ses sentezi",
       "tweets": [
         {
+          "id": "2020566181246009569",
+          "text": "Kurucu ortağımız @matiii'yi ağırladığı için CNBC'ye teşekkürler. Teknolojiyle etkileşimimizi dönüştürmek için 11 milyar dolarlık değerleme ile gerçekleştirdiğimiz 500 milyon dolarlık fon turumuzu konuştuk.\n\nSesli asistanlar, bilgiye ve desteğe erişimin en önemli arayüzlerinden biri olacak ve güçlü momentumumuzu https://t.co/v68TYWAA8H",
+          "createdAt": "2026-02-08T18:31:32.000Z",
+          "metrics": {
+            "like_count": 50,
+            "retweet_count": 8,
+            "reply_count": 11,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2020566181246009569",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2020565984797659136/img/b2LR9RYGA0GDGGPy.jpg",
+              "display_url": "pic.x.com/v68TYWAA8H",
+              "expanded_url": "https://x.com/elevenlabsio/status/2020566181246009569/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2020565984797659136/vid/avc1/1280x720/FFfGXPMul0aViTpV.mp4",
+              "duration_millis": 167700
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Thank you to CNBC for hosting our Co-Founder @matiii to discuss our $500M fundraise at an $11B valuation to transform how we interact with technology.\n\nVoice agents will be one of the key interfaces for accessing knowledge and support, and we are doubling down on the strong https://t.co/v68TYWAA8H"
+        },
+        {
           "id": "2020467914030129516",
-          "text": "Ses Kütüphanesini Keşfedin: https://t.co/aJHOJ8HLqQ",
+          "text": "Ses Kütüphanesi'ni keşfedin: https://t.co/aJHOJ8HLqQ",
           "createdAt": "2026-02-08T12:01:03.000Z",
           "metrics": {
-            "like_count": 1,
-            "retweet_count": 1,
-            "reply_count": 0,
+            "like_count": 11,
+            "retweet_count": 3,
+            "reply_count": 2,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
@@ -34,17 +356,27 @@
         },
         {
           "id": "2020467912943792424",
-          "text": "Adam & Bella Ses Kütüphanemize geri döndü.\n\nElevenLabs'a başından beri eşlik edenler için bu seslerin tanıtıma ihtiyacı yok - en popüler seslerimizden ikisi olmalarının bir nedeni var.\n\nSakin bir otoriteye sahip Adam'ı veya sıcak, net bir tona sahip Bella'yı deneyin: https://t.co/YlSsKXQNfl",
+          "text": "Adam & Bella, Ses Kütüphanesi'mize geri döndü.\n\nElevenLabs'a başından beri eşlik edenler için bu seslerin tanıtıma ihtiyacı yok - en popüler seslerimizden ikisi olmalarının bir nedeni var.\n\nSakin bir otoriteye sahip Adam'ı veya sıcak, net ve https://t.co/YlSsKXQNfl",
           "createdAt": "2026-02-08T12:01:03.000Z",
           "metrics": {
-            "like_count": 6,
-            "retweet_count": 2,
-            "reply_count": 1,
+            "like_count": 135,
+            "retweet_count": 8,
+            "reply_count": 10,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 0
+            "quote_count": 4
           },
           "url": "https://twitter.com/elevenlabsio/status/2020467912943792424",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/ext_tw_video_thumb/2020467672161329152/pu/img/yVMLkY1INCbH6HLE.jpg",
+              "display_url": "pic.x.com/YlSsKXQNfl",
+              "expanded_url": "https://x.com/elevenlabsio/status/2020467912943792424/video/1",
+              "video_url": "https://video.twimg.com/ext_tw_video/2020467672161329152/pu/vid/avc1/1280x720/9jXHFanxUaVaz9l9.mp4?tag=12",
+              "duration_millis": 38080
+            }
+          ],
           "isMock": false,
           "source": "syndication",
           "originalText": "Adam &amp; Bella are back in our Voice Library.\n\nFor those who have been with ElevenLabs from the beginning, these voices need no introduction - they are two of our most popular for a reason.\n\nTry Adam, for a voice with calm authority, or Bella for a tone that is warm, clear, and https://t.co/YlSsKXQNfl"
@@ -64,182 +396,21 @@
       "description": "GitHub'ın AI kod asistanı",
       "tweets": [
         {
-          "id": "2020444015334711594",
-          "text": "Yeni cep boyutundaki programlama dostunla tanış!\n\nGitHub Copilot Peluş Anahtarlık yumuşacık, sevimli ve anahtarlarınıza ya da sırt çantanıza hemen takılıyor; Copilot sihrini yanınızda taşıyın.\nhttps://t.co/qECBDE4326 https://t.co/aCNForRLd2",
-          "createdAt": "2026-02-08T10:26:05.000Z",
+          "id": "2020560769071337832",
+          "text": "AI ile basit bir uygulama geliştirmek her zaman... basit olmayabiliyor. 👀\n\n@reddobowen, GitHub Copilot ile bir geri sayım uygulaması oluştururken bağlam pencerelerini yönetmek, Plan aracını kullanmak ve test odaklı geliştirmeye bağlı kalmak gibi pek çok şey öğrendi.\n\nTüm bu deneyimlerini bu derinlemesine incelemede bir araya getiriyor.",
+          "createdAt": "2026-02-08T18:10:02.000Z",
           "metrics": {
-            "like_count": 66,
-            "retweet_count": 7,
-            "reply_count": 25,
+            "like_count": 114,
+            "retweet_count": 8,
+            "reply_count": 9,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 3
+            "quote_count": 1
           },
-          "url": "https://twitter.com/github/status/2020444015334711594",
+          "url": "https://twitter.com/github/status/2020560769071337832",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Meet your new pocket-sized programming pal!\n\nThe GitHub Copilot Plush Keychain is soft, adorable, and attaches right to your keys or backpack, bringing a little Copilot magic wherever you go.\nhttps://t.co/qECBDE4326 https://t.co/aCNForRLd2"
-        },
-        {
-          "id": "2020285201180487765",
-          "text": "Hata ayıklama sürenizi /slash komutuyla yarıya indirmek ister misiniz? 🤭\n\nCopilot CLI'da kolayca gezinmeniz için nihai kısayol kılavuzunu derledik. Rica ederiz! 😎\nhttps://t.co/gArZhIuqe4",
-          "createdAt": "2026-02-07T23:55:01.000Z",
-          "metrics": {
-            "like_count": 106,
-            "retweet_count": 10,
-            "reply_count": 6,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/github/status/2020285201180487765",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Want to /slash your debugging time in half? 🤭\n\nWe compiled the ultimate cheat sheet for slash commands to help you easily navigate Copilot CLI. You're welcome! 😎\nhttps://t.co/gArZhIuqe4"
-        },
-        {
-          "id": "2020259771614654759",
-          "text": "Bunu bütün sabah test ediyoruz ve hızına bayılıyoruz ⚡️\n\nCopilot Pro+ kullanıcıları artık Claude Opus 4.6 için hızlı moda araştırma önizlemesinde erişebiliyor. Ne düşündüğünüzü bize bildirin 👀",
-          "createdAt": "2026-02-07T22:13:58.000Z",
-          "metrics": {
-            "like_count": 210,
-            "retweet_count": 25,
-            "reply_count": 12,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 5
-          },
-          "url": "https://twitter.com/github/status/2020259771614654759",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We’ve been testing this all morning and we’re loving the speed ⚡️ \n\nCopilot Pro+ users now have access to fast mode for Claude Opus 4.6 in research preview. Let us know what you think 👀"
-        },
-        {
-          "id": "2020235612654301479",
-          "text": "RT @matthewisabel: Daha fazla büyük PR performans iyileştirmesi artık yayında\n\nKlasik dosya...ya kıyasla p99 INP'de ~3 kat iyileşme görüyoruz",
-          "createdAt": "2026-02-07T20:37:58.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 37,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/github/status/2020235612654301479",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @matthewisabel: More large PR performance improvements are now live\n\nWe’re seeing ~3x improvement in p99 INP relative to the classic fil…"
-        },
-        {
-          "id": "2020209157018665179",
-          "text": "🏎️ @AnthropicAI’nin Claude Opus 4.6 için hızlı mod, GitHub Copilot'ta araştırma önizlemesi olarak yayına alınıyor. Aynı sınır zekasıyla 2.5 kat daha hızlı token hızları elde edin—şimdi 16 Şubat'a kadar 9 premium istekle promosyon fiyatında.\n\nBu sürüm erken ve deneysel bir sürümdür. Deneyin",
-          "createdAt": "2026-02-07T18:52:51.000Z",
-          "metrics": {
-            "like_count": 513,
-            "retweet_count": 46,
-            "reply_count": 37,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 22
-          },
-          "url": "https://twitter.com/github/status/2020209157018665179",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "🏎️ Fast mode for @AnthropicAI’s Claude Opus 4.6 is rolling out in research preview on GitHub Copilot. Get 2.5x faster token speeds with the same frontier intelligence—now at promotional price of 9 premium requests through Feb 16.\n\nThis release is early and experimental. Try it"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "kimiai",
-      "name": "Kimi",
-      "xHandle": "Kimi_Moonshot",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#6366F1",
-      "logo": "🌙",
-      "company": "Moonshot AI",
-      "description": "Moonshot AI'ın uzun bağlamlı modeli",
-      "tweets": [
-        {
-          "id": "2020423716698730607",
-          "text": "RT @OpenRouterAI: Kimi K2.5 artık OpenRouter'daki en popüler model https://t.co/kftInjEt8u",
-          "createdAt": "2026-02-08T09:05:26.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 95,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/Kimi_Moonshot/status/2020423716698730607",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @OpenRouterAI: Kimi K2.5 is now the most popular model on OpenRouter https://t.co/kftInjEt8u"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "grok",
-      "name": "Grok",
-      "xHandle": "xAI",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#FF6B6B",
-      "logo": "🐦",
-      "company": "xAI",
-      "description": "xAI'ın gerçek zamanlı bilgi erişimli botu",
-      "tweets": [
-        {
-          "id": "2020313728802242673",
-          "text": "Yeni görüntü modelleri artık Grok Imagine API'de kullanılabilir.\n\nhttps://t.co/TAkoRrflJ5 adresinden deneyin.",
-          "createdAt": "2026-02-08T01:48:23.000Z",
-          "metrics": {
-            "like_count": 876,
-            "retweet_count": 95,
-            "reply_count": 98,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 11
-          },
-          "url": "https://twitter.com/xai/status/2020313728802242673",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "The new image models are now available on Grok Imagine API. \n\nTry them at https://t.co/TAkoRrflJ5."
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "claude",
-      "name": "Claude",
-      "xHandle": "AnthropicAI",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#CC785C",
-      "logo": "🧠",
-      "company": "Anthropic",
-      "description": "Anthropic'ın güvenli AI asistanı",
-      "tweets": [
-        {
-          "id": "2020226842846744786",
-          "text": "RT @claudeai: Ekiplerimiz, Claude Opus 4.6'nın 2.5 kat daha hızlı bir versiyonuyla çalışıyordu.\n\nŞimdi bunu erken bir deneyim olarak sunuyoruz…",
-          "createdAt": "2026-02-07T20:03:07.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 609,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/AnthropicAI/status/2020226842846744786",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @claudeai: Our teams have been building with a 2.5x-faster version of Claude Opus 4.6.\n\nWe’re now making it available as an early experi…"
+          "originalText": "Building a simple app with AI isn't always ... simple. 👀 \n\n@reddobowen learned a lot from creating a countdown app with GitHub Copilot, like managing context windows, using the Plan agent, and sticking to test-driven development.\n\nHe ties it all together in this deep dive to"
         }
       ],
       "source": "syndication"
@@ -256,86 +427,21 @@
       "description": "Gerçekçi AI video üretimi",
       "tweets": [
         {
-          "id": "2020219893442806187",
-          "text": "Luma Dream Brief, en iyi yapılmamış reklam fikrinizi Luma AI kullanarak hayata geçirmek için düzenlenen 1 milyon dolarlık küresel bir yarışma.\n\nMüşteri yok. Onay yok.\nSadece aklınızdan hiç çıkmayan fikir.\n\nSon başvuru tarihi: 22 Mart. https://t.co/jqcN1SN0Ee",
-          "createdAt": "2026-02-07T19:35:31.000Z",
+          "id": "2020542701758771440",
+          "text": "Super Bowl'da yer alan tüm ajansları tebrik ederiz. Aileleriniz sizinle gurur duyuyordur. Yolda fikri reddedilen her kreatif için - bu gece pizzalar bizden.\n\nAjans e-posta adresinizden bize yazın: dreambrief@lumalabs.ai",
+          "createdAt": "2026-02-08T16:58:14.000Z",
           "metrics": {
-            "like_count": 36,
-            "retweet_count": 4,
-            "reply_count": 3,
+            "like_count": 58,
+            "retweet_count": 2,
+            "reply_count": 9,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 3
+            "quote_count": 1
           },
-          "url": "https://twitter.com/LumaLabsAI/status/2020219893442806187",
+          "url": "https://twitter.com/LumaLabsAI/status/2020542701758771440",
           "isMock": false,
           "source": "syndication",
-          "originalText": "The Luma Dream Brief is a $1M global competition to bring your best unmade advertising idea to life using Luma AI. \n\nNo client. No approvals.\nJust the idea you never stopped thinking about. \n\nSubmit by March 22. https://t.co/jqcN1SN0Ee"
-        },
-        {
-          "id": "2020219891559633040",
-          "text": "Hiç Super Bowl reklamlarını izleyip,\n\"benim fikrim bu çöpten daha iyi\" diye düşündünüz mü?\nKanıtlayın. Ve 1 milyon dolar kazanın. https://t.co/Ya5UmU9Yu3",
-          "createdAt": "2026-02-07T19:35:30.000Z",
-          "metrics": {
-            "like_count": 109,
-            "retweet_count": 14,
-            "reply_count": 23,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 3
-          },
-          "url": "https://twitter.com/LumaLabsAI/status/2020219891559633040",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "You ever watch Super Bowl ads and think,\nmy idea is better than that garbage?\nProve it. And win $1M. https://t.co/Ya5UmU9Yu3"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "cursor",
-      "name": "Cursor",
-      "xHandle": "cursor_ai",
-      "category": "coding",
-      "categoryLabel": "Coding",
-      "brandColor": "#000000",
-      "logo": "💻",
-      "company": "Anysphere",
-      "description": "AI destekli kod editörü",
-      "tweets": [
-        {
-          "id": "2020208133847806170",
-          "text": "Fiyatı 30$ giriş / 150$ çıkış token'ı.\n\nÖnümüzdeki 10 gün boyunca %50 indirimle kullanılabilir.",
-          "createdAt": "2026-02-07T18:48:47.000Z",
-          "metrics": {
-            "like_count": 510,
-            "retweet_count": 9,
-            "reply_count": 29,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 15
-          },
-          "url": "https://twitter.com/cursor_ai/status/2020208133847806170",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "It's priced at $30 input / $150 output tokens.\n\nFor the next 10 days, it's available for 50% off."
-        },
-        {
-          "id": "2020208132207845576",
-          "text": "Opus 4.6 (hızlı mod) artık Cursor'da mevcut!\n\nAraştırma önizlemesinde 2.5 kat daha hızlı.",
-          "createdAt": "2026-02-07T18:48:47.000Z",
-          "metrics": {
-            "like_count": 1535,
-            "retweet_count": 60,
-            "reply_count": 69,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 19
-          },
-          "url": "https://twitter.com/cursor_ai/status/2020208132207845576",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Opus 4.6 (fast mode) is now available in Cursor!\n\nIt's 2.5x as fast in research preview."
+          "originalText": "Congrats to all the agencies with spots in the Super Bowl. Your parents must be very proud. For every creative whose idea got killed along the way - pizza's on us tonight.\n\nEmail us from your agency email: dreambrief@lumalabs.ai"
         }
       ],
       "source": "syndication"
