@@ -1,90 +1,92 @@
 {
-  "fetchedAt": "2026-02-10T08:21:07.907Z",
+  "fetchedAt": "2026-02-11T08:15:54.175Z",
   "source": "syndication+deepseek",
-  "toolCount": 13,
-  "tweetCount": 37,
+  "toolCount": 10,
+  "tweetCount": 20,
   "data": [
     {
-      "tool": "github-copilot",
-      "name": "GitHub Copilot",
-      "xHandle": "github",
-      "category": "coding",
-      "categoryLabel": "Coding",
-      "brandColor": "#6E40C9",
-      "logo": "🐙",
-      "company": "GitHub",
-      "description": "GitHub'ın AI kod asistanı",
+      "tool": "claude",
+      "name": "Claude",
+      "xHandle": "AnthropicAI",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#CC785C",
+      "logo": "🧠",
+      "company": "Anthropic",
+      "description": "Anthropic'ın güvenli AI asistanı",
       "tweets": [
         {
-          "id": "2021040916451164412",
-          "text": "Platform güvenilirliğimize odaklandığımız için GPT-5.3-Codex'in dağıtımını durduruyoruz. Yeniden dağıtıma başladığımızda mutlaka paylaşacağız.",
-          "createdAt": "2026-02-10T01:57:58.000Z",
+          "id": "2021397953848672557",
+          "text": "Bulanık eşikler hakkında zor kararlar vermek yerine, Opus 4.6'nın AI AR&GE risklerini daha detaylı değerlendiren raporu geliştirerek, üst düzey ASL-4 güvenlik standardını önceden karşılamaya karar verdik.\n\nSabotaj risk raporunu buradan okuyun: https://t.co/5baBK1LUSG",
+          "createdAt": "2026-02-11T01:36:42.000Z",
           "metrics": {
-            "like_count": 702,
-            "retweet_count": 44,
-            "reply_count": 51,
+            "like_count": 855,
+            "retweet_count": 65,
+            "reply_count": 34,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 32
+            "quote_count": 26
           },
-          "url": "https://twitter.com/github/status/2021040916451164412",
-          "quotedTweet": {
-            "id": "2020926945324679411",
-            "text": "📣 @OpenAIDevs GPT-5.3-Codex is now generally available and rolling out in GitHub Copilot.\n\nEarly testing shows \n➡️ It reaches new high scores on benchmarks we use to evaluate coding, agentic, and real-world capabilities\n➡️ 25% faster performance than GPT-5.2-Codex on agentic",
-            "author": {
-              "name": "GitHub",
-              "handle": "github"
-            },
-            "media": [],
-            "url": "https://twitter.com/github/status/2020926945324679411"
-          },
+          "url": "https://twitter.com/AnthropicAI/status/2021397953848672557",
           "isMock": false,
           "source": "syndication",
-          "originalText": "We're pausing the rollout of GPT-5.3-Codex as we focus on our platform reliability. We'll be sure to share when it is rolling out again."
+          "originalText": "Rather than making difficult calls about blurry thresholds, we decided to preemptively meet the higher ASL-4 safety bar by developing the report, which assesses Opus 4.6’s AI R&amp;D risks in greater detail.\n\nRead the sabotage risk report here: https://t.co/5baBK1LUSG"
         },
         {
-          "id": "2021017735929418067",
-          "text": "\"Sosisin nasıl yapıldığını görmek\" sadece kullanıcılar için değil, geliştiriciler için de daha iyi.\n\nAnders Hejlsberg diyor ki: \"Topluluğun katılımını her gün görmek... son derece tatmin edici.\"\n\nAçık kaynakla geliştirdiğinizde, her gün doğru sorunları çözdüğünüzü teyit edersiniz. https://t.co/EuqRluXjZZ",
-          "createdAt": "2026-02-10T00:25:51.000Z",
+          "id": "2021397952791707696",
+          "text": "Claude Opus 4.5'i yayınladığımızda, gelecek modellerin otonom AI AR&GE için belirlediğimiz AI Güvenlik Seviyesi 4 eşiğine yaklaşacağını biliyorduk. Bu nedenle gelecekteki sınır modeller için sabotaj risk raporları yazma taahhüdünde bulunduk.\n\nBugün bu taahhüdü Claude Opus 4.6 için yerine getiriyoruz.",
+          "createdAt": "2026-02-11T01:36:42.000Z",
           "metrics": {
-            "like_count": 54,
-            "retweet_count": 6,
-            "reply_count": 7,
+            "like_count": 2437,
+            "retweet_count": 162,
+            "reply_count": 150,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 83
+          },
+          "url": "https://twitter.com/AnthropicAI/status/2021397952791707696",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "When we released Claude Opus 4.5, we knew future models would be close to our AI Safety Level 4 threshold for autonomous AI R&amp;D. We therefore committed to writing sabotage risk reports for future frontier models.\n\nToday we’re delivering on that commitment for Claude Opus 4.6."
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "poe",
+      "name": "Poe",
+      "xHandle": "poe_platform",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#A855F7",
+      "logo": "📚",
+      "company": "Quora",
+      "description": "Çoklu AI model platformu",
+      "tweets": [
+        {
+          "id": "2021389254971228609",
+          "text": "Opus 4.6, @AnthropicAI tarafından, Poe'daki liderlik tablosunda #1 sıraya yerleşti.\n\nÜst düzey akıl yürütme, hız ve gerçek dünya kullanılabilirliğinin şu anda kazandığının güçlü bir işareti.\n\nhttps://t.co/p3xSNPHKFg https://t.co/v6hFNKfp6M",
+          "createdAt": "2026-02-11T01:02:08.000Z",
+          "metrics": {
+            "like_count": 34,
+            "retweet_count": 2,
+            "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/github/status/2021017735929418067",
+          "url": "https://twitter.com/poe_platform/status/2021389254971228609",
           "media": [
             {
-              "type": "video",
-              "url": "https://pbs.twimg.com/media/HAwY50WXAAAig1B.jpg",
-              "display_url": "pic.x.com/EuqRluXjZZ",
-              "expanded_url": "https://x.com/github/status/2021017735929418067/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2021017525857800192/vid/avc1/720x1280/tyqn7N0ErdftYTPs.mp4?tag=14",
-              "duration_millis": 72947
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA1qW86aAAAytut.png",
+              "display_url": "pic.x.com/v6hFNKfp6M",
+              "expanded_url": "https://x.com/poe_platform/status/2021389254971228609/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Seeing \"the sausage being made\" isn't just good for users, it's better for developers too.\n\n\"It is immensely more satisfying to see the engagement of the community... every day,\" says Anders Hejlsberg. \n\nWhen you build in the open, you get daily validation that you're solving https://t.co/EuqRluXjZZ"
-        },
-        {
-          "id": "2020926945324679411",
-          "text": "📣 @OpenAIDevs GPT-5.3-Codex artık genel kullanıma açık ve GitHub Copilot'ta dağıtılıyor.\n\nErken testler gösteriyor ki:\n➡️ Kodlama, ajanlık ve gerçek dünya yeteneklerini değerlendirmek için kullandığımız kıyaslamalarda yeni yüksek puanlara ulaşıyor\n➡️ Ajanlık görevlerinde GPT-5.2-Codex'ten %25 daha hızlı performans",
-          "createdAt": "2026-02-09T18:25:05.000Z",
-          "metrics": {
-            "like_count": 856,
-            "retweet_count": 77,
-            "reply_count": 51,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 25
-          },
-          "url": "https://twitter.com/github/status/2020926945324679411",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "📣 @OpenAIDevs GPT-5.3-Codex is now generally available and rolling out in GitHub Copilot.\n\nEarly testing shows \n➡️ It reaches new high scores on benchmarks we use to evaluate coding, agentic, and real-world capabilities\n➡️ 25% faster performance than GPT-5.2-Codex on agentic"
+          "originalText": "Opus 4.6 by @AnthropicAI just took the #1 spot on the leaderboard on Poe.  \n\nStrong signal that high-end reasoning, speed and real-world usability is winning right now. \n\nhttps://t.co/p3xSNPHKFg https://t.co/v6hFNKfp6M"
         }
       ],
       "source": "syndication"
@@ -101,73 +103,68 @@
       "description": "OpenAI'nin sohbet botu ve GPT modelleri",
       "tweets": [
         {
-          "id": "2021025336897700114",
-          "text": "OpenAI Podcast'ini dinleyin—\nSpotify\nhttps://t.co/mCUNQMANGy\nApple\nhttps://t.co/2049K2MWSB\nYouTube\nhttps://t.co/v9MpyjxIjH",
-          "createdAt": "2026-02-10T00:56:03.000Z",
+          "id": "2021299936948781095",
+          "text": "Derin araştırmada artık şunları yapabilirsiniz:\n\n- ChatGPT'deki uygulamalara bağlanın ve belirli sitelerde arama yapın\n\n- Gerçek zamanlı ilerlemeyi takip edin ve ek sorular veya yeni kaynaklarla müdahale edin\n\n- Tam ekran raporları görüntüleyin https://t.co/XAWKFNS8Ql",
+          "createdAt": "2026-02-10T19:07:13.000Z",
           "metrics": {
-            "like_count": 93,
-            "retweet_count": 5,
-            "reply_count": 12,
+            "like_count": 1248,
+            "retweet_count": 90,
+            "reply_count": 71,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 2
+            "quote_count": 16
           },
-          "url": "https://twitter.com/OpenAI/status/2021025336897700114",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Listen to the OpenAI Podcast on—\nSpotify\nhttps://t.co/mCUNQMANGy\nApple\nhttps://t.co/2049K2MWSB\nYouTube\nhttps://t.co/v9MpyjxIjH"
-        },
-        {
-          "id": "2021025290366091442",
-          "text": "Bu haftanın podcast'i tamamen reklamlarla ilgili.\n\nOpenAI'da reklam ekibinin liderlerinden Asad Awan, @AndrewMayne'e katılarak reklam ilkelerimizi nasıl oluşturduğumuzu ve ChatGPT ücretsiz ve Go seviyelerindeki reklamların herkes için AI erişimini nasıl genişlettiğini anlatıyor. https://t.co/WTptRgg0uE",
-          "createdAt": "2026-02-10T00:55:52.000Z",
-          "metrics": {
-            "like_count": 404,
-            "retweet_count": 40,
-            "reply_count": 140,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 14
-          },
-          "url": "https://twitter.com/OpenAI/status/2021025290366091442",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/media/HAu1kHKbsAAXOK3.jpg",
-              "display_url": "pic.x.com/WTptRgg0uE",
-              "expanded_url": "https://x.com/OpenAI/status/2021025290366091442/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2019930956086595584/vid/avc1/1920x1080/GwxcWNWQj5ITQieh.mp4",
-              "duration_millis": 1534616
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "This week's podcast is all about ads.\n\nAsad Awan, one of the leads behind ads at OpenAI, joins @AndrewMayne to share how we came up with our ad principles and how ads in ChatGPT free and Go tiers expand AI access for all. https://t.co/WTptRgg0uE"
-        },
-        {
-          "id": "2020936703763153010",
-          "text": "Bugün, ABD'deki belirli ücretsiz ve Go kullanıcıları için ChatGPT'de reklam testini başlatıyoruz.\n\nReklamlar ChatGPT'nin yanıtlarını etkilemez. Reklamlar sponsorlu olarak etiketlenir ve yanıttan görsel olarak ayrılır.\n\nAmacımız, herkese https://t.co/S9BV24uJLb ile ChatGPT'ye ücretsiz erişim sağlamak.",
-          "createdAt": "2026-02-09T19:03:52.000Z",
-          "metrics": {
-            "like_count": 2932,
-            "retweet_count": 253,
-            "reply_count": 819,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 313
-          },
-          "url": "https://twitter.com/OpenAI/status/2020936703763153010",
+          "url": "https://twitter.com/OpenAI/status/2021299936948781095",
           "media": [
             {
               "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvNn4GbwAA7ykr.jpg",
-              "display_url": "pic.x.com/S9BV24uJLb",
-              "expanded_url": "https://x.com/OpenAI/status/2020936703763153010/photo/1"
+              "url": "https://pbs.twimg.com/media/HA0ZRpZaAAI7_66.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA0ZRpdaAAIsnMJ.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA0ZRphb0AAosrT.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "We’re starting to roll out a test for ads in ChatGPT today to a subset of free and Go users in the U.S.\n\nAds do not influence ChatGPT’s answers. Ads are labeled as sponsored and visually separate from the response.\n\nOur goal is to give everyone access to ChatGPT for free with https://t.co/S9BV24uJLb"
+          "originalText": "Now in deep research you can:\n\n- Connect to apps in ChatGPT and search specific sites\n\n- Track real-time progress and interrupt with follow-ups or new sources\n\n- View fullscreen reports https://t.co/XAWKFNS8Ql"
+        },
+        {
+          "id": "2021299935678026168",
+          "text": "ChatGPT'deki derin araştırma artık GPT-5.2 ile destekleniyor.\n\nDaha fazla iyileştirmeyle birlikte bugünden itibaren yayılıyor. https://t.co/LdgoWlucuE",
+          "createdAt": "2026-02-10T19:07:13.000Z",
+          "metrics": {
+            "like_count": 3976,
+            "retweet_count": 398,
+            "reply_count": 442,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 223
+          },
+          "url": "https://twitter.com/OpenAI/status/2021299935678026168",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HA0ZqlJagAA28JX.png",
+              "display_url": "pic.x.com/LdgoWlucuE",
+              "expanded_url": "https://x.com/OpenAI/status/2021299935678026168/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021299347523239936/vid/avc1/1920x1080/LwilfSkY7sps3A4T.mp4",
+              "duration_millis": 79116
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Deep research in ChatGPT is now powered by GPT-5.2.\n\nRolling out starting today with more improvements. https://t.co/LdgoWlucuE"
         }
       ],
       "source": "syndication"
@@ -184,73 +181,68 @@
       "description": "OpenAI'ın görsel oluşturma modeli",
       "tweets": [
         {
-          "id": "2021025336897700114",
-          "text": "OpenAI Podcast'ini dinleyin—\nSpotify\nhttps://t.co/mCUNQMANGy\nApple\nhttps://t.co/2049K2MWSB\nYouTube\nhttps://t.co/v9MpyjxIjH",
-          "createdAt": "2026-02-10T00:56:03.000Z",
+          "id": "2021299936948781095",
+          "text": "Derin araştırmada artık şunları yapabilirsiniz:\n\n- ChatGPT'deki uygulamalara bağlanın ve belirli sitelerde arama yapın\n\n- Gerçek zamanlı ilerlemeyi takip edin ve ek sorular veya yeni kaynaklarla müdahale edin\n\n- Tam ekran raporları görüntüleyin https://t.co/XAWKFNS8Ql",
+          "createdAt": "2026-02-10T19:07:13.000Z",
           "metrics": {
-            "like_count": 93,
-            "retweet_count": 5,
-            "reply_count": 12,
+            "like_count": 1248,
+            "retweet_count": 90,
+            "reply_count": 71,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 2
+            "quote_count": 16
           },
-          "url": "https://twitter.com/OpenAI/status/2021025336897700114",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Listen to the OpenAI Podcast on—\nSpotify\nhttps://t.co/mCUNQMANGy\nApple\nhttps://t.co/2049K2MWSB\nYouTube\nhttps://t.co/v9MpyjxIjH"
-        },
-        {
-          "id": "2021025290366091442",
-          "text": "Bu haftanın podcast'i tamamen reklamlarla ilgili.\n\nOpenAI'da reklam ekibinin liderlerinden Asad Awan, @AndrewMayne'a katılarak reklam ilkelerimizi nasıl oluşturduğumuzu ve ChatGPT ücretsiz ve Go seviyelerindeki reklamların herkes için AI erişimini nasıl genişlettiğini anlatıyor. https://t.co/WTptRgg0uE",
-          "createdAt": "2026-02-10T00:55:52.000Z",
-          "metrics": {
-            "like_count": 404,
-            "retweet_count": 40,
-            "reply_count": 140,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 14
-          },
-          "url": "https://twitter.com/OpenAI/status/2021025290366091442",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/media/HAu1kHKbsAAXOK3.jpg",
-              "display_url": "pic.x.com/WTptRgg0uE",
-              "expanded_url": "https://x.com/OpenAI/status/2021025290366091442/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2019930956086595584/vid/avc1/1920x1080/GwxcWNWQj5ITQieh.mp4",
-              "duration_millis": 1534616
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "This week's podcast is all about ads.\n\nAsad Awan, one of the leads behind ads at OpenAI, joins @AndrewMayne to share how we came up with our ad principles and how ads in ChatGPT free and Go tiers expand AI access for all. https://t.co/WTptRgg0uE"
-        },
-        {
-          "id": "2020936703763153010",
-          "text": "Bugün, ABD'deki belirli ücretsiz ve Go kullanıcıları için ChatGPT'de reklam testini başlatıyoruz.\n\nReklamlar ChatGPT'nin yanıtlarını etkilemez. Reklamlar sponsorlu olarak etiketlenir ve yanıttan görsel olarak ayrılır.\n\nAmacımız, herkese https://t.co/S9BV24uJLb ile ChatGPT'ye ücretsiz erişim sağlamak.",
-          "createdAt": "2026-02-09T19:03:52.000Z",
-          "metrics": {
-            "like_count": 2932,
-            "retweet_count": 253,
-            "reply_count": 819,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 313
-          },
-          "url": "https://twitter.com/OpenAI/status/2020936703763153010",
+          "url": "https://twitter.com/OpenAI/status/2021299936948781095",
           "media": [
             {
               "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvNn4GbwAA7ykr.jpg",
-              "display_url": "pic.x.com/S9BV24uJLb",
-              "expanded_url": "https://x.com/OpenAI/status/2020936703763153010/photo/1"
+              "url": "https://pbs.twimg.com/media/HA0ZRpZaAAI7_66.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA0ZRpdaAAIsnMJ.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA0ZRphb0AAosrT.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "We’re starting to roll out a test for ads in ChatGPT today to a subset of free and Go users in the U.S.\n\nAds do not influence ChatGPT’s answers. Ads are labeled as sponsored and visually separate from the response.\n\nOur goal is to give everyone access to ChatGPT for free with https://t.co/S9BV24uJLb"
+          "originalText": "Now in deep research you can:\n\n- Connect to apps in ChatGPT and search specific sites\n\n- Track real-time progress and interrupt with follow-ups or new sources\n\n- View fullscreen reports https://t.co/XAWKFNS8Ql"
+        },
+        {
+          "id": "2021299935678026168",
+          "text": "ChatGPT'deki derin araştırma artık GPT-5.2 ile destekleniyor.\n\nDaha fazla iyileştirmeyle birlikte bugünden itibaren yayılıyor. https://t.co/LdgoWlucuE",
+          "createdAt": "2026-02-10T19:07:13.000Z",
+          "metrics": {
+            "like_count": 3976,
+            "retweet_count": 398,
+            "reply_count": 442,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 223
+          },
+          "url": "https://twitter.com/OpenAI/status/2021299935678026168",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HA0ZqlJagAA28JX.png",
+              "display_url": "pic.x.com/LdgoWlucuE",
+              "expanded_url": "https://x.com/OpenAI/status/2021299935678026168/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021299347523239936/vid/avc1/1920x1080/LwilfSkY7sps3A4T.mp4",
+              "duration_millis": 79116
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Deep research in ChatGPT is now powered by GPT-5.2.\n\nRolling out starting today with more improvements. https://t.co/LdgoWlucuE"
         }
       ],
       "source": "syndication"
@@ -267,73 +259,68 @@
       "description": "OpenAI'ın video oluşturma modeli",
       "tweets": [
         {
-          "id": "2021025336897700114",
-          "text": "OpenAI Podcast'ini dinleyin—\nSpotify\nhttps://t.co/mCUNQMANGy\nApple\nhttps://t.co/2049K2MWSB\nYouTube\nhttps://t.co/v9MpyjxIjH",
-          "createdAt": "2026-02-10T00:56:03.000Z",
+          "id": "2021299936948781095",
+          "text": "Derin araştırmada artık şunları yapabilirsiniz:\n\n- ChatGPT'deki uygulamalara bağlanın ve belirli sitelerde arama yapın\n\n- Gerçek zamanlı ilerlemeyi takip edin ve ek sorular veya yeni kaynaklarla müdahale edin\n\n- Tam ekran raporları görüntüleyin https://t.co/XAWKFNS8Ql",
+          "createdAt": "2026-02-10T19:07:13.000Z",
           "metrics": {
-            "like_count": 93,
-            "retweet_count": 5,
-            "reply_count": 12,
+            "like_count": 1248,
+            "retweet_count": 90,
+            "reply_count": 71,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 2
+            "quote_count": 16
           },
-          "url": "https://twitter.com/OpenAI/status/2021025336897700114",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Listen to the OpenAI Podcast on—\nSpotify\nhttps://t.co/mCUNQMANGy\nApple\nhttps://t.co/2049K2MWSB\nYouTube\nhttps://t.co/v9MpyjxIjH"
-        },
-        {
-          "id": "2021025290366091442",
-          "text": "Bu haftanın podcast'i tamamen reklamlarla ilgili.\n\nOpenAI'da reklam ekibinin liderlerinden Asad Awan, @AndrewMayne'e katılarak reklam ilkelerimizi nasıl oluşturduğumuzu ve ChatGPT ücretsiz ve Go seviyelerindeki reklamların herkes için AI erişimini nasıl genişlettiğini anlatıyor. https://t.co/WTptRgg0uE",
-          "createdAt": "2026-02-10T00:55:52.000Z",
-          "metrics": {
-            "like_count": 404,
-            "retweet_count": 40,
-            "reply_count": 140,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 14
-          },
-          "url": "https://twitter.com/OpenAI/status/2021025290366091442",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/media/HAu1kHKbsAAXOK3.jpg",
-              "display_url": "pic.x.com/WTptRgg0uE",
-              "expanded_url": "https://x.com/OpenAI/status/2021025290366091442/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2019930956086595584/vid/avc1/1920x1080/GwxcWNWQj5ITQieh.mp4",
-              "duration_millis": 1534616
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "This week's podcast is all about ads.\n\nAsad Awan, one of the leads behind ads at OpenAI, joins @AndrewMayne to share how we came up with our ad principles and how ads in ChatGPT free and Go tiers expand AI access for all. https://t.co/WTptRgg0uE"
-        },
-        {
-          "id": "2020936703763153010",
-          "text": "Bugün, ABD'deki belirli ücretsiz ve Go kullanıcıları için ChatGPT'de reklam testini başlatıyoruz.\n\nReklamlar ChatGPT'nin yanıtlarını etkilemez. Reklamlar sponsorlu olarak etiketlenir ve yanıttan görsel olarak ayrılır.\n\nAmacımız, herkese https://t.co/S9BV24uJLb ile ChatGPT'ye ücretsiz erişim sağlamak.",
-          "createdAt": "2026-02-09T19:03:52.000Z",
-          "metrics": {
-            "like_count": 2932,
-            "retweet_count": 253,
-            "reply_count": 819,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 313
-          },
-          "url": "https://twitter.com/OpenAI/status/2020936703763153010",
+          "url": "https://twitter.com/OpenAI/status/2021299936948781095",
           "media": [
             {
               "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvNn4GbwAA7ykr.jpg",
-              "display_url": "pic.x.com/S9BV24uJLb",
-              "expanded_url": "https://x.com/OpenAI/status/2020936703763153010/photo/1"
+              "url": "https://pbs.twimg.com/media/HA0ZRpZaAAI7_66.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA0ZRpdaAAIsnMJ.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA0ZRphb0AAosrT.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "We’re starting to roll out a test for ads in ChatGPT today to a subset of free and Go users in the U.S.\n\nAds do not influence ChatGPT’s answers. Ads are labeled as sponsored and visually separate from the response.\n\nOur goal is to give everyone access to ChatGPT for free with https://t.co/S9BV24uJLb"
+          "originalText": "Now in deep research you can:\n\n- Connect to apps in ChatGPT and search specific sites\n\n- Track real-time progress and interrupt with follow-ups or new sources\n\n- View fullscreen reports https://t.co/XAWKFNS8Ql"
+        },
+        {
+          "id": "2021299935678026168",
+          "text": "ChatGPT'deki derin araştırma artık GPT-5.2 ile destekleniyor.\n\nDaha fazla iyileştirmeyle birlikte bugünden itibaren yayılıyor. https://t.co/LdgoWlucuE",
+          "createdAt": "2026-02-10T19:07:13.000Z",
+          "metrics": {
+            "like_count": 3976,
+            "retweet_count": 398,
+            "reply_count": 442,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 223
+          },
+          "url": "https://twitter.com/OpenAI/status/2021299935678026168",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HA0ZqlJagAA28JX.png",
+              "display_url": "pic.x.com/LdgoWlucuE",
+              "expanded_url": "https://x.com/OpenAI/status/2021299935678026168/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021299347523239936/vid/avc1/1920x1080/LwilfSkY7sps3A4T.mp4",
+              "duration_millis": 79116
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Deep research in ChatGPT is now powered by GPT-5.2.\n\nRolling out starting today with more improvements. https://t.co/LdgoWlucuE"
         }
       ],
       "source": "syndication"
@@ -350,73 +337,68 @@
       "description": "OpenAI'ın kod modeli",
       "tweets": [
         {
-          "id": "2021025336897700114",
-          "text": "OpenAI Podcast'ini dinleyin—\nSpotify\nhttps://t.co/mCUNQMANGy\nApple\nhttps://t.co/2049K2MWSB\nYouTube\nhttps://t.co/v9MpyjxIjH",
-          "createdAt": "2026-02-10T00:56:03.000Z",
+          "id": "2021299936948781095",
+          "text": "Derin araştırmada artık şunları yapabilirsiniz:\n\n- ChatGPT'deki uygulamalara bağlanın ve belirli sitelerde arama yapın\n\n- Gerçek zamanlı ilerlemeyi takip edin ve ek sorular veya yeni kaynaklarla müdahale edin\n\n- Tam ekran raporları görüntüleyin https://t.co/XAWKFNS8Ql",
+          "createdAt": "2026-02-10T19:07:13.000Z",
           "metrics": {
-            "like_count": 93,
-            "retweet_count": 5,
-            "reply_count": 12,
+            "like_count": 1248,
+            "retweet_count": 90,
+            "reply_count": 71,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 2
+            "quote_count": 16
           },
-          "url": "https://twitter.com/OpenAI/status/2021025336897700114",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Listen to the OpenAI Podcast on—\nSpotify\nhttps://t.co/mCUNQMANGy\nApple\nhttps://t.co/2049K2MWSB\nYouTube\nhttps://t.co/v9MpyjxIjH"
-        },
-        {
-          "id": "2021025290366091442",
-          "text": "Bu haftanın podcast'i tamamen reklamlarla ilgili.\n\nOpenAI'da reklam ekibinin liderlerinden Asad Awan, @AndrewMayne'e katılarak reklam ilkelerimizi nasıl oluşturduğumuzu ve ChatGPT ücretsiz ve Go seviyelerindeki reklamların herkes için AI erişimini nasıl genişlettiğini anlatıyor. https://t.co/WTptRgg0uE",
-          "createdAt": "2026-02-10T00:55:52.000Z",
-          "metrics": {
-            "like_count": 404,
-            "retweet_count": 40,
-            "reply_count": 140,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 14
-          },
-          "url": "https://twitter.com/OpenAI/status/2021025290366091442",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/media/HAu1kHKbsAAXOK3.jpg",
-              "display_url": "pic.x.com/WTptRgg0uE",
-              "expanded_url": "https://x.com/OpenAI/status/2021025290366091442/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2019930956086595584/vid/avc1/1920x1080/GwxcWNWQj5ITQieh.mp4",
-              "duration_millis": 1534616
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "This week's podcast is all about ads.\n\nAsad Awan, one of the leads behind ads at OpenAI, joins @AndrewMayne to share how we came up with our ad principles and how ads in ChatGPT free and Go tiers expand AI access for all. https://t.co/WTptRgg0uE"
-        },
-        {
-          "id": "2020936703763153010",
-          "text": "Bugün, ABD'deki belirli ücretsiz ve Go kullanıcıları için ChatGPT'de reklam testini başlatıyoruz.\n\nReklamlar ChatGPT'nin yanıtlarını etkilemez. Reklamlar sponsorlu olarak etiketlenir ve yanıttan görsel olarak ayrılır.\n\nAmacımız, herkese https://t.co/S9BV24uJLb ile ChatGPT'ye ücretsiz erişim sağlamak.",
-          "createdAt": "2026-02-09T19:03:52.000Z",
-          "metrics": {
-            "like_count": 2932,
-            "retweet_count": 253,
-            "reply_count": 819,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 313
-          },
-          "url": "https://twitter.com/OpenAI/status/2020936703763153010",
+          "url": "https://twitter.com/OpenAI/status/2021299936948781095",
           "media": [
             {
               "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvNn4GbwAA7ykr.jpg",
-              "display_url": "pic.x.com/S9BV24uJLb",
-              "expanded_url": "https://x.com/OpenAI/status/2020936703763153010/photo/1"
+              "url": "https://pbs.twimg.com/media/HA0ZRpZaAAI7_66.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA0ZRpdaAAIsnMJ.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA0ZRphb0AAosrT.jpg",
+              "display_url": "pic.x.com/XAWKFNS8Ql",
+              "expanded_url": "https://x.com/OpenAI/status/2021299936948781095/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "We’re starting to roll out a test for ads in ChatGPT today to a subset of free and Go users in the U.S.\n\nAds do not influence ChatGPT’s answers. Ads are labeled as sponsored and visually separate from the response.\n\nOur goal is to give everyone access to ChatGPT for free with https://t.co/S9BV24uJLb"
+          "originalText": "Now in deep research you can:\n\n- Connect to apps in ChatGPT and search specific sites\n\n- Track real-time progress and interrupt with follow-ups or new sources\n\n- View fullscreen reports https://t.co/XAWKFNS8Ql"
+        },
+        {
+          "id": "2021299935678026168",
+          "text": "ChatGPT'deki derin araştırma artık GPT-5.2 ile destekleniyor.\n\nDaha fazla iyileştirmeyle birlikte bugünden itibaren yayılıyor. https://t.co/LdgoWlucuE",
+          "createdAt": "2026-02-10T19:07:13.000Z",
+          "metrics": {
+            "like_count": 3976,
+            "retweet_count": 398,
+            "reply_count": 442,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 223
+          },
+          "url": "https://twitter.com/OpenAI/status/2021299935678026168",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HA0ZqlJagAA28JX.png",
+              "display_url": "pic.x.com/LdgoWlucuE",
+              "expanded_url": "https://x.com/OpenAI/status/2021299935678026168/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021299347523239936/vid/avc1/1920x1080/LwilfSkY7sps3A4T.mp4",
+              "duration_millis": 79116
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Deep research in ChatGPT is now powered by GPT-5.2.\n\nRolling out starting today with more improvements. https://t.co/LdgoWlucuE"
         }
       ],
       "source": "syndication"
@@ -433,459 +415,31 @@
       "description": "Gerçekçi AI video üretimi",
       "tweets": [
         {
-          "id": "2020972783568814493",
-          "text": "Ray3.14 ile 1080p çözünürlükte hikaye odaklı reklamlar oluşturun. Karakterleri ve sahneleri yönetin, hareketi tahminle değil niyetle şekillendirin. Görsel stil ve karakter kimliği kareler arasında tutarlı kalır, sinematik hikaye anlatımı için idealdir. Şimdi Dream Machine'da mevcut. https://t.co/lMv3UKmR47",
-          "createdAt": "2026-02-09T21:27:14.000Z",
+          "id": "2021275845692883345",
+          "text": "Midnight Tokyo - Gece Yarısı Tokyo https://t.co/nIImcJFkPP",
+          "createdAt": "2026-02-10T17:31:29.000Z",
           "metrics": {
-            "like_count": 55,
-            "retweet_count": 4,
-            "reply_count": 4,
+            "like_count": 52,
+            "retweet_count": 0,
+            "reply_count": 12,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 2
+            "quote_count": 1
           },
-          "url": "https://twitter.com/LumaLabsAI/status/2020972783568814493",
+          "url": "https://twitter.com/LumaLabsAI/status/2021275845692883345",
           "media": [
             {
               "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2020972617138917376/img/fI-8EPgbq-YUVDVx.jpg",
-              "display_url": "pic.x.com/lMv3UKmR47",
-              "expanded_url": "https://x.com/LumaLabsAI/status/2020972783568814493/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2020972617138917376/vid/avc1/1920x816/WWRmORCaN-jltdUD.mp4",
-              "duration_millis": 31083
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2021262834886475776/img/tPGXGjKCXuY7_fD2.jpg",
+              "display_url": "pic.x.com/nIImcJFkPP",
+              "expanded_url": "https://x.com/LumaLabsAI/status/2021275845692883345/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021262834886475776/vid/avc1/1920x1080/8kLMtAwYqpxuAigt.mp4",
+              "duration_millis": 27041
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Craft story-driven ads in native 1080p with Ray3.14. Direct characters and scenes, shaping motion with intention instead of guesswork. Visual style and character identity hold together across frames, making it ideal for cinematic storytelling. Available now in Dream Machine. https://t.co/lMv3UKmR47"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "cursor",
-      "name": "Cursor",
-      "xHandle": "cursor_ai",
-      "category": "coding",
-      "categoryLabel": "Coding",
-      "brandColor": "#000000",
-      "logo": "💻",
-      "company": "Anysphere",
-      "description": "AI destekli kod editörü",
-      "tweets": [
-        {
-          "id": "2020968663545938147",
-          "text": "Daha fazla bilgi edin: https://t.co/aUajAJ3BjH",
-          "createdAt": "2026-02-09T21:10:51.000Z",
-          "metrics": {
-            "like_count": 180,
-            "retweet_count": 7,
-            "reply_count": 6,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 3
-          },
-          "url": "https://twitter.com/cursor_ai/status/2020968663545938147",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Learn more: https://t.co/aUajAJ3BjH"
-        },
-        {
-          "id": "2020968661142380971",
-          "text": "Composer 1.5 artık kullanılabilir.\n\nZekâ ve hız arasında güçlü bir denge kurduğunu gördük. https://t.co/jK92KCL5ku",
-          "createdAt": "2026-02-09T21:10:51.000Z",
-          "metrics": {
-            "like_count": 1432,
-            "retweet_count": 152,
-            "reply_count": 111,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 154
-          },
-          "url": "https://twitter.com/cursor_ai/status/2020968661142380971",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvr7NcaAAQOPql.png",
-              "display_url": "pic.x.com/jK92KCL5ku",
-              "expanded_url": "https://x.com/cursor_ai/status/2020968661142380971/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Composer 1.5 is now available.\n\nWe’ve found it to strike a strong balance between intelligence and speed. https://t.co/jK92KCL5ku"
-        },
-        {
-          "id": "2020921643145519249",
-          "text": "GPT-5.3 Codex artık Cursor'da mevcut!\n\n5.2'den belirgin şekilde daha hızlı ve artık mühendislerimizin çoğu için tercih edilen model.",
-          "createdAt": "2026-02-09T18:04:01.000Z",
-          "metrics": {
-            "like_count": 2863,
-            "retweet_count": 149,
-            "reply_count": 148,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 82
-          },
-          "url": "https://twitter.com/cursor_ai/status/2020921643145519249",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "GPT-5.3 Codex is now available in Cursor!\n\nIt's noticeably faster than 5.2 and is now the preferred model for many of our engineers."
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "perplexity",
-      "name": "Perplexity",
-      "xHandle": "perplexity_ai",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#22C55E",
-      "logo": "🔍",
-      "company": "Perplexity AI",
-      "description": "AI destekli arama motoru",
-      "tweets": [
-        {
-          "id": "2020962433591017492",
-          "text": "Perplexity Deep Research artık Opus 4.6 üzerinde çalışıyor, mevcut en iyi sonuçlarımızı dahili ve harici kıyaslamalarda daha da geliştiriyor.\n\nŞu anda Max kullanıcıları için kullanılabilir ve kademeli olarak Pro kullanıcılarına yayılıyor. https://t.co/O3I98DNbSR",
-          "createdAt": "2026-02-09T20:46:06.000Z",
-          "metrics": {
-            "like_count": 764,
-            "retweet_count": 47,
-            "reply_count": 51,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 8
-          },
-          "url": "https://twitter.com/perplexity_ai/status/2020962433591017492",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvmnsFawAAQQqs.png",
-              "display_url": "pic.x.com/O3I98DNbSR",
-              "expanded_url": "https://x.com/perplexity_ai/status/2020962433591017492/photo/1"
-            }
-          ],
-          "quotedTweet": {
-            "id": "2019126571521761450",
-            "text": "We've upgraded Deep Research in Perplexity.\n\nPerplexity Deep Research achieves state-of-the-art performance on leading external benchmarks, outperforming other deep research tools on accuracy and reliability.\n\nAvailable now for Max users. Rolling out to Pro in the coming days. https://t.co/8RAlewuWa3",
-            "author": {
-              "name": "Perplexity",
-              "handle": "perplexity_ai"
-            },
-            "media": [
-              {
-                "type": "photo",
-                "url": "https://pbs.twimg.com/media/HAVg6sWacAIlAQK.png",
-                "display_url": "pic.x.com/8RAlewuWa3",
-                "expanded_url": "https://x.com/perplexity_ai/status/2019126571521761450/photo/1"
-              }
-            ],
-            "url": "https://twitter.com/perplexity_ai/status/2019126571521761450"
-          },
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Perplexity Deep Research now runs on Opus 4.6, improving our existing state-of-the-art results on internal and external benchmarks even further.\n\nAvailable now for Max users, and gradually rolling out to Pro users. https://t.co/O3I98DNbSR"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "gemini",
-      "name": "Gemini",
-      "xHandle": "GoogleDeepMind",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#4285F4",
-      "logo": "✨",
-      "company": "Google",
-      "description": "Google'ın çok modlu AI modeli",
-      "tweets": [
-        {
-          "id": "2020933699211080029",
-          "text": "Bu araştırmayı daha da desteklemek için, verilerle çalışmak, yeni keşifleri ve bilimsel içgörüleri ölçekte desteklemek amacıyla @GoogleResearch ile uçtan uca bir demo oluşturduk.\n\nDaha fazlasını öğrenin → https://t.co/J2t88lShIh",
-          "createdAt": "2026-02-09T18:51:55.000Z",
-          "metrics": {
-            "like_count": 48,
-            "retweet_count": 4,
-            "reply_count": 1,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933699211080029",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "To support this research further, we’ve created an end-to-end demo with @GoogleResearch for working with the data, supporting new discoveries and scientific insights at scale.  \n\nFind out more →  https://t.co/J2t88lShIh"
-        },
-        {
-          "id": "2020933697084576102",
-          "text": "Perch 2.0'ın kuş verilerini su altı seslerine aktarmada bu kadar başarılı olmasının nedenlerini şöyle inanıyoruz:\n\nGenelleme: Eğitiminde yer almayan sesleri uzmanlıkla kategorize edebilir.\nBenzer sesleri sınıflandırma: Detaylı akustik özellikleri öğrenmeye zorlanır.\nTanıma https://t.co/pbKmQkU8gh",
-          "createdAt": "2026-02-09T18:51:55.000Z",
-          "metrics": {
-            "like_count": 74,
-            "retweet_count": 4,
-            "reply_count": 2,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 3
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933697084576102",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvMO21aAAEJWv7.jpg",
-              "display_url": "pic.x.com/pbKmQkU8gh",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2020933697084576102/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We believe Perch 2.0 is so successful at transferring bird data to underwater sounds because of its ability to:\n\nGeneralize: it can expertly categorize sounds not included in its training.\nClassify similar sounds: it’s forced to learn detailed acoustic features.\nRecognise https://t.co/pbKmQkU8gh"
-        },
-        {
-          "id": "2020933694148538383",
-          "text": "Perch 2.0, bir dizi balina vokalizasyonu görevinde değerlendirildi: farklı balen balina türlerini ve katil balina alt popülasyonlarını ayırt etme.\n\nÖnceden eğitilmiş modellerle karşılaştırıldığında, her veri seti ve örnek için tutarlı bir şekilde en iyi veya ikinci en iyi performans gösteren model oldu. https://t.co/evjgmdMWeA",
-          "createdAt": "2026-02-09T18:51:54.000Z",
-          "metrics": {
-            "like_count": 120,
-            "retweet_count": 11,
-            "reply_count": 5,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933694148538383",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvMCfRaAAAEkqh.jpg",
-              "display_url": "pic.x.com/evjgmdMWeA",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2020933694148538383/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Perch 2.0 was evaluated on a range of whale vocalization tasks: distinguishing different baleen whale species, and killer whale subpopulations.\n\nCompared against pre-trained models, it landed consistently in the top or second-best performing model for each dataset and sample https://t.co/evjgmdMWeA"
-        },
-        {
-          "id": "2020933690210037993",
-          "text": "Perch 2.0'ın su altı ses tanıma yeteneklerini genişletmek için transfer öğreniminden yararlandık.\n\nÖnceden eğitilmiş model zaten sesi anlayabiliyor, bu yüzden ona sadece sürecin son adımı için yeni parametreler öğreterek yeni bir türe uygulamasını sağladık. https://t.co/cxdQ5fmM5b",
-          "createdAt": "2026-02-09T18:51:53.000Z",
-          "metrics": {
-            "like_count": 60,
-            "retweet_count": 6,
-            "reply_count": 2,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933690210037993",
-          "media": [
-            {
-              "type": "animated_gif",
-              "url": "https://pbs.twimg.com/tweet_video_thumb/HAvL7XUaAAg3lDm.jpg",
-              "display_url": "pic.x.com/cxdQ5fmM5b",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2020933690210037993/photo/1",
-              "video_url": "https://video.twimg.com/tweet_video/HAvL7XUaAAg3lDm.mp4"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "To extend the capabilities of Perch 2.0 for underwater sound identification, we leveraged transfer learning.\n\nThe pre-trained model can already understand sound, so we teach it to learn new parameters only for the final step in the process, applying it to a new species. https://t.co/cxdQ5fmM5b"
-        },
-        {
-          "id": "2020933687257292954",
-          "text": "Okyanus, bir gizem \"ses manzarasıdır\". Su altı türlerini korumak için onları ölçekte tanımlamamız gerekiyor.\n\nYakın zamanda, eğitiminde hiç su altı sesi olmamasına rağmen deniz doğrulama görevlerinde mükemmel performans gösteren Perch 2.0'ı başlattık.\n\nhttps://t.co/Z16r8njDZK",
-          "createdAt": "2026-02-09T18:51:52.000Z",
-          "metrics": {
-            "like_count": 75,
-            "retweet_count": 13,
-            "reply_count": 4,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933687257292954",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/1986113056443629569/img/UymfDSUGVFHhpu0Q.jpg",
-              "display_url": "pic.x.com/Z16r8njDZK",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/1986117235350417439/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/1986113056443629569/vid/avc1/1080x1080/tvtVhHrLbuvnxC_K.mp4",
-              "duration_millis": 19458
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "The ocean is a “soundscape” of mystery. To protect underwater species, we need to identify them at scale.\n\nRecently, we launched Perch 2.0, which excels at marine validation tasks - despite having no underwater audio in training.\n\nhttps://t.co/Z16r8njDZK"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "notebooklm",
-      "name": "NotebookLM",
-      "xHandle": "GoogleDeepMind",
-      "category": "productivity",
-      "categoryLabel": "Productivity",
-      "brandColor": "#4285F4",
-      "logo": "📓",
-      "company": "Google",
-      "description": "AI destekli not alma ve araştırma",
-      "tweets": [
-        {
-          "id": "2020933699211080029",
-          "text": "Bu araştırmayı daha da desteklemek için, verilerle çalışmak, yeni keşifleri ve bilimsel içgörüleri ölçekte desteklemek amacıyla @GoogleResearch ile uçtan uca bir demo oluşturduk.\n\nDaha fazlasını öğrenin → https://t.co/J2t88lShIh",
-          "createdAt": "2026-02-09T18:51:55.000Z",
-          "metrics": {
-            "like_count": 48,
-            "retweet_count": 4,
-            "reply_count": 1,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933699211080029",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "To support this research further, we’ve created an end-to-end demo with @GoogleResearch for working with the data, supporting new discoveries and scientific insights at scale.  \n\nFind out more →  https://t.co/J2t88lShIh"
-        },
-        {
-          "id": "2020933697084576102",
-          "text": "Perch 2.0'ın kuş verilerini su altı seslerine aktarmada bu kadar başarılı olmasının nedenlerini şöyle inanıyoruz:\n\nGenelleme: Eğitiminde yer almayan sesleri uzmanlıkla kategorize edebilir.\nBenzer sesleri sınıflandırma: Detaylı akustik özellikleri öğrenmeye zorlanır.\nTanıma https://t.co/pbKmQkU8gh",
-          "createdAt": "2026-02-09T18:51:55.000Z",
-          "metrics": {
-            "like_count": 74,
-            "retweet_count": 4,
-            "reply_count": 2,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 3
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933697084576102",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvMO21aAAEJWv7.jpg",
-              "display_url": "pic.x.com/pbKmQkU8gh",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2020933697084576102/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We believe Perch 2.0 is so successful at transferring bird data to underwater sounds because of its ability to:\n\nGeneralize: it can expertly categorize sounds not included in its training.\nClassify similar sounds: it’s forced to learn detailed acoustic features.\nRecognise https://t.co/pbKmQkU8gh"
-        },
-        {
-          "id": "2020933694148538383",
-          "text": "Perch 2.0, bir dizi balina vokalizasyonu görevinde değerlendirildi: farklı balen balina türlerini ve katil balina alt popülasyonlarını ayırt etme.\n\nÖnceden eğitilmiş modellerle karşılaştırıldığında, her veri seti ve örnek için tutarlı bir şekilde en iyi veya ikinci en iyi performans gösteren model oldu. https://t.co/evjgmdMWeA",
-          "createdAt": "2026-02-09T18:51:54.000Z",
-          "metrics": {
-            "like_count": 120,
-            "retweet_count": 11,
-            "reply_count": 5,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933694148538383",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAvMCfRaAAAEkqh.jpg",
-              "display_url": "pic.x.com/evjgmdMWeA",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2020933694148538383/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Perch 2.0 was evaluated on a range of whale vocalization tasks: distinguishing different baleen whale species, and killer whale subpopulations.\n\nCompared against pre-trained models, it landed consistently in the top or second-best performing model for each dataset and sample https://t.co/evjgmdMWeA"
-        },
-        {
-          "id": "2020933690210037993",
-          "text": "Perch 2.0'ın su altı ses tanıma yeteneklerini genişletmek için transfer öğreniminden yararlandık.\n\nÖnceden eğitilmiş model zaten sesi anlayabiliyor, bu yüzden ona sadece sürecin son adımı için yeni parametreler öğreterek yeni bir türe uygulamasını sağladık. https://t.co/cxdQ5fmM5b",
-          "createdAt": "2026-02-09T18:51:53.000Z",
-          "metrics": {
-            "like_count": 60,
-            "retweet_count": 6,
-            "reply_count": 2,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933690210037993",
-          "media": [
-            {
-              "type": "animated_gif",
-              "url": "https://pbs.twimg.com/tweet_video_thumb/HAvL7XUaAAg3lDm.jpg",
-              "display_url": "pic.x.com/cxdQ5fmM5b",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2020933690210037993/photo/1",
-              "video_url": "https://video.twimg.com/tweet_video/HAvL7XUaAAg3lDm.mp4"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "To extend the capabilities of Perch 2.0 for underwater sound identification, we leveraged transfer learning.\n\nThe pre-trained model can already understand sound, so we teach it to learn new parameters only for the final step in the process, applying it to a new species. https://t.co/cxdQ5fmM5b"
-        },
-        {
-          "id": "2020933687257292954",
-          "text": "Okyanus, bir gizem \"ses manzarasıdır\". Su altı türlerini korumak için onları ölçekte tanımlamamız gerekiyor.\n\nYakın zamanda, eğitiminde hiç su altı sesi olmamasına rağmen deniz doğrulama görevlerinde mükemmel performans gösteren Perch 2.0'ı başlattık.\n\nhttps://t.co/Z16r8njDZK",
-          "createdAt": "2026-02-09T18:51:52.000Z",
-          "metrics": {
-            "like_count": 75,
-            "retweet_count": 13,
-            "reply_count": 4,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2020933687257292954",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/1986113056443629569/img/UymfDSUGVFHhpu0Q.jpg",
-              "display_url": "pic.x.com/Z16r8njDZK",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/1986117235350417439/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/1986113056443629569/vid/avc1/1080x1080/tvtVhHrLbuvnxC_K.mp4",
-              "duration_millis": 19458
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "The ocean is a “soundscape” of mystery. To protect underwater species, we need to identify them at scale.\n\nRecently, we launched Perch 2.0, which excels at marine validation tasks - despite having no underwater audio in training.\n\nhttps://t.co/Z16r8njDZK"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "claude",
-      "name": "Claude",
-      "xHandle": "AnthropicAI",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#CC785C",
-      "logo": "🧠",
-      "company": "Anthropic",
-      "description": "Anthropic'ın güvenli AI asistanı",
-      "tweets": [
-        {
-          "id": "2020908471936323584",
-          "text": "Takım ve Kurumsal planlardaki kar amacı gütmeyen kuruluşlar artık en yetenekli modelimiz Claude Opus 4.6'ya ek ücret ödemeden erişebiliyor.\n\nKar amacı gütmeyen kuruluşlar toplumun en zorlu sorunlarıyla mücadele ediyor. Sınır AI araçları, etkilerini en üst düzeye çıkarmalarına yardımcı olabilir.\n\nDaha fazla bilgi: https://t.co/6N9SGeiPyL",
-          "createdAt": "2026-02-09T17:11:41.000Z",
-          "metrics": {
-            "like_count": 1507,
-            "retweet_count": 114,
-            "reply_count": 136,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 23
-          },
-          "url": "https://twitter.com/AnthropicAI/status/2020908471936323584",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Nonprofits on Team and Enterprise plans now have access to Claude Opus 4.6, our most capable model, at no extra cost.\n\nNonprofits tackle some of society’s most difficult problems. Frontier AI tools can help maximize their impact.\n\nLearn more: https://t.co/6N9SGeiPyL"
+          "originalText": "Midnight Tokyo - 真夜中の東京 https://t.co/nIImcJFkPP"
         }
       ],
       "source": "syndication"
@@ -902,97 +456,119 @@
       "description": "Gerçekçi AI ses sentezi",
       "tweets": [
         {
-          "id": "2020906316634399178",
-          "text": "Bir hikayeniz varsa, bir sesli kitabınız da olabilir.\n\nSesli Kitaplarla bugün üretmeye başlayın: https://t.co/HS6LXPdLfU https://t.co/MHEvgoNdjI",
-          "createdAt": "2026-02-09T17:03:07.000Z",
+          "id": "2021237348097225151",
+          "text": "Expressive Mode, ekiplerin duygusal olarak ifade gücü yüksek, marka kimliğine uygun, doğru anda yanıt veren ve gerçek müşteri duygularına uyum sağlayan konuşma ajanları dağıtmasına yardımcı olur - böylece müşteriler işlemden geçirilmiş değil, yardım görmüş hisseder.\n\nDeneyin: https://t.co/qEGn0ZJxrB\n\nDaha fazla bilgi: https://t.co/k5DPy1rBCy",
+          "createdAt": "2026-02-10T14:58:31.000Z",
           "metrics": {
-            "like_count": 14,
+            "like_count": 15,
             "retweet_count": 0,
-            "reply_count": 1,
+            "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/elevenlabsio/status/2020906316634399178",
+          "url": "https://twitter.com/elevenlabsio/status/2021237348097225151",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Expressive Mode helps teams deploy emotionally expressive conversational agents that sound on-brand, respond at the right moment, and adapt to real customer emotion - so customers feel helped, not processed.\n\nTry it: https://t.co/qEGn0ZJxrB\n\nLearn more: https://t.co/k5DPy1rBCy"
+        },
+        {
+          "id": "2021237346071404965",
+          "text": "Expressive Mode, duygusal nüansı 70'ten fazla dilde ölçeklendirerek, Hintçe gibi nüansın daha önce geride kaldığı dillerde ve lehçelerde sunumu iyileştirir. https://t.co/2JDsKvjFQ7",
+          "createdAt": "2026-02-10T14:58:30.000Z",
+          "metrics": {
+            "like_count": 29,
+            "retweet_count": 1,
+            "reply_count": 4,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 1
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2021237346071404965",
           "media": [
             {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HAuzaQRXMAAakwJ.jpg",
-              "display_url": "pic.x.com/MHEvgoNdjI",
-              "expanded_url": "https://x.com/elevenlabsio/status/2020906316634399178/photo/1"
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2021235264132153346/img/u_dlK2rHYxBfc0I-.jpg",
+              "display_url": "pic.x.com/2JDsKvjFQ7",
+              "expanded_url": "https://x.com/elevenlabsio/status/2021237346071404965/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021235264132153346/vid/avc1/1920x1080/konH62w9lLeeq8sT.mp4",
+              "duration_millis": 68500
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "If you have a story, you can have an audiobook.\n\nStart creating with Audiobooks today: https://t.co/HS6LXPdLfU https://t.co/MHEvgoNdjI"
+          "originalText": "Expressive Mode scales emotional nuance across 70+ languages, improving delivery in languages and dialects where nuance previously lagged, such as Hindi. https://t.co/2JDsKvjFQ7"
         },
         {
-          "id": "2020906315694960777",
-          "text": "Sesli hikaye üreten ve ölçeklendiren kişiler için tasarlandı.\n- Bağımsız yazarlar.\n- Kurgu ve seri hikaye anlatıcıları.\n- Sözlü performans yaratıcıları.\n- Sesli içeriği ölçekli üreten yayıncılar.",
-          "createdAt": "2026-02-09T17:03:06.000Z",
-          "metrics": {
-            "like_count": 10,
-            "retweet_count": 0,
-            "reply_count": 1,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/elevenlabsio/status/2020906315694960777",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Built for people who create and scale audio stories.\n- Independent authors.\n- Fiction and serialized storytellers.\n- Spoken-word creators.\n- Publishers producing audio at scale."
-        },
-        {
-          "id": "2020906314826731972",
-          "text": "Ardından, hazır olduğunuzda doğrudan ElevenReader'a yayınlayın.\n\nEk kurulum gerektirmeden ve araçlar arasında geçiş yapmadan, başlıca dinleme platformlarına dağıtın.\n\nAraçlar veya platformlar arasında atlamadan sesli hikayeler üretin, iyileştirin ve yayınlayın.",
-          "createdAt": "2026-02-09T17:03:06.000Z",
-          "metrics": {
-            "like_count": 3,
-            "retweet_count": 0,
-            "reply_count": 1,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/elevenlabsio/status/2020906314826731972",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Then, when you are ready, publish directly to ElevenReader. \n\nDistribute to major listening platforms with no additional setup, and without moving between tools.\n\nProduce, refine, and publish audio stories without jumping between tools or platforms."
-        },
-        {
-          "id": "2020906313929146635",
-          "text": "Anlatımınıza duygusal zenginliğe sahip, karaktere hazır AI seslerle güç katın.\n\nİnce diyaloglardan dramatik hikaye anlatımına kadar, her performans özellikle ifadeli olacak şekilde tasarlandı.",
-          "createdAt": "2026-02-09T17:03:06.000Z",
-          "metrics": {
-            "like_count": 2,
-            "retweet_count": 0,
-            "reply_count": 1,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/elevenlabsio/status/2020906313929146635",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Power your narration with emotionally rich, character-ready AI voices.\n\nFrom subtle dialogue to dramatic storytelling, every performance is expressive by design."
-        },
-        {
-          "id": "2020906312935043116",
-          "text": "Sürecinize uyan iş akışını seçin:\n- Hızlı tekrar için anında oluşturma\n- Detaylı ses yönetimi ve sahne sahne kontrol için stüdyo erişimi\n\nHikayenizin gerektirdiği hızda veya hassasiyette ilerleyin.",
-          "createdAt": "2026-02-09T17:03:06.000Z",
+          "id": "2021237343475163270",
+          "text": "Expressive Mode, bir şeyin nasıl söylendiğinden duyguyu çıkarmak için sektör lideri transkripsiyon modelimiz Scribe v2 Realtime'dan gelen sinyalleri kullanır.\n\nÖrneğin, yükselen tonlama ve kısa ünlemler genellikle hoş bir sürpriz veya rahatlama sinyali verir. https://t.co/2EvzU6hTgD",
+          "createdAt": "2026-02-10T14:58:30.000Z",
           "metrics": {
             "like_count": 12,
             "retweet_count": 0,
+            "reply_count": 1,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2021237343475163270",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2021235121312186368/img/cX5QyVWbQLtp_oLv.jpg",
+              "display_url": "pic.x.com/2EvzU6hTgD",
+              "expanded_url": "https://x.com/elevenlabsio/status/2021237343475163270/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021235121312186368/vid/avc1/1920x1080/4I5Qpt9dM5VqiGNh.mp4",
+              "duration_millis": 23523
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Expressive Mode uses signals from our industry-leading transcription model, Scribe v2 Realtime, to infer emotion from how something is said.\n\nFor example, rising intonation and short exclamations often signal pleasant surprise or relief. https://t.co/2EvzU6hTgD"
+        },
+        {
+          "id": "2021237341101101261",
+          "text": "Expressive Mode, iki yükseltme ile güçlendirilmiştir.\n\nEleven v3 Conversational: Eleven v3 üzerine inşa edilen ve gerçek zamanlı diyalog için optimize edilmiş, en duygusal zekaya ve bağlam bilincine sahip Metinden Sese modelimiz.\n\nYeni bir sıra alma sistemi: daha az kesintiyle, zamanlaması daha iyi yanıtlar.\n\nBunlar",
+          "createdAt": "2026-02-10T14:58:29.000Z",
+          "metrics": {
+            "like_count": 27,
+            "retweet_count": 1,
+            "reply_count": 1,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2021237341101101261",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Expressive Mode is powered by two upgrades.\n\nEleven v3 Conversational: our most emotionally intelligent, context-aware Text to Speech model, built on Eleven v3 and optimized for real-time dialogue.\n\nA new turn-taking system: better-timed responses with fewer interruptions.\n\nThese"
+        },
+        {
+          "id": "2021237339213709634",
+          "text": "Expressive Mode, ekiplere tonda benzeri görülmemiş bir kontrol sağlar - böylece ajanlar, baskı altında bile konuşmaları yatıştırabilir, güven verebilir ve net bir çözüme yönlendirebilir.\n\nİşte panikleyen bir müşteriyi rahatlatan bir ajan. https://t.co/zIyhHldd4M",
+          "createdAt": "2026-02-10T14:58:29.000Z",
+          "metrics": {
+            "like_count": 40,
+            "retweet_count": 2,
             "reply_count": 2,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/elevenlabsio/status/2020906312935043116",
+          "url": "https://twitter.com/elevenlabsio/status/2021237339213709634",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2021234996451868673/img/zCZcHV_e5u_EtPN6.jpg",
+              "display_url": "pic.x.com/zIyhHldd4M",
+              "expanded_url": "https://x.com/elevenlabsio/status/2021237339213709634/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021234996451868673/vid/avc1/1920x1080/va6bQVLPQQV6CfGl.mp4",
+              "duration_millis": 49299
+            }
+          ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Choose the workflow that fits your process:\n- Instant creation for fast iteration\n- Studio access for detailed voice direction and scene-by-scene control\n\nMove as fast or as precisely as your story demands."
+          "originalText": "Expressive Mode gives teams unprecedented control over tone - so agents can de-escalate, reassure, and guide conversations to a clear resolution, even under pressure.\n\nHere’s an agent reassuring a panicked customer. https://t.co/zIyhHldd4M"
         }
       ],
       "source": "syndication"
@@ -1009,31 +585,85 @@
       "description": "Yaratıcı AI video araçları",
       "tweets": [
         {
-          "id": "2020875742490349703",
-          "text": "Tek bir görselden, tutarlı karakterler ve dünya tasarımıyla dolu bir hikaye oluşturun: Story Panels, Panel Upscaler ve Gen-4.5 Image to Video ile. https://t.co/hobUqMkMFo",
-          "createdAt": "2026-02-09T15:01:37.000Z",
+          "id": "2021223546257555659",
+          "text": "Daha fazla bilgi: https://t.co/Ll7IQsZ3fO",
+          "createdAt": "2026-02-10T14:03:40.000Z",
           "metrics": {
-            "like_count": 151,
-            "retweet_count": 16,
-            "reply_count": 13,
+            "like_count": 16,
+            "retweet_count": 2,
+            "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 5
+            "quote_count": 0
           },
-          "url": "https://twitter.com/runwayml/status/2020875742490349703",
+          "url": "https://twitter.com/runwayml/status/2021223546257555659",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Learn more: https://t.co/Ll7IQsZ3fO"
+        },
+        {
+          "id": "2021223543724183732",
+          "text": "Dünya modelleri, çağımızın en dönüştürücü teknolojisi. Runway'deki misyonumuz, onların gelişimini hızlandırmak ve dünya üzerinde olumlu bir etkiye sahip olmalarını sağlamak. Bu çalışmayı ilerletmek için bugün 315 milyon dolarlık Seri E finansmanını duyuruyoruz.\n\nDaha fazla bilgi: https://t.co/lR2iEks8tP",
+          "createdAt": "2026-02-10T14:03:39.000Z",
+          "metrics": {
+            "like_count": 191,
+            "retweet_count": 34,
+            "reply_count": 14,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 20
+          },
+          "url": "https://twitter.com/runwayml/status/2021223543724183732",
           "media": [
             {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2020874971216580608/img/dZFWN9XZFIQ063AT.jpg",
-              "display_url": "pic.x.com/hobUqMkMFo",
-              "expanded_url": "https://x.com/runwayml/status/2020875742490349703/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2020874971216580608/vid/avc1/1080x1920/Dg_Zcl2sPpU_37CL.mp4",
-              "duration_millis": 40937
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HAzUAfsaAAEQPGS.jpg",
+              "display_url": "pic.x.com/lR2iEks8tP",
+              "expanded_url": "https://x.com/runwayml/status/2021223543724183732/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Turn a single image into a full story with consistent characters and world design with Story Panels, Panel Upscaler and Gen-4.5 Image to Video. https://t.co/hobUqMkMFo"
+          "originalText": "World models are the most transformative technology of our time. Our mission at Runway is to accelerate their development and ensure they have a positive impact on the world. Today we're announcing $315 million in Series E funding to help advance this work.\n\nLearn more at the https://t.co/lR2iEks8tP"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "kimiai",
+      "name": "Kimi",
+      "xHandle": "Kimi_Moonshot",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#6366F1",
+      "logo": "🌙",
+      "company": "Moonshot AI",
+      "description": "Moonshot AI'ın uzun bağlamlı modeli",
+      "tweets": [
+        {
+          "id": "2021141949416362381",
+          "text": "Kimi Agent Swarm blogu burada 🐝  \nhttps://t.co/XjPeoRVNxG\n\nKimi, bir uzman ekibi oluşturarak şunları yapabilir:\n\n- Çıktıyı ölçeklendir: çoklu dosya oluşturma (Word, Excel, PDF'ler, slaytlar)  \n- Araştırmayı ölçeklendir: 2000–2025 haberlerinin paralel analizi  \n- Yaratıcılığı ölçeklendir: 20 yazım stilinde bir kitap https://t.co/ElTzf3ksQe",
+          "createdAt": "2026-02-10T08:39:26.000Z",
+          "metrics": {
+            "like_count": 1264,
+            "retweet_count": 109,
+            "reply_count": 50,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 28
+          },
+          "url": "https://twitter.com/Kimi_Moonshot/status/2021141949416362381",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HAyIkZjaAAEXep-.jpg",
+              "display_url": "pic.x.com/ElTzf3ksQe",
+              "expanded_url": "https://x.com/Kimi_Moonshot/status/2021141949416362381/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Kimi Agent Swarm blog is here 🐝  \nhttps://t.co/XjPeoRVNxG\n\nKimi can spawn a team of specialists to:\n\n- Scale output: multi-file generation (Word, Excel, PDFs, slides)  \n- Scale research: parallel analysis of news from 2000–2025  \n- Scale creativity: a book in 20 writing styles https://t.co/ElTzf3ksQe"
         }
       ],
       "source": "syndication"
