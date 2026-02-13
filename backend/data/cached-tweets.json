@@ -1,9 +1,163 @@
 {
-  "fetchedAt": "2026-02-12T08:15:28.320Z",
+  "fetchedAt": "2026-02-13T08:15:52.247Z",
   "source": "syndication+deepseek",
-  "toolCount": 8,
-  "tweetCount": 13,
+  "toolCount": 14,
+  "tweetCount": 30,
   "data": [
+    {
+      "tool": "kimiai",
+      "name": "Kimi",
+      "xHandle": "Kimi_Moonshot",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#6366F1",
+      "logo": "🌙",
+      "company": "Moonshot AI",
+      "description": "Moonshot AI'ın uzun bağlamlı modeli",
+      "tweets": [
+        {
+          "id": "2022109533716533612",
+          "text": "\"Mooncake, Kimi (Moonshot AI) ve Tsinghua Üniversitesi'nin araştırma işbirliğinden doğdu. Kimi K-Serisi gibi devasa ölçekli modellerin servis edilmesindeki 'bellek duvarı' sorununu çözme ihtiyacından ortaya çıktı. Açık kaynak olarak yayınlandıktan sonra, gelişen bir topluluk odaklı ekosisteme dönüştü.",
+          "createdAt": "2026-02-13T00:44:16.000Z",
+          "metrics": {
+            "like_count": 516,
+            "retweet_count": 39,
+            "reply_count": 14,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/Kimi_Moonshot/status/2022109533716533612",
+          "quotedTweet": {
+            "id": "2022079425001504933",
+            "text": "We’re excited to welcome Mooncake to the PyTorch Ecosystem!\n\nMooncake is designed to solve the “memory wall” in LLM serving. By integrating Mooncake’s high performance KVCache transfer and storage capabilities with PyTorch native inference engines like SGLang, vLLM, and https://t.co/lTWz8Ek9Kc",
+            "author": {
+              "name": "PyTorch",
+              "handle": "PyTorch"
+            },
+            "media": [
+              {
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/HA_ehVDWMAAzfMv.jpg",
+                "display_url": "pic.x.com/lTWz8Ek9Kc",
+                "expanded_url": "https://x.com/PyTorch/status/2022079425001504933/photo/1"
+              }
+            ],
+            "url": "https://twitter.com/PyTorch/status/2022079425001504933"
+          },
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "\"Mooncake originated from a research collaboration between Kimi(Moonshot AI) and Tsinghua University. It was born from the need to solve the 'memory wall' in serving massive-scale models like Kimi K-Series. Since open-sourcing, it has evolved into a thriving community-driven"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "github-copilot",
+      "name": "GitHub Copilot",
+      "xHandle": "github",
+      "category": "coding",
+      "categoryLabel": "Coding",
+      "brandColor": "#6E40C9",
+      "logo": "🐙",
+      "company": "GitHub",
+      "description": "GitHub'ın AI kod asistanı",
+      "tweets": [
+        {
+          "id": "2022068273357914316",
+          "text": "Açık kaynak hiç olmadığı kadar hızlı büyüyor. Ancak bu büyümeyi yönetmek için, bakım yapanların ölçeklenmek için daha iyi araçlara ihtiyacı var. ⚒️\n\nİşte bakımı daha kolay, daha sakin ve daha sürdürülebilir hale getirme planımız. 👇\nhttps://t.co/Q73XafhP7j",
+          "createdAt": "2026-02-12T22:00:19.000Z",
+          "metrics": {
+            "like_count": 60,
+            "retweet_count": 11,
+            "reply_count": 3,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 4
+          },
+          "url": "https://twitter.com/github/status/2022068273357914316",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Open source is growing faster than ever. But to manage that growth, maintainers need better tools to scale. ⚒️ \n\nHere's our plan to make maintaining easier, quieter, and more sustainable. 👇\nhttps://t.co/Q73XafhP7j"
+        },
+        {
+          "id": "2022030662090244257",
+          "text": "@cameronfoxly'nin istediği araç mevcut değildi. Bu yüzden Copilot ile 30 dakikadan kısa sürede kendisi yaptı. 👀 İşte nasıl yaptığı. ▶️ https://t.co/EdkOe4qFRH",
+          "createdAt": "2026-02-12T19:30:52.000Z",
+          "metrics": {
+            "like_count": 84,
+            "retweet_count": 12,
+            "reply_count": 6,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 2
+          },
+          "url": "https://twitter.com/github/status/2022030662090244257",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2022030473740881920/img/ok3IyRgjcLTG6vx1.jpg",
+              "display_url": "pic.x.com/EdkOe4qFRH",
+              "expanded_url": "https://x.com/github/status/2022030662090244257/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2022030473740881920/vid/avc1/720x1280/IYJvmHm1Y7D1cPXr.mp4?tag=14",
+              "duration_millis": 70945
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "The tool @cameronfoxly wanted didn’t exist. So he built it with Copilot, in under 30 minutes. 👀 Here’s how he did it. ▶️ https://t.co/EdkOe4qFRH"
+        },
+        {
+          "id": "2021956857573851262",
+          "text": "RT @marlene_zw: @excalidraw'ın bir MCP Uygulaması olarak bu kullanımını gerçekten çok sevdim😍 Ben de bunu ve @github copilot sdk'sını kullanarak sohbet geçmişini görselleştiren bir uygulama yaptım…",
+          "createdAt": "2026-02-12T14:37:35.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 43,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/github/status/2021956857573851262",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @marlene_zw: Really love this use of @excalidraw as an MCP App😍 I made an app using this and the @github copilot sdk to visualise the ch…"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "copilot",
+      "name": "Microsoft Copilot",
+      "xHandle": "Microsoft",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#00A4EF",
+      "logo": "🔷",
+      "company": "Microsoft",
+      "description": "Microsoft'un entegre AI asistanı",
+      "tweets": [
+        {
+          "id": "2022049875710632145",
+          "text": "RT @BradSmi: Sık sık söylerim, @Microsoft gezegendeki en cömert şirkettir ve 2025 çalışan bağış rakamlarımız bunu kanıtlıyor. Gurur duyuyor…",
+          "createdAt": "2026-02-12T20:47:12.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 22,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/Microsoft/status/2022049875710632145",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @BradSmi: I often say that @Microsoft is the most generous company on the planet, and our 2025 employee giving numbers prove it. I’m pro…"
+        }
+      ],
+      "source": "syndication"
+    },
     {
       "tool": "cursor",
       "name": "Cursor",
@@ -16,77 +170,65 @@
       "description": "AI destekli kod editörü",
       "tweets": [
         {
-          "id": "2021765378309816403",
-          "text": "Daha fazla bilgi: https://t.co/rckwUJSG3d",
-          "createdAt": "2026-02-12T01:56:43.000Z",
+          "id": "2022046181556379717",
+          "text": "Bu çalışma, geçen ayki araştırmamızın üzerine inşa edilmiştir.\n\nhttps://t.co/bcsbWS0fLC",
+          "createdAt": "2026-02-12T20:32:32.000Z",
           "metrics": {
-            "like_count": 73,
+            "like_count": 81,
             "retweet_count": 2,
-            "reply_count": 2,
+            "reply_count": 4,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/cursor_ai/status/2021765378309816403",
+          "url": "https://twitter.com/cursor_ai/status/2022046181556379717",
+          "quotedTweet": {
+            "id": "2019456112806732159",
+            "text": "We've been working on very long-running coding agents.\n\nIn a recent week-long run, our system peaked at over 1,000 commits per hour across hundreds of agents.\n\nWe're sharing our findings and an early research preview inside Cursor. https://t.co/Xo76WER6L1",
+            "author": {
+              "name": "Cursor",
+              "handle": "cursor_ai"
+            },
+            "media": [
+              {
+                "type": "video",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2019455981134958592/img/yXjKluGw9w-uU0tZ.jpg",
+                "display_url": "pic.x.com/Xo76WER6L1",
+                "expanded_url": "https://x.com/cursor_ai/status/2019456112806732159/video/1",
+                "video_url": "https://video.twimg.com/amplify_video/2019455981134958592/vid/avc1/2724x1640/o0INM8sH7uhpwJ4c.mp4",
+                "duration_millis": 14786
+              }
+            ],
+            "url": "https://twitter.com/cursor_ai/status/2019456112806732159"
+          },
           "isMock": false,
           "source": "syndication",
-          "originalText": "Learn more: https://t.co/rckwUJSG3d"
+          "originalText": "This work builds on our research from last month.\n\nhttps://t.co/bcsbWS0fLC"
         },
         {
-          "id": "2021765377085308938",
-          "text": "Tüm bireysel planlar için Auto ve Composer 1.5 limitlerini artırdık.\n\nBireysel planlar artık Composer 1.5 için Composer 1'e kıyasla 3 kat daha fazla kullanım hakkına sahip. Sınırlı bir süre için (16 Şubat'a kadar) bunu 6 kata çıkarıyoruz.",
-          "createdAt": "2026-02-12T01:56:43.000Z",
+          "id": "2022046178708492445",
+          "text": "Uzun süreli çalışan agent'lar artık Ultra, Teams ve Enterprise planları için https://t.co/3PT8c7azU3 adresinde mevcut.\n\nYeni kontrol sistemimizle, agent'lar çok daha büyük görevleri tamamlayabilir.\n\nhttps://t.co/7p57WeR04t https://t.co/pGePEFRPTT",
+          "createdAt": "2026-02-12T20:32:31.000Z",
           "metrics": {
-            "like_count": 661,
-            "retweet_count": 39,
-            "reply_count": 53,
+            "like_count": 612,
+            "retweet_count": 58,
+            "reply_count": 35,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 22
+            "quote_count": 41
           },
-          "url": "https://twitter.com/cursor_ai/status/2021765377085308938",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We've raised limits for Auto and Composer 1.5 for all individual plans.\n\nIndividual plans now have 3x usage of Composer 1.5 versus Composer 1. For a limited time (through February 16), we're increasing that to 6x."
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "poe",
-      "name": "Poe",
-      "xHandle": "poe_platform",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#A855F7",
-      "logo": "📚",
-      "company": "Quora",
-      "description": "Çoklu AI model platformu",
-      "tweets": [
-        {
-          "id": "2021759608151585193",
-          "text": "GLM-5 artık Poe'da kullanılabilir!\n\nİç testlerimizde GLM-5'in kodlama konusunda büyük bir ilerleme kaydettiğini gördük. Önceki açık ağırlıklı modellere kıyasla daha iyi uzun vadeli tutarlılık ve yürütme doğruluğu sergiliyor.\n\nTüm platformlardaki Poe uygulamasında ve https://t.co/uUHnjXWqOC adresinde deneyebilirsiniz.",
-          "createdAt": "2026-02-12T01:33:47.000Z",
-          "metrics": {
-            "like_count": 69,
-            "retweet_count": 6,
-            "reply_count": 7,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/poe_platform/status/2021759608151585193",
+          "url": "https://twitter.com/cursor_ai/status/2022046178708492445",
           "media": [
             {
               "type": "photo",
-              "url": "https://pbs.twimg.com/media/HA67dI6bsAAcyIX.jpg",
-              "display_url": "pic.x.com/uUHnjXWqOC",
-              "expanded_url": "https://x.com/poe_platform/status/2021759608151585193/photo/1"
+              "url": "https://pbs.twimg.com/media/HA--1ihWYAAMUmY.png",
+              "display_url": "pic.x.com/pGePEFRPTT",
+              "expanded_url": "https://x.com/cursor_ai/status/2022046178708492445/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "GLM-5 is now available on Poe!\n\nWe found GLM-5 to be a big step up in coding during testing as part of our internal benchmarks. It shows improved long-horizon coherence and execution fidelity relative to prior open-weight models.\n\nYou can try it in Poe app on all platforms and in https://t.co/uUHnjXWqOC"
+          "originalText": "Long-running agents are now available at https://t.co/3PT8c7azU3 for Ultra, Teams, and Enterprise plans.\n\nWith our new harness, agents can complete much larger tasks.\n\nhttps://t.co/7p57WeR04t https://t.co/pGePEFRPTT"
         }
       ],
       "source": "syndication"
@@ -103,46 +245,118 @@
       "description": "Google'ın çok modlu AI modeli",
       "tweets": [
         {
-          "id": "2021711361168863340",
-          "text": "RT @lmthang: IMO altın madalyasından 6 ay sonra, başka bir önemli dönüm noktasını paylaşmaktan heyecan duyuyorum: AI, bilgi keşfini hızlandırmaya yardımcı olabilir…",
-          "createdAt": "2026-02-11T22:22:04.000Z",
+          "id": "2022039378886062301",
+          "text": "RT @Google: Gemini 3 Deep Think'ın ilk test kullanıcıları sonuçları şimdiden görmeye başladı.\n\nBu modelin nasıl... olabileceğini araştırmak için araştırmacılarla ortaklık kurduk.",
+          "createdAt": "2026-02-12T20:05:30.000Z",
           "metrics": {
             "like_count": 0,
-            "retweet_count": 136,
+            "retweet_count": 69,
             "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/GoogleDeepMind/status/2021711361168863340",
+          "url": "https://twitter.com/GoogleDeepMind/status/2022039378886062301",
           "isMock": false,
           "source": "syndication",
-          "originalText": "RT @lmthang: 6 months in, after the IMO-gold achievement, I’m very excited to share another important  milestone: AI can help accelerate kn…"
+          "originalText": "RT @Google: Early testers of Gemini 3 Deep Think are already seeing results.\n\nWe partnered with researchers to explore how this model could…"
         },
         {
-          "id": "2021632302070026581",
-          "text": "AI daha iyi bir araştırma işbirlikçisi olarak nasıl davranabilir? 🧑‍🔬\n\n@GoogleResearch ile yaptığımız iki yeni makalede, Gemini Deep Think'ın matematik, fizik ve bilgisayar bilimlerindeki araştırma düzeyindeki problemleri çözmeye yardımcı olmak için ajanlı iş akışlarını nasıl kullandığını gösteriyoruz.\n\nDevamı → https://t.co/ISWedYjpgD https://t.co/LWDIwLzXNw",
-          "createdAt": "2026-02-11T17:07:55.000Z",
+          "id": "2021981517791342807",
+          "text": "Geliştirilmiş Deep Think modu, şu anda @GeminiApp'te Google AI Ultra aboneleri için yayına alınıyor.\n\nBilimsel araştırmacılar ve geliştiriciler için, API için bir Vertex AI Erken Erişim Programı başlatıyoruz. Keşfetmeye başlayın → https://t.co/8OhnV65pW5 https://t.co/WGSlntIFLc",
+          "createdAt": "2026-02-12T16:15:35.000Z",
           "metrics": {
-            "like_count": 1189,
-            "retweet_count": 176,
-            "reply_count": 73,
+            "like_count": 614,
+            "retweet_count": 34,
+            "reply_count": 13,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 25
+            "quote_count": 9
           },
-          "url": "https://twitter.com/GoogleDeepMind/status/2021632302070026581",
+          "url": "https://twitter.com/GoogleDeepMind/status/2021981517791342807",
           "media": [
             {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HA5HsnxbsAEXIQf.jpg",
-              "display_url": "pic.x.com/LWDIwLzXNw",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2021632302070026581/photo/1"
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2021976837015085056/img/4O7I0tEs9hcY5n6K.jpg",
+              "display_url": "pic.x.com/WGSlntIFLc",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981517791342807/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021976837015085056/vid/avc1/1920x1080/RfNpHtZ5rNw_vxr7.mp4",
+              "duration_millis": 26463
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "How could AI act as a better research collaborator? 🧑‍🔬\n\nIn two new papers with @GoogleResearch, we show how Gemini Deep Think uses agentic workflows to help solve research-level problems in mathematics, physics, and computer science.\n\nMore → https://t.co/ISWedYjpgD https://t.co/LWDIwLzXNw"
+          "originalText": "The upgraded Deep Think mode is rolling out now in the @GeminiApp for Google AI Ultra subscribers.\n\nFor scientific researchers and developers, we’re opening a Vertex AI Early Access Program for the API. Start discovering → https://t.co/8OhnV65pW5 https://t.co/WGSlntIFLc"
+        },
+        {
+          "id": "2021981510400709092",
+          "text": "Özel akıl yürütme modumuz Gemini 3 Deep Think'ı, modern bilim, araştırma ve mühendislik zorluklarını çözmeye yardımcı olmak için geliştirdik – zekânın sınırlarını zorluyor. 🧠\n\nDuke Üniversitesi'ndeki Wang Laboratuvarı'nın bunu yeni yarı iletken malzemeler tasarlamak için nasıl kullandığını izleyin. 🧵 https://t.co/BgSEmv00JP",
+          "createdAt": "2026-02-12T16:15:33.000Z",
+          "metrics": {
+            "like_count": 4768,
+            "retweet_count": 544,
+            "reply_count": 170,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 288
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2021981510400709092",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HA-GdlHWIAkrHzf.jpg",
+              "display_url": "pic.x.com/BgSEmv00JP",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981510400709092/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021976591442817024/vid/avc1/1080x1080/g4uZTZJuts9A5WGw.mp4",
+              "duration_millis": 88666
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We’ve upgraded our specialized reasoning mode Gemini 3 Deep Think to help solve modern science, research, and engineering challenges – pushing the frontier of intelligence. 🧠\n\nWatch how the Wang Lab at Duke University is using it to design new semiconductor materials. 🧵 https://t.co/BgSEmv00JP"
+        },
+        {
+          "id": "2021981512925585703",
+          "text": "En son Deep Think, soyut teorinin ötesine geçerek pratik uygulamaları yönlendiriyor.\n\nSınır AI akıl yürütmesi için bir kıyaslama olan ARC-AGI-2'de en son teknolojiyi temsil ediyor.\n\nİnsanlığın Son Sınavı'nda, matematik, bilim ve... alanlarındaki en zor problemleri ele alarak yeni bir standart belirliyor. https://t.co/Cm0PYDd2Cn",
+          "createdAt": "2026-02-12T16:15:33.000Z",
+          "metrics": {
+            "like_count": 1678,
+            "retweet_count": 205,
+            "reply_count": 73,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 166
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2021981512925585703",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA-DcI3XgAARAeF.png",
+              "display_url": "pic.x.com/Cm0PYDd2Cn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981512925585703/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA-DcJYaUAAtA0y.png",
+              "display_url": "pic.x.com/Cm0PYDd2Cn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981512925585703/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA-DoQdaIAASEXY.png",
+              "display_url": "pic.x.com/Cm0PYDd2Cn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981512925585703/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA-DoQmagAA9wym.png",
+              "display_url": "pic.x.com/Cm0PYDd2Cn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981512925585703/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "The latest Deep Think moves beyond abstract theory to drive practical applications.\n\nIt’s state-of-the-art on ARC-AGI-2, a benchmark for frontier AI reasoning.\n\nOn Humanity’s Last Exam, it sets a new standard, tackling the hardest problems across mathematics, science, and https://t.co/Cm0PYDd2Cn"
         }
       ],
       "source": "syndication"
@@ -159,46 +373,118 @@
       "description": "AI destekli not alma ve araştırma",
       "tweets": [
         {
-          "id": "2021711361168863340",
-          "text": "RT @lmthang: IMO altın madalyasından 6 ay sonra, başka bir önemli dönüm noktasını paylaşmaktan heyecan duyuyorum: AI, bilgi keşfini hızlandırmaya yardımcı olabilir…",
-          "createdAt": "2026-02-11T22:22:04.000Z",
+          "id": "2022039378886062301",
+          "text": "RT @Google: Gemini 3 Deep Think'ın ilk test kullanıcıları şimdiden sonuçları görmeye başladı.\n\nBu modelin nasıl... olabileceğini araştırmak için araştırmacılarla ortaklık kurduk.",
+          "createdAt": "2026-02-12T20:05:30.000Z",
           "metrics": {
             "like_count": 0,
-            "retweet_count": 136,
+            "retweet_count": 69,
             "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/GoogleDeepMind/status/2021711361168863340",
+          "url": "https://twitter.com/GoogleDeepMind/status/2022039378886062301",
           "isMock": false,
           "source": "syndication",
-          "originalText": "RT @lmthang: 6 months in, after the IMO-gold achievement, I’m very excited to share another important  milestone: AI can help accelerate kn…"
+          "originalText": "RT @Google: Early testers of Gemini 3 Deep Think are already seeing results.\n\nWe partnered with researchers to explore how this model could…"
         },
         {
-          "id": "2021632302070026581",
-          "text": "AI daha iyi bir araştırma işbirlikçisi olarak nasıl davranabilir? 🧑‍🔬\n\n@GoogleResearch ile yaptığımız iki yeni makalede, Gemini Deep Think'ın matematik, fizik ve bilgisayar bilimlerindeki araştırma düzeyindeki problemleri çözmeye yardımcı olmak için ajanlı iş akışlarını nasıl kullandığını gösteriyoruz.\n\nDevamı → https://t.co/ISWedYjpgD https://t.co/LWDIwLzXNw",
-          "createdAt": "2026-02-11T17:07:55.000Z",
+          "id": "2021981517791342807",
+          "text": "Güncellenmiş Deep Think modu, şu anda Google AI Ultra aboneleri için @GeminiApp'te yayına alınıyor.\n\nBilimsel araştırmacılar ve geliştiriciler için, API için bir Vertex AI Erken Erişim Programı başlatıyoruz. Keşfetmeye başlayın → https://t.co/8OhnV65pW5 https://t.co/WGSlntIFLc",
+          "createdAt": "2026-02-12T16:15:35.000Z",
           "metrics": {
-            "like_count": 1189,
-            "retweet_count": 176,
-            "reply_count": 73,
+            "like_count": 614,
+            "retweet_count": 34,
+            "reply_count": 13,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 25
+            "quote_count": 9
           },
-          "url": "https://twitter.com/GoogleDeepMind/status/2021632302070026581",
+          "url": "https://twitter.com/GoogleDeepMind/status/2021981517791342807",
           "media": [
             {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HA5HsnxbsAEXIQf.jpg",
-              "display_url": "pic.x.com/LWDIwLzXNw",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2021632302070026581/photo/1"
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2021976837015085056/img/4O7I0tEs9hcY5n6K.jpg",
+              "display_url": "pic.x.com/WGSlntIFLc",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981517791342807/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021976837015085056/vid/avc1/1920x1080/RfNpHtZ5rNw_vxr7.mp4",
+              "duration_millis": 26463
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "How could AI act as a better research collaborator? 🧑‍🔬\n\nIn two new papers with @GoogleResearch, we show how Gemini Deep Think uses agentic workflows to help solve research-level problems in mathematics, physics, and computer science.\n\nMore → https://t.co/ISWedYjpgD https://t.co/LWDIwLzXNw"
+          "originalText": "The upgraded Deep Think mode is rolling out now in the @GeminiApp for Google AI Ultra subscribers.\n\nFor scientific researchers and developers, we’re opening a Vertex AI Early Access Program for the API. Start discovering → https://t.co/8OhnV65pW5 https://t.co/WGSlntIFLc"
+        },
+        {
+          "id": "2021981510400709092",
+          "text": "Özel akıl yürütme modumuz Gemini 3 Deep Think'ı, modern bilim, araştırma ve mühendislik zorluklarını çözmeye yardımcı olmak için geliştirdik – zekânın sınırlarını zorluyor. 🧠\n\nDuke Üniversitesi'ndeki Wang Laboratuvarı'nın bunu yeni yarı iletken malzemeler tasarlamak için nasıl kullandığını izleyin. 🧵 https://t.co/BgSEmv00JP",
+          "createdAt": "2026-02-12T16:15:33.000Z",
+          "metrics": {
+            "like_count": 4768,
+            "retweet_count": 544,
+            "reply_count": 170,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 288
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2021981510400709092",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HA-GdlHWIAkrHzf.jpg",
+              "display_url": "pic.x.com/BgSEmv00JP",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981510400709092/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021976591442817024/vid/avc1/1080x1080/g4uZTZJuts9A5WGw.mp4",
+              "duration_millis": 88666
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We’ve upgraded our specialized reasoning mode Gemini 3 Deep Think to help solve modern science, research, and engineering challenges – pushing the frontier of intelligence. 🧠\n\nWatch how the Wang Lab at Duke University is using it to design new semiconductor materials. 🧵 https://t.co/BgSEmv00JP"
+        },
+        {
+          "id": "2021981512925585703",
+          "text": "En son Deep Think, soyut teorinin ötesine geçerek pratik uygulamaları yönlendiriyor.\n\nSınır AI akıl yürütmesi için bir kıyaslama olan ARC-AGI-2'de en son teknolojiyi temsil ediyor.\n\nİnsanlığın Son Sınavı'nda, matematik, bilim ve... alanlarındaki en zor problemleri ele alarak yeni bir standart belirliyor. https://t.co/Cm0PYDd2Cn",
+          "createdAt": "2026-02-12T16:15:33.000Z",
+          "metrics": {
+            "like_count": 1678,
+            "retweet_count": 205,
+            "reply_count": 73,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 166
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2021981512925585703",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA-DcI3XgAARAeF.png",
+              "display_url": "pic.x.com/Cm0PYDd2Cn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981512925585703/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA-DcJYaUAAtA0y.png",
+              "display_url": "pic.x.com/Cm0PYDd2Cn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981512925585703/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA-DoQdaIAASEXY.png",
+              "display_url": "pic.x.com/Cm0PYDd2Cn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981512925585703/photo/1"
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HA-DoQmagAA9wym.png",
+              "display_url": "pic.x.com/Cm0PYDd2Cn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2021981512925585703/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "The latest Deep Think moves beyond abstract theory to drive practical applications.\n\nIt’s state-of-the-art on ARC-AGI-2, a benchmark for frontier AI reasoning.\n\nOn Humanity’s Last Exam, it sets a new standard, tackling the hardest problems across mathematics, science, and https://t.co/Cm0PYDd2Cn"
         }
       ],
       "source": "syndication"
@@ -215,21 +501,55 @@
       "description": "Anthropic'ın güvenli AI asistanı",
       "tweets": [
         {
-          "id": "2021694494215901314",
-          "text": "Veri merkezlerimizden kaynaklanan elektrik fiyat artışlarını karşılamayı taahhüt ediyoruz.\n\nTüketicilerin bu maliyeti üstlenmemesi için şebeke yükseltme maliyetlerinin %100'ünü ödeyecek, yeni enerji kaynaklarını devreye almak için çalışacak ve şebeke yükünü azaltacak sistemlere yatırım yapacağız.\n\nDaha fazlası: https://t.co/avOFlvRNpa",
-          "createdAt": "2026-02-11T21:15:03.000Z",
+          "id": "2022023156513616220",
+          "text": "Yıllık gelirimiz 14 milyar dolar seviyesinde ve son 3 yılda her yıl 10 katın üzerinde büyüdü. Bu büyüme, kurumsal firmalar ve geliştiriciler için tercih edilen zeka platformu konumumuz sayesinde gerçekleşti.\n\nDevamını oku: https://t.co/aMRyOkFFSg",
+          "createdAt": "2026-02-12T19:01:02.000Z",
           "metrics": {
-            "like_count": 4111,
-            "retweet_count": 300,
-            "reply_count": 197,
+            "like_count": 1501,
+            "retweet_count": 78,
+            "reply_count": 55,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 127
+            "quote_count": 60
           },
-          "url": "https://twitter.com/AnthropicAI/status/2021694494215901314",
+          "url": "https://twitter.com/AnthropicAI/status/2022023156513616220",
           "isMock": false,
           "source": "syndication",
-          "originalText": "We're committing to cover electricity price increases from our data centers.\n\nTo ensure ratepayers aren’t picking up the tab, we'll pay 100% of grid upgrade costs, work to bring new power online, and invest in systems to reduce grid strain.\n\nRead more: https://t.co/avOFlvRNpa"
+          "originalText": "Our run-rate revenue is $14 billion, and has grown over 10x in each of the past 3 years. This growth has been driven by our position as the intelligence platform of choice for enterprises and developers.\n\nRead more: https://t.co/aMRyOkFFSg"
+        },
+        {
+          "id": "2022023155423002867",
+          "text": "380 milyar dolar değerleme ile 30 milyar dolar fon topladık.\n\nBu yatırım, araştırmalarımızı derinleştirmemize, ürünlerde yenilik yapmaya devam etmemize ve müşterilerimizin olduğu her yerde Claude'u sunarken altyapı genişletmemizi destekleyecek kaynaklara sahip olmamızı sağlayacak.",
+          "createdAt": "2026-02-12T19:01:02.000Z",
+          "metrics": {
+            "like_count": 13158,
+            "retweet_count": 800,
+            "reply_count": 855,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 675
+          },
+          "url": "https://twitter.com/AnthropicAI/status/2022023155423002867",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We’ve raised $30B in funding at a $380B post-money valuation.\n\nThis investment will help us deepen our research, continue to innovate in products, and ensure we have the resources to power our infrastructure expansion as we make Claude available everywhere our customers are."
+        },
+        {
+          "id": "2021921419026657362",
+          "text": "Yapay zeka, tarihteki herhangi bir teknolojiden daha hızlı benimseniyor. Doğru politikaları belirlemek için zaman daralıyor.\n\nBugün, konunun önemini anlayan insanları ve politikacıları harekete geçirecek yeni bir partilerüstü kuruluş olan Public First Action'a 20 milyon dolar katkı sağlıyoruz.\n\nhttps://t.co/y9ZQNQ1Q8W",
+          "createdAt": "2026-02-12T12:16:46.000Z",
+          "metrics": {
+            "like_count": 1362,
+            "retweet_count": 113,
+            "reply_count": 167,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 41
+          },
+          "url": "https://twitter.com/AnthropicAI/status/2021921419026657362",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "AI is being adopted faster than any technology in history. The window to get policy right is closing.\n\nToday we’re contributing $20m to Public First Action, a new bipartisan org that will mobilize people and politicians who understand what’s at stake.\n\nhttps://t.co/y9ZQNQ1Q8W"
         }
       ],
       "source": "syndication"
@@ -246,97 +566,288 @@
       "description": "Gerçekçi AI ses sentezi",
       "tweets": [
         {
-          "id": "2021674063413035471",
-          "text": "Tüm ana konuşmayı izleyin: \nhttps://t.co/TCzcTn6gCq https://t.co/YC9BAp5De1",
-          "createdAt": "2026-02-11T19:53:52.000Z",
+          "id": "2022017268595798249",
+          "text": "Tüm ana konuşmayı izleyin: https://t.co/TCzcTn6gCq https://t.co/o3SNKUltVW",
+          "createdAt": "2026-02-12T18:37:38.000Z",
           "metrics": {
-            "like_count": 12,
-            "retweet_count": 0,
-            "reply_count": 0,
+            "like_count": 8,
+            "retweet_count": 1,
+            "reply_count": 1,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/elevenlabsio/status/2021674063413035471",
+          "url": "https://twitter.com/elevenlabsio/status/2022017268595798249",
           "media": [
             {
               "type": "photo",
-              "url": "https://pbs.twimg.com/media/HA5tzRyXkAA5y0q.jpg",
-              "display_url": "pic.x.com/YC9BAp5De1",
-              "expanded_url": "https://x.com/elevenlabsio/status/2021674063413035471/photo/1"
+              "url": "https://pbs.twimg.com/media/HA-jLu0bEAAZTv6.jpg",
+              "display_url": "pic.x.com/o3SNKUltVW",
+              "expanded_url": "https://x.com/elevenlabsio/status/2022017268595798249/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Watch the full keynote: \nhttps://t.co/TCzcTn6gCq https://t.co/YC9BAp5De1"
+          "originalText": "Watch the full keynote: https://t.co/TCzcTn6gCq https://t.co/o3SNKUltVW"
         },
         {
-          "id": "2021641898872520749",
-          "text": "Londra'daki ElevenLabs Summit'te bugün bize şahsen katılan yaklaşık 1.000 müşteri ve ortağa teşekkürler.\n\nTeknolojiyle etkileşimimizi dönüştürmek için yapılan harika çalışmalardan ilham alıyoruz. Yakında, ses eski arayüzlerin ve genel https://t.co/tBGSGObZ23",
-          "createdAt": "2026-02-11T17:46:03.000Z",
+          "id": "2022017265726627846",
+          "text": "Londra'daki ElevenLabs Zirvesi'nde, Kurucu Ortağımız @matiii, ElevenAgents'ın hükümetlerin ve kuruluşların kullanıcılara her zaman, her yerde ve her dilde nasıl destek olabileceğini gösteren canlı bir demo gerçekleştirdi.\n\nHerhangi bir kuruluşa uygulanabilen modüler bileşenlerle oluşturulmuş, ulusal bir https://t.co/FsV5IuNBro",
+          "createdAt": "2026-02-12T18:37:38.000Z",
           "metrics": {
-            "like_count": 188,
-            "retweet_count": 13,
-            "reply_count": 17,
+            "like_count": 70,
+            "retweet_count": 10,
+            "reply_count": 8,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 2
           },
-          "url": "https://twitter.com/elevenlabsio/status/2021641898872520749",
+          "url": "https://twitter.com/elevenlabsio/status/2022017265726627846",
           "media": [
             {
               "type": "video",
-              "url": "https://pbs.twimg.com/ext_tw_video_thumb/2021641866664345600/pu/img/52W-LMPmYIbgRhvu.jpg",
-              "display_url": "pic.x.com/tBGSGObZ23",
-              "expanded_url": "https://x.com/elevenlabsio/status/2021641898872520749/video/1",
-              "video_url": "https://video.twimg.com/ext_tw_video/2021641866664345600/pu/vid/avc1/1280x720/z2S0DSpTIpEqEfgh.mp4?tag=12",
-              "duration_millis": 22080
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2022014120896102400/img/sO9AkMlsT1UMY70h.jpg",
+              "display_url": "pic.x.com/FsV5IuNBro",
+              "expanded_url": "https://x.com/elevenlabsio/status/2022017265726627846/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2022014120896102400/vid/avc1/1920x1080/Wqi8gS8QojlNjBHR.mp4",
+              "duration_millis": 740280
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Thank you to the nearly 1,000 customers and partners who joined us in person today at the ElevenLabs Summit in London.\n\nWe're inspired by the amazing work being done to transform how we interact with technology. Soon, voice will replace outdated interfaces and general https://t.co/tBGSGObZ23"
+          "originalText": "At the ElevenLabs Summit in London, our Co-Founder @matiii delivered a live demo showing how ElevenAgents can help governments and enterprises support users anytime, anywhere, and in any language.\n\nBuilt with modular components that apply to any organization, see how a national https://t.co/FsV5IuNBro"
         }
       ],
       "source": "syndication"
     },
     {
-      "tool": "grok",
-      "name": "Grok",
-      "xHandle": "xAI",
+      "tool": "chatgpt",
+      "name": "ChatGPT",
+      "xHandle": "OpenAI",
       "category": "chatbots",
       "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#FF6B6B",
-      "logo": "🐦",
-      "company": "xAI",
-      "description": "xAI'ın gerçek zamanlı bilgi erişimli botu",
+      "brandColor": "#10A37F",
+      "logo": "🤖",
+      "company": "OpenAI",
+      "description": "OpenAI'nin sohbet botu ve GPT modelleri",
       "tweets": [
         {
-          "id": "2021667200885829667",
-          "text": "xAI sadece 30 ay önce kurulmasına rağmen, küçük ve yetenekli ekibi olağanüstü ilerleme kaydetti.\n\nGelecek hiç bu kadar heyecan verici görünmemişti! https://t.co/QZ73H2mpBj",
-          "createdAt": "2026-02-11T19:26:36.000Z",
+          "id": "2022009583653576787",
+          "text": "Codex uygulamasında, CLI'da ve IDE eklentisinde bugün ChatGPT Pro kullanıcılarına sunuluyor.\nhttps://t.co/Ln74zCPJqK",
+          "createdAt": "2026-02-12T18:07:06.000Z",
           "metrics": {
-            "like_count": 8707,
-            "retweet_count": 1429,
-            "reply_count": 879,
+            "like_count": 941,
+            "retweet_count": 77,
+            "reply_count": 71,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 372
+            "quote_count": 36
           },
-          "url": "https://twitter.com/xai/status/2021667200885829667",
+          "url": "https://twitter.com/OpenAI/status/2022009583653576787",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Rolling out today to ChatGPT Pro users in the Codex app, CLI, and IDE extension. \nhttps://t.co/Ln74zCPJqK"
+        },
+        {
+          "id": "2022009582210715925",
+          "text": "GPT-5.3-Codex-Spark artık araştırma önizlemesinde.\n\nArtık sadece daha hızlı bir şekilde şeyler inşa edebilirsiniz. https://t.co/85LzDOgcQj",
+          "createdAt": "2026-02-12T18:07:06.000Z",
+          "metrics": {
+            "like_count": 4648,
+            "retweet_count": 497,
+            "reply_count": 460,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 432
+          },
+          "url": "https://twitter.com/OpenAI/status/2022009582210715925",
           "media": [
             {
               "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2021663522305060864/img/5M5DcW3bmQMUQk1G.jpg",
-              "display_url": "pic.x.com/QZ73H2mpBj",
-              "expanded_url": "https://x.com/xai/status/2021667200885829667/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2021663522305060864/vid/avc1/1920x1080/AXNodco1AYW0D2dj.mp4",
-              "duration_millis": 2746243
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2022006158765305856/img/boAkEOij5foYQRQx.jpg",
+              "display_url": "pic.x.com/85LzDOgcQj",
+              "expanded_url": "https://x.com/OpenAI/status/2022009582210715925/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2022006158765305856/vid/avc1/3840x2160/q_Yt6WYpYsNrjqhM.mp4",
+              "duration_millis": 47133
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Since xAI was formed just 30 months ago, the small and talented team has made remarkable progress.\n\nThe future has never looked more exciting! https://t.co/QZ73H2mpBj"
+          "originalText": "GPT-5.3-Codex-Spark is now in research preview.\n\nYou can just build things—faster. https://t.co/85LzDOgcQj"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "dalle",
+      "name": "DALL-E",
+      "xHandle": "OpenAI",
+      "category": "image",
+      "categoryLabel": "Image Generation",
+      "brandColor": "#10A37F",
+      "logo": "🖼️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın görsel oluşturma modeli",
+      "tweets": [
+        {
+          "id": "2022009583653576787",
+          "text": "Codex uygulamasında, CLI'da ve IDE eklentisinde bugün ChatGPT Pro kullanıcılarına sunuluyor.\nhttps://t.co/Ln74zCPJqK",
+          "createdAt": "2026-02-12T18:07:06.000Z",
+          "metrics": {
+            "like_count": 941,
+            "retweet_count": 77,
+            "reply_count": 71,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 36
+          },
+          "url": "https://twitter.com/OpenAI/status/2022009583653576787",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Rolling out today to ChatGPT Pro users in the Codex app, CLI, and IDE extension. \nhttps://t.co/Ln74zCPJqK"
+        },
+        {
+          "id": "2022009582210715925",
+          "text": "GPT-5.3-Codex-Spark artık araştırma önizlemesinde.\n\nArtık sadece daha hızlı bir şekilde şeyler inşa edebilirsiniz. https://t.co/85LzDOgcQj",
+          "createdAt": "2026-02-12T18:07:06.000Z",
+          "metrics": {
+            "like_count": 4648,
+            "retweet_count": 497,
+            "reply_count": 460,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 432
+          },
+          "url": "https://twitter.com/OpenAI/status/2022009582210715925",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2022006158765305856/img/boAkEOij5foYQRQx.jpg",
+              "display_url": "pic.x.com/85LzDOgcQj",
+              "expanded_url": "https://x.com/OpenAI/status/2022009582210715925/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2022006158765305856/vid/avc1/3840x2160/q_Yt6WYpYsNrjqhM.mp4",
+              "duration_millis": 47133
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "GPT-5.3-Codex-Spark is now in research preview.\n\nYou can just build things—faster. https://t.co/85LzDOgcQj"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "sora",
+      "name": "Sora",
+      "xHandle": "OpenAI",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#10A37F",
+      "logo": "🎞️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın video oluşturma modeli",
+      "tweets": [
+        {
+          "id": "2022009583653576787",
+          "text": "Codex uygulamasında, CLI'da ve IDE eklentisinde bugün ChatGPT Pro kullanıcılarına sunuluyor.\nhttps://t.co/Ln74zCPJqK",
+          "createdAt": "2026-02-12T18:07:06.000Z",
+          "metrics": {
+            "like_count": 941,
+            "retweet_count": 77,
+            "reply_count": 71,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 36
+          },
+          "url": "https://twitter.com/OpenAI/status/2022009583653576787",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Rolling out today to ChatGPT Pro users in the Codex app, CLI, and IDE extension. \nhttps://t.co/Ln74zCPJqK"
+        },
+        {
+          "id": "2022009582210715925",
+          "text": "GPT-5.3-Codex-Spark artık araştırma önizlemesinde.\n\nArtık sadece daha hızlı bir şekilde şeyler inşa edebilirsiniz. https://t.co/85LzDOgcQj",
+          "createdAt": "2026-02-12T18:07:06.000Z",
+          "metrics": {
+            "like_count": 4648,
+            "retweet_count": 497,
+            "reply_count": 460,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 432
+          },
+          "url": "https://twitter.com/OpenAI/status/2022009582210715925",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2022006158765305856/img/boAkEOij5foYQRQx.jpg",
+              "display_url": "pic.x.com/85LzDOgcQj",
+              "expanded_url": "https://x.com/OpenAI/status/2022009582210715925/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2022006158765305856/vid/avc1/3840x2160/q_Yt6WYpYsNrjqhM.mp4",
+              "duration_millis": 47133
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "GPT-5.3-Codex-Spark is now in research preview.\n\nYou can just build things—faster. https://t.co/85LzDOgcQj"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "codex",
+      "name": "Codex",
+      "xHandle": "OpenAI",
+      "category": "coding",
+      "categoryLabel": "Coding",
+      "brandColor": "#10A37F",
+      "logo": "⌨️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın kod modeli",
+      "tweets": [
+        {
+          "id": "2022009583653576787",
+          "text": "Codex uygulamasında, CLI'da ve IDE eklentisinde bugün ChatGPT Pro kullanıcılarına sunuluyor.\nhttps://t.co/Ln74zCPJqK",
+          "createdAt": "2026-02-12T18:07:06.000Z",
+          "metrics": {
+            "like_count": 941,
+            "retweet_count": 77,
+            "reply_count": 71,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 36
+          },
+          "url": "https://twitter.com/OpenAI/status/2022009583653576787",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Rolling out today to ChatGPT Pro users in the Codex app, CLI, and IDE extension. \nhttps://t.co/Ln74zCPJqK"
+        },
+        {
+          "id": "2022009582210715925",
+          "text": "GPT-5.3-Codex-Spark artık araştırma önizlemesinde.\n\nArtık sadece daha hızlı bir şekilde şeyler inşa edebilirsiniz. https://t.co/85LzDOgcQj",
+          "createdAt": "2026-02-12T18:07:06.000Z",
+          "metrics": {
+            "like_count": 4648,
+            "retweet_count": 497,
+            "reply_count": 460,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 432
+          },
+          "url": "https://twitter.com/OpenAI/status/2022009582210715925",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2022006158765305856/img/boAkEOij5foYQRQx.jpg",
+              "display_url": "pic.x.com/85LzDOgcQj",
+              "expanded_url": "https://x.com/OpenAI/status/2022009582210715925/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2022006158765305856/vid/avc1/3840x2160/q_Yt6WYpYsNrjqhM.mp4",
+              "duration_millis": 47133
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "GPT-5.3-Codex-Spark is now in research preview.\n\nYou can just build things—faster. https://t.co/85LzDOgcQj"
         }
       ],
       "source": "syndication"
@@ -353,48 +864,72 @@
       "description": "Gerçekçi AI video üretimi",
       "tweets": [
         {
-          "id": "2021658301667389538",
-          "text": "Luma Riyad'a genişliyor. MENA bölgesinde AI destekli yaratıcı üretimi ve ortaklıkları hızlandırıyor.\nhttps://t.co/bgSWboFjCv",
-          "createdAt": "2026-02-11T18:51:14.000Z",
+          "id": "2021988033466384696",
+          "text": "VID_0314.mp4 https://t.co/YblpcKiZuz",
+          "createdAt": "2026-02-12T16:41:28.000Z",
           "metrics": {
-            "like_count": 17,
-            "retweet_count": 1,
-            "reply_count": 1,
+            "like_count": 152,
+            "retweet_count": 10,
+            "reply_count": 20,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 1
+            "quote_count": 9
           },
-          "url": "https://twitter.com/LumaLabsAI/status/2021658301667389538",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Luma is expanding to Riyadh. Accelerating AI-power creative production and partnerships across the MENA region.\nhttps://t.co/bgSWboFjCv"
-        },
-        {
-          "id": "2021625672188457018",
-          "text": "Çizgi filmleri, animeleri veya her türlü illüstrasyonu Ray3.14 ile natif 1080p'de canlandırın. Herhangi bir görseli ekleyin ve hareketi anında yönlendirerek üretimi hızlandırın, hızlıca yineleyin. Karakterler ve stiller kareler arasında tutarlı kalır. Dream Machine'de Görselden-Videoya ile animasyonlu dünyalar yaratın. https://t.co/WYuq8iaEif",
-          "createdAt": "2026-02-11T16:41:34.000Z",
-          "metrics": {
-            "like_count": 40,
-            "retweet_count": 3,
-            "reply_count": 5,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/LumaLabsAI/status/2021625672188457018",
+          "url": "https://twitter.com/LumaLabsAI/status/2021988033466384696",
           "media": [
             {
               "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2021625557214277639/img/kTLQF7Vv7usZI-4j.jpg",
-              "display_url": "pic.x.com/WYuq8iaEif",
-              "expanded_url": "https://x.com/LumaLabsAI/status/2021625672188457018/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2021625557214277639/vid/avc1/1920x816/eBRzE8do3lfTg-02.mp4",
-              "duration_millis": 28958
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2021987617789845504/img/OxQpwbiGUGDU4QoH.jpg",
+              "display_url": "pic.x.com/YblpcKiZuz",
+              "expanded_url": "https://x.com/LumaLabsAI/status/2021988033466384696/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021987617789845504/vid/avc1/1920x1080/fmyYnx6Qr5z_mEVD.mp4",
+              "duration_millis": 32866
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Animate cartoons, anime, or any illustration type in native 1080p with Ray3.14. Drop in any image and direct motion instantly to speed up production and iterate rapidly. Characters and styles hold together across frames. Build animated worlds with Image-to-Video in Dream Machine. https://t.co/WYuq8iaEif"
+          "originalText": "VID_0314.mp4 https://t.co/YblpcKiZuz"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "runway",
+      "name": "Runway ML",
+      "xHandle": "runwayml",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#FF3366",
+      "logo": "🎬",
+      "company": "Runway",
+      "description": "Yaratıcı AI video araçları",
+      "tweets": [
+        {
+          "id": "2021968843476750655",
+          "text": "Tek bir görselden, yeni Story Panels Öne Çıkan İş Akışımızla bir filmin, reklamın veya içeriğin tamamına geçin.\n\nBu İş Akışı, birkaç basit adımda tutarlı karakterler, mekanlar ve tarzla bir çekim kataloğu oluşturmanıza olanak tanır.\n\nDetaylı bilgi için \"Mammoth\" yorum yapın https://t.co/gfuXjnzk19",
+          "createdAt": "2026-02-12T15:25:13.000Z",
+          "metrics": {
+            "like_count": 157,
+            "retweet_count": 23,
+            "reply_count": 90,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 3
+          },
+          "url": "https://twitter.com/runwayml/status/2021968843476750655",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2021963889974685698/img/Bp0dadUNZaVSqno3.jpg",
+              "display_url": "pic.x.com/gfuXjnzk19",
+              "expanded_url": "https://x.com/runwayml/status/2021968843476750655/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2021963889974685698/vid/avc1/1080x1920/djF_PCw1zrVArhbY.mp4",
+              "duration_millis": 35241
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Go from a single image to an entire film, ad or piece of content using our new Story Panels Featured Workflow.\n\nThis Workflow allows you to build a catalogue of shots with consistent characters, locations and style all in a few simple steps.\n\nComment \"Mammoth\" for the in-depth https://t.co/gfuXjnzk19"
         }
       ],
       "source": "syndication"
