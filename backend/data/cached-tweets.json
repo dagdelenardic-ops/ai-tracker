@@ -1,9 +1,172 @@
 {
-  "fetchedAt": "2026-02-15T07:35:47.020Z",
+  "fetchedAt": "2026-02-16T08:00:35.445Z",
   "source": "syndication+deepseek",
-  "toolCount": 2,
-  "tweetCount": 4,
+  "toolCount": 7,
+  "tweetCount": 10,
   "data": [
+    {
+      "tool": "chatgpt",
+      "name": "ChatGPT",
+      "xHandle": "OpenAI",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#10A37F",
+      "logo": "🤖",
+      "company": "OpenAI",
+      "description": "OpenAI'nin sohbet botu ve GPT modelleri",
+      "tweets": [
+        {
+          "id": "2023250868066455718",
+          "text": "RT @sama: Peter Steinberger, OpenAI'ye katılarak yeni nesil kişisel asistanları geliştirecek. Harika fikirleri ve ürün vizyonu olan bir dahi…",
+          "createdAt": "2026-02-16T04:19:31.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 3347,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/OpenAI/status/2023250868066455718",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @sama: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas a…"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "dalle",
+      "name": "DALL-E",
+      "xHandle": "OpenAI",
+      "category": "image",
+      "categoryLabel": "Image Generation",
+      "brandColor": "#10A37F",
+      "logo": "🖼️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın görsel oluşturma modeli",
+      "tweets": [
+        {
+          "id": "2023250868066455718",
+          "text": "RT @sama: Peter Steinberger, OpenAI'ye katılarak yeni nesil kişisel asistanları geliştirecek. Harika fikirleri ve ürün vizyonu olan bir dahi…",
+          "createdAt": "2026-02-16T04:19:31.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 3347,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/OpenAI/status/2023250868066455718",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @sama: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas a…"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "sora",
+      "name": "Sora",
+      "xHandle": "OpenAI",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#10A37F",
+      "logo": "🎞️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın video oluşturma modeli",
+      "tweets": [
+        {
+          "id": "2023250868066455718",
+          "text": "RT @sama: Peter Steinberger, OpenAI'ye katılarak yeni nesil kişisel asistanları geliştirecek. Harika fikirleri ve ürün vizyonu olan bir dahi…",
+          "createdAt": "2026-02-16T04:19:31.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 3347,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/OpenAI/status/2023250868066455718",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @sama: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas a…"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "codex",
+      "name": "Codex",
+      "xHandle": "OpenAI",
+      "category": "coding",
+      "categoryLabel": "Coding",
+      "brandColor": "#10A37F",
+      "logo": "⌨️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın kod modeli",
+      "tweets": [
+        {
+          "id": "2023250868066455718",
+          "text": "RT @sama: Peter Steinberger, OpenAI'ye katılarak yeni nesil kişisel asistanları geliştirecek. Harika fikirleri ve ürün vizyonu olan bir dahi…",
+          "createdAt": "2026-02-16T04:19:31.000Z",
+          "metrics": {
+            "like_count": 0,
+            "retweet_count": 3347,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/OpenAI/status/2023250868066455718",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @sama: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas a…"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "poe",
+      "name": "Poe",
+      "xHandle": "poe_platform",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#A855F7",
+      "logo": "📚",
+      "company": "Quora",
+      "description": "Çoklu AI model platformu",
+      "tweets": [
+        {
+          "id": "2023224829000995122",
+          "text": "Minimax M2.5, Poe'da yayında!\n\nYeni Minimax M2.5, karmaşık dijital iş akışlarında planlamaya dayalı, çok adımlı yürütmeye odaklanarak gerçek dünya üretkenliği için tasarlandı. Kodlama, araçlar arası bağlam değiştirme ve ajan tarzı görev koordinasyonunda üstün performans sergiliyor. Ayrıca, https://t.co/XrqZZ6MOxh",
+          "createdAt": "2026-02-16T02:36:03.000Z",
+          "metrics": {
+            "like_count": 41,
+            "retweet_count": 2,
+            "reply_count": 1,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 1
+          },
+          "url": "https://twitter.com/poe_platform/status/2023224829000995122",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBPwOhhbYAEScy0.jpg",
+              "display_url": "pic.x.com/XrqZZ6MOxh",
+              "expanded_url": "https://x.com/poe_platform/status/2023224829000995122/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Minimax M2.5 is live on Poe!\n\nThe new Minimax M2.5 is designed for real world productivity, with a focus on planning‑driven, multi‑step execution across complex digital workflows. It excels at coding, cross‑tool context switching, and agent style task coordination. Also, it https://t.co/XrqZZ6MOxh"
+        }
+      ],
+      "source": "syndication"
+    },
     {
       "tool": "github-copilot",
       "name": "GitHub Copilot",
@@ -16,104 +179,139 @@
       "description": "GitHub'ın AI kod asistanı",
       "tweets": [
         {
-          "id": "2022792999676100879",
-          "text": "Bunu kimin duyması gerektiğini bilmiyoruz ama artık Copilot Chat'e log ve özellikleri yapıştırmayı bırakabilirsiniz. 👀\n\nAraçlarınızı doğrudan Copilot kodlama asistanına bağlamak için bir MCP sunucusu yapılandırın.\n\nBu sayede Copilot şunları yapabilir:\n• Sentry'den en son çökme raporunu getirebilir\n• Özellik şartnamesini okuyabilir\n\n[2] Bu Sevgililer Günü'nde Copilot'tan beş sevgi dilini sizin için yorumlamasını istedik. 💚 https://t.co/VkhcTYuKgn",
-          "createdAt": "2026-02-14T22:00:07.000Z",
+          "id": "2023099075231367544",
+          "text": "Geri döndü! 👀 GitHub İnovasyon Grafiği yeni verilerle güncellendi. 📊\n\nGit push'larında, depolarında, geliştiricilerinde ve organizasyonlarında kimlerin önde olduğunu keşfedin. 🏎️\nhttps://t.co/ZOBbO8mFg3 https://t.co/aQlfcbivRQ",
+          "createdAt": "2026-02-15T18:16:21.000Z",
           "metrics": {
-            "like_count": 337,
-            "retweet_count": 39,
-            "reply_count": 21,
+            "like_count": 358,
+            "retweet_count": 42,
+            "reply_count": 44,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 6
+            "quote_count": 14
           },
-          "url": "https://twitter.com/github/status/2022792999676100879",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We don't know who needs to hear this, but you can stop pasting logs and specs into Copilot Chat now. 👀\n\nConfigure an MCP server to plug your tools directly into Copilot coding agent.\n\nThat way, Copilot can:\n• Fetch the latest crash report from Sentry\n• Read the feature spec"
-        },
-        {
-          "id": "2022720043818078394",
-          "text": "We asked Copilot to interpret the five love languages for you this Valentine's Day. 💚 https://t.co/VkhcTYuKgn",
-          "createdAt": "2026-02-14T17:10:13.000Z",
-          "metrics": {
-            "like_count": 206,
-            "retweet_count": 26,
-            "reply_count": 7,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 3
-          },
-          "url": "https://twitter.com/github/status/2022720043818078394",
+          "url": "https://twitter.com/github/status/2023099075231367544",
           "media": [
             {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBIlJMuXsAEbRtB.png",
-              "display_url": "pic.x.com/VkhcTYuKgn",
-              "expanded_url": "https://x.com/github/status/2022720043818078394/photo/1"
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HBN93ujXAAAbNWh.jpg",
+              "display_url": "pic.x.com/aQlfcbivRQ",
+              "expanded_url": "https://x.com/github/status/2023099075231367544/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2023098991185928192/vid/avc1/960x720/xzqa-g42cHPncz3E.mp4?tag=14",
+              "duration_millis": 31033
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "We asked Copilot to interpret the five love languages for you this Valentine's Day. 💚 https://t.co/VkhcTYuKgn"
+          "originalText": "It's back! 👀 The GitHub Innovation Graph has been updated with fresh data. 📊\n\nFind out who's leading in git pushes, repositories, developers, and organizations. 🏎️\nhttps://t.co/ZOBbO8mFg3 https://t.co/aQlfcbivRQ"
+        },
+        {
+          "id": "2022981718429347976",
+          "text": "Sürekli şu soruyu duyuyoruz: AI gerçekten yardımcı oluyor mu, yoksa sadece bir hype mı? 🤔\n\nBu yüzden @cassidoo, geliştiricilerin AI'yı gerçekte ne için kullandığını ve işlerinde en büyük farkı nerede yarattığını öğrenmek için geri bildirimleri inceledi.\n\nİşte buldukları. ⬇️\nhttps://t.co/DmNBit812j",
+          "createdAt": "2026-02-15T10:30:01.000Z",
+          "metrics": {
+            "like_count": 82,
+            "retweet_count": 16,
+            "reply_count": 13,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/github/status/2022981718429347976",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We hear the questions constantly: Does AI actually help, or is it just hype?  🤔 \n\nSo @cassidoo dug into the feedback to find out what developers really use AI for, and where it makes the biggest difference in their work.\n\nHere's what she discovered. ⬇️ \nhttps://t.co/DmNBit812j"
         }
       ],
       "source": "syndication"
     },
     {
-      "tool": "elevenlabs",
-      "name": "ElevenLabs",
-      "xHandle": "elevenlabsio",
-      "category": "audio",
-      "categoryLabel": "Audio & Music",
-      "brandColor": "#10B981",
-      "logo": "🗣️",
-      "company": "ElevenLabs",
-      "description": "Gerçekçi AI ses sentezi",
+      "tool": "kimiai",
+      "name": "Kimi",
+      "xHandle": "Kimi_Moonshot",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#6366F1",
+      "logo": "🌙",
+      "company": "Moonshot AI",
+      "description": "Moonshot AI'ın uzun bağlamlı modeli",
       "tweets": [
         {
-          "id": "2022687356516446608",
-          "text": "ElevenLabs ile çalışarak sesini yeniden oluşturdu ve eski grup arkadaşlarıyla bir araya gelip \"Ghost of a Man I Never Met\" şarkısını seslendirdi - bu şarkı Eleven Music ile yaratıldı ve tamamen kendi sözleriyle yazıldı.\n\n\"Yıllar sonra ilk kez kendimi tekrar şarkı söylerken duyabildim,\" dedi. \"Bu her şeyi değiştiriyor.\"",
-          "createdAt": "2026-02-14T15:00:20.000Z",
+          "id": "2023042887769071747",
+          "text": "İşte resmi oyun kitabı ⬇️\nhttps://t.co/mx4lB0TRMs https://t.co/f0JQmhhyAo",
+          "createdAt": "2026-02-15T14:33:05.000Z",
           "metrics": {
-            "like_count": 12,
-            "retweet_count": 1,
-            "reply_count": 1,
+            "like_count": 265,
+            "retweet_count": 13,
+            "reply_count": 11,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 0
+            "quote_count": 1
           },
-          "url": "https://twitter.com/elevenlabsio/status/2022687356516446608",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Working with ElevenLabs, he rebuilt his voice and reunited with his former bandmates to perform \"Ghost of a Man I Never Met\" - created with Eleven Music and written entirely in his own words.\n\n\"For the first time in years, I could hear myself sing again,\" he said. \"That changes"
-        },
-        {
-          "id": "2022687354931011731",
-          "text": "Londra'daki ElevenLabs Zirvesi'nde, Patrick Darling neredeyse 1.000 kişinin önünde sahnede canlı olarak kendi bestesini seslendirdi.\n\nALS nedeniyle neredeyse tamamen ses üretme yeteneğini kaybetmiş biri için bu an mümkün olmamalıydı. Onun şarkı söyleyen sesi https://t.co/ugfL3s8gGM",
-          "createdAt": "2026-02-14T15:00:19.000Z",
-          "metrics": {
-            "like_count": 48,
-            "retweet_count": 8,
-            "reply_count": 4,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/elevenlabsio/status/2022687354931011731",
+          "url": "https://twitter.com/Kimi_Moonshot/status/2023042887769071747",
           "media": [
             {
-              "type": "video",
-              "url": "https://pbs.twimg.com/ext_tw_video_thumb/2022687325809958912/pu/img/cBKdCbFeUeOALHnA.jpg",
-              "display_url": "pic.x.com/ugfL3s8gGM",
-              "expanded_url": "https://x.com/elevenlabsio/status/2022687354931011731/video/1",
-              "video_url": "https://video.twimg.com/ext_tw_video/2022687325809958912/pu/vid/avc1/1280x720/YMiR7Ifk9cs7FYPB.mp4?tag=12",
-              "duration_millis": 15018
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBNKxiSbAAAlpc5.jpg",
+              "display_url": "pic.x.com/f0JQmhhyAo",
+              "expanded_url": "https://x.com/Kimi_Moonshot/status/2023042887769071747/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "At the ElevenLabs Summit in London, Patrick Darling performed an original song live on stage in front of nearly 1,000 people.\n\nFor someone who has almost completely lost his ability to produce sound due to ALS, that moment should not have been possible. His singing voice was https://t.co/ugfL3s8gGM"
+          "originalText": "Here is the official playbook ⬇️\nhttps://t.co/mx4lB0TRMs https://t.co/f0JQmhhyAo"
+        },
+        {
+          "id": "2023029679611904256",
+          "text": "&gt; Beta Erişimi: Şimdi Allegretto üyeleri ve üzeri için açık.\n&gt; Şimdi dene: https://t.co/Q60psWWsux https://t.co/1S7WGLAGwR",
+          "createdAt": "2026-02-15T13:40:36.000Z",
+          "metrics": {
+            "like_count": 401,
+            "retweet_count": 20,
+            "reply_count": 10,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 4
+          },
+          "url": "https://twitter.com/Kimi_Moonshot/status/2023029679611904256",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBM-GACaEAA7mwu.jpg",
+              "display_url": "pic.x.com/1S7WGLAGwR",
+              "expanded_url": "https://x.com/Kimi_Moonshot/status/2023029679611904256/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "&gt; Beta Access: Now open for Allegretto members and above.\n&gt; Try it now at: https://t.co/Q60psWWsux https://t.co/1S7WGLAGwR"
+        },
+        {
+          "id": "2023029674549596301",
+          "text": "Kimi Claw'ı tanıtıyoruz🦞\n\nOpenClaw, artık https://t.co/8PH4O9dh6m'de yerel olarak mevcut. Tarayıcı sekmenizde yaşıyor, 7/24 çevrimiçi.\n\n🔹 ClawHub Erişimi: ClawHub kütüphanesinde 5.000'den fazla topluluk becerisi.\n🔹 40GB Bulut Depolama: Tüm dosyalarınız için devasa alan\n🔹 Profesyonel Kalite Arama: Canlı bilgi getirin, https://t.co/eWwp6sWEw3",
+          "createdAt": "2026-02-15T13:40:35.000Z",
+          "metrics": {
+            "like_count": 8992,
+            "retweet_count": 979,
+            "reply_count": 557,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 533
+          },
+          "url": "https://twitter.com/Kimi_Moonshot/status/2023029674549596301",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2023029535974055936/img/Qf6wkOTM3Z8nwkvI.jpg",
+              "display_url": "pic.x.com/eWwp6sWEw3",
+              "expanded_url": "https://x.com/Kimi_Moonshot/status/2023029674549596301/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2023029535974055936/vid/avc1/1920x1080/b460v6QM0ZJ8p57q.mp4",
+              "duration_millis": 31061
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Introducing Kimi Claw🦞\n\nOpenClaw, now native to https://t.co/8PH4O9dh6m. Living right in your browser tab, online 24/7. \n\n🔹 ClawHub Access: 5,000+ community skills in the ClawHub library.\n🔹 40GB Cloud Storage: Massive space for all your files  \n🔹 Pro-Grade Search: Fetch live, https://t.co/eWwp6sWEw3"
         }
       ],
       "source": "syndication"
