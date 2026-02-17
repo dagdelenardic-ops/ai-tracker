@@ -1,133 +1,9 @@
 {
-  "fetchedAt": "2026-02-16T08:00:35.445Z",
+  "fetchedAt": "2026-02-17T08:15:19.736Z",
   "source": "syndication+deepseek",
-  "toolCount": 7,
-  "tweetCount": 10,
+  "toolCount": 5,
+  "tweetCount": 9,
   "data": [
-    {
-      "tool": "chatgpt",
-      "name": "ChatGPT",
-      "xHandle": "OpenAI",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#10A37F",
-      "logo": "🤖",
-      "company": "OpenAI",
-      "description": "OpenAI'nin sohbet botu ve GPT modelleri",
-      "tweets": [
-        {
-          "id": "2023250868066455718",
-          "text": "RT @sama: Peter Steinberger, OpenAI'ye katılarak yeni nesil kişisel asistanları geliştirecek. Harika fikirleri ve ürün vizyonu olan bir dahi…",
-          "createdAt": "2026-02-16T04:19:31.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 3347,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/OpenAI/status/2023250868066455718",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @sama: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas a…"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "dalle",
-      "name": "DALL-E",
-      "xHandle": "OpenAI",
-      "category": "image",
-      "categoryLabel": "Image Generation",
-      "brandColor": "#10A37F",
-      "logo": "🖼️",
-      "company": "OpenAI",
-      "description": "OpenAI'ın görsel oluşturma modeli",
-      "tweets": [
-        {
-          "id": "2023250868066455718",
-          "text": "RT @sama: Peter Steinberger, OpenAI'ye katılarak yeni nesil kişisel asistanları geliştirecek. Harika fikirleri ve ürün vizyonu olan bir dahi…",
-          "createdAt": "2026-02-16T04:19:31.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 3347,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/OpenAI/status/2023250868066455718",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @sama: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas a…"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "sora",
-      "name": "Sora",
-      "xHandle": "OpenAI",
-      "category": "video",
-      "categoryLabel": "Video Generation",
-      "brandColor": "#10A37F",
-      "logo": "🎞️",
-      "company": "OpenAI",
-      "description": "OpenAI'ın video oluşturma modeli",
-      "tweets": [
-        {
-          "id": "2023250868066455718",
-          "text": "RT @sama: Peter Steinberger, OpenAI'ye katılarak yeni nesil kişisel asistanları geliştirecek. Harika fikirleri ve ürün vizyonu olan bir dahi…",
-          "createdAt": "2026-02-16T04:19:31.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 3347,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/OpenAI/status/2023250868066455718",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @sama: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas a…"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "codex",
-      "name": "Codex",
-      "xHandle": "OpenAI",
-      "category": "coding",
-      "categoryLabel": "Coding",
-      "brandColor": "#10A37F",
-      "logo": "⌨️",
-      "company": "OpenAI",
-      "description": "OpenAI'ın kod modeli",
-      "tweets": [
-        {
-          "id": "2023250868066455718",
-          "text": "RT @sama: Peter Steinberger, OpenAI'ye katılarak yeni nesil kişisel asistanları geliştirecek. Harika fikirleri ve ürün vizyonu olan bir dahi…",
-          "createdAt": "2026-02-16T04:19:31.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 3347,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/OpenAI/status/2023250868066455718",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @sama: Peter Steinberger is joining OpenAI to drive the next generation of personal agents. He is a genius with a lot of amazing ideas a…"
-        }
-      ],
-      "source": "syndication"
-    },
     {
       "tool": "poe",
       "name": "Poe",
@@ -140,29 +16,179 @@
       "description": "Çoklu AI model platformu",
       "tweets": [
         {
-          "id": "2023224829000995122",
-          "text": "Minimax M2.5, Poe'da yayında!\n\nYeni Minimax M2.5, karmaşık dijital iş akışlarında planlamaya dayalı, çok adımlı yürütmeye odaklanarak gerçek dünya üretkenliği için tasarlandı. Kodlama, araçlar arası bağlam değiştirme ve ajan tarzı görev koordinasyonunda üstün performans sergiliyor. Ayrıca, https://t.co/XrqZZ6MOxh",
-          "createdAt": "2026-02-16T02:36:03.000Z",
+          "id": "2023564448552898752",
+          "text": "Qwen3.5-Plus, Poe'da yayında!\n\nQwen3.5-Plus, daha yüksek çıkarım verimliliği için hibrit doğrusal-dikkat ve seyrek MoE mimarisi üzerine kurulu yerel bir görü-dil modelidir. 1M token'lık bağlam penceresi, güçlü uzun bağlamlı çoklu ortam akıl yürütme ve ajan özellikleri sunar. https://t.co/LbGrnmXaFn",
+          "createdAt": "2026-02-17T01:05:35.000Z",
           "metrics": {
-            "like_count": 41,
-            "retweet_count": 2,
-            "reply_count": 1,
+            "like_count": 85,
+            "retweet_count": 6,
+            "reply_count": 7,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 1
+            "quote_count": 2
           },
-          "url": "https://twitter.com/poe_platform/status/2023224829000995122",
+          "url": "https://twitter.com/poe_platform/status/2023564448552898752",
           "media": [
             {
               "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBPwOhhbYAEScy0.jpg",
-              "display_url": "pic.x.com/XrqZZ6MOxh",
-              "expanded_url": "https://x.com/poe_platform/status/2023224829000995122/photo/1"
+              "url": "https://pbs.twimg.com/media/HBUk9cpbMAAzbVn.jpg",
+              "display_url": "pic.x.com/LbGrnmXaFn",
+              "expanded_url": "https://x.com/poe_platform/status/2023564448552898752/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Minimax M2.5 is live on Poe!\n\nThe new Minimax M2.5 is designed for real world productivity, with a focus on planning‑driven, multi‑step execution across complex digital workflows. It excels at coding, cross‑tool context switching, and agent style task coordination. Also, it https://t.co/XrqZZ6MOxh"
+          "originalText": "Qwen3.5-Plus is live on Poe!\n\nQwen3.5‑Plus is a native vision‑language model built on a hybrid linear‑attention and sparse MoE architecture for greater inference efficiency. It features a 1M‑token context window, enabling powerful long‑context multimodal reasoning and agent https://t.co/LbGrnmXaFn"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "elevenlabs",
+      "name": "ElevenLabs",
+      "xHandle": "elevenlabsio",
+      "category": "audio",
+      "categoryLabel": "Audio & Music",
+      "brandColor": "#10B981",
+      "logo": "🗣️",
+      "company": "ElevenLabs",
+      "description": "Gerçekçi AI ses sentezi",
+      "tweets": [
+        {
+          "id": "2023457489476256115",
+          "text": "ElevenLabs for Government, kamu sektörünün daha iyi vatandaş deneyimleri sunmasını sağlar.\n\nDaha fazla bilgi edinin:\nhttps://t.co/mj6qWbSSpE",
+          "createdAt": "2026-02-16T18:00:34.000Z",
+          "metrics": {
+            "like_count": 5,
+            "retweet_count": 0,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2023457489476256115",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "ElevenLabs for Government enables the public sector to deliver better citizen experiences.\n\nLearn more: \nhttps://t.co/mj6qWbSSpE"
+        },
+        {
+          "id": "2023457488582955390",
+          "text": "Ukrayna'da, ElevenLabs bir üst düzey yetkilinin dijital ikizinin ses katmanını güçlendiriyor ve işbirliği, farklı kanallarda kamu hizmetlerini desteklemeye devam ederek güvenilir kamu iletişimini ülke çapında ölçeklendiriyor ve yüz binlerce doğal etkileşimi mümkün kılıyor.",
+          "createdAt": "2026-02-16T18:00:33.000Z",
+          "metrics": {
+            "like_count": 9,
+            "retweet_count": 1,
+            "reply_count": 2,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2023457488582955390",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "In Ukraine, ElevenLabs powers the voice layer of a senior official digital twin and the collaboration continues to power public services across different channels, scaling trusted public communication nationwide and enabling hundreds of thousands of natural interactions."
+        },
+        {
+          "id": "2023457487576351138",
+          "text": "Devlet kurumları, yüksek etkili iş akışlarında önce AI'yi konuşlandırıyor:\n- Vatandaşlar için anlık yanıtlar - SSS ve durum kontrolleri\n- Rehberli hizmet yolculukları - yardımlar, izinler, vergi tamamlama\n- Kriz yanıt hatları ve giden iletişimler\n- Kamu için güvenilir dijital ikizler",
+          "createdAt": "2026-02-16T18:00:33.000Z",
+          "metrics": {
+            "like_count": 9,
+            "retweet_count": 0,
+            "reply_count": 1,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2023457487576351138",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Government agencies are deploying AI first in high-impact workflows:\n- Instant answers for residents - FAQs and status checks\n- Guided service journeys - benefits, permits, tax completion\n- Crisis response hotlines and outbound communications\n- Trusted digital twins for public"
+        },
+        {
+          "id": "2023457486519345631",
+          "text": "Çok uzun süredir, devlet dairelerini yardım uygunluğu, vergi sorgulamaları veya genel bilgi için arayan vatandaşlar, katı IVR'lar, uzun beklemeler veya cevapsız çağrılarla karşılaşıyor.",
+          "createdAt": "2026-02-16T18:00:33.000Z",
+          "metrics": {
+            "like_count": 9,
+            "retweet_count": 0,
+            "reply_count": 1,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2023457486519345631",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "For too long, citizens contacting government departments for benefits eligibility, tax inquiries, or general information have faced rigid IVRs, long waits, or unanswered calls."
+        },
+        {
+          "id": "2023457485403623646",
+          "text": "ElevenLabs for Government'i tanıtıyoruz - kamu sektörü kuruluşlarının sürekli açık hizmetler sunmasına, eşit erişimi genişletmesine ve kriz müdahalesini güçlendirmesine yardımcı olacak özel bir girişim. https://t.co/4WWpVwISpA",
+          "createdAt": "2026-02-16T18:00:33.000Z",
+          "metrics": {
+            "like_count": 46,
+            "retweet_count": 5,
+            "reply_count": 5,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2023457485403623646",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/ext_tw_video_thumb/2023457407213453313/pu/img/RPa7DBjxIbDjieZ2.jpg",
+              "display_url": "pic.x.com/4WWpVwISpA",
+              "expanded_url": "https://x.com/elevenlabsio/status/2023457485403623646/video/1",
+              "video_url": "https://video.twimg.com/ext_tw_video/2023457407213453313/pu/vid/avc1/1280x720/gmz5MqhjjmvL6qIH.mp4?tag=12",
+              "duration_millis": 19680
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Introducing ElevenLabs for Government - a dedicated initiative to help public sector organizations deliver always-on services, expand equitable access, and strengthen crisis response. https://t.co/4WWpVwISpA"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "luma",
+      "name": "Dream Machine",
+      "xHandle": "LumaLabsAI",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#3B82F6",
+      "logo": "💭",
+      "company": "Luma AI",
+      "description": "Gerçekçi AI video üretimi",
+      "tweets": [
+        {
+          "id": "2023448295629365548",
+          "text": "“SOUL CODE” - 1. Bölüm\n2099 yılında insanlar makinelere yüklenebiliyor ama bu yasadışı. Zihinlerin depolandığı, alınıp satıldığı ve çalındığı bu dünyada, sokak seviyesinde bir uygulayıcı kendisinden alınanı arıyor. Kurtarılan bir bellek parçası onu, ölümcül bir kalıcılıkla dolu bir şehrin derinliklerine çekiyor. https://t.co/7DrIpvgOHB",
+          "createdAt": "2026-02-16T17:24:02.000Z",
+          "metrics": {
+            "like_count": 499,
+            "retweet_count": 82,
+            "reply_count": 24,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 9
+          },
+          "url": "https://twitter.com/LumaLabsAI/status/2023448295629365548",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2023447763527364608/img/-x1RBAalrYiOwHsk.jpg",
+              "display_url": "pic.x.com/7DrIpvgOHB",
+              "expanded_url": "https://x.com/LumaLabsAI/status/2023448295629365548/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2023447763527364608/vid/avc1/1920x1080/pf1MNTOZ2YdHC-7r.mp4",
+              "duration_millis": 46083
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "“SOUL CODE” - Ep. 1 \nIn the year 2099, humans can upload into machines, but it’s illegal. Where minds are stored, traded, and stolen, one street-level enforcer searches for what was taken from him. A recovered memory shard pulls him deep into a city filled with deadly permanence. https://t.co/7DrIpvgOHB"
         }
       ],
       "source": "syndication"
@@ -179,139 +205,52 @@
       "description": "GitHub'ın AI kod asistanı",
       "tweets": [
         {
-          "id": "2023099075231367544",
-          "text": "Geri döndü! 👀 GitHub İnovasyon Grafiği yeni verilerle güncellendi. 📊\n\nGit push'larında, depolarında, geliştiricilerinde ve organizasyonlarında kimlerin önde olduğunu keşfedin. 🏎️\nhttps://t.co/ZOBbO8mFg3 https://t.co/aQlfcbivRQ",
-          "createdAt": "2026-02-15T18:16:21.000Z",
+          "id": "2023441003802214828",
+          "text": "Çekirdek bellek açıldı 🔓 (GitHub Copilot için)\n\nCopilot'un yeni ajan bellek sisteminin mimarisine göz atın. 💾 İşte daha akıllı, daha kişiselleştirilmiş bir kodlama asistanını nasıl inşa ettiğimiz. ⬇️\nhttps://t.co/16UgYosc9W",
+          "createdAt": "2026-02-16T16:55:03.000Z",
           "metrics": {
-            "like_count": 358,
-            "retweet_count": 42,
-            "reply_count": 44,
+            "like_count": 300,
+            "retweet_count": 44,
+            "reply_count": 14,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 14
+            "quote_count": 2
           },
-          "url": "https://twitter.com/github/status/2023099075231367544",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/media/HBN93ujXAAAbNWh.jpg",
-              "display_url": "pic.x.com/aQlfcbivRQ",
-              "expanded_url": "https://x.com/github/status/2023099075231367544/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023098991185928192/vid/avc1/960x720/xzqa-g42cHPncz3E.mp4?tag=14",
-              "duration_millis": 31033
-            }
-          ],
+          "url": "https://twitter.com/github/status/2023441003802214828",
           "isMock": false,
           "source": "syndication",
-          "originalText": "It's back! 👀 The GitHub Innovation Graph has been updated with fresh data. 📊\n\nFind out who's leading in git pushes, repositories, developers, and organizations. 🏎️\nhttps://t.co/ZOBbO8mFg3 https://t.co/aQlfcbivRQ"
-        },
-        {
-          "id": "2022981718429347976",
-          "text": "Sürekli şu soruyu duyuyoruz: AI gerçekten yardımcı oluyor mu, yoksa sadece bir hype mı? 🤔\n\nBu yüzden @cassidoo, geliştiricilerin AI'yı gerçekte ne için kullandığını ve işlerinde en büyük farkı nerede yarattığını öğrenmek için geri bildirimleri inceledi.\n\nİşte buldukları. ⬇️\nhttps://t.co/DmNBit812j",
-          "createdAt": "2026-02-15T10:30:01.000Z",
-          "metrics": {
-            "like_count": 82,
-            "retweet_count": 16,
-            "reply_count": 13,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/github/status/2022981718429347976",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We hear the questions constantly: Does AI actually help, or is it just hype?  🤔 \n\nSo @cassidoo dug into the feedback to find out what developers really use AI for, and where it makes the biggest difference in their work.\n\nHere's what she discovered. ⬇️ \nhttps://t.co/DmNBit812j"
+          "originalText": "Core memory unlocked 🔓 (for GitHub Copilot)\n\nCheck out the architecture behind Copilot's new agentic memory system. 💾 Here's how we're building a smarter, more personalized coding assistant. ⬇️\nhttps://t.co/16UgYosc9W"
         }
       ],
       "source": "syndication"
     },
     {
-      "tool": "kimiai",
-      "name": "Kimi",
-      "xHandle": "Kimi_Moonshot",
+      "tool": "claude",
+      "name": "Claude",
+      "xHandle": "AnthropicAI",
       "category": "chatbots",
       "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#6366F1",
-      "logo": "🌙",
-      "company": "Moonshot AI",
-      "description": "Moonshot AI'ın uzun bağlamlı modeli",
+      "brandColor": "#CC785C",
+      "logo": "🧠",
+      "company": "Anthropic",
+      "description": "Anthropic'ın güvenli AI asistanı",
       "tweets": [
         {
-          "id": "2023042887769071747",
-          "text": "İşte resmi oyun kitabı ⬇️\nhttps://t.co/mx4lB0TRMs https://t.co/f0JQmhhyAo",
-          "createdAt": "2026-02-15T14:33:05.000Z",
+          "id": "2023322514206957688",
+          "text": "Bengaluru ofisimizi resmen açıyoruz—Hindistan'daki yeni üs merkezimiz ve Anthropic'ın Asya-Pasifik'teki ikinci ofisi.\n\nHindistan, https://t.co/RxKnLNNcNR için ikinci büyük pazarımız. Uzun vadeli taahhüdümüzü derinleştirmek için yeni ortaklıklar başlatıyoruz: https://t.co/q94L1Hesq1",
+          "createdAt": "2026-02-16T09:04:13.000Z",
           "metrics": {
-            "like_count": 265,
-            "retweet_count": 13,
-            "reply_count": 11,
+            "like_count": 10098,
+            "retweet_count": 807,
+            "reply_count": 532,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 1
+            "quote_count": 275
           },
-          "url": "https://twitter.com/Kimi_Moonshot/status/2023042887769071747",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBNKxiSbAAAlpc5.jpg",
-              "display_url": "pic.x.com/f0JQmhhyAo",
-              "expanded_url": "https://x.com/Kimi_Moonshot/status/2023042887769071747/photo/1"
-            }
-          ],
+          "url": "https://twitter.com/AnthropicAI/status/2023322514206957688",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Here is the official playbook ⬇️\nhttps://t.co/mx4lB0TRMs https://t.co/f0JQmhhyAo"
-        },
-        {
-          "id": "2023029679611904256",
-          "text": "&gt; Beta Erişimi: Şimdi Allegretto üyeleri ve üzeri için açık.\n&gt; Şimdi dene: https://t.co/Q60psWWsux https://t.co/1S7WGLAGwR",
-          "createdAt": "2026-02-15T13:40:36.000Z",
-          "metrics": {
-            "like_count": 401,
-            "retweet_count": 20,
-            "reply_count": 10,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 4
-          },
-          "url": "https://twitter.com/Kimi_Moonshot/status/2023029679611904256",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBM-GACaEAA7mwu.jpg",
-              "display_url": "pic.x.com/1S7WGLAGwR",
-              "expanded_url": "https://x.com/Kimi_Moonshot/status/2023029679611904256/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "&gt; Beta Access: Now open for Allegretto members and above.\n&gt; Try it now at: https://t.co/Q60psWWsux https://t.co/1S7WGLAGwR"
-        },
-        {
-          "id": "2023029674549596301",
-          "text": "Kimi Claw'ı tanıtıyoruz🦞\n\nOpenClaw, artık https://t.co/8PH4O9dh6m'de yerel olarak mevcut. Tarayıcı sekmenizde yaşıyor, 7/24 çevrimiçi.\n\n🔹 ClawHub Erişimi: ClawHub kütüphanesinde 5.000'den fazla topluluk becerisi.\n🔹 40GB Bulut Depolama: Tüm dosyalarınız için devasa alan\n🔹 Profesyonel Kalite Arama: Canlı bilgi getirin, https://t.co/eWwp6sWEw3",
-          "createdAt": "2026-02-15T13:40:35.000Z",
-          "metrics": {
-            "like_count": 8992,
-            "retweet_count": 979,
-            "reply_count": 557,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 533
-          },
-          "url": "https://twitter.com/Kimi_Moonshot/status/2023029674549596301",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2023029535974055936/img/Qf6wkOTM3Z8nwkvI.jpg",
-              "display_url": "pic.x.com/eWwp6sWEw3",
-              "expanded_url": "https://x.com/Kimi_Moonshot/status/2023029674549596301/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023029535974055936/vid/avc1/1920x1080/b460v6QM0ZJ8p57q.mp4",
-              "duration_millis": 31061
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Introducing Kimi Claw🦞\n\nOpenClaw, now native to https://t.co/8PH4O9dh6m. Living right in your browser tab, online 24/7. \n\n🔹 ClawHub Access: 5,000+ community skills in the ClawHub library.\n🔹 40GB Cloud Storage: Massive space for all your files  \n🔹 Pro-Grade Search: Fetch live, https://t.co/eWwp6sWEw3"
+          "originalText": "We’re officially opening our Bengaluru office—our new home base in India, and Anthropic's second office in Asia-Pacific.\n\nIndia is our second-largest market for https://t.co/RxKnLNNcNR. We’re launching new partnerships to deepen our long-term commitment: https://t.co/q94L1Hesq1"
         }
       ],
       "source": "syndication"
