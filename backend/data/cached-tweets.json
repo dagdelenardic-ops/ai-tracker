@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-02-18T08:15:33.751Z",
+  "fetchedAt": "2026-02-19T08:11:08.109Z",
   "source": "syndication+deepseek",
-  "toolCount": 10,
-  "tweetCount": 24,
+  "toolCount": 16,
+  "tweetCount": 40,
   "data": [
     {
       "tool": "github-copilot",
@@ -16,165 +16,89 @@
       "description": "GitHub'ın AI kod asistanı",
       "tweets": [
         {
-          "id": "2023887711057125507",
-          "text": "Açık kaynağı korumayı, proje bakımcılarının kendisinden daha iyi kim bilebilir? 🛡️\n\nGitHub Açık Kaynak Güvenlik Fonu'nun 3. oturumunda, 67 proje daha savunmalarını güçlendirdi.\n\nYapay zeka yığınını güvence altına almaktan küresel tedarik zincirini güçlendirmeye kadar, bu bakımcıların nasıl çalıştığını keşfedin.\n\n[2] ✨ @AnthropicAI'ın Claude Sonnet 4.6 artık genel kullanıma açık ve GitHub Copilot'ta yayılıyor.\n\nİlk testler gösteriyor ki:\n➡️ Ajan tabanlı kodlamada üstün performans sergiliyor\n➡️ Özellikle arama işlemlerinde başarılı\n\n@code veya Copilot CLI'da deneyin.\nhttps://t.co/0DHPMrSoqD https://t.co/VWkO0p9tx0",
-          "createdAt": "2026-02-17T22:30:06.000Z",
+          "id": "2024260880809284041",
+          "text": "RT @code: Aracı Oturumları Günü YARIN! @code'da çoklu aracı geliştirmeye adanmış bir etkinlik - canlı kodlama, ürün ekibinden içgörüler...",
+          "createdAt": "2026-02-18T23:12:57.000Z",
           "metrics": {
-            "like_count": 66,
-            "retweet_count": 14,
-            "reply_count": 3,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/github/status/2023887711057125507",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Who knows how to secure open source better than the maintainers themselves? 🛡️\n\nIn Session 3 of the GitHub Secure Open Source Fund, 67 more projects improved their defenses.\n\nFrom securing the AI stack to strengthening the global supply chain, find out how these maintainers are"
-        },
-        {
-          "id": "2023829306112434495",
-          "text": "✨ @AnthropicAI's Claude Sonnet 4.6 is now generally available and rolling out in GitHub Copilot.\n\nEarly testing shows \n➡️ It excels on agentic coding\n➡️ It is particularly successful in search operations\n\nTry it out in @code or Copilot CLI.\nhttps://t.co/0DHPMrSoqD https://t.co/VWkO0p9tx0",
-          "createdAt": "2026-02-17T18:38:02.000Z",
-          "metrics": {
-            "like_count": 891,
-            "retweet_count": 102,
-            "reply_count": 46,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 18
-          },
-          "url": "https://twitter.com/github/status/2023829306112434495",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2023819554032685056/img/NNRrffEEx7CfXwAA.jpg",
-              "display_url": "pic.x.com/VWkO0p9tx0",
-              "expanded_url": "https://x.com/github/status/2023829306112434495/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023819554032685056/vid/avc1/1920x1080/BAa0aBRw1ADRYFe_.mp4",
-              "duration_millis": 74771
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "✨ @AnthropicAI's Claude Sonnet 4.6 is now generally available and rolling out in GitHub Copilot.\n\nEarly testing shows \n➡️ It excels on agentic coding\n➡️ It is particularly successful in search operations\n\nTry it out in @code or Copilot CLI.\nhttps://t.co/0DHPMrSoqD https://t.co/VWkO0p9tx0"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "runway",
-      "name": "Runway ML",
-      "xHandle": "runwayml",
-      "category": "video",
-      "categoryLabel": "Video Generation",
-      "brandColor": "#FF3366",
-      "logo": "🎬",
-      "company": "Runway",
-      "description": "Yaratıcı AI video araçları",
-      "tweets": [
-        {
-          "id": "2023866001293807703",
-          "text": "Gen-4.5'e Runway API üzerinden başlayın: https://t.co/cMBkArD9yJ",
-          "createdAt": "2026-02-17T21:03:50.000Z",
-          "metrics": {
-            "like_count": 3,
-            "retweet_count": 0,
+            "like_count": 0,
+            "retweet_count": 19,
             "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/runwayml/status/2023866001293807703",
+          "url": "https://twitter.com/github/status/2024260880809284041",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Get started with Gen-4.5 via the Runway API at https://t.co/cMBkArD9yJ"
+          "originalText": "RT @code: Agent Sessions Day is TOMORROW! An event dedicated to multi-agent development in @code - with live coding, insights from the prod…"
         },
         {
-          "id": "2023865999792234548",
-          "text": "Runway API Claude Code Skill'ini yükleyin: https://t.co/jlrr8nBCBx",
-          "createdAt": "2026-02-17T21:03:50.000Z",
+          "id": "2024251334262726832",
+          "text": "Bu hafta Açık Kaynak Cuma'da 👇\n\nTSİ 20:00: @fkadev, prompt kütüphanelerini nasıl canlı araçlara dönüştüreceğinizi demo ediyor (statik listeler değil).\nTSİ 22:00: @mitchellh, issue'ları, pull request'leri ve katkıda bulunanları korumak için bir topluluk güven yönetim sistemi olan vouch'u anlatıyor.\n\nHatırlatıcılarınızı kurun. 🔔",
+          "createdAt": "2026-02-18T22:35:01.000Z",
           "metrics": {
-            "like_count": 11,
-            "retweet_count": 0,
-            "reply_count": 1,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/runwayml/status/2023865999792234548",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Install the Runway API Claude Code Skill at https://t.co/jlrr8nBCBx"
-        },
-        {
-          "id": "2023865997510525257",
-          "text": "Bugün, Gen-4.5'i Runway API'ye getirmekten heyecan duyuyoruz. Yepyeni Runway API Claude Code skill'i ile birlikte.  \n\nArtık, tüm görüntü, video ve ses üretim modellerimizi vibe kodlama projelerinize, uygulamalarınıza, ürünlerinize, platformlarınıza ve https://t.co/P7SvDYwZjQ adresine doğrudan entegre etmek hiç olmadığı kadar kolay.",
-          "createdAt": "2026-02-17T21:03:50.000Z",
-          "metrics": {
-            "like_count": 113,
-            "retweet_count": 18,
-            "reply_count": 13,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/runwayml/status/2023865997510525257",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBY3ON8XoAAy4dx.jpg",
-              "display_url": "pic.x.com/P7SvDYwZjQ",
-              "expanded_url": "https://x.com/runwayml/status/2023865997510525257/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Today we're excited to bring Gen-4.5 to the Runway API. Alongside the all new Runway API Claude Code skill.  \n\nNow, it's easier than ever to bring our entire suite of image, video and audio generation models directly into your vibe coding projects, apps, products, platforms and https://t.co/P7SvDYwZjQ"
-        },
-        {
-          "id": "2023760694504812750",
-          "text": "Hemen başlayın: https://t.co/i8ugBQ0wvm",
-          "createdAt": "2026-02-17T14:05:23.000Z",
-          "metrics": {
-            "like_count": 6,
-            "retweet_count": 0,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/runwayml/status/2023760694504812750",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Get started: https://t.co/i8ugBQ0wvm"
-        },
-        {
-          "id": "2023760692470497587",
-          "text": "İster birden fazla pazarda çalışan küresel bir ajans olun, ister öne çıkmaya çalışan tek kişilik bir işletme, Runway size tek bir ürün çekiminden bütçe veya prodüksiyona gerek kalmadan bitmiş reklamlara ulaşmanızda yardımcı olabilir. Daha fazla bilgi edinin ve aşağıdaki linkten başlayın. https://t.co/teQmI0aV3G",
-          "createdAt": "2026-02-17T14:05:23.000Z",
-          "metrics": {
-            "like_count": 91,
-            "retweet_count": 5,
-            "reply_count": 7,
+            "like_count": 62,
+            "retweet_count": 7,
+            "reply_count": 5,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 2
           },
-          "url": "https://twitter.com/runwayml/status/2023760692470497587",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2023760221856845825/img/0a0Du_7ArBaZVWEx.jpg",
-              "display_url": "pic.x.com/teQmI0aV3G",
-              "expanded_url": "https://x.com/runwayml/status/2023760692470497587/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023760221856845825/vid/avc1/1920x1080/c2c0rya2sZidN-vA.mp4",
-              "duration_millis": 49257
-            }
-          ],
+          "url": "https://twitter.com/github/status/2024251334262726832",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Whether you're a global agency working across multiple markets or a one person shop trying to breakthrough, Runway can help you go from a single product shot to finished ads without the need for budgets or production. Learn more and get started at the link below. https://t.co/teQmI0aV3G"
+          "originalText": "This week on Open Source Friday 👇\n\n10 a.m. PT: @fkadev demos how to turn prompt libraries into living tools (not static lists).\n12 p.m. PT: @mitchellh talks vouch, a community trust management system to protect issues, pull requests, and contributors.\n\nSet your reminders. 🔔"
+        },
+        {
+          "id": "2024185164663083489",
+          "text": "Bunu uygulamaya hazır mısınız? 👇\nhttps://t.co/mc9WbeQ3hX",
+          "createdAt": "2026-02-18T18:12:05.000Z",
+          "metrics": {
+            "like_count": 41,
+            "retweet_count": 1,
+            "reply_count": 2,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/github/status/2024185164663083489",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Ready to put this into practice? 👇\nhttps://t.co/mc9WbeQ3hX"
+        },
+        {
+          "id": "2024185163220209931",
+          "text": "🎛️ 4. Aracılarınızın kapsamını belirleyin ve kontrol edin\n\nErişimi sınırlayın, eylemleri kısıtlayın ve sınırlar tanımlayın; böylece aracılar güvenli, öngörülebilir ve iş akışınızla uyumlu kalır.",
+          "createdAt": "2026-02-18T18:12:05.000Z",
+          "metrics": {
+            "like_count": 23,
+            "retweet_count": 2,
+            "reply_count": 2,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/github/status/2024185163220209931",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "🎛️ 4. Scope and control your agents\n\nLimit access, restrict actions, and define boundaries so agents stay safe, predictable, and aligned with your workflow."
+        },
+        {
+          "id": "2024185161936753035",
+          "text": "🕵️ 3. Özelleştirilmiş kişiliklere sahip özel aracılar oluşturun\n\nGüvenlik incelemeleri, API mimarisi, test veya dokümantasyon için ayarlanmış aracılar oluşturun - her biri kendi davranışlarına ve araçlarına sahip.",
+          "createdAt": "2026-02-18T18:12:04.000Z",
+          "metrics": {
+            "like_count": 22,
+            "retweet_count": 2,
+            "reply_count": 2,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/github/status/2024185161936753035",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "🕵️ 3. Build custom agents with specialized personas\n\nCreate agents tuned for security reviews, API architecture, testing, or documentation—each with its own behaviors and tools."
         }
       ],
       "source": "syndication"
@@ -191,30 +115,129 @@
       "description": "Google'ın çok modlu AI modeli",
       "tweets": [
         {
-          "id": "2023851323360506008",
-          "text": "RT @sundarpichai: 19 Mayıs'ta başlayacak Google I/O'da görüşmek üzere! https://t.co/KgNKbb3nMu https://t.co/OD6x3IYtTi",
-          "createdAt": "2026-02-17T20:05:31.000Z",
+          "id": "2024245607221653880",
+          "text": "RT @googlecloud: Tüm hareket dağda gerçekleşmez. Her koşudan sonra olan çok şey var.\n\nTüm bunların nasıl bir araya geldiğini görün...",
+          "createdAt": "2026-02-18T22:12:16.000Z",
           "metrics": {
             "like_count": 0,
-            "retweet_count": 467,
+            "retweet_count": 8,
             "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/GoogleDeepMind/status/2023851323360506008",
+          "url": "https://twitter.com/GoogleDeepMind/status/2024245607221653880",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @googlecloud: Not all the action happens on the mountain. There’s a lot that happens after every run. \n\nSee how it all comes together wi…"
+        },
+        {
+          "id": "2024186433339027868",
+          "text": "Kristal netliğinde ses. İnce detaylı kontrol. Lyria 3 şimdiye kadarki en yetenekli müzik modelimiz. 🎶\n\nBeta sürümünü @GeminiApp'te deneyin https://t.co/VdShoC2pQt",
+          "createdAt": "2026-02-18T18:17:07.000Z",
+          "metrics": {
+            "like_count": 443,
+            "retweet_count": 38,
+            "reply_count": 35,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 11
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024186433339027868",
           "media": [
             {
-              "type": "animated_gif",
-              "url": "https://pbs.twimg.com/tweet_video_thumb/HBYmkrzbMAAfMMV.jpg",
-              "display_url": "pic.x.com/OD6x3IYtTi",
-              "expanded_url": "https://x.com/sundarpichai/status/2023847540400288134/photo/1",
-              "video_url": "https://video.twimg.com/tweet_video/HBYmkrzbMAAfMMV.mp4"
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024186128736059392/img/soqHgs6Q631rp0ka.jpg",
+              "display_url": "pic.x.com/VdShoC2pQt",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024186433339027868/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024186128736059392/vid/avc1/1440x1800/aQrkIoEOWUcHr-R-.mp4",
+              "duration_millis": 100633
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "RT @sundarpichai: See you all at Google I/O starting May 19th! https://t.co/KgNKbb3nMu https://t.co/OD6x3IYtTi"
+          "originalText": "Crystal-clear audio. Granular control. Lyria 3 is our most capable music model yet. 🎶\n\nTry it in beta in the @GeminiApp https://t.co/VdShoC2pQt"
+        },
+        {
+          "id": "2024153074315497495",
+          "text": "Lyria 3 bugün beta olarak tüm dünyada @GeminiApp'te kullanıma sunuluyor, özel ses içeriği oluşturmaya başlamayı kolaylaştırıyor. 🎛️\n\nUygulamadaki tüm üretimler ayrıca SynthID içeriyor: Google AI içeriğini tanımlamak için görünmez filigranımız.\n\nDaha fazla bilgi → https://t.co/nzcllM4npn",
+          "createdAt": "2026-02-18T16:04:34.000Z",
+          "metrics": {
+            "like_count": 131,
+            "retweet_count": 7,
+            "reply_count": 3,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024153074315497495",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024151169531002880/img/eDffB8QLJpGKVIqS.jpg",
+              "display_url": "pic.x.com/nzcllM4npn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153074315497495/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024151169531002880/vid/avc1/1080x1080/h19lQJx2gxy4hpu8.mp4",
+              "duration_millis": 30000
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Lyria 3 is rolling out today in beta in the @GeminiApp for everyone globally, making it easy to get started with custom audio. 🎛️\n\nAll generations from the app also include SynthID: our invisible watermark for identifying Google AI content.\n\nFind out more → https://t.co/nzcllM4npn"
+        },
+        {
+          "id": "2024153072046424556",
+          "text": "Üreticilere, ürettikleri üzerinde daha fazla kontrol veriyoruz ve onlara şunları yönlendirmede yardımcı oluyoruz:\n🔵 Tempo ayarları\n🔵 Belirli vokal stilleri\n🔵 Kesin sözler https://t.co/PZgw3Fpk62",
+          "createdAt": "2026-02-18T16:04:33.000Z",
+          "metrics": {
+            "like_count": 181,
+            "retweet_count": 11,
+            "reply_count": 8,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024153072046424556",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024151018322145281/img/qubzzpOobIRa-Gus.jpg",
+              "display_url": "pic.x.com/PZgw3Fpk62",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153072046424556/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024151018322145281/vid/avc1/1080x1080/Nb25QtXbDRFxdLjx.mp4",
+              "duration_millis": 30000
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We’re giving creators more control over what they produce, helping them steer:\n🔵 Tempo settings\n🔵 Specific vocal styles\n🔵 Precise lyrics https://t.co/PZgw3Fpk62"
+        },
+        {
+          "id": "2024153067654902014",
+          "text": "Yeni üretken müzik modelimiz Lyria 3'ü duyurduk. 🔊\n\nFotoğrafları ve metinleri - vokal ve sözlerle birlikte - dinamik parçalara dönüştürebiliyor. 🧵 https://t.co/Bd2CHCSthO",
+          "createdAt": "2026-02-18T16:04:32.000Z",
+          "metrics": {
+            "like_count": 1297,
+            "retweet_count": 201,
+            "reply_count": 93,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 109
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024153067654902014",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024150673319727104/img/MfyZ5l9K74Gx15o6.jpg",
+              "display_url": "pic.x.com/Bd2CHCSthO",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153067654902014/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024150673319727104/vid/avc1/1080x1080/jvaou6lwxQA9sYAw.mp4",
+              "duration_millis": 19875
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We just dropped Lyria 3: our latest generative music model. 🔊 \n\nIt can turn photos and text into dynamic tracks - complete with vocals and lyrics. 🧵 https://t.co/Bd2CHCSthO"
         }
       ],
       "source": "syndication"
@@ -231,30 +254,170 @@
       "description": "AI destekli not alma ve araştırma",
       "tweets": [
         {
-          "id": "2023851323360506008",
-          "text": "RT @sundarpichai: 19 Mayıs'ta başlayacak Google I/O'da görüşmek üzere! https://t.co/KgNKbb3nMu https://t.co/OD6x3IYtTi",
-          "createdAt": "2026-02-17T20:05:31.000Z",
+          "id": "2024245607221653880",
+          "text": "RT @googlecloud: Tüm hareket dağda olmuyor. Her koşudan sonra da pek çok şey yaşanıyor.\n\nTüm bunların nasıl bir araya geldiğini görün...",
+          "createdAt": "2026-02-18T22:12:16.000Z",
           "metrics": {
             "like_count": 0,
-            "retweet_count": 467,
+            "retweet_count": 8,
             "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/GoogleDeepMind/status/2023851323360506008",
+          "url": "https://twitter.com/GoogleDeepMind/status/2024245607221653880",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @googlecloud: Not all the action happens on the mountain. There’s a lot that happens after every run. \n\nSee how it all comes together wi…"
+        },
+        {
+          "id": "2024186433339027868",
+          "text": "Kristal netliğinde ses. İnce detaylı kontrol. Lyria 3 şimdiye kadarki en yetenekli müzik modelimiz. 🎶\n\nBeta sürümünü @GeminiApp'te deneyin https://t.co/VdShoC2pQt",
+          "createdAt": "2026-02-18T18:17:07.000Z",
+          "metrics": {
+            "like_count": 443,
+            "retweet_count": 38,
+            "reply_count": 35,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 11
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024186433339027868",
           "media": [
             {
-              "type": "animated_gif",
-              "url": "https://pbs.twimg.com/tweet_video_thumb/HBYmkrzbMAAfMMV.jpg",
-              "display_url": "pic.x.com/OD6x3IYtTi",
-              "expanded_url": "https://x.com/sundarpichai/status/2023847540400288134/photo/1",
-              "video_url": "https://video.twimg.com/tweet_video/HBYmkrzbMAAfMMV.mp4"
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024186128736059392/img/soqHgs6Q631rp0ka.jpg",
+              "display_url": "pic.x.com/VdShoC2pQt",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024186433339027868/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024186128736059392/vid/avc1/1440x1800/aQrkIoEOWUcHr-R-.mp4",
+              "duration_millis": 100633
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "RT @sundarpichai: See you all at Google I/O starting May 19th! https://t.co/KgNKbb3nMu https://t.co/OD6x3IYtTi"
+          "originalText": "Crystal-clear audio. Granular control. Lyria 3 is our most capable music model yet. 🎶\n\nTry it in beta in the @GeminiApp https://t.co/VdShoC2pQt"
+        },
+        {
+          "id": "2024153074315497495",
+          "text": "Lyria 3 bugün beta olarak tüm dünyada @GeminiApp'te kullanıma sunuluyor, böylece özel ses oluşturmaya başlamak kolaylaşıyor. 🎛️\n\nUygulamadaki tüm üretimler ayrıca SynthID içeriyor: Google AI içeriğini tanımlamak için görünmez filigranımız.\n\nDaha fazla bilgi → https://t.co/nzcllM4npn",
+          "createdAt": "2026-02-18T16:04:34.000Z",
+          "metrics": {
+            "like_count": 131,
+            "retweet_count": 7,
+            "reply_count": 3,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024153074315497495",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024151169531002880/img/eDffB8QLJpGKVIqS.jpg",
+              "display_url": "pic.x.com/nzcllM4npn",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153074315497495/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024151169531002880/vid/avc1/1080x1080/h19lQJx2gxy4hpu8.mp4",
+              "duration_millis": 30000
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Lyria 3 is rolling out today in beta in the @GeminiApp for everyone globally, making it easy to get started with custom audio. 🎛️\n\nAll generations from the app also include SynthID: our invisible watermark for identifying Google AI content.\n\nFind out more → https://t.co/nzcllM4npn"
+        },
+        {
+          "id": "2024153072046424556",
+          "text": "Üreticilere, ürettikleri üzerinde daha fazla kontrol imkanı sunuyoruz:\n🔵 Tempo ayarları\n🔵 Belirli vokal stilleri\n🔵 Kesin sözler https://t.co/PZgw3Fpk62",
+          "createdAt": "2026-02-18T16:04:33.000Z",
+          "metrics": {
+            "like_count": 181,
+            "retweet_count": 11,
+            "reply_count": 8,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024153072046424556",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024151018322145281/img/qubzzpOobIRa-Gus.jpg",
+              "display_url": "pic.x.com/PZgw3Fpk62",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153072046424556/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024151018322145281/vid/avc1/1080x1080/Nb25QtXbDRFxdLjx.mp4",
+              "duration_millis": 30000
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We’re giving creators more control over what they produce, helping them steer:\n🔵 Tempo settings\n🔵 Specific vocal styles\n🔵 Precise lyrics https://t.co/PZgw3Fpk62"
+        },
+        {
+          "id": "2024153067654902014",
+          "text": "Yeni üretken müzik modelimiz Lyria 3'ü duyurduk. 🔊\n\nFotoğraf ve metinleri -vokal ve sözlerle birlikte- dinamik parçalara dönüştürebiliyor. 🧵 https://t.co/Bd2CHCSthO",
+          "createdAt": "2026-02-18T16:04:32.000Z",
+          "metrics": {
+            "like_count": 1297,
+            "retweet_count": 201,
+            "reply_count": 93,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 109
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024153067654902014",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024150673319727104/img/MfyZ5l9K74Gx15o6.jpg",
+              "display_url": "pic.x.com/Bd2CHCSthO",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153067654902014/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024150673319727104/vid/avc1/1080x1080/jvaou6lwxQA9sYAw.mp4",
+              "duration_millis": 19875
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We just dropped Lyria 3: our latest generative music model. 🔊 \n\nIt can turn photos and text into dynamic tracks - complete with vocals and lyrics. 🧵 https://t.co/Bd2CHCSthO"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "flux",
+      "name": "Flux",
+      "xHandle": "bfl_ml",
+      "category": "image",
+      "categoryLabel": "Image Generation",
+      "brandColor": "#F97316",
+      "logo": "⚡",
+      "company": "Black Forest Labs",
+      "description": "Gelişmiş açık kaynak görsel modeli",
+      "tweets": [
+        {
+          "id": "2024241784025731492",
+          "text": "Doğanın içindeki müze.\n\nYapıyı koru ama çevreyi değiştir.\n\nFLUX.2 ve basit bir taslak kullanılarak oluşturuldu. https://t.co/ItfFjXvLmf",
+          "createdAt": "2026-02-18T21:57:04.000Z",
+          "metrics": {
+            "like_count": 58,
+            "retweet_count": 1,
+            "reply_count": 4,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/bfl_ml/status/2024241784025731492",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024241732880404480/img/HrWleZ8GSOQFLuuA.jpg",
+              "display_url": "pic.x.com/ItfFjXvLmf",
+              "expanded_url": "https://x.com/bfl_ml/status/2024241784025731492/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024241732880404480/vid/avc1/720x1044/0WaaBjUHqI0Euc17.mp4?tag=14",
+              "duration_millis": 9000
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Museum in the wild.\n\nPreserve structure but change the environment.\n\nGenerated using FLUX.2 and a simple outline. https://t.co/ItfFjXvLmf"
         }
       ],
       "source": "syndication"
@@ -271,248 +434,96 @@
       "description": "AI destekli kod editörü",
       "tweets": [
         {
-          "id": "2023841746577485894",
-          "text": "Sonnet 4.6 artık Cursor'da mevcut.\n\nKıyaslamalarımız, uzun görevlerde Sonnet 4.5'e göre kayda değer bir gelişme olduğunu, ancak zeka performansında Opus 4.6'nın gerisinde kaldığını gösteriyor.",
-          "createdAt": "2026-02-17T19:27:28.000Z",
+          "id": "2024222148009886099",
+          "text": "Cursor'daki tüm yeniliklere göz atın: https://t.co/7qceASnFlu",
+          "createdAt": "2026-02-18T20:39:02.000Z",
           "metrics": {
-            "like_count": 1723,
-            "retweet_count": 70,
-            "reply_count": 47,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 18
-          },
-          "url": "https://twitter.com/cursor_ai/status/2023841746577485894",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Sonnet 4.6 is now available in Cursor.\n\nOur benchmarks show it as a notable improvement over Sonnet 4.5 on longer tasks, but below Opus 4.6 for intelligence."
-        },
-        {
-          "id": "2023829000192422347",
-          "text": "AWS için Agent eklentileri, Cursor'a AWS üzerinde uygulamaları tasarlama, dağıtma ve işletme becerileri ile araçlar sağlıyor. https://t.co/VF74H29U8v",
-          "createdAt": "2026-02-17T18:36:49.000Z",
-          "metrics": {
-            "like_count": 45,
+            "like_count": 102,
             "retweet_count": 2,
-            "reply_count": 1,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 4
-          },
-          "url": "https://twitter.com/cursor_ai/status/2023829000192422347",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2023828942839562240/img/JjGITXfzbTsH1Sgr.jpg",
-              "display_url": "pic.x.com/VF74H29U8v",
-              "expanded_url": "https://x.com/cursor_ai/status/2023829000192422347/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023828942839562240/vid/avc1/1388x1080/DNg9I3-Y5-h8vyl7.mp4",
-              "duration_millis": 22783
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Agent plugins for AWS provide Cursor with skills and tools to architect, deploy, and operate applications on AWS. https://t.co/VF74H29U8v"
-        },
-        {
-          "id": "2023827905743384969",
-          "text": "Vercel eklentisi ile React en iyi uygulamalarını kullanarak uygulamaları optimize edin. https://t.co/JOublZpz8c",
-          "createdAt": "2026-02-17T18:32:28.000Z",
-          "metrics": {
-            "like_count": 45,
-            "retweet_count": 2,
-            "reply_count": 2,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/cursor_ai/status/2023827905743384969",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2023827271967207424/img/OnHg41g4qeyCr138.jpg",
-              "display_url": "pic.x.com/JOublZpz8c",
-              "expanded_url": "https://x.com/cursor_ai/status/2023827905743384969/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023827271967207424/vid/avc1/1388x1080/4VSSTiZkc94RdChM.mp4",
-              "duration_millis": 24333
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Optimize apps using React best practices with the Vercel plugin. https://t.co/JOublZpz8c"
-        },
-        {
-          "id": "2023827904178893303",
-          "text": "Figma eklentisi ile tasarımları koda dönüştürün. https://t.co/6lbT3AqVTZ",
-          "createdAt": "2026-02-17T18:32:27.000Z",
-          "metrics": {
-            "like_count": 38,
-            "retweet_count": 0,
             "reply_count": 5,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 1
           },
-          "url": "https://twitter.com/cursor_ai/status/2023827904178893303",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2023827179243757568/img/Qlh8SNbftpzsm3YT.jpg",
-              "display_url": "pic.x.com/6lbT3AqVTZ",
-              "expanded_url": "https://x.com/cursor_ai/status/2023827904178893303/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023827179243757568/vid/avc1/1388x1080/mShAaPi6MExjGpK5.mp4",
-              "duration_millis": 21400
-            }
-          ],
+          "url": "https://twitter.com/cursor_ai/status/2024222148009886099",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Translate designs into code with the Figma plugin. https://t.co/6lbT3AqVTZ"
+          "originalText": "See everything new in Cursor: https://t.co/7qceASnFlu"
         },
         {
-          "id": "2023827902471827673",
-          "text": "Stripe eklentisi ile ödeme ve abonelik işlemleri için entegrasyonlar oluşturun. https://t.co/g1RM12kbGl",
-          "createdAt": "2026-02-17T18:32:27.000Z",
+          "id": "2024222146642497713",
+          "text": "Cursor artık geçmiş konuşmaları bağlam olarak kullanabiliyor. https://t.co/Ue1lBQ9xA3",
+          "createdAt": "2026-02-18T20:39:02.000Z",
           "metrics": {
-            "like_count": 66,
-            "retweet_count": 5,
-            "reply_count": 2,
+            "like_count": 887,
+            "retweet_count": 56,
+            "reply_count": 50,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 3
+            "quote_count": 28
           },
-          "url": "https://twitter.com/cursor_ai/status/2023827902471827673",
+          "url": "https://twitter.com/cursor_ai/status/2024222146642497713",
           "media": [
             {
               "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2023827109261832194/img/8Qhb_WHUZz0hYZHu.jpg",
-              "display_url": "pic.x.com/g1RM12kbGl",
-              "expanded_url": "https://x.com/cursor_ai/status/2023827902471827673/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023827109261832194/vid/avc1/1388x1080/y1AQ8fdYOvNw_90Z.mp4",
-              "duration_millis": 22250
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024221912789110789/img/5ZTvicTxUGm28P5k.jpg",
+              "display_url": "pic.x.com/Ue1lBQ9xA3",
+              "expanded_url": "https://x.com/cursor_ai/status/2024222146642497713/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024221912789110789/vid/avc1/2816x2160/BvtK1kzgf_TTx1lX.mp4",
+              "duration_millis": 16933
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Build integrations for handling payments and subscriptions with the Stripe plugin. https://t.co/g1RM12kbGl"
+          "originalText": "Cursor can now use past conversations as context. https://t.co/Ue1lBQ9xA3"
         }
       ],
       "source": "syndication"
     },
     {
-      "tool": "perplexity",
-      "name": "Perplexity",
-      "xHandle": "perplexity_ai",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#22C55E",
-      "logo": "🔍",
-      "company": "Perplexity AI",
-      "description": "AI destekli arama motoru",
+      "tool": "midjourney",
+      "name": "Midjourney",
+      "xHandle": "midjourney",
+      "category": "image",
+      "categoryLabel": "Image Generation",
+      "brandColor": "#1A1A2E",
+      "logo": "🎨",
+      "company": "Midjourney",
+      "description": "Yüksek kaliteli AI görsel oluşturma",
       "tweets": [
         {
-          "id": "2023839622242206179",
-          "text": "Claude Sonnet 4.6 artık tüm Perplexity Pro ve Max aboneleri için kullanılabilir. https://t.co/fCq5w8gbho",
-          "createdAt": "2026-02-17T19:19:01.000Z",
+          "id": "2024221301960020076",
+          "text": "https://t.co/OfPhSMZDwn",
+          "createdAt": "2026-02-18T20:35:41.000Z",
           "metrics": {
-            "like_count": 1157,
-            "retweet_count": 58,
-            "reply_count": 66,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 19
-          },
-          "url": "https://twitter.com/perplexity_ai/status/2023839622242206179",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBYfaVRaMAAmO3K.png",
-              "display_url": "pic.x.com/fCq5w8gbho",
-              "expanded_url": "https://x.com/perplexity_ai/status/2023839622242206179/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Claude Sonnet 4.6 is now available to all Perplexity Pro and Max subscribers. https://t.co/fCq5w8gbho"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "pika",
-      "name": "Pika Labs",
-      "xHandle": "pika_labs",
-      "category": "video",
-      "categoryLabel": "Video Generation",
-      "brandColor": "#FBBF24",
-      "logo": "🎥",
-      "company": "Pika",
-      "description": "AI video oluşturma platformu",
-      "tweets": [
-        {
-          "id": "2023830588130771193",
-          "text": "🦾💪 https://t.co/Qmis6197CW",
-          "createdAt": "2026-02-17T18:43:07.000Z",
-          "metrics": {
-            "like_count": 268,
-            "retweet_count": 72,
-            "reply_count": 89,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 37
-          },
-          "url": "https://twitter.com/pika_labs/status/2023830588130771193",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2023830462347739136/img/X6CuxN2y1M0J3106.jpg",
-              "display_url": "pic.x.com/Qmis6197CW",
-              "expanded_url": "https://x.com/pika_labs/status/2023830588130771193/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2023830462347739136/vid/avc1/1248x1660/_2Qt3J2Dj9XDct82.mp4",
-              "duration_millis": 10041
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "🦾💪 https://t.co/Qmis6197CW"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "poe",
-      "name": "Poe",
-      "xHandle": "poe_platform",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#A855F7",
-      "logo": "📚",
-      "company": "Quora",
-      "description": "Çoklu AI model platformu",
-      "tweets": [
-        {
-          "id": "2023819270602535240",
-          "text": "Claude Sonnet 4.6, Anthropic'ın en yeni modelidir. Günlük işler için kalite, hız ve fiyat arasında güçlü bir denge sunar; araç odaklı iş akışları ve kullanıcı arayüzü otomasyonu için sağlam bilgisayar kullanım yeteneklerine sahiptir.\n\nModeli tüm platformlardaki Poe uygulamasında ve Poe https://t.co/CTdkWEthua adresinde deneyebilirsiniz.",
-          "createdAt": "2026-02-17T17:58:09.000Z",
-          "metrics": {
-            "like_count": 99,
-            "retweet_count": 10,
-            "reply_count": 6,
+            "like_count": 5,
+            "retweet_count": 0,
+            "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/poe_platform/status/2023819270602535240",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBYKxlTaEAA--lq.jpg",
-              "display_url": "pic.x.com/CTdkWEthua",
-              "expanded_url": "https://x.com/poe_platform/status/2023819270602535240/photo/1"
-            }
-          ],
+          "url": "https://twitter.com/midjourney/status/2024221301960020076",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Claude Sonnet 4.6 is Anthropic’s latest model. It strikes a strong balance of quality, speed, and price for day-to-day work, with robust computer-use capabilities for tool-driven workflows and UI automation.\n\nYou can try the model in the Poe app on all platforms and in the Poe https://t.co/CTdkWEthua"
+          "originalText": "https://t.co/OfPhSMZDwn"
+        },
+        {
+          "id": "2024215048584134678",
+          "text": "https://t.co/lu54WDUDXg",
+          "createdAt": "2026-02-18T20:10:50.000Z",
+          "metrics": {
+            "like_count": 21,
+            "retweet_count": 3,
+            "reply_count": 14,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 1
+          },
+          "url": "https://twitter.com/midjourney/status/2024215048584134678",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "https://t.co/lu54WDUDXg"
         }
       ],
       "source": "syndication"
@@ -529,38 +540,245 @@
       "description": "Anthropic'ın güvenli AI asistanı",
       "tweets": [
         {
-          "id": "2023818886874099996",
-          "text": "RT @claudeai: Bu, Claude Sonnet 4.6: şimdiye kadarki en yetenekli Sonnet modelimiz.\n\nKodlama, bilgisayar kullanımı, uzun bağlam... alanlarında tam bir yükseltme...",
-          "createdAt": "2026-02-17T17:56:38.000Z",
+          "id": "2024210056871629072",
+          "text": "Bu çalışmanın temel bir dersi, özerkliğin model, kullanıcı ve ürün tarafından birlikte inşa edildiğidir. Yalnızca dağıtım öncesi değerlendirmelerle tam olarak karakterize edilemez.\n\nTüm detaylar ve geliştiriciler ile politika yapıcılar için önerilerimiz blogda: https://t.co/CllNkMF4ZZ",
+          "createdAt": "2026-02-18T19:51:00.000Z",
           "metrics": {
-            "like_count": 0,
-            "retweet_count": 2246,
-            "reply_count": 0,
+            "like_count": 92,
+            "retweet_count": 5,
+            "reply_count": 11,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 2
+          },
+          "url": "https://twitter.com/AnthropicAI/status/2024210056871629072",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "A central lesson of this work is that autonomy is co-constructed by the model, user, and product. It can't be fully characterized by pre-deployment evaluations alone.\n\nFor full details, and our recommendations to developers and policymakers, see the blog: https://t.co/CllNkMF4ZZ"
+        },
+        {
+          "id": "2024210053369385192",
+          "text": "API'mizdeki araçsal çağrıların yaklaşık %50'sini yazılım mühendisliği oluşturuyor, ancak diğer sektörlerde de yeni kullanım alanları görüyoruz.\n\nRisk ve özerklik sınırları genişledikçe, dağıtım sonrası izleme temel hale geliyor. Diğer model geliştiricileri bu araştırmayı genişletmeye teşvik ediyoruz. https://t.co/p8pOjgJPrh",
+          "createdAt": "2026-02-18T19:50:59.000Z",
+          "metrics": {
+            "like_count": 458,
+            "retweet_count": 39,
+            "reply_count": 24,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 25
+          },
+          "url": "https://twitter.com/AnthropicAI/status/2024210053369385192",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBdvcsMbYAAXwGM.png",
+              "display_url": "pic.x.com/p8pOjgJPrh",
+              "expanded_url": "https://x.com/AnthropicAI/status/2024210053369385192/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Software engineering makes up ~50% of agentic tool calls on our API, but we see emerging use in other industries. \n\nAs the frontier of risk and autonomy expands, post-deployment monitoring becomes essential. We encourage other model developers to extend this research. https://t.co/p8pOjgJPrh"
+        },
+        {
+          "id": "2024210050718585017",
+          "text": "API'mizdeki çoğu ajan eylemi düşük risklidir. Araç çağrılarının %73'ünde insan kontrolü var gibi görünüyor ve yalnızca %0.8'i geri alınamaz nitelikte.\n\nAncak sınır bölgelerinde, ajanların güvenlik sistemleri, finansal işlemler ve üretim dağıtımları üzerinde hareket ettiğini görüyoruz (bazıları değerlendirme olabilir). https://t.co/Jk3xXUKCpN",
+          "createdAt": "2026-02-18T19:50:58.000Z",
+          "metrics": {
+            "like_count": 72,
+            "retweet_count": 2,
+            "reply_count": 6,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/AnthropicAI/status/2023818886874099996",
+          "url": "https://twitter.com/AnthropicAI/status/2024210050718585017",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBdvKxta0AAeFg-.jpg",
+              "display_url": "pic.x.com/Jk3xXUKCpN",
+              "expanded_url": "https://x.com/AnthropicAI/status/2024210050718585017/photo/1"
+            }
+          ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "RT @claudeai: This is Claude Sonnet 4.6: our most capable Sonnet model yet.\n\nIt’s a full upgrade across coding, computer use, long-context…"
+          "originalText": "Most agent actions on our API are low risk. 73% of tool calls appear to have a human in the loop, and only 0.8% are irreversible.\n\nBut at the frontier, we see agents acting on security systems, financial transactions, and production deployments (though some may be evals). https://t.co/Jk3xXUKCpN"
         },
         {
-          "id": "2023789983711326380",
-          "text": "Ruanda Hükümeti ile bir Mutabakat Zaptı imzaladık—Afrika'daki bu türden ilk ortaklık—sağlık, eğitim ve diğer kamu sektörlerine AI getirmek için.\n\nDaha fazlasını okuyun: https://t.co/txgEScvKtP",
-          "createdAt": "2026-02-17T16:01:46.000Z",
+          "id": "2024210048516575324",
+          "text": "Claude Code ayrıca sorular sorarak durarak denetimi teşvik ediyor.\n\nKarmaşık görevlerde, Claude Code açıklama için, insanların onu böldüğünden iki kattan daha fazla sıklıkta duraklıyor. Modellerin belirsizliği tanımasını öğretmek, önemli ve yeterince takdir edilmeyen bir güvenlik özelliği. https://t.co/IyOSahYEI4",
+          "createdAt": "2026-02-18T19:50:58.000Z",
           "metrics": {
-            "like_count": 2408,
-            "retweet_count": 557,
-            "reply_count": 181,
+            "like_count": 76,
+            "retweet_count": 0,
+            "reply_count": 7,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 201
+            "quote_count": 3
           },
-          "url": "https://twitter.com/AnthropicAI/status/2023789983711326380",
+          "url": "https://twitter.com/AnthropicAI/status/2024210048516575324",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBdu881aYAAP-S-.png",
+              "display_url": "pic.x.com/IyOSahYEI4",
+              "expanded_url": "https://x.com/AnthropicAI/status/2024210048516575324/photo/1"
+            }
+          ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "We've signed an MOU with the Government of Rwanda—the first partnership of its kind in Africa—to bring AI to health, education, and other public sectors.\n\nRead more: https://t.co/txgEScvKtP"
+          "originalText": "Claude Code also encourages oversight by stopping to ask questions.\n\nOn complex tasks, Claude Code pauses for clarification more than twice as often as humans interrupt it. Training models to recognize uncertainty is an important, under-appreciated safety property. https://t.co/IyOSahYEI4"
+        },
+        {
+          "id": "2024210044917891361",
+          "text": "Ancak kesintiler deneyimle birlikte artıyor. Yeni kullanıcılar Claude Code'u etkileşimlerin %5'inde keserken, daha deneyimli kullanıcılarda bu oran %9.\n\nBu, her eylemi onaylamaktan, gerektiğinde yetki devredip müdahale etmeye doğru bir geçişe işaret ediyor. https://t.co/SDaUXCl2Gv",
+          "createdAt": "2026-02-18T19:50:57.000Z",
+          "metrics": {
+            "like_count": 66,
+            "retweet_count": 0,
+            "reply_count": 4,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 1
+          },
+          "url": "https://twitter.com/AnthropicAI/status/2024210044917891361",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBdu39ObUAMdED8.png",
+              "display_url": "pic.x.com/SDaUXCl2Gv",
+              "expanded_url": "https://x.com/AnthropicAI/status/2024210044917891361/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "But interruptions also increase with experience. New users interrupt Claude Code in 5% of turns, compared to 9% for more experienced users.\n\nThis suggests a shift from approving each action to delegating and interrupting when needed. https://t.co/SDaUXCl2Gv"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "chatgpt",
+      "name": "ChatGPT",
+      "xHandle": "OpenAI",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#10A37F",
+      "logo": "🤖",
+      "company": "OpenAI",
+      "description": "OpenAI'nin sohbet botu ve GPT modelleri",
+      "tweets": [
+        {
+          "id": "2024193883748651102",
+          "text": "EVMbench'i tanıtıyoruz—bu yeni kıyaslama, AI ajanlarının yüksek önemdeki akıllı sözleşme güvenlik açıklarını ne kadar iyi tespit edebildiğini, sömürebildiğini ve yamalayabildiğini ölçüyor. https://t.co/op5zufgAGH",
+          "createdAt": "2026-02-18T18:46:44.000Z",
+          "metrics": {
+            "like_count": 6571,
+            "retweet_count": 890,
+            "reply_count": 794,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 550
+          },
+          "url": "https://twitter.com/OpenAI/status/2024193883748651102",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://t.co/op5zufgAGH"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "dalle",
+      "name": "DALL-E",
+      "xHandle": "OpenAI",
+      "category": "image",
+      "categoryLabel": "Image Generation",
+      "brandColor": "#10A37F",
+      "logo": "🖼️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın görsel oluşturma modeli",
+      "tweets": [
+        {
+          "id": "2024193883748651102",
+          "text": "EVMbench'i tanıtıyoruz—bu yeni kıyaslama, AI ajanlarının yüksek önemdeki akıllı sözleşme güvenlik açıklarını ne kadar iyi tespit edebildiğini, sömürebildiğini ve yamalayabildiğini ölçüyor. https://t.co/op5zufgAGH",
+          "createdAt": "2026-02-18T18:46:44.000Z",
+          "metrics": {
+            "like_count": 6571,
+            "retweet_count": 890,
+            "reply_count": 794,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 550
+          },
+          "url": "https://twitter.com/OpenAI/status/2024193883748651102",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://t.co/op5zufgAGH"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "sora",
+      "name": "Sora",
+      "xHandle": "OpenAI",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#10A37F",
+      "logo": "🎞️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın video oluşturma modeli",
+      "tweets": [
+        {
+          "id": "2024193883748651102",
+          "text": "EVMbench'i tanıtıyoruz—bu yeni kıyaslama, AI ajanlarının yüksek önemdeki akıllı sözleşme güvenlik açıklarını ne kadar iyi tespit edebildiğini, sömürebildiğini ve yamalayabildiğini ölçüyor. https://t.co/op5zufgAGH",
+          "createdAt": "2026-02-18T18:46:44.000Z",
+          "metrics": {
+            "like_count": 6571,
+            "retweet_count": 890,
+            "reply_count": 794,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 550
+          },
+          "url": "https://twitter.com/OpenAI/status/2024193883748651102",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://t.co/op5zufgAGH"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "codex",
+      "name": "Codex",
+      "xHandle": "OpenAI",
+      "category": "coding",
+      "categoryLabel": "Coding",
+      "brandColor": "#10A37F",
+      "logo": "⌨️",
+      "company": "OpenAI",
+      "description": "OpenAI'ın kod modeli",
+      "tweets": [
+        {
+          "id": "2024193883748651102",
+          "text": "EVMbench'i tanıtıyoruz—bu yeni kıyaslama, AI ajanlarının yüksek önemdeki akıllı sözleşme güvenlik açıklarını ne kadar iyi tespit edebildiğini, sömürebildiğini ve yamalayabildiğini ölçüyor. https://t.co/op5zufgAGH",
+          "createdAt": "2026-02-18T18:46:44.000Z",
+          "metrics": {
+            "like_count": 6571,
+            "retweet_count": 890,
+            "reply_count": 794,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 550
+          },
+          "url": "https://twitter.com/OpenAI/status/2024193883748651102",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://t.co/op5zufgAGH"
         }
       ],
       "source": "syndication"
@@ -577,89 +795,305 @@
       "description": "Gerçekçi AI ses sentezi",
       "tweets": [
         {
-          "id": "2023816868205670662",
-          "text": "ElevenAgents for Support, 4 milyondan fazla ajan dağıtımından edinilen bilgilerle, kurumsal güvenilirlik, düşük gecikme süresi ve kontrol için oluşturulmuş, dikey olarak entegre ajan platformumuz tarafından desteklenmektedir.\n\nDaha fazla bilgi: https://t.co/zLucX3ccTo",
-          "createdAt": "2026-02-17T17:48:36.000Z",
+          "id": "2024192067673497624",
+          "text": "RT @ArtificialAnlys: AA-WER v2.0 Konuşmayı Metne Dönüştürme doğruluk kıyaslaması ve konuşma odaklı yeni özel veri seti AA-AgentTalk duyuruluyor…",
+          "createdAt": "2026-02-18T18:39:31.000Z",
           "metrics": {
-            "like_count": 10,
-            "retweet_count": 1,
+            "like_count": 0,
+            "retweet_count": 12,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2024192067673497624",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "RT @ArtificialAnlys: Announcing AA-WER v2.0 Speech to Text accuracy benchmark, and AA-AgentTalk, a new proprietary dataset focused on speec…"
+        },
+        {
+          "id": "2024121835500011855",
+          "text": "@aiunderwriting Bu, kuruluşların müşteri desteği, satış, planlama ve daha fazlasında kritik iş akışlarında konuşma ajanlarını konuşlandırmak için güven kazanmasını sağlıyor.\n\nDevamını okuyun: https://t.co/6dVFJfKx7m",
+          "createdAt": "2026-02-18T14:00:26.000Z",
+          "metrics": {
+            "like_count": 11,
+            "retweet_count": 0,
+            "reply_count": 0,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2024121835500011855",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "@aiunderwriting This gives enterprises the confidence to deploy conversational agents in mission-critical workflows across customer support, sales, scheduling, and more.\n\nRead more: https://t.co/6dVFJfKx7m"
+        },
+        {
+          "id": "2024121834598273151",
+          "text": "ElevenAgents üzerine inşa eden şirketler, yerleşik korumalar sayesinde @aiunderwriting'in AIUC-1 sertifikasına %75'e varan oranda yaklaşıyor ve bunu haftalar içinde elde edebiliyor.",
+          "createdAt": "2026-02-18T14:00:26.000Z",
+          "metrics": {
+            "like_count": 15,
+            "retweet_count": 0,
+            "reply_count": 1,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2024121834598273151",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Companies building on ElevenAgents are up to 75% of the way to @aiunderwriting's AIUC-1 certification and can achieve it in weeks thanks to built-in protections."
+        },
+        {
+          "id": "2024121833528676600",
+          "text": "Fortune 500 güvenlik ve risk liderleriyle geliştirilen AIUC-1 sertifikası, AI sistemlerinin şu alanlarda 5.000'den fazla düşmanca simülasyondan geçmesini gerektirir:\n- Güvenlik açıkları\n- Veri gizliliği\n- Halüsinasyonlar\n- Güvenlik\n\nBu testler, sigortacıların ihtiyaç duyduğu deneysel risk profilini oluşturur.",
+          "createdAt": "2026-02-18T14:00:26.000Z",
+          "metrics": {
+            "like_count": 27,
+            "retweet_count": 0,
             "reply_count": 2,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/elevenlabsio/status/2023816868205670662",
+          "url": "https://twitter.com/elevenlabsio/status/2024121833528676600",
           "isMock": false,
           "source": "syndication",
-          "originalText": "ElevenAgents for Support is powered by our vertically integrated agents platform - built for enterprise reliability, low latency, and control, and informed by 4M+ agent deployments.\n\nLearn more: https://t.co/zLucX3ccTo"
+          "originalText": "AIUC-1 certification, developed with Fortune 500 security and risk leaders, requires AI systems to undergo 5,000+ adversarial simulations across:\n- Security vulnerabilities\n- Data privacy\n- Hallucinations\n- Safety\n\nThese tests create the empirical risk profile insurers need to"
         },
         {
-          "id": "2023816867459010632",
-          "text": "Kurumsal düzeyde hazır politikalar, ajanların marka ve düzenleyici gerekliliklerle uyumlu kalmasını sağlar. 🛡️",
-          "createdAt": "2026-02-17T17:48:36.000Z",
+          "id": "2024121832278757850",
+          "text": "Ajanlarımız - ve eylemleri - artık sigortalanabilir.\n\nAIUC-1 sertifikasıyla desteklenen, AI ses ajanları için sigorta güvencesi sağlayan ilk şirket biziz. https://t.co/QwcD67MuBw",
+          "createdAt": "2026-02-18T14:00:25.000Z",
           "metrics": {
-            "like_count": 4,
+            "like_count": 259,
+            "retweet_count": 28,
+            "reply_count": 25,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 26
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2024121832278757850",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/ext_tw_video_thumb/2024121761642541056/pu/img/IRjMOABEgvLN1UcL.jpg",
+              "display_url": "pic.x.com/QwcD67MuBw",
+              "expanded_url": "https://x.com/elevenlabsio/status/2024121832278757850/video/1",
+              "video_url": "https://video.twimg.com/ext_tw_video/2024121761642541056/pu/vid/avc1/1280x720/uf4utxZCdNcKoBKe.mp4?tag=12",
+              "duration_millis": 48766
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Our agents - and their actions - can now be insured.\n\nBacked by AIUC-1 certification, we’re the first company to secure insurance for AI voice agents. https://t.co/QwcD67MuBw"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "pika",
+      "name": "Pika Labs",
+      "xHandle": "pika_labs",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#FBBF24",
+      "logo": "🎥",
+      "company": "Pika",
+      "description": "AI video oluşturma platformu",
+      "tweets": [
+        {
+          "id": "2024190226579804603",
+          "text": "👀 https://t.co/LHAsdTPOJk",
+          "createdAt": "2026-02-18T18:32:12.000Z",
+          "metrics": {
+            "like_count": 149,
+            "retweet_count": 24,
+            "reply_count": 38,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 10
+          },
+          "url": "https://twitter.com/pika_labs/status/2024190226579804603",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024190074024579073/img/uP1Fb80NWWR2tW40.jpg",
+              "display_url": "pic.x.com/LHAsdTPOJk",
+              "expanded_url": "https://x.com/pika_labs/status/2024190226579804603/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024190074024579073/vid/avc1/1536x2048/EjQAGozNNFkcwJ8b.mp4",
+              "duration_millis": 10166
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "👀 https://t.co/LHAsdTPOJk"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "ideogram",
+      "name": "Ideogram",
+      "xHandle": "ideogram_ai",
+      "category": "image",
+      "categoryLabel": "Image Generation",
+      "brandColor": "#EC4899",
+      "logo": "📝",
+      "company": "Ideogram AI",
+      "description": "Metin destekli görsel oluşturma",
+      "tweets": [
+        {
+          "id": "2024184546988601784",
+          "text": "Artık şeffaf tasarımları doğrudan Ideogram içinde düzenleyebilirsiniz.\n\nSadece bir metin istemiyle düzenleyin, şeffaf arka plan bozulmadan kalır. Herkes için ücretsiz. https://t.co/WwFV142p27",
+          "createdAt": "2026-02-18T18:09:38.000Z",
+          "metrics": {
+            "like_count": 32,
+            "retweet_count": 6,
+            "reply_count": 11,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 3
+          },
+          "url": "https://twitter.com/ideogram_ai/status/2024184546988601784",
+          "media": [
+            {
+              "type": "animated_gif",
+              "url": "https://pbs.twimg.com/tweet_video_thumb/HBdYv7tWIAA9Ecy.jpg",
+              "display_url": "pic.x.com/WwFV142p27",
+              "expanded_url": "https://x.com/ideogram_ai/status/2024184546988601784/photo/1",
+              "video_url": "https://video.twimg.com/tweet_video/HBdYv7tWIAA9Ecy.mp4"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "You can now edit transparent designs directly inside Ideogram.\n\nSimply edit with a text prompt, and the transparent background stays intact. Free for everyone. https://t.co/WwFV142p27"
+        },
+        {
+          "id": "2024184549429624977",
+          "text": "Düzenleme için şeffaflık desteği hakkında daha fazla bilgi edinin: https://t.co/UlRMm9Hygh https://t.co/pYLVQvMhNf",
+          "createdAt": "2026-02-18T18:09:38.000Z",
+          "metrics": {
+            "like_count": 5,
             "retweet_count": 0,
-            "reply_count": 1,
+            "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/elevenlabsio/status/2023816867459010632",
+          "url": "https://twitter.com/ideogram_ai/status/2024184549429624977",
+          "media": [
+            {
+              "type": "animated_gif",
+              "url": "https://pbs.twimg.com/tweet_video_thumb/HBdZAoxXMAAwXVI.jpg",
+              "display_url": "pic.x.com/pYLVQvMhNf",
+              "expanded_url": "https://x.com/ideogram_ai/status/2024184549429624977/photo/1",
+              "video_url": "https://video.twimg.com/tweet_video/HBdZAoxXMAAwXVI.mp4"
+            }
+          ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Enterprise-ready guardrails enforce policy and keep agents aligned with brand and regulatory requirements."
-        },
+          "originalText": "Read more about the transparency support for edit here: https://t.co/UlRMm9Hygh https://t.co/pYLVQvMhNf"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "luma",
+      "name": "Dream Machine",
+      "xHandle": "LumaLabsAI",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#3B82F6",
+      "logo": "💭",
+      "company": "Luma AI",
+      "description": "Gerçekçi AI video üretimi",
+      "tweets": [
         {
-          "id": "2023816866553118909",
-          "text": "ElevenAgents for Support, CCaaS, destek bileti ve CRM sistemleriyle entegre olarak, iş akışlarını yeniden oluşturmadan bağlamı sorunsuzca yönlendirir, kayıtları senkronize eder ve insan ajanlara aktarır. 🔄",
-          "createdAt": "2026-02-17T17:48:36.000Z",
+          "id": "2024167145391673815",
+          "text": "Ray3.14 ile hikayenizi gerçek 1080p kalitesinde hayata geçirin. Yönetmen niyetine sadık kalarak karakter ve çevre tutarlılığını koruyun. Daha güçlü süreklilik, incelikli detaylar ve uyumlu görsel sonuçlarla gerçekçi hareketler üretin. Şimdi yalnızca Dream Machine'de mevcut. https://t.co/QEmz6LFTFs",
+          "createdAt": "2026-02-18T17:00:29.000Z",
           "metrics": {
-            "like_count": 4,
-            "retweet_count": 0,
-            "reply_count": 1,
+            "like_count": 66,
+            "retweet_count": 10,
+            "reply_count": 3,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 0
+            "quote_count": 2
           },
-          "url": "https://twitter.com/elevenlabsio/status/2023816866553118909",
+          "url": "https://twitter.com/LumaLabsAI/status/2024167145391673815",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024166938809692160/img/j5rd9ByTv4m4Y6B0.jpg",
+              "display_url": "pic.x.com/QEmz6LFTFs",
+              "expanded_url": "https://x.com/LumaLabsAI/status/2024167145391673815/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024166938809692160/vid/avc1/1920x816/cNCHqKWWdkgLcffQ.mp4",
+              "duration_millis": 46083
+            }
+          ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Integrating with CCaaS, ticketing, and CRM systems, ElevenAgents for Support seamlessly routes context, syncs records, and hands off to human agents without rebuilding workflows."
-        },
+          "originalText": "Bring your narrative story to life in native 1080p with Ray3.14. Maintain character and environment consistency while adhering to director intent. Produce realistic motion with stronger continuity, refined detail, and cohesive visual results. Available now only in Dream Machine. https://t.co/QEmz6LFTFs"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "runway",
+      "name": "Runway ML",
+      "xHandle": "runwayml",
+      "category": "video",
+      "categoryLabel": "Video Generation",
+      "brandColor": "#FF3366",
+      "logo": "🎬",
+      "company": "Runway",
+      "description": "Yaratıcı AI video araçları",
+      "tweets": [
         {
-          "id": "2023816865718362332",
-          "text": "Ajanlarımız, telefon, sohbet, e-posta ve WhatsApp gibi mesajlaşma platformlarında destek sorunlarını çözer; endişeli müşterileri rahatlatan ve 70'ten fazla dilde konuşmaları çözüme yönlendiren duygusal açıdan uygun bir tonla yanıt verir. 🌍",
-          "createdAt": "2026-02-17T17:48:36.000Z",
+          "id": "2024137812946092152",
+          "text": "Daha fazla bilgi edin: https://t.co/g39FV2piCj",
+          "createdAt": "2026-02-18T15:03:55.000Z",
           "metrics": {
-            "like_count": 11,
-            "retweet_count": 0,
-            "reply_count": 1,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/elevenlabsio/status/2023816865718362332",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Our agents resolve support issues across phone, chat, email and messaging platforms like WhatsApp, responding with an emotionally appropriate tone - reassuring worried customers and guiding conversations to resolution in 70+ languages."
-        },
-        {
-          "id": "2023816864673980609",
-          "text": "CX ekipleri, ElevenAgents for Support'u şunlar için kullanabilir:\n- SOP'ları ve bilgi tabanlarını canlı ajanlara dönüştürmek.\n- \"Bu senaryoda daha empatik ol\" gibi düz metin geri bildirimlerle ajan davranışını iyileştirmek.\n- Yerleşik CX metrikleriyle CSAT, yönlendirme oranı ve gecikme süresini takip etmek. #MüşteriDeneyimi",
-          "createdAt": "2026-02-17T17:48:35.000Z",
-          "metrics": {
-            "like_count": 11,
+            "like_count": 3,
             "retweet_count": 1,
-            "reply_count": 1,
+            "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/elevenlabsio/status/2023816864673980609",
+          "url": "https://twitter.com/runwayml/status/2024137812946092152",
           "isMock": false,
           "source": "syndication",
-          "originalText": "CX teams can use ElevenAgents for Support to:\n- Convert SOPs and knowledge bases into live agents.\n- Improve agent behavior through plain-text feedback like \"Be more empathetic in this scenario.\n- Track CSAT, deflection rate, and latency with built-in CX metrics."
+          "originalText": "Learn more: https://t.co/g39FV2piCj"
+        },
+        {
+          "id": "2024137810953793869",
+          "text": "Çekeceğiniz sahneyi daha önceden görmüş olarak sete gelin.\n\nRunway ile storyboard ve eskizlerden yüksek kaliteli ön görselleştirmelere aylar yerine dakikalar içinde geçebilirsiniz.\n\nDaha fazla bilgi edinmek ve başlamak için aşağıdaki bağlantıyı kullanın. https://t.co/wQRmKTFG2b",
+          "createdAt": "2026-02-18T15:03:55.000Z",
+          "metrics": {
+            "like_count": 94,
+            "retweet_count": 8,
+            "reply_count": 11,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 1
+          },
+          "url": "https://twitter.com/runwayml/status/2024137810953793869",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024137423236497408/img/y8mG1faL6Hg1MkUf.jpg",
+              "display_url": "pic.x.com/wQRmKTFG2b",
+              "expanded_url": "https://x.com/runwayml/status/2024137810953793869/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024137423236497408/vid/avc1/720x1280/iNkWjc9RNrYTqcBt.mp4",
+              "duration_millis": 35666
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Walk on set having already seen what you're about to shoot.\n\nWith Runway you can go from storyboards and sketches to high fidelity previs in a matter a minutes instead of months.\n\nLearn more and get started at the link below. https://t.co/wQRmKTFG2b"
         }
       ],
       "source": "syndication"
