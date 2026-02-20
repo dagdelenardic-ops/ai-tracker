@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-02-19T08:11:08.109Z",
+  "fetchedAt": "2026-02-20T07:54:17.632Z",
   "source": "syndication+deepseek",
-  "toolCount": 16,
-  "tweetCount": 40,
+  "toolCount": 10,
+  "tweetCount": 25,
   "data": [
     {
       "tool": "github-copilot",
@@ -16,878 +16,82 @@
       "description": "GitHub'ın AI kod asistanı",
       "tweets": [
         {
-          "id": "2024260880809284041",
-          "text": "RT @code: Aracı Oturumları Günü YARIN! @code'da çoklu aracı geliştirmeye adanmış bir etkinlik - canlı kodlama, ürün ekibinden içgörüler...",
-          "createdAt": "2026-02-18T23:12:57.000Z",
+          "id": "2024670741640466720",
+          "text": "RT @cassidoo: Yeni GitHub Projeleri oluşturmak artık çok daha kolay!\n\nArtık bir sorgudan içerik aktarabilirsiniz (Issues'daki sorgularla aynı):…",
+          "createdAt": "2026-02-20T02:21:36.000Z",
           "metrics": {
             "like_count": 0,
-            "retweet_count": 19,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/github/status/2024260880809284041",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @code: Agent Sessions Day is TOMORROW! An event dedicated to multi-agent development in @code - with live coding, insights from the prod…"
-        },
-        {
-          "id": "2024251334262726832",
-          "text": "Bu hafta Açık Kaynak Cuma'da 👇\n\nTSİ 20:00: @fkadev, prompt kütüphanelerini nasıl canlı araçlara dönüştüreceğinizi demo ediyor (statik listeler değil).\nTSİ 22:00: @mitchellh, issue'ları, pull request'leri ve katkıda bulunanları korumak için bir topluluk güven yönetim sistemi olan vouch'u anlatıyor.\n\nHatırlatıcılarınızı kurun. 🔔",
-          "createdAt": "2026-02-18T22:35:01.000Z",
-          "metrics": {
-            "like_count": 62,
             "retweet_count": 7,
-            "reply_count": 5,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/github/status/2024251334262726832",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "This week on Open Source Friday 👇\n\n10 a.m. PT: @fkadev demos how to turn prompt libraries into living tools (not static lists).\n12 p.m. PT: @mitchellh talks vouch, a community trust management system to protect issues, pull requests, and contributors.\n\nSet your reminders. 🔔"
-        },
-        {
-          "id": "2024185164663083489",
-          "text": "Bunu uygulamaya hazır mısınız? 👇\nhttps://t.co/mc9WbeQ3hX",
-          "createdAt": "2026-02-18T18:12:05.000Z",
-          "metrics": {
-            "like_count": 41,
-            "retweet_count": 1,
-            "reply_count": 2,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/github/status/2024185164663083489",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Ready to put this into practice? 👇\nhttps://t.co/mc9WbeQ3hX"
-        },
-        {
-          "id": "2024185163220209931",
-          "text": "🎛️ 4. Aracılarınızın kapsamını belirleyin ve kontrol edin\n\nErişimi sınırlayın, eylemleri kısıtlayın ve sınırlar tanımlayın; böylece aracılar güvenli, öngörülebilir ve iş akışınızla uyumlu kalır.",
-          "createdAt": "2026-02-18T18:12:05.000Z",
-          "metrics": {
-            "like_count": 23,
-            "retweet_count": 2,
-            "reply_count": 2,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/github/status/2024185163220209931",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "🎛️ 4. Scope and control your agents\n\nLimit access, restrict actions, and define boundaries so agents stay safe, predictable, and aligned with your workflow."
-        },
-        {
-          "id": "2024185161936753035",
-          "text": "🕵️ 3. Özelleştirilmiş kişiliklere sahip özel aracılar oluşturun\n\nGüvenlik incelemeleri, API mimarisi, test veya dokümantasyon için ayarlanmış aracılar oluşturun - her biri kendi davranışlarına ve araçlarına sahip.",
-          "createdAt": "2026-02-18T18:12:04.000Z",
-          "metrics": {
-            "like_count": 22,
-            "retweet_count": 2,
-            "reply_count": 2,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/github/status/2024185161936753035",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "🕵️ 3. Build custom agents with specialized personas\n\nCreate agents tuned for security reviews, API architecture, testing, or documentation—each with its own behaviors and tools."
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "gemini",
-      "name": "Gemini",
-      "xHandle": "GoogleDeepMind",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#4285F4",
-      "logo": "✨",
-      "company": "Google",
-      "description": "Google'ın çok modlu AI modeli",
-      "tweets": [
-        {
-          "id": "2024245607221653880",
-          "text": "RT @googlecloud: Tüm hareket dağda gerçekleşmez. Her koşudan sonra olan çok şey var.\n\nTüm bunların nasıl bir araya geldiğini görün...",
-          "createdAt": "2026-02-18T22:12:16.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 8,
             "reply_count": 0,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024245607221653880",
+          "url": "https://twitter.com/github/status/2024670741640466720",
           "isMock": false,
           "source": "syndication",
-          "originalText": "RT @googlecloud: Not all the action happens on the mountain. There’s a lot that happens after every run. \n\nSee how it all comes together wi…"
+          "originalText": "RT @cassidoo: It just got a lot easier to spin up new GitHub Projects!\n\nYou can now import things from a query (same queries as in Issues):…"
         },
         {
-          "id": "2024186433339027868",
-          "text": "Kristal netliğinde ses. İnce detaylı kontrol. Lyria 3 şimdiye kadarki en yetenekli müzik modelimiz. 🎶\n\nBeta sürümünü @GeminiApp'te deneyin https://t.co/VdShoC2pQt",
-          "createdAt": "2026-02-18T18:17:07.000Z",
+          "id": "2024612722994970861",
+          "text": "Başlamak için işte adımlar:\n➡️ Zed'de Ayarlar'ı açın ve GitHub Copilot Chat bölümüne gidin.\n➡️ Copilot'ı kullanmak için Oturum aç'a tıklayın, açılan penceredeki adımları izleyin.\n➡️ Copilot ile güçlenen Zed'i kullanmaya başlayın. ✨",
+          "createdAt": "2026-02-19T22:31:03.000Z",
           "metrics": {
-            "like_count": 443,
-            "retweet_count": 38,
-            "reply_count": 35,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 11
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024186433339027868",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024186128736059392/img/soqHgs6Q631rp0ka.jpg",
-              "display_url": "pic.x.com/VdShoC2pQt",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2024186433339027868/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024186128736059392/vid/avc1/1440x1800/aQrkIoEOWUcHr-R-.mp4",
-              "duration_millis": 100633
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Crystal-clear audio. Granular control. Lyria 3 is our most capable music model yet. 🎶\n\nTry it in beta in the @GeminiApp https://t.co/VdShoC2pQt"
-        },
-        {
-          "id": "2024153074315497495",
-          "text": "Lyria 3 bugün beta olarak tüm dünyada @GeminiApp'te kullanıma sunuluyor, özel ses içeriği oluşturmaya başlamayı kolaylaştırıyor. 🎛️\n\nUygulamadaki tüm üretimler ayrıca SynthID içeriyor: Google AI içeriğini tanımlamak için görünmez filigranımız.\n\nDaha fazla bilgi → https://t.co/nzcllM4npn",
-          "createdAt": "2026-02-18T16:04:34.000Z",
-          "metrics": {
-            "like_count": 131,
-            "retweet_count": 7,
-            "reply_count": 3,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024153074315497495",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024151169531002880/img/eDffB8QLJpGKVIqS.jpg",
-              "display_url": "pic.x.com/nzcllM4npn",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153074315497495/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024151169531002880/vid/avc1/1080x1080/h19lQJx2gxy4hpu8.mp4",
-              "duration_millis": 30000
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Lyria 3 is rolling out today in beta in the @GeminiApp for everyone globally, making it easy to get started with custom audio. 🎛️\n\nAll generations from the app also include SynthID: our invisible watermark for identifying Google AI content.\n\nFind out more → https://t.co/nzcllM4npn"
-        },
-        {
-          "id": "2024153072046424556",
-          "text": "Üreticilere, ürettikleri üzerinde daha fazla kontrol veriyoruz ve onlara şunları yönlendirmede yardımcı oluyoruz:\n🔵 Tempo ayarları\n🔵 Belirli vokal stilleri\n🔵 Kesin sözler https://t.co/PZgw3Fpk62",
-          "createdAt": "2026-02-18T16:04:33.000Z",
-          "metrics": {
-            "like_count": 181,
-            "retweet_count": 11,
-            "reply_count": 8,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024153072046424556",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024151018322145281/img/qubzzpOobIRa-Gus.jpg",
-              "display_url": "pic.x.com/PZgw3Fpk62",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153072046424556/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024151018322145281/vid/avc1/1080x1080/Nb25QtXbDRFxdLjx.mp4",
-              "duration_millis": 30000
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We’re giving creators more control over what they produce, helping them steer:\n🔵 Tempo settings\n🔵 Specific vocal styles\n🔵 Precise lyrics https://t.co/PZgw3Fpk62"
-        },
-        {
-          "id": "2024153067654902014",
-          "text": "Yeni üretken müzik modelimiz Lyria 3'ü duyurduk. 🔊\n\nFotoğrafları ve metinleri - vokal ve sözlerle birlikte - dinamik parçalara dönüştürebiliyor. 🧵 https://t.co/Bd2CHCSthO",
-          "createdAt": "2026-02-18T16:04:32.000Z",
-          "metrics": {
-            "like_count": 1297,
-            "retweet_count": 201,
-            "reply_count": 93,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 109
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024153067654902014",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024150673319727104/img/MfyZ5l9K74Gx15o6.jpg",
-              "display_url": "pic.x.com/Bd2CHCSthO",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153067654902014/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024150673319727104/vid/avc1/1080x1080/jvaou6lwxQA9sYAw.mp4",
-              "duration_millis": 19875
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We just dropped Lyria 3: our latest generative music model. 🔊 \n\nIt can turn photos and text into dynamic tracks - complete with vocals and lyrics. 🧵 https://t.co/Bd2CHCSthO"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "notebooklm",
-      "name": "NotebookLM",
-      "xHandle": "GoogleDeepMind",
-      "category": "productivity",
-      "categoryLabel": "Productivity",
-      "brandColor": "#4285F4",
-      "logo": "📓",
-      "company": "Google",
-      "description": "AI destekli not alma ve araştırma",
-      "tweets": [
-        {
-          "id": "2024245607221653880",
-          "text": "RT @googlecloud: Tüm hareket dağda olmuyor. Her koşudan sonra da pek çok şey yaşanıyor.\n\nTüm bunların nasıl bir araya geldiğini görün...",
-          "createdAt": "2026-02-18T22:12:16.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 8,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024245607221653880",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @googlecloud: Not all the action happens on the mountain. There’s a lot that happens after every run. \n\nSee how it all comes together wi…"
-        },
-        {
-          "id": "2024186433339027868",
-          "text": "Kristal netliğinde ses. İnce detaylı kontrol. Lyria 3 şimdiye kadarki en yetenekli müzik modelimiz. 🎶\n\nBeta sürümünü @GeminiApp'te deneyin https://t.co/VdShoC2pQt",
-          "createdAt": "2026-02-18T18:17:07.000Z",
-          "metrics": {
-            "like_count": 443,
-            "retweet_count": 38,
-            "reply_count": 35,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 11
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024186433339027868",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024186128736059392/img/soqHgs6Q631rp0ka.jpg",
-              "display_url": "pic.x.com/VdShoC2pQt",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2024186433339027868/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024186128736059392/vid/avc1/1440x1800/aQrkIoEOWUcHr-R-.mp4",
-              "duration_millis": 100633
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Crystal-clear audio. Granular control. Lyria 3 is our most capable music model yet. 🎶\n\nTry it in beta in the @GeminiApp https://t.co/VdShoC2pQt"
-        },
-        {
-          "id": "2024153074315497495",
-          "text": "Lyria 3 bugün beta olarak tüm dünyada @GeminiApp'te kullanıma sunuluyor, böylece özel ses oluşturmaya başlamak kolaylaşıyor. 🎛️\n\nUygulamadaki tüm üretimler ayrıca SynthID içeriyor: Google AI içeriğini tanımlamak için görünmez filigranımız.\n\nDaha fazla bilgi → https://t.co/nzcllM4npn",
-          "createdAt": "2026-02-18T16:04:34.000Z",
-          "metrics": {
-            "like_count": 131,
-            "retweet_count": 7,
-            "reply_count": 3,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024153074315497495",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024151169531002880/img/eDffB8QLJpGKVIqS.jpg",
-              "display_url": "pic.x.com/nzcllM4npn",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153074315497495/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024151169531002880/vid/avc1/1080x1080/h19lQJx2gxy4hpu8.mp4",
-              "duration_millis": 30000
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Lyria 3 is rolling out today in beta in the @GeminiApp for everyone globally, making it easy to get started with custom audio. 🎛️\n\nAll generations from the app also include SynthID: our invisible watermark for identifying Google AI content.\n\nFind out more → https://t.co/nzcllM4npn"
-        },
-        {
-          "id": "2024153072046424556",
-          "text": "Üreticilere, ürettikleri üzerinde daha fazla kontrol imkanı sunuyoruz:\n🔵 Tempo ayarları\n🔵 Belirli vokal stilleri\n🔵 Kesin sözler https://t.co/PZgw3Fpk62",
-          "createdAt": "2026-02-18T16:04:33.000Z",
-          "metrics": {
-            "like_count": 181,
-            "retweet_count": 11,
-            "reply_count": 8,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024153072046424556",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024151018322145281/img/qubzzpOobIRa-Gus.jpg",
-              "display_url": "pic.x.com/PZgw3Fpk62",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153072046424556/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024151018322145281/vid/avc1/1080x1080/Nb25QtXbDRFxdLjx.mp4",
-              "duration_millis": 30000
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We’re giving creators more control over what they produce, helping them steer:\n🔵 Tempo settings\n🔵 Specific vocal styles\n🔵 Precise lyrics https://t.co/PZgw3Fpk62"
-        },
-        {
-          "id": "2024153067654902014",
-          "text": "Yeni üretken müzik modelimiz Lyria 3'ü duyurduk. 🔊\n\nFotoğraf ve metinleri -vokal ve sözlerle birlikte- dinamik parçalara dönüştürebiliyor. 🧵 https://t.co/Bd2CHCSthO",
-          "createdAt": "2026-02-18T16:04:32.000Z",
-          "metrics": {
-            "like_count": 1297,
-            "retweet_count": 201,
-            "reply_count": 93,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 109
-          },
-          "url": "https://twitter.com/GoogleDeepMind/status/2024153067654902014",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024150673319727104/img/MfyZ5l9K74Gx15o6.jpg",
-              "display_url": "pic.x.com/Bd2CHCSthO",
-              "expanded_url": "https://x.com/GoogleDeepMind/status/2024153067654902014/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024150673319727104/vid/avc1/1080x1080/jvaou6lwxQA9sYAw.mp4",
-              "duration_millis": 19875
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "We just dropped Lyria 3: our latest generative music model. 🔊 \n\nIt can turn photos and text into dynamic tracks - complete with vocals and lyrics. 🧵 https://t.co/Bd2CHCSthO"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "flux",
-      "name": "Flux",
-      "xHandle": "bfl_ml",
-      "category": "image",
-      "categoryLabel": "Image Generation",
-      "brandColor": "#F97316",
-      "logo": "⚡",
-      "company": "Black Forest Labs",
-      "description": "Gelişmiş açık kaynak görsel modeli",
-      "tweets": [
-        {
-          "id": "2024241784025731492",
-          "text": "Doğanın içindeki müze.\n\nYapıyı koru ama çevreyi değiştir.\n\nFLUX.2 ve basit bir taslak kullanılarak oluşturuldu. https://t.co/ItfFjXvLmf",
-          "createdAt": "2026-02-18T21:57:04.000Z",
-          "metrics": {
-            "like_count": 58,
-            "retweet_count": 1,
-            "reply_count": 4,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/bfl_ml/status/2024241784025731492",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024241732880404480/img/HrWleZ8GSOQFLuuA.jpg",
-              "display_url": "pic.x.com/ItfFjXvLmf",
-              "expanded_url": "https://x.com/bfl_ml/status/2024241784025731492/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024241732880404480/vid/avc1/720x1044/0WaaBjUHqI0Euc17.mp4?tag=14",
-              "duration_millis": 9000
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Museum in the wild.\n\nPreserve structure but change the environment.\n\nGenerated using FLUX.2 and a simple outline. https://t.co/ItfFjXvLmf"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "cursor",
-      "name": "Cursor",
-      "xHandle": "cursor_ai",
-      "category": "coding",
-      "categoryLabel": "Coding",
-      "brandColor": "#000000",
-      "logo": "💻",
-      "company": "Anysphere",
-      "description": "AI destekli kod editörü",
-      "tweets": [
-        {
-          "id": "2024222148009886099",
-          "text": "Cursor'daki tüm yeniliklere göz atın: https://t.co/7qceASnFlu",
-          "createdAt": "2026-02-18T20:39:02.000Z",
-          "metrics": {
-            "like_count": 102,
-            "retweet_count": 2,
-            "reply_count": 5,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 1
-          },
-          "url": "https://twitter.com/cursor_ai/status/2024222148009886099",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "See everything new in Cursor: https://t.co/7qceASnFlu"
-        },
-        {
-          "id": "2024222146642497713",
-          "text": "Cursor artık geçmiş konuşmaları bağlam olarak kullanabiliyor. https://t.co/Ue1lBQ9xA3",
-          "createdAt": "2026-02-18T20:39:02.000Z",
-          "metrics": {
-            "like_count": 887,
-            "retweet_count": 56,
-            "reply_count": 50,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 28
-          },
-          "url": "https://twitter.com/cursor_ai/status/2024222146642497713",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024221912789110789/img/5ZTvicTxUGm28P5k.jpg",
-              "display_url": "pic.x.com/Ue1lBQ9xA3",
-              "expanded_url": "https://x.com/cursor_ai/status/2024222146642497713/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024221912789110789/vid/avc1/2816x2160/BvtK1kzgf_TTx1lX.mp4",
-              "duration_millis": 16933
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Cursor can now use past conversations as context. https://t.co/Ue1lBQ9xA3"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "midjourney",
-      "name": "Midjourney",
-      "xHandle": "midjourney",
-      "category": "image",
-      "categoryLabel": "Image Generation",
-      "brandColor": "#1A1A2E",
-      "logo": "🎨",
-      "company": "Midjourney",
-      "description": "Yüksek kaliteli AI görsel oluşturma",
-      "tweets": [
-        {
-          "id": "2024221301960020076",
-          "text": "https://t.co/OfPhSMZDwn",
-          "createdAt": "2026-02-18T20:35:41.000Z",
-          "metrics": {
-            "like_count": 5,
-            "retweet_count": 0,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/midjourney/status/2024221301960020076",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "https://t.co/OfPhSMZDwn"
-        },
-        {
-          "id": "2024215048584134678",
-          "text": "https://t.co/lu54WDUDXg",
-          "createdAt": "2026-02-18T20:10:50.000Z",
-          "metrics": {
-            "like_count": 21,
-            "retweet_count": 3,
-            "reply_count": 14,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 1
-          },
-          "url": "https://twitter.com/midjourney/status/2024215048584134678",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "https://t.co/lu54WDUDXg"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "claude",
-      "name": "Claude",
-      "xHandle": "AnthropicAI",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#CC785C",
-      "logo": "🧠",
-      "company": "Anthropic",
-      "description": "Anthropic'ın güvenli AI asistanı",
-      "tweets": [
-        {
-          "id": "2024210056871629072",
-          "text": "Bu çalışmanın temel bir dersi, özerkliğin model, kullanıcı ve ürün tarafından birlikte inşa edildiğidir. Yalnızca dağıtım öncesi değerlendirmelerle tam olarak karakterize edilemez.\n\nTüm detaylar ve geliştiriciler ile politika yapıcılar için önerilerimiz blogda: https://t.co/CllNkMF4ZZ",
-          "createdAt": "2026-02-18T19:51:00.000Z",
-          "metrics": {
-            "like_count": 92,
-            "retweet_count": 5,
-            "reply_count": 11,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 2
-          },
-          "url": "https://twitter.com/AnthropicAI/status/2024210056871629072",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "A central lesson of this work is that autonomy is co-constructed by the model, user, and product. It can't be fully characterized by pre-deployment evaluations alone.\n\nFor full details, and our recommendations to developers and policymakers, see the blog: https://t.co/CllNkMF4ZZ"
-        },
-        {
-          "id": "2024210053369385192",
-          "text": "API'mizdeki araçsal çağrıların yaklaşık %50'sini yazılım mühendisliği oluşturuyor, ancak diğer sektörlerde de yeni kullanım alanları görüyoruz.\n\nRisk ve özerklik sınırları genişledikçe, dağıtım sonrası izleme temel hale geliyor. Diğer model geliştiricileri bu araştırmayı genişletmeye teşvik ediyoruz. https://t.co/p8pOjgJPrh",
-          "createdAt": "2026-02-18T19:50:59.000Z",
-          "metrics": {
-            "like_count": 458,
-            "retweet_count": 39,
-            "reply_count": 24,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 25
-          },
-          "url": "https://twitter.com/AnthropicAI/status/2024210053369385192",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBdvcsMbYAAXwGM.png",
-              "display_url": "pic.x.com/p8pOjgJPrh",
-              "expanded_url": "https://x.com/AnthropicAI/status/2024210053369385192/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Software engineering makes up ~50% of agentic tool calls on our API, but we see emerging use in other industries. \n\nAs the frontier of risk and autonomy expands, post-deployment monitoring becomes essential. We encourage other model developers to extend this research. https://t.co/p8pOjgJPrh"
-        },
-        {
-          "id": "2024210050718585017",
-          "text": "API'mizdeki çoğu ajan eylemi düşük risklidir. Araç çağrılarının %73'ünde insan kontrolü var gibi görünüyor ve yalnızca %0.8'i geri alınamaz nitelikte.\n\nAncak sınır bölgelerinde, ajanların güvenlik sistemleri, finansal işlemler ve üretim dağıtımları üzerinde hareket ettiğini görüyoruz (bazıları değerlendirme olabilir). https://t.co/Jk3xXUKCpN",
-          "createdAt": "2026-02-18T19:50:58.000Z",
-          "metrics": {
-            "like_count": 72,
-            "retweet_count": 2,
-            "reply_count": 6,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/AnthropicAI/status/2024210050718585017",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBdvKxta0AAeFg-.jpg",
-              "display_url": "pic.x.com/Jk3xXUKCpN",
-              "expanded_url": "https://x.com/AnthropicAI/status/2024210050718585017/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Most agent actions on our API are low risk. 73% of tool calls appear to have a human in the loop, and only 0.8% are irreversible.\n\nBut at the frontier, we see agents acting on security systems, financial transactions, and production deployments (though some may be evals). https://t.co/Jk3xXUKCpN"
-        },
-        {
-          "id": "2024210048516575324",
-          "text": "Claude Code ayrıca sorular sorarak durarak denetimi teşvik ediyor.\n\nKarmaşık görevlerde, Claude Code açıklama için, insanların onu böldüğünden iki kattan daha fazla sıklıkta duraklıyor. Modellerin belirsizliği tanımasını öğretmek, önemli ve yeterince takdir edilmeyen bir güvenlik özelliği. https://t.co/IyOSahYEI4",
-          "createdAt": "2026-02-18T19:50:58.000Z",
-          "metrics": {
-            "like_count": 76,
-            "retweet_count": 0,
-            "reply_count": 7,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 3
-          },
-          "url": "https://twitter.com/AnthropicAI/status/2024210048516575324",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBdu881aYAAP-S-.png",
-              "display_url": "pic.x.com/IyOSahYEI4",
-              "expanded_url": "https://x.com/AnthropicAI/status/2024210048516575324/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Claude Code also encourages oversight by stopping to ask questions.\n\nOn complex tasks, Claude Code pauses for clarification more than twice as often as humans interrupt it. Training models to recognize uncertainty is an important, under-appreciated safety property. https://t.co/IyOSahYEI4"
-        },
-        {
-          "id": "2024210044917891361",
-          "text": "Ancak kesintiler deneyimle birlikte artıyor. Yeni kullanıcılar Claude Code'u etkileşimlerin %5'inde keserken, daha deneyimli kullanıcılarda bu oran %9.\n\nBu, her eylemi onaylamaktan, gerektiğinde yetki devredip müdahale etmeye doğru bir geçişe işaret ediyor. https://t.co/SDaUXCl2Gv",
-          "createdAt": "2026-02-18T19:50:57.000Z",
-          "metrics": {
-            "like_count": 66,
-            "retweet_count": 0,
-            "reply_count": 4,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 1
-          },
-          "url": "https://twitter.com/AnthropicAI/status/2024210044917891361",
-          "media": [
-            {
-              "type": "photo",
-              "url": "https://pbs.twimg.com/media/HBdu39ObUAMdED8.png",
-              "display_url": "pic.x.com/SDaUXCl2Gv",
-              "expanded_url": "https://x.com/AnthropicAI/status/2024210044917891361/photo/1"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "But interruptions also increase with experience. New users interrupt Claude Code in 5% of turns, compared to 9% for more experienced users.\n\nThis suggests a shift from approving each action to delegating and interrupting when needed. https://t.co/SDaUXCl2Gv"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "chatgpt",
-      "name": "ChatGPT",
-      "xHandle": "OpenAI",
-      "category": "chatbots",
-      "categoryLabel": "Chatbots & LLMs",
-      "brandColor": "#10A37F",
-      "logo": "🤖",
-      "company": "OpenAI",
-      "description": "OpenAI'nin sohbet botu ve GPT modelleri",
-      "tweets": [
-        {
-          "id": "2024193883748651102",
-          "text": "EVMbench'i tanıtıyoruz—bu yeni kıyaslama, AI ajanlarının yüksek önemdeki akıllı sözleşme güvenlik açıklarını ne kadar iyi tespit edebildiğini, sömürebildiğini ve yamalayabildiğini ölçüyor. https://t.co/op5zufgAGH",
-          "createdAt": "2026-02-18T18:46:44.000Z",
-          "metrics": {
-            "like_count": 6571,
-            "retweet_count": 890,
-            "reply_count": 794,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 550
-          },
-          "url": "https://twitter.com/OpenAI/status/2024193883748651102",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://t.co/op5zufgAGH"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "dalle",
-      "name": "DALL-E",
-      "xHandle": "OpenAI",
-      "category": "image",
-      "categoryLabel": "Image Generation",
-      "brandColor": "#10A37F",
-      "logo": "🖼️",
-      "company": "OpenAI",
-      "description": "OpenAI'ın görsel oluşturma modeli",
-      "tweets": [
-        {
-          "id": "2024193883748651102",
-          "text": "EVMbench'i tanıtıyoruz—bu yeni kıyaslama, AI ajanlarının yüksek önemdeki akıllı sözleşme güvenlik açıklarını ne kadar iyi tespit edebildiğini, sömürebildiğini ve yamalayabildiğini ölçüyor. https://t.co/op5zufgAGH",
-          "createdAt": "2026-02-18T18:46:44.000Z",
-          "metrics": {
-            "like_count": 6571,
-            "retweet_count": 890,
-            "reply_count": 794,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 550
-          },
-          "url": "https://twitter.com/OpenAI/status/2024193883748651102",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://t.co/op5zufgAGH"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "sora",
-      "name": "Sora",
-      "xHandle": "OpenAI",
-      "category": "video",
-      "categoryLabel": "Video Generation",
-      "brandColor": "#10A37F",
-      "logo": "🎞️",
-      "company": "OpenAI",
-      "description": "OpenAI'ın video oluşturma modeli",
-      "tweets": [
-        {
-          "id": "2024193883748651102",
-          "text": "EVMbench'i tanıtıyoruz—bu yeni kıyaslama, AI ajanlarının yüksek önemdeki akıllı sözleşme güvenlik açıklarını ne kadar iyi tespit edebildiğini, sömürebildiğini ve yamalayabildiğini ölçüyor. https://t.co/op5zufgAGH",
-          "createdAt": "2026-02-18T18:46:44.000Z",
-          "metrics": {
-            "like_count": 6571,
-            "retweet_count": 890,
-            "reply_count": 794,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 550
-          },
-          "url": "https://twitter.com/OpenAI/status/2024193883748651102",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://t.co/op5zufgAGH"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "codex",
-      "name": "Codex",
-      "xHandle": "OpenAI",
-      "category": "coding",
-      "categoryLabel": "Coding",
-      "brandColor": "#10A37F",
-      "logo": "⌨️",
-      "company": "OpenAI",
-      "description": "OpenAI'ın kod modeli",
-      "tweets": [
-        {
-          "id": "2024193883748651102",
-          "text": "EVMbench'i tanıtıyoruz—bu yeni kıyaslama, AI ajanlarının yüksek önemdeki akıllı sözleşme güvenlik açıklarını ne kadar iyi tespit edebildiğini, sömürebildiğini ve yamalayabildiğini ölçüyor. https://t.co/op5zufgAGH",
-          "createdAt": "2026-02-18T18:46:44.000Z",
-          "metrics": {
-            "like_count": 6571,
-            "retweet_count": 890,
-            "reply_count": 794,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 550
-          },
-          "url": "https://twitter.com/OpenAI/status/2024193883748651102",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Introducing EVMbench—a new benchmark that measures how well AI agents can detect, exploit, and patch high-severity smart contract vulnerabilities. https://t.co/op5zufgAGH"
-        }
-      ],
-      "source": "syndication"
-    },
-    {
-      "tool": "elevenlabs",
-      "name": "ElevenLabs",
-      "xHandle": "elevenlabsio",
-      "category": "audio",
-      "categoryLabel": "Audio & Music",
-      "brandColor": "#10B981",
-      "logo": "🗣️",
-      "company": "ElevenLabs",
-      "description": "Gerçekçi AI ses sentezi",
-      "tweets": [
-        {
-          "id": "2024192067673497624",
-          "text": "RT @ArtificialAnlys: AA-WER v2.0 Konuşmayı Metne Dönüştürme doğruluk kıyaslaması ve konuşma odaklı yeni özel veri seti AA-AgentTalk duyuruluyor…",
-          "createdAt": "2026-02-18T18:39:31.000Z",
-          "metrics": {
-            "like_count": 0,
-            "retweet_count": 12,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/elevenlabsio/status/2024192067673497624",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "RT @ArtificialAnlys: Announcing AA-WER v2.0 Speech to Text accuracy benchmark, and AA-AgentTalk, a new proprietary dataset focused on speec…"
-        },
-        {
-          "id": "2024121835500011855",
-          "text": "@aiunderwriting Bu, kuruluşların müşteri desteği, satış, planlama ve daha fazlasında kritik iş akışlarında konuşma ajanlarını konuşlandırmak için güven kazanmasını sağlıyor.\n\nDevamını okuyun: https://t.co/6dVFJfKx7m",
-          "createdAt": "2026-02-18T14:00:26.000Z",
-          "metrics": {
-            "like_count": 11,
-            "retweet_count": 0,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/elevenlabsio/status/2024121835500011855",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "@aiunderwriting This gives enterprises the confidence to deploy conversational agents in mission-critical workflows across customer support, sales, scheduling, and more.\n\nRead more: https://t.co/6dVFJfKx7m"
-        },
-        {
-          "id": "2024121834598273151",
-          "text": "ElevenAgents üzerine inşa eden şirketler, yerleşik korumalar sayesinde @aiunderwriting'in AIUC-1 sertifikasına %75'e varan oranda yaklaşıyor ve bunu haftalar içinde elde edebiliyor.",
-          "createdAt": "2026-02-18T14:00:26.000Z",
-          "metrics": {
-            "like_count": 15,
+            "like_count": 49,
             "retweet_count": 0,
             "reply_count": 1,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 0
+            "quote_count": 1
           },
-          "url": "https://twitter.com/elevenlabsio/status/2024121834598273151",
+          "url": "https://twitter.com/github/status/2024612722994970861",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Companies building on ElevenAgents are up to 75% of the way to @aiunderwriting's AIUC-1 certification and can achieve it in weeks thanks to built-in protections."
+          "originalText": "Here’s how you get started:\n➡️ In Zed, open Settings and go to the section GitHub Copilot Chat.\n➡️ Click on Sign in to use Copilot, follow the steps shown in the modal.\n➡️ Start using Zed powered by Copilot. ✨"
         },
         {
-          "id": "2024121833528676600",
-          "text": "Fortune 500 güvenlik ve risk liderleriyle geliştirilen AIUC-1 sertifikası, AI sistemlerinin şu alanlarda 5.000'den fazla düşmanca simülasyondan geçmesini gerektirir:\n- Güvenlik açıkları\n- Veri gizliliği\n- Halüsinasyonlar\n- Güvenlik\n\nBu testler, sigortacıların ihtiyaç duyduğu deneysel risk profilini oluşturur.",
-          "createdAt": "2026-02-18T14:00:26.000Z",
+          "id": "2024612721422192873",
+          "text": "🤝 Artık GitHub Copilot aboneliğinizi @zeddotdev ile kullanabilirsiniz.\nhttps://t.co/Raw5J9dHqk",
+          "createdAt": "2026-02-19T22:31:02.000Z",
           "metrics": {
-            "like_count": 27,
-            "retweet_count": 0,
-            "reply_count": 2,
+            "like_count": 633,
+            "retweet_count": 35,
+            "reply_count": 27,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 0
+            "quote_count": 15
           },
-          "url": "https://twitter.com/elevenlabsio/status/2024121833528676600",
+          "url": "https://twitter.com/github/status/2024612721422192873",
           "isMock": false,
           "source": "syndication",
-          "originalText": "AIUC-1 certification, developed with Fortune 500 security and risk leaders, requires AI systems to undergo 5,000+ adversarial simulations across:\n- Security vulnerabilities\n- Data privacy\n- Hallucinations\n- Safety\n\nThese tests create the empirical risk profile insurers need to"
+          "originalText": "🤝 You can now use your GitHub Copilot subscription with @zeddotdev.\nhttps://t.co/Raw5J9dHqk"
         },
         {
-          "id": "2024121832278757850",
-          "text": "Ajanlarımız - ve eylemleri - artık sigortalanabilir.\n\nAIUC-1 sertifikasıyla desteklenen, AI ses ajanları için sigorta güvencesi sağlayan ilk şirket biziz. https://t.co/QwcD67MuBw",
-          "createdAt": "2026-02-18T14:00:25.000Z",
+          "id": "2024537368087216237",
+          "text": "📣 @GoogleAI’nin Gemini 3.1 Pro'su artık GitHub Copilot'ta genel önizleme olarak yayına alınıyor.\n\nErken testler şunları gösteriyor:\n➡️ Yüksek araç doğruluğu — daha az araç çağrısıyla güçlü sonuçlar\n➡️ Etkili ve verimli düzenle-sonra-test döngüleri\n\n@code üzerinde deneyin.\nhttps://t.co/oYCncQMfNX https://t.co/13r1FFEjpF",
+          "createdAt": "2026-02-19T17:31:37.000Z",
           "metrics": {
-            "like_count": 259,
-            "retweet_count": 28,
-            "reply_count": 25,
+            "like_count": 1081,
+            "retweet_count": 90,
+            "reply_count": 34,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 26
+            "quote_count": 12
           },
-          "url": "https://twitter.com/elevenlabsio/status/2024121832278757850",
+          "url": "https://twitter.com/github/status/2024537368087216237",
           "media": [
             {
               "type": "video",
-              "url": "https://pbs.twimg.com/ext_tw_video_thumb/2024121761642541056/pu/img/IRjMOABEgvLN1UcL.jpg",
-              "display_url": "pic.x.com/QwcD67MuBw",
-              "expanded_url": "https://x.com/elevenlabsio/status/2024121832278757850/video/1",
-              "video_url": "https://video.twimg.com/ext_tw_video/2024121761642541056/pu/vid/avc1/1280x720/uf4utxZCdNcKoBKe.mp4?tag=12",
-              "duration_millis": 48766
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024514001195991040/img/3_f51H9vVFnhlzzP.jpg",
+              "display_url": "pic.x.com/13r1FFEjpF",
+              "expanded_url": "https://x.com/github/status/2024537368087216237/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024514001195991040/vid/avc1/1920x1080/cs9-3ceitt4WIg-z.mp4",
+              "duration_millis": 101674
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Our agents - and their actions - can now be insured.\n\nBacked by AIUC-1 certification, we’re the first company to secure insurance for AI voice agents. https://t.co/QwcD67MuBw"
+          "originalText": "📣 @GoogleAI’s Gemini 3.1 Pro is now rolling out in public preview in GitHub Copilot.\n\nEarly testing shows\n➡️ High tool precision — achieving strong results with fewer tool calls\n➡️ Effective and efficient edit-then-test loops\n\nTry it out in @code.\nhttps://t.co/oYCncQMfNX https://t.co/13r1FFEjpF"
         }
       ],
       "source": "syndication"
@@ -904,97 +108,537 @@
       "description": "AI video oluşturma platformu",
       "tweets": [
         {
-          "id": "2024190226579804603",
-          "text": "👀 https://t.co/LHAsdTPOJk",
-          "createdAt": "2026-02-18T18:32:12.000Z",
+          "id": "2024668121936891950",
+          "text": "🫄🏻🪞 https://t.co/ENH5qt8P4y",
+          "createdAt": "2026-02-20T02:11:11.000Z",
           "metrics": {
-            "like_count": 149,
-            "retweet_count": 24,
-            "reply_count": 38,
+            "like_count": 134,
+            "retweet_count": 31,
+            "reply_count": 33,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 10
+            "quote_count": 6
           },
-          "url": "https://twitter.com/pika_labs/status/2024190226579804603",
+          "url": "https://twitter.com/pika_labs/status/2024668121936891950",
           "media": [
             {
               "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024190074024579073/img/uP1Fb80NWWR2tW40.jpg",
-              "display_url": "pic.x.com/LHAsdTPOJk",
-              "expanded_url": "https://x.com/pika_labs/status/2024190226579804603/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024190074024579073/vid/avc1/1536x2048/EjQAGozNNFkcwJ8b.mp4",
-              "duration_millis": 10166
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024668069701021696/img/mRgvc5G0qAfSvmXo.jpg",
+              "display_url": "pic.x.com/ENH5qt8P4y",
+              "expanded_url": "https://x.com/pika_labs/status/2024668121936891950/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024668069701021696/vid/avc1/1536x2048/8GeZFlj94C6CG87L.mp4",
+              "duration_millis": 20629
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "👀 https://t.co/LHAsdTPOJk"
+          "originalText": "🫄🏻🪞 https://t.co/ENH5qt8P4y"
+        },
+        {
+          "id": "2024551821524816166",
+          "text": "🔜 https://t.co/xZe2J047ev",
+          "createdAt": "2026-02-19T18:29:03.000Z",
+          "metrics": {
+            "like_count": 160,
+            "retweet_count": 28,
+            "reply_count": 33,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 9
+          },
+          "url": "https://twitter.com/pika_labs/status/2024551821524816166",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBinI7jbUAE9U3c.jpg",
+              "display_url": "pic.x.com/xZe2J047ev",
+              "expanded_url": "https://x.com/pika_labs/status/2024551821524816166/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "🔜 https://t.co/xZe2J047ev"
         }
       ],
       "source": "syndication"
     },
     {
-      "tool": "ideogram",
-      "name": "Ideogram",
-      "xHandle": "ideogram_ai",
+      "tool": "flux",
+      "name": "Flux",
+      "xHandle": "bfl_ml",
       "category": "image",
       "categoryLabel": "Image Generation",
-      "brandColor": "#EC4899",
-      "logo": "📝",
-      "company": "Ideogram AI",
-      "description": "Metin destekli görsel oluşturma",
+      "brandColor": "#F97316",
+      "logo": "⚡",
+      "company": "Black Forest Labs",
+      "description": "Gelişmiş açık kaynak görsel modeli",
       "tweets": [
         {
-          "id": "2024184546988601784",
-          "text": "Artık şeffaf tasarımları doğrudan Ideogram içinde düzenleyebilirsiniz.\n\nSadece bir metin istemiyle düzenleyin, şeffaf arka plan bozulmadan kalır. Herkes için ücretsiz. https://t.co/WwFV142p27",
-          "createdAt": "2026-02-18T18:09:38.000Z",
+          "id": "2024615577546084531",
+          "text": "Yapıyı tutarlı tutarken iç mekanlarla oyna.\n\nFLUX.2 ile oluşturuldu. https://t.co/AVf5ye6jeh",
+          "createdAt": "2026-02-19T22:42:23.000Z",
           "metrics": {
-            "like_count": 32,
-            "retweet_count": 6,
-            "reply_count": 11,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 3
-          },
-          "url": "https://twitter.com/ideogram_ai/status/2024184546988601784",
-          "media": [
-            {
-              "type": "animated_gif",
-              "url": "https://pbs.twimg.com/tweet_video_thumb/HBdYv7tWIAA9Ecy.jpg",
-              "display_url": "pic.x.com/WwFV142p27",
-              "expanded_url": "https://x.com/ideogram_ai/status/2024184546988601784/photo/1",
-              "video_url": "https://video.twimg.com/tweet_video/HBdYv7tWIAA9Ecy.mp4"
-            }
-          ],
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "You can now edit transparent designs directly inside Ideogram.\n\nSimply edit with a text prompt, and the transparent background stays intact. Free for everyone. https://t.co/WwFV142p27"
-        },
-        {
-          "id": "2024184549429624977",
-          "text": "Düzenleme için şeffaflık desteği hakkında daha fazla bilgi edinin: https://t.co/UlRMm9Hygh https://t.co/pYLVQvMhNf",
-          "createdAt": "2026-02-18T18:09:38.000Z",
-          "metrics": {
-            "like_count": 5,
-            "retweet_count": 0,
-            "reply_count": 0,
+            "like_count": 72,
+            "retweet_count": 4,
+            "reply_count": 3,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 0
           },
-          "url": "https://twitter.com/ideogram_ai/status/2024184549429624977",
+          "url": "https://twitter.com/bfl_ml/status/2024615577546084531",
           "media": [
             {
-              "type": "animated_gif",
-              "url": "https://pbs.twimg.com/tweet_video_thumb/HBdZAoxXMAAwXVI.jpg",
-              "display_url": "pic.x.com/pYLVQvMhNf",
-              "expanded_url": "https://x.com/ideogram_ai/status/2024184549429624977/photo/1",
-              "video_url": "https://video.twimg.com/tweet_video/HBdZAoxXMAAwXVI.mp4"
+              "type": "video",
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2024615519857627137/img/gWdbfVwza2eMLqql.jpg",
+              "display_url": "pic.x.com/AVf5ye6jeh",
+              "expanded_url": "https://x.com/bfl_ml/status/2024615577546084531/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024615519857627137/vid/avc1/720x900/xG6RsW5tXtUtxtQZ.mp4?tag=14",
+              "duration_millis": 37056
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Read more about the transparency support for edit here: https://t.co/UlRMm9Hygh https://t.co/pYLVQvMhNf"
+          "originalText": "Play with interiors while keeping the structure consistent.\n\nGenerated with FLUX.2 https://t.co/AVf5ye6jeh"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "perplexity",
+      "name": "Perplexity",
+      "xHandle": "perplexity_ai",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#22C55E",
+      "logo": "🔍",
+      "company": "Perplexity AI",
+      "description": "AI destekli arama motoru",
+      "tweets": [
+        {
+          "id": "2024590462057922864",
+          "text": "Gemini 3.1 Pro artık tüm Perplexity Pro ve Max aboneleri için kullanılabilir. https://t.co/Nk0N0FXWgM",
+          "createdAt": "2026-02-19T21:02:35.000Z",
+          "metrics": {
+            "like_count": 923,
+            "retweet_count": 40,
+            "reply_count": 37,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 17
+          },
+          "url": "https://twitter.com/perplexity_ai/status/2024590462057922864",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBjKTARb0AA9sQh.png",
+              "display_url": "pic.x.com/Nk0N0FXWgM",
+              "expanded_url": "https://x.com/perplexity_ai/status/2024590462057922864/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Gemini 3.1 Pro is now available to all Perplexity Pro and Max subscribers. https://t.co/Nk0N0FXWgM"
+        },
+        {
+          "id": "2024532470407065819",
+          "text": "iOS için Comet ön siparişi Apple App Store'da başladı.\n\nHemen kaydolun.\nhttps://t.co/bir4vr26yn https://t.co/h2a19B2rw8",
+          "createdAt": "2026-02-19T17:12:09.000Z",
+          "metrics": {
+            "like_count": 629,
+            "retweet_count": 84,
+            "reply_count": 50,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 27
+          },
+          "url": "https://twitter.com/perplexity_ai/status/2024532470407065819",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBiVjLIbEAA0cuI.jpg",
+              "display_url": "pic.x.com/h2a19B2rw8",
+              "expanded_url": "https://x.com/perplexity_ai/status/2024532470407065819/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Pre-order for Comet on iOS is now live in the Apple App Store.\n\nSign up now.\nhttps://t.co/bir4vr26yn https://t.co/h2a19B2rw8"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "gemini",
+      "name": "Gemini",
+      "xHandle": "GoogleDeepMind",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#4285F4",
+      "logo": "✨",
+      "company": "Google",
+      "description": "Google'ın çok modlu AI modeli",
+      "tweets": [
+        {
+          "id": "2024570293520396796",
+          "text": "Gemini 3.1 Pro, geliştiriciler için @GeminiApp ve @GoogleAIStudio'da kullanıma sunuluyor.\n\nDaha fazla bilgi edinin ⬇️\nhttps://t.co/mOhribhxDD",
+          "createdAt": "2026-02-19T19:42:27.000Z",
+          "metrics": {
+            "like_count": 181,
+            "retweet_count": 13,
+            "reply_count": 8,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 2
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024570293520396796",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Gemini 3.1 Pro is rolling out now in the @GeminiApp and in @GoogleAIStudio for developers.\n\nFind out more ⬇️\nhttps://t.co/mOhribhxDD"
+        },
+        {
+          "id": "2024570291767181557",
+          "text": "Gerçekçi bir şehir planlama uygulaması oluşturmak için Gemini 3.1 Pro'yu kullandık. 🏙️\n\nModelin karmaşık araziyi nasıl ele aldığını, altyapıyı nasıl planladığını ve yüksek kaliteli bir görselleştirme oluşturmak için trafiği nasıl simüle ettiğini izleyin. https://t.co/SKoVzwtBy8",
+          "createdAt": "2026-02-19T19:42:26.000Z",
+          "metrics": {
+            "like_count": 3327,
+            "retweet_count": 292,
+            "reply_count": 66,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 59
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024570291767181557",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HBi4N3_XAAAg_KI.jpg",
+              "display_url": "pic.x.com/SKoVzwtBy8",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024570291767181557/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024569248639492096/vid/avc1/1920x1080/cQkBm_mOsxGUELFF.mp4",
+              "duration_millis": 90880
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We used Gemini 3.1 Pro to build a realistic city planner app. 🏙️\n\nWatch how the model tackles complex terrain, maps out infrastructure, and simulates traffic to generate a high-quality visualization. https://t.co/SKoVzwtBy8"
+        },
+        {
+          "id": "2024516471720743295",
+          "text": "Gemini 3.1 Pro şimdi @GeminiApp'te ve yalnızca Google AI Pro ve Ultra kullanıcıları için @NotebookLM'de kullanıma sunuluyor.\n\nGeliştiriciler, @GoogleAIStudio'daki API üzerinden önizleme olarak erişebilir. Daha fazla bilgi → https://t.co/goZsHskWCQ https://t.co/t86fimPlRp",
+          "createdAt": "2026-02-19T16:08:35.000Z",
+          "metrics": {
+            "like_count": 482,
+            "retweet_count": 28,
+            "reply_count": 13,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 10
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024516471720743295",
+          "media": [
+            {
+              "type": "animated_gif",
+              "url": "https://pbs.twimg.com/tweet_video_thumb/HBiEx2PX0AEwCEe.jpg",
+              "display_url": "pic.x.com/t86fimPlRp",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024516471720743295/photo/1",
+              "video_url": "https://video.twimg.com/tweet_video/HBiEx2PX0AEwCEe.mp4"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Gemini 3.1 Pro is rolling out now in the @GeminiApp, and exclusively to Google AI Pro and Ultra users in @NotebookLM.\n\nDevelopers can access it in preview via the API in @GoogleAIStudio. Find out more → https://t.co/goZsHskWCQ https://t.co/t86fimPlRp"
+        },
+        {
+          "id": "2024516467618656357",
+          "text": "Model, basit bir cevabın yeterli olmadığı iş akışları için tasarlanmış, akıl yürütmede bir adım önde.\n\nYeni mantık kalıplarını test eden ARC-AGI-2'de, 3 Pro'nun puanını iki katından fazlasına çıkarıyor.\n\nBu, karmaşık konuları görselleştirmenize, dağınık verileri düzenlemenize ve https://t.co/1RyM0yZwEo",
+          "createdAt": "2026-02-19T16:08:34.000Z",
+          "metrics": {
+            "like_count": 1159,
+            "retweet_count": 103,
+            "reply_count": 22,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 47
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024516467618656357",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBiEguGWwAAygSR.png",
+              "display_url": "pic.x.com/1RyM0yZwEo",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024516467618656357/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "The model is a step forward in reasoning, designed for workflows where a simple answer isn’t enough.\n\nOn ARC-AGI-2 – which tests for novel logic patterns – it more than doubles 3 Pro’s score.\n\nThis means it can help you visualize complex topics, organize scattered data, and bring https://t.co/1RyM0yZwEo"
+        },
+        {
+          "id": "2024516464892334129",
+          "text": "Gemini 3.1 Pro burada.\n\nModelin genel zekasını, daha zorlu problemleri çözebilmesi için önemli ölçüde geliştirdik. 🧵 https://t.co/upyJv1p7MA",
+          "createdAt": "2026-02-19T16:08:33.000Z",
+          "metrics": {
+            "like_count": 5469,
+            "retweet_count": 671,
+            "reply_count": 220,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 269
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024516464892334129",
+          "media": [
+            {
+              "type": "animated_gif",
+              "url": "https://pbs.twimg.com/tweet_video_thumb/HBiEYaDXUAAMgbN.jpg",
+              "display_url": "pic.x.com/upyJv1p7MA",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024516464892334129/photo/1",
+              "video_url": "https://video.twimg.com/tweet_video/HBiEYaDXUAAMgbN.mp4"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Gemini 3.1 Pro is here.\n\nWe’ve significantly improved the model’s overall intelligence so it can solve tougher problems. 🧵 https://t.co/upyJv1p7MA"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "notebooklm",
+      "name": "NotebookLM",
+      "xHandle": "GoogleDeepMind",
+      "category": "productivity",
+      "categoryLabel": "Productivity",
+      "brandColor": "#4285F4",
+      "logo": "📓",
+      "company": "Google",
+      "description": "AI destekli not alma ve araştırma",
+      "tweets": [
+        {
+          "id": "2024570293520396796",
+          "text": "Gemini 3.1 Pro, geliştiriciler için @GeminiApp ve @GoogleAIStudio'da kullanıma sunuluyor.\n\nDaha fazla bilgi edinin ⬇️\nhttps://t.co/mOhribhxDD",
+          "createdAt": "2026-02-19T19:42:27.000Z",
+          "metrics": {
+            "like_count": 181,
+            "retweet_count": 13,
+            "reply_count": 8,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 2
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024570293520396796",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Gemini 3.1 Pro is rolling out now in the @GeminiApp and in @GoogleAIStudio for developers.\n\nFind out more ⬇️\nhttps://t.co/mOhribhxDD"
+        },
+        {
+          "id": "2024570291767181557",
+          "text": "Gerçekçi bir şehir planlama uygulaması oluşturmak için Gemini 3.1 Pro'yu kullandık. 🏙️\n\nModelin karmaşık araziyi nasıl ele aldığını, altyapıyı nasıl planladığını ve yüksek kaliteli bir görselleştirme oluşturmak için trafiği nasıl simüle ettiğini izleyin. https://t.co/SKoVzwtBy8",
+          "createdAt": "2026-02-19T19:42:26.000Z",
+          "metrics": {
+            "like_count": 3327,
+            "retweet_count": 292,
+            "reply_count": 66,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 59
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024570291767181557",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/media/HBi4N3_XAAAg_KI.jpg",
+              "display_url": "pic.x.com/SKoVzwtBy8",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024570291767181557/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2024569248639492096/vid/avc1/1920x1080/cQkBm_mOsxGUELFF.mp4",
+              "duration_millis": 90880
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "We used Gemini 3.1 Pro to build a realistic city planner app. 🏙️\n\nWatch how the model tackles complex terrain, maps out infrastructure, and simulates traffic to generate a high-quality visualization. https://t.co/SKoVzwtBy8"
+        },
+        {
+          "id": "2024516471720743295",
+          "text": "Gemini 3.1 Pro şimdi @GeminiApp'te ve @NotebookLM'de yalnızca Google AI Pro ve Ultra kullanıcılarına özel olarak sunuluyor.\n\nGeliştiriciler, @GoogleAIStudio'daki API üzerinden önizleme olarak erişebilir. Daha fazla bilgi → https://t.co/goZsHskWCQ https://t.co/t86fimPlRp",
+          "createdAt": "2026-02-19T16:08:35.000Z",
+          "metrics": {
+            "like_count": 482,
+            "retweet_count": 28,
+            "reply_count": 13,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 10
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024516471720743295",
+          "media": [
+            {
+              "type": "animated_gif",
+              "url": "https://pbs.twimg.com/tweet_video_thumb/HBiEx2PX0AEwCEe.jpg",
+              "display_url": "pic.x.com/t86fimPlRp",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024516471720743295/photo/1",
+              "video_url": "https://video.twimg.com/tweet_video/HBiEx2PX0AEwCEe.mp4"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Gemini 3.1 Pro is rolling out now in the @GeminiApp, and exclusively to Google AI Pro and Ultra users in @NotebookLM.\n\nDevelopers can access it in preview via the API in @GoogleAIStudio. Find out more → https://t.co/goZsHskWCQ https://t.co/t86fimPlRp"
+        },
+        {
+          "id": "2024516467618656357",
+          "text": "Model, basit bir cevabın yeterli olmadığı iş akışları için tasarlanmış, akıl yürütmede bir adım önde.\n\nYeni mantık kalıplarını test eden ARC-AGI-2'de, 3 Pro'nun puanını iki katından fazlasına çıkarıyor.\n\nBu, karmaşık konuları görselleştirmenize, dağınık verileri düzenlemenize ve https://t.co/1RyM0yZwEo",
+          "createdAt": "2026-02-19T16:08:34.000Z",
+          "metrics": {
+            "like_count": 1159,
+            "retweet_count": 103,
+            "reply_count": 22,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 47
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024516467618656357",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBiEguGWwAAygSR.png",
+              "display_url": "pic.x.com/1RyM0yZwEo",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024516467618656357/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "The model is a step forward in reasoning, designed for workflows where a simple answer isn’t enough.\n\nOn ARC-AGI-2 – which tests for novel logic patterns – it more than doubles 3 Pro’s score.\n\nThis means it can help you visualize complex topics, organize scattered data, and bring https://t.co/1RyM0yZwEo"
+        },
+        {
+          "id": "2024516464892334129",
+          "text": "Gemini 3.1 Pro burada.\n\nModelin genel zekasını, daha zorlu problemleri çözebilmesi için önemli ölçüde geliştirdik. 🧵 https://t.co/upyJv1p7MA",
+          "createdAt": "2026-02-19T16:08:33.000Z",
+          "metrics": {
+            "like_count": 5469,
+            "retweet_count": 671,
+            "reply_count": 220,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 269
+          },
+          "url": "https://twitter.com/GoogleDeepMind/status/2024516464892334129",
+          "media": [
+            {
+              "type": "animated_gif",
+              "url": "https://pbs.twimg.com/tweet_video_thumb/HBiEYaDXUAAMgbN.jpg",
+              "display_url": "pic.x.com/upyJv1p7MA",
+              "expanded_url": "https://x.com/GoogleDeepMind/status/2024516464892334129/photo/1",
+              "video_url": "https://video.twimg.com/tweet_video/HBiEYaDXUAAMgbN.mp4"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Gemini 3.1 Pro is here.\n\nWe’ve significantly improved the model’s overall intelligence so it can solve tougher problems. 🧵 https://t.co/upyJv1p7MA"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "xHandle": "cursor_ai",
+      "category": "coding",
+      "categoryLabel": "Coding",
+      "brandColor": "#000000",
+      "logo": "💻",
+      "company": "Anysphere",
+      "description": "AI destekli kod editörü",
+      "tweets": [
+        {
+          "id": "2024544628687687879",
+          "text": "Son üç ayda macOS, Linux ve Windows'ta ajan sandbox'ını devreye aldık.\n\nSandbox'lar, ajanların güvenli bir şekilde özgürce çalışmasına izin veriyor ve yalnızca dışarı çıkmaları gerektiğinde onay talep ediyor.\n\nİşte nasıl oluşturduğumuz: https://t.co/5Tv8enRB5d",
+          "createdAt": "2026-02-19T18:00:28.000Z",
+          "metrics": {
+            "like_count": 532,
+            "retweet_count": 42,
+            "reply_count": 29,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 8
+          },
+          "url": "https://twitter.com/cursor_ai/status/2024544628687687879",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Over the last three months, we've rolled out agent sandboxing on macOS, Linux, and Windows.\n\nSandboxes allow agents to run freely and securely, only requesting approval when they need to step outside it.\n\nHere's how we built it: https://t.co/5Tv8enRB5d"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "elevenlabs",
+      "name": "ElevenLabs",
+      "xHandle": "elevenlabsio",
+      "category": "audio",
+      "categoryLabel": "Audio & Music",
+      "brandColor": "#10B981",
+      "logo": "🗣️",
+      "company": "ElevenLabs",
+      "description": "Gerçekçi AI ses sentezi",
+      "tweets": [
+        {
+          "id": "2024539646332428802",
+          "text": "Ekipler, CSAT, çözüm oranı ve dönüşüm gibi sonuçları güvenle iyileştirmek için Deneyler'i kullanır.\n\nDaha fazla bilgi edinin: https://t.co/ETTeshci4e",
+          "createdAt": "2026-02-19T17:40:40.000Z",
+          "metrics": {
+            "like_count": 21,
+            "retweet_count": 1,
+            "reply_count": 2,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2024539646332428802",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Teams use Experiments to safely improve outcomes like CSAT, containment rate and conversion with confidence.\n\nLearn more: https://t.co/ETTeshci4e"
+        },
+        {
+          "id": "2024539645535457466",
+          "text": "Nasıl çalışır:\n- Asistanınızın yeni bir varyantını oluşturun.\n- Trafiğin kontrollü bir kısmını ona yönlendirin.\n- Temel metriklerdeki etkiyi ölçün.\n- Kazananı tam sürüm kontrolüyle canlı ortama taşıyın.",
+          "createdAt": "2026-02-19T17:40:40.000Z",
+          "metrics": {
+            "like_count": 20,
+            "retweet_count": 0,
+            "reply_count": 1,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 0
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2024539645535457466",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "How it works:\n- Create a new variant of your agent.\n- Route a controlled slice of traffic to it.\n- Measure impact across key metrics.\n- Promote the winner to production with full version control."
+        },
+        {
+          "id": "2024539644579271048",
+          "text": "ElevenAgents'ta Deneyler'i tanıtıyoruz - gerçek dünyadaki asistan performansını iyileştirmenin en veri odaklı yolu.\n\nDeneyler, istem yapısından iş akışı mantığına, sese ve kişiliğe kadar hangi asistan yapılandırmasının en iyi çalıştığını ölçmek için kontrollü A/B testleri yapmanızı sağlar. https://t.co/tbNlY2pmfV",
+          "createdAt": "2026-02-19T17:40:40.000Z",
+          "metrics": {
+            "like_count": 238,
+            "retweet_count": 28,
+            "reply_count": 19,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 4
+          },
+          "url": "https://twitter.com/elevenlabsio/status/2024539644579271048",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://pbs.twimg.com/ext_tw_video_thumb/2024539568486092800/pu/img/XZgX1tFx_JPI8Nwh.jpg",
+              "display_url": "pic.x.com/tbNlY2pmfV",
+              "expanded_url": "https://x.com/elevenlabsio/status/2024539644579271048/video/1",
+              "video_url": "https://video.twimg.com/ext_tw_video/2024539568486092800/pu/vid/avc1/1280x720/IlNf8jaJ9faVFlMK.mp4?tag=12",
+              "duration_millis": 44393
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Introducing Experiments in ElevenAgents - the most data-driven way to improve real-world agent performance.\n\nExperiments enables you to run controlled A/B tests to measure which agent configuration works best - from prompt structure to workflow logic, voice, and personality. https://t.co/tbNlY2pmfV"
         }
       ],
       "source": "syndication"
@@ -1011,89 +655,60 @@
       "description": "Gerçekçi AI video üretimi",
       "tweets": [
         {
-          "id": "2024167145391673815",
-          "text": "Ray3.14 ile hikayenizi gerçek 1080p kalitesinde hayata geçirin. Yönetmen niyetine sadık kalarak karakter ve çevre tutarlılığını koruyun. Daha güçlü süreklilik, incelikli detaylar ve uyumlu görsel sonuçlarla gerçekçi hareketler üretin. Şimdi yalnızca Dream Machine'de mevcut. https://t.co/QEmz6LFTFs",
-          "createdAt": "2026-02-18T17:00:29.000Z",
+          "id": "2024529647984123996",
+          "text": "Fikir istedik. Sumo güreşçisinin kickflip öğrenmesini aldık. Dream Brief iyi gidiyor.",
+          "createdAt": "2026-02-19T17:00:56.000Z",
           "metrics": {
-            "like_count": 66,
-            "retweet_count": 10,
-            "reply_count": 3,
+            "like_count": 26,
+            "retweet_count": 3,
+            "reply_count": 1,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 2
+            "quote_count": 0
           },
-          "url": "https://twitter.com/LumaLabsAI/status/2024167145391673815",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024166938809692160/img/j5rd9ByTv4m4Y6B0.jpg",
-              "display_url": "pic.x.com/QEmz6LFTFs",
-              "expanded_url": "https://x.com/LumaLabsAI/status/2024167145391673815/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024166938809692160/vid/avc1/1920x816/cNCHqKWWdkgLcffQ.mp4",
-              "duration_millis": 46083
-            }
-          ],
+          "url": "https://twitter.com/LumaLabsAI/status/2024529647984123996",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Bring your narrative story to life in native 1080p with Ray3.14. Maintain character and environment consistency while adhering to director intent. Produce realistic motion with stronger continuity, refined detail, and cohesive visual results. Available now only in Dream Machine. https://t.co/QEmz6LFTFs"
+          "originalText": "We asked for ideas. We got a sumo wrestler learning to kickflip. Dream Brief is going well."
         }
       ],
       "source": "syndication"
     },
     {
-      "tool": "runway",
-      "name": "Runway ML",
-      "xHandle": "runwayml",
-      "category": "video",
-      "categoryLabel": "Video Generation",
-      "brandColor": "#FF3366",
-      "logo": "🎬",
-      "company": "Runway",
-      "description": "Yaratıcı AI video araçları",
+      "tool": "poe",
+      "name": "Poe",
+      "xHandle": "poe_platform",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#A855F7",
+      "logo": "📚",
+      "company": "Quora",
+      "description": "Çoklu AI model platformu",
       "tweets": [
         {
-          "id": "2024137812946092152",
-          "text": "Daha fazla bilgi edin: https://t.co/g39FV2piCj",
-          "createdAt": "2026-02-18T15:03:55.000Z",
+          "id": "2024523659193602466",
+          "text": "Gemini 3.1 Pro Poe'da yayında — en zorlu zorluklarınızı çözmek için geliştirilen Google'ın en yeni Gemini modeli: derin akıl yürütme, sentez ve karmaşık problem çözme. Özel bir sürümünün erken erişimini aldık ve ortaklarımızla bu modelin şekillenmesine yardımcı olmak için özel bir kıyaslama geliştirdik: https://t.co/1f9zaH8TTA",
+          "createdAt": "2026-02-19T16:37:08.000Z",
           "metrics": {
-            "like_count": 3,
-            "retweet_count": 1,
-            "reply_count": 0,
-            "impression_count": 0,
-            "bookmark_count": 0,
-            "quote_count": 0
-          },
-          "url": "https://twitter.com/runwayml/status/2024137812946092152",
-          "isMock": false,
-          "source": "syndication",
-          "originalText": "Learn more: https://t.co/g39FV2piCj"
-        },
-        {
-          "id": "2024137810953793869",
-          "text": "Çekeceğiniz sahneyi daha önceden görmüş olarak sete gelin.\n\nRunway ile storyboard ve eskizlerden yüksek kaliteli ön görselleştirmelere aylar yerine dakikalar içinde geçebilirsiniz.\n\nDaha fazla bilgi edinmek ve başlamak için aşağıdaki bağlantıyı kullanın. https://t.co/wQRmKTFG2b",
-          "createdAt": "2026-02-18T15:03:55.000Z",
-          "metrics": {
-            "like_count": 94,
-            "retweet_count": 8,
-            "reply_count": 11,
+            "like_count": 89,
+            "retweet_count": 4,
+            "reply_count": 3,
             "impression_count": 0,
             "bookmark_count": 0,
             "quote_count": 1
           },
-          "url": "https://twitter.com/runwayml/status/2024137810953793869",
+          "url": "https://twitter.com/poe_platform/status/2024523659193602466",
           "media": [
             {
-              "type": "video",
-              "url": "https://pbs.twimg.com/amplify_video_thumb/2024137423236497408/img/y8mG1faL6Hg1MkUf.jpg",
-              "display_url": "pic.x.com/wQRmKTFG2b",
-              "expanded_url": "https://x.com/runwayml/status/2024137810953793869/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2024137423236497408/vid/avc1/720x1280/iNkWjc9RNrYTqcBt.mp4",
-              "duration_millis": 35666
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBiK9dhbUAU6z88.jpg",
+              "display_url": "pic.x.com/1f9zaH8TTA",
+              "expanded_url": "https://x.com/poe_platform/status/2024523659193602466/photo/1"
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "Walk on set having already seen what you're about to shoot.\n\nWith Runway you can go from storyboards and sketches to high fidelity previs in a matter a minutes instead of months.\n\nLearn more and get started at the link below. https://t.co/wQRmKTFG2b"
+          "originalText": "Gemini 3.1 Pro is live on Poe — Google’s newest Gemini model built to solve your hardest challenges: deep reasoning, synthesis, and complex problem solving. We got early access to a private snapshot and co-developed a custom benchmark to help shape this model with our partners at https://t.co/1f9zaH8TTA"
         }
       ],
       "source": "syndication"
