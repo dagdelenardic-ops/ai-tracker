@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-02-22T07:38:17.427Z",
+  "fetchedAt": "2026-02-23T08:30:13.570Z",
   "source": "syndication+deepseek",
-  "toolCount": 1,
-  "tweetCount": 2,
+  "toolCount": 2,
+  "tweetCount": 4,
   "data": [
     {
       "tool": "github-copilot",
@@ -16,48 +16,104 @@
       "description": "GitHub'ın AI kod asistanı",
       "tweets": [
         {
-          "id": "2025269486350196844",
-          "text": "Bir AI ajanını sizin adınıza PR açması için nasıl yönlendirirsiniz? 👀\n\nOna yetenekler verirsiniz.\n\nMake Contribution ajan yeteneği sayesinde, Copilot CLI harekete geçmeden önce otomatik olarak bir repo'nun katkı kurallarını ve şablonlarını bulur ve takip eder.\n\nBu yeteneği edinin.👇\nhttps://t.co/fKjeNkK0P0 https://t.co/JE1itjbmZ8",
-          "createdAt": "2026-02-21T18:00:47.000Z",
+          "id": "2025638707987099692",
+          "text": "Daha fazla bilgi edinin. ⬇️\nhttps://t.co/16UgYosJZu",
+          "createdAt": "2026-02-22T18:27:57.000Z",
           "metrics": {
-            "like_count": 476,
-            "retweet_count": 43,
-            "reply_count": 29,
+            "like_count": 47,
+            "retweet_count": 5,
+            "reply_count": 2,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 6
+            "quote_count": 0
           },
-          "url": "https://twitter.com/github/status/2025269486350196844",
+          "url": "https://twitter.com/github/status/2025638707987099692",
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "Learn more. ⬇️\nhttps://t.co/16UgYosJZu"
+        },
+        {
+          "id": "2025638706393272358",
+          "text": "Copilot artık hafızaya sahip! 🧠\n\nGitHub platformundaki favori asistanlarınızdan herhangi biri (Copilot, Claude, Codex, c-c-c-combo breaker) deponuz genelinde öğrenebilir.\n\nArtık VS Code Insiders, Copilot CLI, Copilot kodlama asistanı ve Copilot kod incelemesinde mevcut. https://t.co/7AM6755Bkr",
+          "createdAt": "2026-02-22T18:27:56.000Z",
+          "metrics": {
+            "like_count": 659,
+            "retweet_count": 56,
+            "reply_count": 48,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 15
+          },
+          "url": "https://twitter.com/github/status/2025638706393272358",
           "media": [
             {
               "type": "video",
-              "url": "https://pbs.twimg.com/media/HBsz2PrXEAA9ULO.jpg",
-              "display_url": "pic.x.com/JE1itjbmZ8",
-              "expanded_url": "https://x.com/github/status/2025269486350196844/video/1",
-              "video_url": "https://video.twimg.com/amplify_video/2025269338735833088/vid/avc1/1280x720/A_EE2cUzsRVBdhRE.mp4?tag=14",
-              "duration_millis": 114388
+              "url": "https://pbs.twimg.com/amplify_video_thumb/2025638404697083904/img/wmUCst19-NEPsKrg.jpg",
+              "display_url": "pic.x.com/7AM6755Bkr",
+              "expanded_url": "https://x.com/github/status/2025638706393272358/video/1",
+              "video_url": "https://video.twimg.com/amplify_video/2025638404697083904/vid/avc1/1920x1080/VkbqwsYV279Isw-y.mp4",
+              "duration_millis": 42466
             }
           ],
           "isMock": false,
           "source": "syndication",
-          "originalText": "How do you guide an AI agent to open PRs on your behalf? 👀\n\nYou give it skills.\n\nWith the Make Contribution agent skill, Copilot CLI automatically finds and follows a repo's contribution guidelines and templates before acting.\n\nGet this skill.👇\nhttps://t.co/fKjeNkK0P0 https://t.co/JE1itjbmZ8"
+          "originalText": "Copilot now has memory! 🧠\n\nAny of your favorite agents on the GitHub platform (Copilot, Claude, Codex, c-c-c-combo breaker) can learn across your repo.\n\nNow in VS Code Insiders, Copilot CLI, Copilot coding agent, and Copilot code review. https://t.co/7AM6755Bkr"
         },
         {
-          "id": "2025209143158583641",
-          "text": "Araçlar değişir. Yazılım da öyle. 🔄\n\nGitHub'daki en hızlı büyüyen projeler, AI ajanlarından yüksek performanslı araçlara kadar geliştirmenin nasıl evrildiğini ortaya koyuyor.\n\nVerileri analiz ediyoruz. ⬇️\nhttps://t.co/DUgFwqZYyO",
-          "createdAt": "2026-02-21T14:01:00.000Z",
+          "id": "2025523463725699328",
+          "text": "Harika: GitHub Copilot CLI için 60 fps animasyonlu ASCII başlık oluşturmak. 😎\n\nDaha da harikası: Performansı bozmadan terminalde yüksek çözünürlüklü animasyon oluşturmak. 😎😎\n\nİşte nasıl yaptığımız. 🛠️\nhttps://t.co/4qTvoL6VQj",
+          "createdAt": "2026-02-22T10:50:00.000Z",
           "metrics": {
-            "like_count": 117,
-            "retweet_count": 26,
-            "reply_count": 9,
+            "like_count": 454,
+            "retweet_count": 44,
+            "reply_count": 30,
             "impression_count": 0,
             "bookmark_count": 0,
-            "quote_count": 1
+            "quote_count": 4
           },
-          "url": "https://twitter.com/github/status/2025209143158583641",
+          "url": "https://twitter.com/github/status/2025523463725699328",
           "isMock": false,
           "source": "syndication",
-          "originalText": "Tools change. So does software. 🔄\n\nThe fastest-growing projects on GitHub reveal how development is evolving, from AI agents to high-performance tools.\n\nWe break down the data. ⬇️\nhttps://t.co/DUgFwqZYyO"
+          "originalText": "Cool: Building a 60fps animated ASCII banner for GitHub Copilot CLI. 😎\n\nEven cooler: Rendering high-res animation in a terminal without breaking performance. 😎😎\n\nHere's how we did it. 🛠️\nhttps://t.co/4qTvoL6VQj"
+        }
+      ],
+      "source": "syndication"
+    },
+    {
+      "tool": "kimiai",
+      "name": "Kimi",
+      "xHandle": "Kimi_Moonshot",
+      "category": "chatbots",
+      "categoryLabel": "Chatbots & LLMs",
+      "brandColor": "#6366F1",
+      "logo": "🌙",
+      "company": "Moonshot AI",
+      "description": "Moonshot AI'ın uzun bağlamlı modeli",
+      "tweets": [
+        {
+          "id": "2025539982195335198",
+          "text": "“hardwired kimi k2.5’i prefrontal korteksine bağladı” 😂 https://t.co/jFsmbsRJE6",
+          "createdAt": "2026-02-22T11:55:39.000Z",
+          "metrics": {
+            "like_count": 881,
+            "retweet_count": 30,
+            "reply_count": 28,
+            "impression_count": 0,
+            "bookmark_count": 0,
+            "quote_count": 2
+          },
+          "url": "https://twitter.com/Kimi_Moonshot/status/2025539982195335198",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HBwn5wQa4AAwUpj.jpg",
+              "display_url": "pic.x.com/jFsmbsRJE6",
+              "expanded_url": "https://x.com/Kimi_Moonshot/status/2025539982195335198/photo/1"
+            }
+          ],
+          "isMock": false,
+          "source": "syndication",
+          "originalText": "“hardwired kimi k2.5 into his prefrontal cortex” 😂 https://t.co/jFsmbsRJE6"
         }
       ],
       "source": "syndication"
